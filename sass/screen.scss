@@ -269,6 +269,7 @@ span.note{
 .row.main-menu{
   box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
   max-width: none;
+  margin-bottom: 4px;
   nav{
     a{
       padding: 20px 16px;
@@ -285,6 +286,8 @@ span.note{
 
 .row.ofertas{
   padding-bottom: 70px;
+  max-width: none;
+  background: url('../images/ofertasbg.jpg') repeat left top;
   h2.lines{
     width: 293px;
     line-height: 1em;
@@ -368,7 +371,7 @@ span.note{
 }
 
 .row.eventos{
-  margin-bottom: 70px;
+  margin-bottom: 33px;
   .cycle-slideshow{
     .cycle-pager{
       position: absolute;
@@ -419,7 +422,11 @@ span.note{
 }
 
 .row.destinos{
-  margin-bottom: 90px;
+  margin-bottom: 20px;
+  padding-bottom: 70px;
+  padding-top: 33px;
+  max-width: none;
+  background: url('../images/mainbg.jpg') repeat left top;
   h2{
     width: 330px;
   }
@@ -467,6 +474,7 @@ span.note{
 
 footer.row{
   background: $dark-gray;
+  max-width: none;
 }
 .footer-top{
   padding: 27px 0;
