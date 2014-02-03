@@ -16,7 +16,14 @@
 
 </head>
 <body>
-
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=278840028812868";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="row">
 	  <div class="large-4 columns left-tools">
 	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
@@ -103,36 +110,36 @@
           <div class="top">
             <img src="images/ofertas1.jpg" alt="" />
             <div class="precio"><span class="desde">Desde</span><span class="price">65€</div>
-            <div class="bottom">
-              <h4>Fines de semana únicos</h4>
-              <h5>Hoteles Madrid y Barcelona</h5>
-              <p>Queremos que tus fines de semana sean inolvidables</p>
-              <a href="" class="btn-black">Reservar</a>
-            </div>
+          </div>
+          <div class="bottom">
+            <h4>Fines de semana únicos</h4>
+            <h5>Hoteles Madrid y Barcelona</h5>
+            <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
+            <a href="" class="btn-black">Reservar</a>
           </div>
         </li>
         <li class="large-4 columns">
           <div class="top">
             <img src="images/ofertas2.jpg" alt="" />
             <div class="precio"><span class="desde">Desde</span><span class="price">75€</div>
-            <div class="bottom">
-              <h4>Verano refrescante en Salamanca</h4>
-              <h5>Salamanca forum resort</h5>
-              <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
-              <a href="" class="btn-black">Reservar</a>
-            </div>
+          </div>
+          <div class="bottom">
+            <h4>Verano refrescante en Salamanca</h4>
+            <h5>Salamanca forum resort</h5>
+            <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
+            <a href="" class="btn-black">Reservar</a>
           </div>
         </li>
         <li class="large-4 columns">
           <div class="top">
-            <img src="images/ofertas1.jpg" alt="" />
-            <div class="precio"><span class="desde">Dto.</span><span class="price">15%€</div>
-            <div class="bottom">
-              <h4>Reserva Anticipada</h4>
-              <h5>todos los hoteles</h5>
-              <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
-              <a href="" class="btn-black">Reservar</a>
-            </div>
+            <img src="images/ofertas3.jpg" alt="" />
+            <div class="precio"><span class="desde">Dto.</span><span class="price">15%</div>
+          </div>
+          <div class="bottom">
+            <h4>Reserva Anticipada</h4>
+            <h5>todos los hoteles</h5>
+            <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
+            <a href="" class="btn-black">Reservar</a>
           </div>
         </li>
       </ul>
@@ -147,21 +154,27 @@
       <div class="cycle-pager"></div>
       <div class="slide">
         <img src="images/eventos.jpg" alt="" />
-        <h2 class="white-lines">Eventos &amp; Reuniones</h2>
-        <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
-        <a class="button" href="#">Ver m&aacute;s</a>
+        <div class="slide-text">
+          <h2 class="white-lines">Eventos &amp; Reuniones</h2>
+          <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
+          <a class="button" href="#">Ver m&aacute;s</a>
+        </div>
       </div>
       <div class="slide">
         <img src="images/eventos.jpg" alt="" />
-        <h2 class="white-lines">Eventos &amp; Reuniones</h2>
-        <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
-        <a class="button" href="#">Ver m&aacute;s</a>
+        <div class="slide-text">
+          <h2 class="white-lines">Eventos &amp; Reuniones</h2>
+          <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
+          <a class="button" href="#">Ver m&aacute;s</a>
+        </div>
       </div>
       <div class="slide">
         <img src="images/eventos.jpg" alt="" />
-        <h2 class="white-lines">Eventos &amp; Reuniones</h2>
-        <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
-        <a class="button" href="#">Ver m&aacute;s</a>
+        <div class="slide-text">
+          <h2 class="white-lines">Eventos &amp; Reuniones</h2>
+          <span class="slide-caption">Elige la ciudad y nosotros nos encargamos del resto!</span>
+          <a class="button" href="#">Ver m&aacute;s</a>
+        </div>
       </div>
     </div>
   </div><!-- /row -->
@@ -171,19 +184,33 @@
       <h2 class="lines">Destinos</h2>
       <span class="note">Variada oferta artística, histórica, cultural o gastronómica.</span>
       <ul>
-        <li><img src="images/barcelona.jpg" alt="" /><a href="" class="btn-lines white">Ver destino</a></li>
-        <li><img src="images/bilbao" alt="" /><a href="" class="btn-lines white">Ver destino</a></li>
-        <li><img src="images/madrid.jpg" alt="" /><a href="" class="btn-lines white">Ver destino</a></li>
-        <li><img src="images/baqueira.jpg" alt="" /><a href="" class="btn-lines white">Ver destino</a></li>
-        <li><img src="images/salamanca.jpg" alt="" /><a href="" class="btn-lines white">Ver destino</a></li>
+        <li><img src="images/barcelona.jpg" alt="" /><span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li><img src="images/bilbao.jpg" alt="" /><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li><img src="images/madrid.jpg" alt="" /><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li><img src="images/baqueira.jpg" alt="" /><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li><img src="images/salamanca.jpg" alt="" /><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
       </ul>
       <a href="" class="btn-black">Ver mapa de destinos</a>
     </div>
   </div><!-- /row -->
   
   <div class="row social">
-    <div class="large-4 columns">
-      
+    <div class="large-4 large-centered columns">
+      <ul>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="rafaelhoteles">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+        <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
+        <li><!-- Place this tag where you want the +1 button to render. -->
+        <div class="g-plusone" data-annotation="inline" data-width="120"></div>
+        
+        <!-- Place this tag after the last +1 button tag. -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script></li>
+      </ul>  
     </div>
   </div><!-- /row -->
   
