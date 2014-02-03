@@ -5,6 +5,10 @@
 
 @import "compass/reset";
 
+/*--------------------------------*/
+/* CLASES Y VARIABLES RECICLABLES */
+/*--------------------------------*/
+
 $font: 'Istok Web', sans-serif;
 $gray: #999;
 $light-gray: #666;
@@ -94,6 +98,12 @@ span.note{
   margin: 30px auto 0;
   overflow: hidden;
 }
+
+
+
+/*--------------------------------*/
+/*       ESTILOS GENERALES        */
+/*--------------------------------*/
 
 .left-tools{
   padding: 18px 0;
