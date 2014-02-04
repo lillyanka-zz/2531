@@ -26,4 +26,4 @@ color_output = false
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-require 'zurb-foundation'
+require 'zurb-foundation';

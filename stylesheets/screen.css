@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,783 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/*--------------------------------*/
+/* CLASES Y VARIABLES RECICLABLES */
+/*--------------------------------*/
+/* line 20, ../sass/screen.scss */
+body, h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: "Istok Web", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 25, ../sass/screen.scss */
+.right {
+  float: right;
+}
+
+/* line 29, ../sass/screen.scss */
+.left {
+  float: left;
+}
+
+/* line 33, ../sass/screen.scss */
+a.button {
+  border: 2px solid #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: url("../images/white-arrow.png") no-repeat 95% center;
+  padding: 10px 30px 10px 10px;
+  box-shadow: none;
+}
+
+/* line 42, ../sass/screen.scss */
+h2.lines {
+  font-size: 3em;
+  text-align: center;
+  margin: 0.5em auto;
+  background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0.5em auto 0;
+}
+
+/* line 52, ../sass/screen.scss */
+h3.lines {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.5em auto;
+  background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center;
+}
+
+/* line 59, ../sass/screen.scss */
+h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  color: #000;
+}
+
+/* line 65, ../sass/screen.scss */
+span.note {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.875em;
+  margin-bottom: 3em;
+}
+
+/* line 73, ../sass/screen.scss */
+.btn-black {
+  background: black url("../images/white-arrow.png") no-repeat 101px center;
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 0 53px 0 19px;
+  display: block;
+  width: 128px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  margin: 0 auto;
+}
+
+/* line 88, ../sass/screen.scss */
+.btn-lines {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 0.688em;
+  line-height: 28px;
+  display: block;
+  height: 28px;
+  width: 140px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+/*@jimmy*/
+/* line 104, ../sass/screen.scss */
+.main-slider .booking-form select, .mejores-ofertas select {
+  width: 252px;
+  height: 38px;
+  float: left;
+  margin: 1px 10px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border: none;
+  border-radius: 0;
+  padding: 0 5px;
+  background: white url("../images/down-arrow.png") no-repeat 235px center;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+/*--------------------------------*/
+/*       ESTILOS GENERALES        */
+/*--------------------------------*/
+/* line 131, ../sass/screen.scss */
+.left-tools {
+  padding: 18px 0;
+}
+/* line 133, ../sass/screen.scss */
+.left-tools > span:first-child {
+  border-right: 1px solid #999999;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+/* line 138, ../sass/screen.scss */
+.left-tools a, .left-tools span {
+  color: #999999;
+  font-size: 0.688em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 10px;
+  vertical-align: middle;
+}
+/* line 145, ../sass/screen.scss */
+.left-tools a.tel, .left-tools span.tel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+/* line 153, ../sass/screen.scss */
+.menu-top {
+  padding: 0;
+}
+/* line 155, ../sass/screen.scss */
+.menu-top li {
+  float: right;
+  margin: 13px 0 0 20px;
+  position: relative;
+}
+/* line 159, ../sass/screen.scss */
+.menu-top li a {
+  font-size: 0.688em;
+  font-weight: bold;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  color: #999999;
+  text-transform: uppercase;
+}
+/* line 168, ../sass/screen.scss */
+.menu-top li:first-child a {
+  background: url("../images/down-arrow.png") no-repeat right center;
+  padding-right: 15px;
+}
+
+/* line 175, ../sass/screen.scss */
+.main-slider {
+  position: relative;
+  height: 695px;
+}
+/* line 178, ../sass/screen.scss */
+.main-slider .booking-form {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 2000;
+  width: 788px;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  margin-left: -394px;
+  margin-top: -60px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+/* line 190, ../sass/screen.scss */
+.main-slider .booking-form h3.lines {
+  width: 260px;
+}
+/* line 196, ../sass/screen.scss */
+.main-slider .booking-form input[type="text"] {
+  width: 159px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  font-size: 0.875em;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  background: white url("../images/calendar-icon.png") no-repeat 130px center;
+  border: none;
+}
+/* line 207, ../sass/screen.scss */
+.main-slider .booking-form ::-webkit-input-placeholder {
+  color: #333;
+}
+/* line 211, ../sass/screen.scss */
+.main-slider .booking-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #333;
+}
+/* line 215, ../sass/screen.scss */
+.main-slider .booking-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #333;
+}
+/* line 219, ../sass/screen.scss */
+.main-slider .booking-form :-ms-input-placeholder {
+  color: #333;
+}
+/* line 222, ../sass/screen.scss */
+.main-slider .booking-form input[type="button"] {
+  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+  height: 40px;
+  border: none;
+  color: #fff;
+  padding: 0 43px 0 19px;
+}
+/* line 230, ../sass/screen.scss */
+.main-slider .cycle-pager {
+  position: absolute;
+  right: 30px;
+  bottom: 133px;
+  z-index: 2000;
+}
+/* line 235, ../sass/screen.scss */
+.main-slider .cycle-pager span {
+  color: #fff;
+  font-size: 50px;
+  width: 20px;
+  display: block;
+  float: left;
+  opacity: 0.5;
+}
+/* line 242, ../sass/screen.scss */
+.main-slider .cycle-pager span.cycle-pager-active {
+  opacity: 1;
+}
+/* line 247, ../sass/screen.scss */
+.main-slider .slide {
+  position: relative;
+}
+/* line 249, ../sass/screen.scss */
+.main-slider .slide .slide-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 30px 20px 0;
+}
+/* line 254, ../sass/screen.scss */
+.main-slider .slide .slide-text h3 {
+  font-size: 24px;
+  text-align: right;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 262, ../sass/screen.scss */
+.main-slider .slide .slide-text span.slide-caption {
+  font-style: italic;
+  font-size: 0.875em;
+  color: #fff;
+  margin-bottom: 2em;
+  display: block;
+}
+/* line 269, ../sass/screen.scss */
+.main-slider .slide .slide-text a.button {
+  float: right;
+}
+
+/* line 276, ../sass/screen.scss */
+.row.main-menu {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
+  max-width: none;
+  margin-bottom: 4px;
+}
+/* line 281, ../sass/screen.scss */
+.row.main-menu nav a {
+  padding: 20px 16px;
+  float: left;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.938em;
+}
+
+/* line 294, ../sass/screen.scss */
+.row.ofertas {
+  padding-bottom: 70px;
+  max-width: none;
+  background: url("../images/ofertasbg.jpg") repeat left top;
+}
+/* line 298, ../sass/screen.scss */
+.row.ofertas h2.lines {
+  width: 293px;
+  line-height: 1em;
+  margin: 0.5em auto 0;
+}
+/* line 303, ../sass/screen.scss */
+.row.ofertas ul.ofertas {
+  float: left;
+}
+/* line 305, ../sass/screen.scss */
+.row.ofertas ul.ofertas li {
+  padding-bottom: 40px;
+}
+/* line 307, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .top {
+  position: relative;
+}
+/* line 309, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .top img {
+  width: 100%;
+}
+/* line 312, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .top .precio {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  background: url("../images/shadow.png") no-repeat center center;
+  background-size: auto 100%;
+}
+/* line 319, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .top .precio span.desde {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.688em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 327, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .top .precio span.price {
+  display: block;
+  font-weight: 700;
+  font-size: 2.25em;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+/* line 338, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .bottom {
+  padding: 0 40px;
+}
+/* line 340, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .bottom h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  white-space: normal;
+}
+/* line 350, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .bottom h5 {
+  color: #dc1c4d;
+  font-size: 0.688em;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 356, ../sass/screen.scss */
+.row.ofertas ul.ofertas li .bottom p {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+  text-align: center;
+}
+/* line 365, ../sass/screen.scss */
+.row.ofertas .btn-lines {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 0.688em;
+  line-height: 28px;
+  display: block;
+  height: 28px;
+  width: 140px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+/* line 380, ../sass/screen.scss */
+.row.eventos {
+  margin-bottom: 33px;
+}
+/* line 383, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .cycle-pager {
+  position: absolute;
+  z-index: 2000;
+  top: 32%;
+  left: 50%;
+  margin-left: -38px;
+}
+/* line 389, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .cycle-pager span {
+  color: #fff;
+  font-size: 4em;
+  width: 25px;
+  float: left;
+  opacity: 0.5;
+}
+/* line 395, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active {
+  opacity: 1;
+}
+/* line 400, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .slide {
+  position: relative;
+}
+/* line 402, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .slide .slide-text {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+/* line 407, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .slide .slide-text h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+/* line 415, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .slide .slide-text span {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+}
+/* line 421, ../sass/screen.scss */
+.row.eventos .cycle-slideshow .slide .slide-text .button {
+  width: 100px;
+  margin: 28px auto 0;
+  display: block;
+}
+
+/* line 431, ../sass/screen.scss */
+.row.destinos {
+  margin-bottom: 20px;
+  padding-bottom: 70px;
+  padding-top: 33px;
+  max-width: none;
+  background: url("../images/mainbg.jpg") repeat left top;
+}
+/* line 437, ../sass/screen.scss */
+.row.destinos h2 {
+  width: 330px;
+}
+/* line 440, ../sass/screen.scss */
+.row.destinos .btn-black {
+  width: 222px;
+  background: black url("../images/white-arrow.png") no-repeat 188px center;
+}
+/* line 444, ../sass/screen.scss */
+.row.destinos ul {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+/* line 447, ../sass/screen.scss */
+.row.destinos ul li {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* line 451, ../sass/screen.scss */
+.row.destinos ul li img {
+  width: 100%;
+}
+/* line 454, ../sass/screen.scss */
+.row.destinos ul li span {
+  position: absolute;
+  top: 43%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+}
+/* line 465, ../sass/screen.scss */
+.row.destinos ul li .btn-lines.white {
+  position: absolute;
+  z-index: 100;
+  left: 30%;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  width: 90px;
+  font-size: 0.688em;
+  font-weight: 700;
+  top: 46%;
+}
+
+/* line 482, ../sass/screen.scss */
+footer.row {
+  background: #333333;
+  max-width: none;
+}
+
+/* line 486, ../sass/screen.scss */
+.footer-top {
+  padding: 27px 0;
+  overflow: hidden;
+}
+/* line 489, ../sass/screen.scss */
+.footer-top a {
+  float: left;
+  height: 49px;
+  width: 49px;
+  margin-right: 10px;
+  background: url("../images/social-sprite.png") no-repeat left top;
+  text-indent: -9999px;
+}
+/* line 496, ../sass/screen.scss */
+.footer-top a.facebook {
+  background-position: 0 0;
+}
+/* line 499, ../sass/screen.scss */
+.footer-top a.twitter {
+  background-position: -50px 0;
+}
+/* line 502, ../sass/screen.scss */
+.footer-top a.pinterest {
+  background-position: -100px 0;
+}
+/* line 505, ../sass/screen.scss */
+.footer-top a.instagram {
+  background-position: -150px 0;
+}
+/* line 508, ../sass/screen.scss */
+.footer-top a.youtube {
+  background-position: -200px 0;
+}
+/* line 513, ../sass/screen.scss */
+.footer-top form h3 {
+  color: #dc1c4d;
+  text-transform: uppercase;
+  float: left;
+  line-height: 40px;
+  margin: 0;
+}
+/* line 520, ../sass/screen.scss */
+.footer-top form input[type="text"] {
+  width: 179px;
+  float: left;
+  height: 40px;
+  margin: 0 10px 0 20px;
+  border: none;
+}
+/* line 527, ../sass/screen.scss */
+.footer-top form .btn.pink {
+  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+  height: 40px;
+  border: none;
+  color: #fff;
+  padding: 0 43px 0 19px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+/* line 539, ../sass/screen.scss */
+.footer-middle {
+  background: url("../images/footer-bg.jpg") repeat left top;
+  padding: 55px 0;
+}
+/* line 543, ../sass/screen.scss */
+.footer-middle .columns div {
+  width: 20%;
+  float: left;
+}
+/* line 546, ../sass/screen.scss */
+.footer-middle .columns div .city-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+/* line 553, ../sass/screen.scss */
+.footer-middle .columns div a {
+  display: block;
+  text-align: center;
+  font-size: 0.813em;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+/* line 564, ../sass/screen.scss */
+.footer-bottom {
+  background: #000;
+  padding: 12px 20px 15px;
+}
+/* line 567, ../sass/screen.scss */
+.footer-bottom .btn-lines.white {
+  float: left;
+  margin-right: 20px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  width: auto;
+  margin-top: 0;
+  font-weight: 700;
+}
+/* line 577, ../sass/screen.scss */
+.footer-bottom span.credits {
+  color: #dc1c4d;
+  font-weight: 700;
+  text-align: right;
+  display: block;
+  line-height: 30px;
+}
+
+/*----------------------------------------------------------------------
+
+                   OFERTAS @jimmy
+
+---------------------------------------------------------------------*/
+/*todo: crear clase reutilizable bg para main gris*/
+/* line 597, ../sass/screen.scss */
+.mejores-ofertas {
+  background: url("../images/ofertasbg.jpg") repeat left top;
+  max-width: none;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+/* line 598, ../sass/screen.scss */
+.mejores-ofertas .title-mejores-ofertas {
+  margin-bottom: 60px;
+}
+/* line 599, ../sass/screen.scss */
+.mejores-ofertas h2 {
+  margin-bottom: 0;
+}
+/* line 600, ../sass/screen.scss */
+.mejores-ofertas select {
+  border: 1px solid #999999;
+  color: 333333;
+}
+/* line 602, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+/* line 604, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .top {
+  position: relative;
+}
+/* line 606, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .top img {
+  width: 100%;
+}
+/* line 609, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .top .precio {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  background: url("../images/shadow.png") no-repeat center center;
+  background-size: auto 100%;
+}
+/* line 616, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .top .precio span.desde {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.688em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 624, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .top .precio span.price {
+  display: block;
+  font-weight: 700;
+  font-size: 2.25em;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+/* line 635, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .bottom {
+  padding: 0 40px;
+}
+/* line 637, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .bottom h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  white-space: normal;
+}
+/* line 647, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .bottom h5 {
+  color: #dc1c4d;
+  font-size: 0.688em;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 653, ../sass/screen.scss */
+.mejores-ofertas ul.ofertas li .bottom p {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+  text-align: center;
 }
