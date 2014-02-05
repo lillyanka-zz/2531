@@ -12,7 +12,7 @@
 $font: 'Istok Web', sans-serif;
 $gray: #999;
 $light-gray: #666;
-$dark-gray: #333;
+$dark-gray: #333; 
 $pink: #dc1c4d;
 $btn-white-arrow: url('../images/white-arrow.png') no-repeat 95% center;
 $black-lines-bg: url('../images/black-lines.png') no-repeat left center, url('../images/black-lines.png') no-repeat right center;
@@ -118,13 +118,20 @@ span.note{
       font-size: 0.875em;
       font-weight: 600;
       -webkit-font-smoothing: antialiased;
-      color: #333;
+      color: $dark-gray;
 }
 
 //fondo gris ofertas
 .bgGray{background: url('../images/mainbg.jpg') repeat left top;max-width:none;padding:30px 0;margin-bottom: 20px;}
-
-
+.clearfix:before,.clearfix:after {content: " "; /* 1 */display: table; /* 2 */}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+.flexMedia img,.flexMedia figure,.flexMedia audio,.flexMedia video{max-width:
+100% !important;}
+.ir {background-color: transparent;border: 0;overflow: hidden;
+/* IE 6/7 fallback */text-indent:-9999px;}
+.ir:before {content: "";display: block;width: 0;height: 150%;}
+.bgWhite{background-color: #FFF;}
 /*--------------------------------*/
 /*       ESTILOS GENERALES        */
 /*--------------------------------*/
@@ -597,55 +604,22 @@ footer.row{
 /*helperclasesr*/
 span.desde{display: block;text-align: center;color: #fff;font-size: 0.688em;font-weight: 600;text-transform: uppercase;}
 span.price{display: block;font-weight: 700;font-size: 2.25em;text-align: center;color: #fff;text-decoration: underline;line-height: 1.2em;}
-.align-center{text-align:center;}
 
-.ofertas-slider{position: relative;
+
+.booking-slider{position: relative;
   .booking-form{background: rgba(255,255,255,0.5);position:absolute;z-index: 2000;width:240px;right: 10%;top: 10%;border: 1px solid rgba(255,255,255,0.75);
-    // h3.lines{width: 260px;}
-    select{
-       width: 100%;
-      height: 38px;
-      margin: 1px 10px 0 0;
+    select{width: 100%;height: 38px;margin: 1px 10px 0 0;color: $dark-gray;text-indent: 0.01px;text-overflow: '';border: none;border-radius: 0;padding: 0 5px;background: #fff url('../images/down-arrow.png') no-repeat 182px center;text-transform: uppercase;font-size: 0.875em;font-weight: 600;
+      -webkit-font-smoothing: antialiased;
       -webkit-appearance: none;
       -moz-appearance: none;
-      text-indent: 0.01px;
-      text-overflow: '';
-      border: none;
-      border-radius: 0;
-      padding: 0 5px;
-      background: #fff url('../images/down-arrow.png') no-repeat 182px center;
-      text-transform: uppercase;
-      font-size: 0.875em;
-      font-weight: 600;
-      -webkit-font-smoothing: antialiased;
-      color: #333;
     }
     input[type="text"]{margin-top:10px; width: 100%;height:40px;font-size: 0.875em;font-weight: 600;-webkit-font-smoothing: antialiased;background: #fff url('../images/calendar-icon.png') no-repeat 173px center;border: none;
     }
-    ::-webkit-input-placeholder {
-       color: #333;
-    }
-    
-    :-moz-placeholder { /* Firefox 18- */
-       color: #333;  
-    }
-    
-    ::-moz-placeholder {  /* Firefox 19+ */
-       color: #333;  
-    }
-    
-    :-ms-input-placeholder {  
-       color: #333;  
-    }
-    input[type="button"]{
-      background: $pink $btn-white-arrow;
-      width: 100%;
-      height: 40px;
-      border: none;
-      color: #fff;
-      padding: 0 43px 0 19px;
-      margin-top: 10px;
-    }
+    ::-webkit-input-placeholder {color: #333;}
+    :-moz-placeholder { color: #333;}
+    ::-moz-placeholder { color: #333;  }
+    :-ms-input-placeholder {  color: #333;  }
+    input[type="button"]{background: $pink $btn-white-arrow;width: 100%;height: 40px;border: none;color: #fff;padding: 0 43px 0 19px;margin-top: 10px;}
   }
   
   .slide{
@@ -677,8 +651,11 @@ span.price{display: block;font-weight: 700;font-size: 2.25em;text-align: center;
   }
 }
 
+/*----------------------------------------------------------------------
 
-/*todo: crear clase reutilizable bg para main gris*/
+                  MEJORES OFERTAS @jimmy
+
+---------------------------------------------------------------------*/
 .mejores-ofertas{
   .title-mejores-ofertas{margin-bottom:60px;}
   h2{margin-bottom:0;}
@@ -726,6 +703,7 @@ span.price{display: block;font-weight: 700;font-size: 2.25em;text-align: center;
           text-align: center;
         }
       }
+      a.btn-black:hover{background-color:$pink;margin-top:10px;color:white;}
     }
   }
    
@@ -734,53 +712,89 @@ span.price{display: block;font-weight: 700;font-size: 2.25em;text-align: center;
 .submenu{
   padding:20px 0;
   .breadcumbs{
-    ul{clear:both;
       li{ float:left;
-       a{font-size:13px;color:#333333;font-style:italic;margin-right:5px; 
-        &.active{color:#666666;}
+       a{font-size:13px;color:$light-gray;font-style:italic;margin-right:5px; 
+        &.active{color:$dark-gray;cursor:inherit;
+          &:hover{color:$dark-gray;cursor:inherit;}
+        }
+        &:hover{color:$dark-gray;}
       }
       }
-    }
+    
   }
-  .icons-ofertas{}
+  .icons{text-align:left;
+    ul li{float:right;}
+    .rss{width:25px;height:25px;display: block;
+      background: url('../images/ico-rss.png') no-repeat left top;}
+  }
 } 
 
 /*----------------------------------------------------------------------
 
-                   OFERTAS @jimmy
+                   Detalle OFERTA @jimmy
 
 ---------------------------------------------------------------------*/
+.clearPadding{padding:0 !important;}
+
 .ofertas-detalle{
   img{width:100%;}
   h2.lines{width: 760px;}
   a.btn-lines{margin-bottom:30px;}
-  #Info{background-color: #FFF;text-align:center;padding:30px;
+  #Info{text-align:center;padding:30px;
     span.price,span.desde{color:black;}
     span.price{margin-bottom:30px;}
     span:last-child{color:$gray;}
     h5{color: $pink;font-size: 0.688em;text-transform: uppercase;text-align: center;}
     p{color: $light-gray;font-style: italic;font-size: 0.875em;text-align: center;}
+    hr{margin:50px 0}
   }
 }
 
-#lists{color:#3333333;margin-top:40px;
-  ul{list-style:initial;}
+#lists{color:$dark-gray;margin-top:40px;
+  ul{list-style:inside;color:$pink;
+    span{color:$dark-gray;}
+  }
   h4,p{font-size:0.85em;}
   h4,li{margin-bottom:20px;}
 }
 
 #disponibles-ofertas{
-  h5{font-size:0.85em;margin-bottom:30px;}
+  h5{font-size:18px;margin-bottom:30px;}
   li{background-color: #FFF;padding:10px;margin-top:10px;
     &:first-child{margin-top:0;} 
   }
+  .info{padding-top:10px;}
   h3{font-size:1.125em;text-transform:uppercase }
   h3 + span{display:block;color: $pink;font-size: 0.688em;text-transform:uppercase;}
   .btn-black{display:inline-block;margin-left:20px; }
-
-  li > div:last-child{text-align:right;
-
-  }
+  li > div:last-child{text-align:right;}
   span.price{display:inline;color:black;font-size:36px;text-decoration:none; }
   .des{font-size:10px; }
+  .bgWhite > div:first-child{padding:0 !important;}
+
+  
+
+}
+
+
+/*----------------------------------------------------------------------
+
+                   DESTINOS @jimmy
+
+---------------------------------------------------------------------*/
+.destinos-mapas{
+  h2.lines{width:600px;}
+}
+
+.items-servicios{
+  li{margin-bottom:20px;position: relative;
+    &:hover .overlay{background-color: rbga(black,0.4)  }
+    .text{text-align:center;width:600px;margin-left:-300px;position:absolute;left:50%;top:0;
+      h2{color:white;font-size:48px; }
+      p{color:white;font-size:14px; }
+      a{font-size:12px; color:white;width:140px;height:40px;line-height:40px;display:block;
+      background: transparent url("../images/white-arrow.png") no-repeat 101px center;margin: 0 auto;}
+    }
+   }
+
 }
