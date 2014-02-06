@@ -577,22 +577,27 @@ footer.row{
 .footer-middle{
   background: url('../images/footer-bg.jpg') repeat left top;
   padding: 55px 0;
-  div{
-    width: 20%;
-    float: left;
-    .city-title{
-      display: block;
-      text-align: center;
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    a{
-      display: block;
-      text-align: center;
-      font-size: 0.813em;
-      color: #fff;
-      line-height: 1.5em;
+  overflow: hidden;
+  & > div{
+  width: 940px;
+  margin: 0 auto;
+    div{
+      width: 20%;
+      float: left;
+      .city-title{
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      a{
+        display: block;
+        text-align: center;
+        font-size: 0.813em;
+        color: #fff;
+        line-height: 1.5em;
+      }
     }
   }
 }
@@ -600,6 +605,7 @@ footer.row{
 .footer-bottom{
   background: #000;
   padding: 12px 20px 15px;
+  overflow: hidden;
   .btn-lines.white{
     float: left;
     margin-right: 20px;
