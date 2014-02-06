@@ -70,23 +70,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*--------------------------------*/
 /* CLASES Y VARIABLES RECICLABLES */
 /*--------------------------------*/
-/* line 20, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body, h1, h2, h3, h4, h5, h6, p, a, span {
   font-family: "Istok Web", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
+.row {
+  width: 100%;
+}
+
+/* line 31, ../sass/screen.scss */
 .right {
   float: right;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .left {
   float: left;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 a.button {
   border: 2px solid #fff;
   font-size: 12px;
@@ -96,7 +101,7 @@ a.button {
   box-shadow: none;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 h2.lines {
   font-size: 3em;
   text-align: center;
@@ -107,7 +112,7 @@ h2.lines {
   margin: 0.5em auto 0;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 h3.lines {
   font-size: 1.5em;
   text-align: center;
@@ -115,14 +120,14 @@ h3.lines {
   background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 h4 {
   font-size: 1.125em;
   font-weight: normal;
   color: #000;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 span.note {
   display: block;
   text-align: center;
@@ -131,7 +136,7 @@ span.note {
   margin-bottom: 3em;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .btn-black {
   background: black url("../images/white-arrow.png") no-repeat 101px center;
   height: 50px;
@@ -146,8 +151,12 @@ span.note {
   font-size: 0.75em;
   margin: 0 auto;
 }
+/* line 93, ../sass/screen.scss */
+.btn-black:hover {
+  background-color: #dc1c4d;
+}
 
-/* line 88, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .btn-lines {
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
@@ -157,18 +166,22 @@ span.note {
   line-height: 28px;
   display: block;
   height: 28px;
-  width: 140px;
+  width: 150px;
   margin: 30px auto 0;
   overflow: hidden;
 }
 
 /*@jimmy*/
-/* line 104, ../sass/screen.scss */
-.main-slider .booking-form select, .mejores-ofertas select {
-  width: 252px;
-  height: 38px;
-  float: left;
-  margin: 1px 10px 0 0;
+/* line 115, ../sass/screen.scss */
+.btn-black, .menu-booking-slider ul li a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 119, ../sass/screen.scss */
+.booking-form select, .mejores-ofertas select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 0.01px;
@@ -184,7 +197,197 @@ span.note {
   color: #333333;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
+.booking-form {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 2000;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+/* line 143, ../sass/screen.scss */
+.booking-form input[type="text"] {
+  font-size: 0.875em;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 144, ../sass/screen.scss */
+.booking-form input[type="button"] {
+  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+  height: 40px;
+  border: none;
+  color: #fff;
+  padding: 0 43px 0 19px;
+}
+
+/* line 153, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #333;
+}
+
+/* line 157, ../sass/screen.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #333;
+}
+
+/* line 161, ../sass/screen.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #333;
+}
+
+/* line 165, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #333;
+}
+
+/* line 169, ../sass/screen.scss */
+ul.ofertas {
+  margin: 0 auto;
+  width: 940px;
+  overflow: hidden;
+}
+/* line 173, ../sass/screen.scss */
+ul.ofertas li {
+  padding-bottom: 40px;
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  background: #fff;
+}
+/* line 179, ../sass/screen.scss */
+ul.ofertas li:last-child {
+  margin-right: 0;
+}
+/* line 182, ../sass/screen.scss */
+ul.ofertas li .top {
+  position: relative;
+}
+/* line 184, ../sass/screen.scss */
+ul.ofertas li .top img {
+  width: 100%;
+}
+/* line 187, ../sass/screen.scss */
+ul.ofertas li .top .precio {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  background: url("../images/shadow.png") no-repeat center center;
+  background-size: auto 100%;
+}
+/* line 194, ../sass/screen.scss */
+ul.ofertas li .top .precio span.desde {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.688em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 202, ../sass/screen.scss */
+ul.ofertas li .top .precio span.price {
+  display: block;
+  font-weight: 700;
+  font-size: 2.25em;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+/* line 213, ../sass/screen.scss */
+ul.ofertas li .bottom {
+  padding: 0 12px;
+}
+/* line 215, ../sass/screen.scss */
+ul.ofertas li .bottom h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  white-space: normal;
+}
+/* line 225, ../sass/screen.scss */
+ul.ofertas li .bottom h5 {
+  color: #dc1c4d;
+  font-size: 0.688em;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 231, ../sass/screen.scss */
+ul.ofertas li .bottom p {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+/* line 241, ../sass/screen.scss */
+.slide-text-header {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 30px 20px 0;
+}
+/* line 246, ../sass/screen.scss */
+.slide-text-header h3 {
+  font-size: 24px;
+  text-align: right;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 254, ../sass/screen.scss */
+.slide-text-header span.slide-caption {
+  font-style: italic;
+  font-size: 0.875em;
+  color: #fff;
+  margin-bottom: 2em;
+  display: block;
+}
+
+/* line 262, ../sass/screen.scss */
+.slide-text-center {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+/* line 267, ../sass/screen.scss */
+.slide-text-center h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 0;
+  line-height: 1em;
+  background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center;
+}
+/* line 276, ../sass/screen.scss */
+.slide-text-center span {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+}
+/* line 282, ../sass/screen.scss */
+.slide-text-center .button {
+  width: 100px;
+  margin: 28px auto 0;
+  display: block;
+}
+
+/* line 289, ../sass/screen.scss */
+.boxtext {
+  padding: 20px 0;
+  background-color: white;
+}
+
+/* line 292, ../sass/screen.scss */
 .bgGray {
   background: url("../images/mainbg.jpg") repeat left top;
   max-width: none;
@@ -192,7 +395,13 @@ span.note {
   margin-bottom: 20px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
+.bgGraySimple {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+/* line 294, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
@@ -200,22 +409,22 @@ span.note {
   /* 2 */
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .flexMedia img, .flexMedia figure, .flexMedia audio, .flexMedia video {
   max-width: 100% !important;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -224,7 +433,7 @@ span.note {
   text-indent: -9999px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .ir:before {
   content: "";
   display: block;
@@ -232,25 +441,25 @@ span.note {
   height: 150%;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .bgWhite {
   background-color: #FFF;
 }
 
 /*--------------------------------*/
-/*       ESTILOS GENERALES        */
+/*      ESTILOS ESPECIFICOS       */
 /*--------------------------------*/
-/* line 139, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .left-tools {
   padding: 18px 0;
 }
-/* line 141, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .left-tools > span:first-child {
   border-right: 1px solid #999999;
   padding-right: 5px;
   margin-right: 5px;
 }
-/* line 146, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .left-tools a, .left-tools span {
   color: #999999;
   font-size: 0.688em;
@@ -259,24 +468,24 @@ span.note {
   line-height: 10px;
   vertical-align: middle;
 }
-/* line 153, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .left-tools a.tel, .left-tools span.tel {
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .menu-top {
   padding: 0;
 }
-/* line 163, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .menu-top li {
   float: right;
   margin: 13px 0 0 20px;
   position: relative;
 }
-/* line 167, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .menu-top li a {
   font-size: 0.688em;
   font-weight: bold;
@@ -286,22 +495,19 @@ span.note {
   color: #999999;
   text-transform: uppercase;
 }
-/* line 176, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .menu-top li:first-child a {
   background: url("../images/down-arrow.png") no-repeat right center;
   padding-right: 15px;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .main-slider {
   position: relative;
   height: 695px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .main-slider .booking-form {
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  z-index: 2000;
   width: 788px;
   height: 120px;
   left: 50%;
@@ -309,58 +515,34 @@ span.note {
   margin-left: -394px;
   margin-top: -60px;
   padding: 0 20px;
-  border: 1px solid rgba(255, 255, 255, 0.75);
 }
-/* line 198, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .main-slider .booking-form h3.lines {
   width: 260px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
+.main-slider .booking-form select {
+  width: 252px;
+  height: 38px;
+  float: left;
+  margin: 1px 10px 0 0;
+}
+/* line 381, ../sass/screen.scss */
 .main-slider .booking-form input[type="text"] {
   width: 159px;
   height: 40px;
   float: left;
   margin-right: 10px;
-  font-size: 0.875em;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased;
   background: white url("../images/calendar-icon.png") no-repeat 130px center;
-  border: none;
 }
-/* line 215, ../sass/screen.scss */
-.main-slider .booking-form ::-webkit-input-placeholder {
-  color: #333;
-}
-/* line 219, ../sass/screen.scss */
-.main-slider .booking-form :-moz-placeholder {
-  /* Firefox 18- */
-  color: #333;
-}
-/* line 223, ../sass/screen.scss */
-.main-slider .booking-form ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #333;
-}
-/* line 227, ../sass/screen.scss */
-.main-slider .booking-form :-ms-input-placeholder {
-  color: #333;
-}
-/* line 230, ../sass/screen.scss */
-.main-slider .booking-form input[type="button"] {
-  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
-  height: 40px;
-  border: none;
-  color: #fff;
-  padding: 0 43px 0 19px;
-}
-/* line 238, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .main-slider .cycle-pager {
   position: absolute;
   right: 30px;
   bottom: 133px;
   z-index: 2000;
 }
-/* line 243, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .main-slider .cycle-pager span {
   color: #fff;
   font-size: 50px;
@@ -369,23 +551,23 @@ span.note {
   float: left;
   opacity: 0.5;
 }
-/* line 250, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .main-slider .cycle-pager span.cycle-pager-active {
   opacity: 1;
 }
-/* line 255, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .main-slider .slide {
   position: relative;
 }
-/* line 257, ../sass/screen.scss */
-.main-slider .slide .slide-text {
+/* line 412, ../sass/screen.scss */
+.main-slider .slide .slide-text-header {
   position: absolute;
   right: 0;
   bottom: 0;
   padding: 0 30px 20px 0;
 }
-/* line 262, ../sass/screen.scss */
-.main-slider .slide .slide-text h3 {
+/* line 417, ../sass/screen.scss */
+.main-slider .slide .slide-text-header h3 {
   font-size: 24px;
   text-align: right;
   font-weight: 400;
@@ -393,26 +575,31 @@ span.note {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-/* line 270, ../sass/screen.scss */
-.main-slider .slide .slide-text span.slide-caption {
+/* line 425, ../sass/screen.scss */
+.main-slider .slide .slide-text-header span.slide-caption {
   font-style: italic;
   font-size: 0.875em;
   color: #fff;
   margin-bottom: 2em;
   display: block;
 }
-/* line 277, ../sass/screen.scss */
-.main-slider .slide .slide-text a.button {
+/* line 432, ../sass/screen.scss */
+.main-slider .slide .slide-text-header a.button {
   float: right;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .row.main-menu {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
   max-width: none;
   margin-bottom: 4px;
 }
-/* line 289, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
+.row.main-menu nav {
+  width: 786px;
+  margin: 0 auto;
+}
+/* line 446, ../sass/screen.scss */
 .row.main-menu nav a {
   padding: 20px 16px;
   float: left;
@@ -424,111 +611,28 @@ span.note {
   font-size: 0.938em;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .row.ofertas {
   padding-bottom: 70px;
   max-width: none;
   background: url("../images/ofertasbg.jpg") repeat left top;
 }
-/* line 306, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .row.ofertas h2.lines {
   width: 293px;
   line-height: 1em;
   margin: 0.5em auto 0;
 }
-/* line 311, ../sass/screen.scss */
-.row.ofertas ul.ofertas {
-  float: left;
-}
-/* line 313, ../sass/screen.scss */
-.row.ofertas ul.ofertas li {
-  padding-bottom: 40px;
-}
-/* line 315, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .top {
-  position: relative;
-}
-/* line 317, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .top img {
-  width: 100%;
-}
-/* line 320, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .top .precio {
-  position: absolute;
-  top: 65%;
-  left: 0;
-  width: 100%;
-  background: url("../images/shadow.png") no-repeat center center;
-  background-size: auto 100%;
-}
-/* line 327, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .top .precio span.desde {
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-size: 0.688em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-/* line 335, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .top .precio span.price {
-  display: block;
-  font-weight: 700;
-  font-size: 2.25em;
-  text-align: center;
-  color: #fff;
-  text-decoration: underline;
-  line-height: 1.2em;
-}
-/* line 346, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .bottom {
-  padding: 0 40px;
-}
-/* line 348, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .bottom h4 {
-  font-size: 1.125em;
-  font-weight: normal;
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0.1em;
-  white-space: normal;
-}
-/* line 358, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .bottom h5 {
-  color: #dc1c4d;
-  font-size: 0.688em;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* line 364, ../sass/screen.scss */
-.row.ofertas ul.ofertas li .bottom p {
-  color: #666666;
-  font-style: italic;
-  font-size: 0.875em;
-  text-align: center;
-}
-/* line 373, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .row.ofertas .btn-lines {
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 0.688em;
-  line-height: 28px;
-  display: block;
-  height: 28px;
-  width: 140px;
-  margin: 30px auto 0;
-  overflow: hidden;
+  float: none;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .row.eventos {
-  margin-bottom: 33px;
+  margin: 20px auto;
 }
-/* line 391, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .row.eventos .cycle-slideshow .cycle-pager {
   position: absolute;
   z-index: 2000;
@@ -536,7 +640,7 @@ span.note {
   left: 50%;
   margin-left: -38px;
 }
-/* line 397, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .row.eventos .cycle-slideshow .cycle-pager span {
   color: #fff;
   font-size: 4em;
@@ -544,45 +648,16 @@ span.note {
   float: left;
   opacity: 0.5;
 }
-/* line 403, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active {
   opacity: 1;
 }
-/* line 408, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 .row.eventos .cycle-slideshow .slide {
   position: relative;
 }
-/* line 410, ../sass/screen.scss */
-.row.eventos .cycle-slideshow .slide .slide-text {
-  position: absolute;
-  left: 0;
-  top: 40%;
-  width: 100%;
-}
-/* line 415, ../sass/screen.scss */
-.row.eventos .cycle-slideshow .slide .slide-text h2 {
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3em;
-  margin-bottom: 0;
-  line-height: 1em;
-}
-/* line 423, ../sass/screen.scss */
-.row.eventos .cycle-slideshow .slide .slide-text span {
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-style: italic;
-}
-/* line 429, ../sass/screen.scss */
-.row.eventos .cycle-slideshow .slide .slide-text .button {
-  width: 100px;
-  margin: 28px auto 0;
-  display: block;
-}
 
-/* line 439, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .row.destinos {
   margin-bottom: 20px;
   padding-bottom: 70px;
@@ -590,31 +665,37 @@ span.note {
   max-width: none;
   background: url("../images/mainbg.jpg") repeat left top;
 }
-/* line 445, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
+.row.destinos > div {
+  width: 1240px;
+  margin: 0 auto;
+}
+/* line 511, ../sass/screen.scss */
 .row.destinos h2 {
   width: 330px;
 }
-/* line 448, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .row.destinos .btn-black {
   width: 222px;
   background: black url("../images/white-arrow.png") no-repeat 188px center;
 }
-/* line 452, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .row.destinos ul {
   overflow: hidden;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
+  width: 940px;
 }
-/* line 455, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .row.destinos ul li {
   width: 20%;
   float: left;
   position: relative;
 }
-/* line 459, ../sass/screen.scss */
+/* line 526, ../sass/screen.scss */
 .row.destinos ul li img {
   width: 100%;
 }
-/* line 462, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 .row.destinos ul li span {
   position: absolute;
   top: 43%;
@@ -626,33 +707,50 @@ span.note {
   color: #fff;
   font-weight: 700;
 }
-/* line 473, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 .row.destinos ul li .btn-lines.white {
   position: absolute;
   z-index: 100;
-  left: 30%;
+  left: 50%;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   color: #fff;
   text-align: center;
   width: 90px;
+  margin-left: -45px;
   font-size: 0.688em;
   font-weight: 700;
   top: 46%;
 }
 
-/* line 490, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
+.social {
+  padding-bottom: 32px;
+}
+/* line 560, ../sass/screen.scss */
+.social > div {
+  width: 270px;
+  margin: 0 auto;
+}
+/* line 564, ../sass/screen.scss */
+.social > div ul li {
+  float: left;
+}
+
+/* line 571, ../sass/screen.scss */
 footer.row {
   background: #333333;
   max-width: none;
 }
 
-/* line 494, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .footer-top {
   padding: 27px 0;
   overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
 }
-/* line 497, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .footer-top a {
   float: left;
   height: 49px;
@@ -661,27 +759,27 @@ footer.row {
   background: url("../images/social-sprite.png") no-repeat left top;
   text-indent: -9999px;
 }
-/* line 504, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 .footer-top a.facebook {
   background-position: 0 0;
 }
-/* line 507, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 .footer-top a.twitter {
   background-position: -50px 0;
 }
-/* line 510, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 .footer-top a.pinterest {
   background-position: -100px 0;
 }
-/* line 513, ../sass/screen.scss */
+/* line 596, ../sass/screen.scss */
 .footer-top a.instagram {
   background-position: -150px 0;
 }
-/* line 516, ../sass/screen.scss */
+/* line 599, ../sass/screen.scss */
 .footer-top a.youtube {
   background-position: -200px 0;
 }
-/* line 521, ../sass/screen.scss */
+/* line 604, ../sass/screen.scss */
 .footer-top form h3 {
   color: #dc1c4d;
   text-transform: uppercase;
@@ -689,7 +787,7 @@ footer.row {
   line-height: 40px;
   margin: 0;
 }
-/* line 528, ../sass/screen.scss */
+/* line 611, ../sass/screen.scss */
 .footer-top form input[type="text"] {
   width: 179px;
   float: left;
@@ -697,7 +795,7 @@ footer.row {
   margin: 0 10px 0 20px;
   border: none;
 }
-/* line 535, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 .footer-top form .btn.pink {
   background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
   height: 40px;
@@ -708,26 +806,26 @@ footer.row {
   font-size: 0.75em;
 }
 
-/* line 547, ../sass/screen.scss */
+/* line 630, ../sass/screen.scss */
 .footer-middle {
   background: url("../images/footer-bg.jpg") repeat left top;
   padding: 55px 0;
 }
-/* line 551, ../sass/screen.scss */
-.footer-middle .columns div {
+/* line 633, ../sass/screen.scss */
+.footer-middle div {
   width: 20%;
   float: left;
 }
-/* line 554, ../sass/screen.scss */
-.footer-middle .columns div .city-title {
+/* line 636, ../sass/screen.scss */
+.footer-middle div .city-title {
   display: block;
   text-align: center;
   color: #fff;
   font-weight: 700;
   margin-bottom: 4px;
 }
-/* line 561, ../sass/screen.scss */
-.footer-middle .columns div a {
+/* line 643, ../sass/screen.scss */
+.footer-middle div a {
   display: block;
   text-align: center;
   font-size: 0.813em;
@@ -735,12 +833,12 @@ footer.row {
   line-height: 1.5em;
 }
 
-/* line 572, ../sass/screen.scss */
+/* line 653, ../sass/screen.scss */
 .footer-bottom {
   background: #000;
   padding: 12px 20px 15px;
 }
-/* line 575, ../sass/screen.scss */
+/* line 656, ../sass/screen.scss */
 .footer-bottom .btn-lines.white {
   float: left;
   margin-right: 20px;
@@ -751,7 +849,7 @@ footer.row {
   margin-top: 0;
   font-weight: 700;
 }
-/* line 585, ../sass/screen.scss */
+/* line 666, ../sass/screen.scss */
 .footer-bottom span.credits {
   color: #dc1c4d;
   font-weight: 700;
@@ -766,128 +864,82 @@ footer.row {
 
 ---------------------------------------------------------------------*/
 /*helperclasesr*/
-/* line 605, ../sass/screen.scss */
-span.desde {
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-size: 0.688em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-/* line 606, ../sass/screen.scss */
-span.price {
-  display: block;
-  font-weight: 700;
-  font-size: 2.25em;
-  text-align: center;
-  color: #fff;
-  text-decoration: underline;
-  line-height: 1.2em;
-}
-
-/* line 609, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .booking-slider {
   position: relative;
+  height: 455px;
+  overflow: hidden;
 }
-/* line 610, ../sass/screen.scss */
+/* line 690, ../sass/screen.scss */
 .booking-slider .booking-form {
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  z-index: 2000;
   width: 240px;
   right: 10%;
-  top: 10%;
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  top: 5%;
+  padding: 10px;
 }
-/* line 611, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 .booking-slider .booking-form select {
   width: 100%;
   height: 38px;
   margin: 1px 10px 0 0;
-  color: #333333;
-  text-indent: 0.01px;
-  text-overflow: '';
-  border: none;
-  border-radius: 0;
-  padding: 0 5px;
   background: white url("../images/down-arrow.png") no-repeat 182px center;
-  text-transform: uppercase;
-  font-size: 0.875em;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
-/* line 616, ../sass/screen.scss */
+/* line 692, ../sass/screen.scss */
 .booking-slider .booking-form input[type="text"] {
   margin-top: 10px;
-  width: 100%;
-  height: 40px;
-  font-size: 0.875em;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased;
   background: white url("../images/calendar-icon.png") no-repeat 173px center;
   border: none;
 }
-/* line 618, ../sass/screen.scss */
-.booking-slider .booking-form ::-webkit-input-placeholder {
-  color: #333;
-}
-/* line 619, ../sass/screen.scss */
-.booking-slider .booking-form :-moz-placeholder {
-  color: #333;
-}
-/* line 620, ../sass/screen.scss */
-.booking-slider .booking-form ::-moz-placeholder {
-  color: #333;
-}
-/* line 621, ../sass/screen.scss */
-.booking-slider .booking-form :-ms-input-placeholder {
-  color: #333;
-}
-/* line 622, ../sass/screen.scss */
+/* line 693, ../sass/screen.scss */
 .booking-slider .booking-form input[type="button"] {
-  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
   width: 100%;
-  height: 40px;
-  border: none;
-  color: #fff;
-  padding: 0 43px 0 19px;
   margin-top: 10px;
 }
-/* line 625, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 .booking-slider .slide {
   position: relative;
 }
-/* line 627, ../sass/screen.scss */
-.booking-slider .slide .slide-text {
+
+/* line 701, ../sass/screen.scss */
+.menu-booking-slider {
+  height: 240px;
+  height: 100%;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0 30px 20px 0;
+  left: 20%;
 }
-/* line 632, ../sass/screen.scss */
-.booking-slider .slide .slide-text h3 {
-  font-size: 24px;
-  text-align: right;
-  font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-/* line 640, ../sass/screen.scss */
-.booking-slider .slide .slide-text span.slide-caption {
-  font-style: italic;
-  font-size: 0.875em;
-  color: #fff;
-  margin-bottom: 2em;
+/* line 702, ../sass/screen.scss */
+.menu-booking-slider img {
+  border-bottom: 1px solid transparent;
   display: block;
 }
-/* line 647, ../sass/screen.scss */
-.booking-slider .slide .slide-text a.button {
-  float: right;
+/* line 703, ../sass/screen.scss */
+.menu-booking-slider ul {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  height: 100%;
+}
+/* line 704, ../sass/screen.scss */
+.menu-booking-slider ul li {
+  margin-top: 10px;
+}
+/* line 705, ../sass/screen.scss */
+.menu-booking-slider ul li:first-child {
+  margin-top: 0;
+}
+/* line 706, ../sass/screen.scss */
+.menu-booking-slider ul li a {
+  color: #cccccc;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+/* line 707, ../sass/screen.scss */
+.menu-booking-slider ul li a:hover {
+  color: white;
+}
+/* line 708, ../sass/screen.scss */
+.menu-booking-slider ul li a.active {
+  color: white;
+  cursor: default;
 }
 
 /*----------------------------------------------------------------------
@@ -895,116 +947,65 @@ span.price {
                   MEJORES OFERTAS @jimmy
 
 ---------------------------------------------------------------------*/
-/* line 660, ../sass/screen.scss */
+/* line 721, ../sass/screen.scss */
 .mejores-ofertas .title-mejores-ofertas {
   margin-bottom: 60px;
 }
-/* line 661, ../sass/screen.scss */
+/* line 722, ../sass/screen.scss */
 .mejores-ofertas h2 {
   margin-bottom: 0;
 }
-/* line 662, ../sass/screen.scss */
+/* line 723, ../sass/screen.scss */
 .mejores-ofertas select {
-  border: 1px solid #999999;
-  color: 333333;
+  height: 40px;
+  border: 1px solid #666666;
 }
-/* line 664, ../sass/screen.scss */
+/* line 725, ../sass/screen.scss */
 .mejores-ofertas ul.ofertas li {
   padding-bottom: 40px;
   margin-bottom: 20px;
-  background-color: white;
-}
-/* line 666, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .top {
-  position: relative;
-}
-/* line 668, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .top img {
-  width: 100%;
-}
-/* line 671, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .top .precio {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-  background: url("../images/shadow.png") no-repeat center center;
-  background-size: auto 100%;
-}
-/* line 681, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .bottom {
-  padding: 0 40px;
-}
-/* line 683, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .bottom h4 {
-  font-size: 1.125em;
-  font-weight: normal;
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0.1em;
-  white-space: normal;
-}
-/* line 693, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .bottom h5 {
-  color: #dc1c4d;
-  font-size: 0.688em;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* line 699, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li .bottom p {
-  color: #666666;
-  font-style: italic;
-  font-size: 0.875em;
-  text-align: center;
-}
-/* line 706, ../sass/screen.scss */
-.mejores-ofertas ul.ofertas li a.btn-black:hover {
-  background-color: #dc1c4d;
-  margin-top: 10px;
-  color: white;
+  float: none;
+  width: 285px;
 }
 
-/* line 712, ../sass/screen.scss */
+/* line 731, ../sass/screen.scss */
 .submenu {
   padding: 20px 0;
 }
-/* line 715, ../sass/screen.scss */
+/* line 734, ../sass/screen.scss */
 .submenu .breadcumbs li {
   float: left;
 }
-/* line 716, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .submenu .breadcumbs li a {
   font-size: 13px;
   color: #666666;
   font-style: italic;
   margin-right: 5px;
 }
-/* line 717, ../sass/screen.scss */
+/* line 736, ../sass/screen.scss */
 .submenu .breadcumbs li a.active {
   color: #333333;
   cursor: inherit;
 }
-/* line 718, ../sass/screen.scss */
+/* line 737, ../sass/screen.scss */
 .submenu .breadcumbs li a.active:hover {
   color: #333333;
   cursor: inherit;
 }
-/* line 720, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 .submenu .breadcumbs li a:hover {
   color: #333333;
 }
-/* line 725, ../sass/screen.scss */
+/* line 744, ../sass/screen.scss */
 .submenu .icons {
   text-align: left;
 }
-/* line 726, ../sass/screen.scss */
+/* line 745, ../sass/screen.scss */
 .submenu .icons ul li {
   float: right;
 }
-/* line 727, ../sass/screen.scss */
+/* line 746, ../sass/screen.scss */
 .submenu .icons .rss {
   width: 25px;
   height: 25px;
@@ -1017,134 +1018,149 @@ span.price {
                    Detalle OFERTA @jimmy
 
 ---------------------------------------------------------------------*/
-/* line 737, ../sass/screen.scss */
+/* line 756, ../sass/screen.scss */
 .clearPadding {
   padding: 0 !important;
 }
 
-/* line 740, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 .ofertas-detalle img {
   width: 100%;
 }
-/* line 741, ../sass/screen.scss */
+/* line 760, ../sass/screen.scss */
 .ofertas-detalle h2.lines {
   width: 760px;
 }
-/* line 742, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 .ofertas-detalle a.btn-lines {
   margin-bottom: 30px;
 }
-/* line 743, ../sass/screen.scss */
+/* line 762, ../sass/screen.scss */
 .ofertas-detalle #Info {
   text-align: center;
   padding: 30px;
 }
-/* line 744, ../sass/screen.scss */
+/* line 763, ../sass/screen.scss */
 .ofertas-detalle #Info span.price, .ofertas-detalle #Info span.desde {
   color: black;
+  display: block;
+  text-align: center;
 }
-/* line 745, ../sass/screen.scss */
+/* line 764, ../sass/screen.scss */
 .ofertas-detalle #Info span.price {
   margin-bottom: 30px;
 }
-/* line 746, ../sass/screen.scss */
+/* line 765, ../sass/screen.scss */
+.ofertas-detalle #Info span.desde {
+  font-size: 0.688em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 766, ../sass/screen.scss */
+.ofertas-detalle #Info span.price {
+  font-weight: 700;
+  font-size: 2.25em;
+  text-decoration: underline;
+  line-height: 1.2em;
+}
+/* line 767, ../sass/screen.scss */
 .ofertas-detalle #Info span:last-child {
   color: #999999;
 }
-/* line 747, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 .ofertas-detalle #Info h5 {
   color: #dc1c4d;
   font-size: 0.688em;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 748, ../sass/screen.scss */
+/* line 769, ../sass/screen.scss */
 .ofertas-detalle #Info p {
   color: #666666;
   font-style: italic;
   font-size: 0.875em;
   text-align: center;
 }
-/* line 749, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 .ofertas-detalle #Info hr {
   margin: 50px 0;
 }
 
-/* line 753, ../sass/screen.scss */
+/* line 775, ../sass/screen.scss */
 #lists {
   color: #333333;
   margin-top: 40px;
 }
-/* line 754, ../sass/screen.scss */
+/* line 776, ../sass/screen.scss */
 #lists ul {
   list-style: inside;
   color: #dc1c4d;
 }
-/* line 755, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #lists ul span {
   color: #333333;
 }
-/* line 757, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 #lists h4, #lists p {
   font-size: 0.85em;
 }
-/* line 758, ../sass/screen.scss */
+/* line 780, ../sass/screen.scss */
 #lists h4, #lists li {
   margin-bottom: 20px;
 }
 
-/* line 762, ../sass/screen.scss */
+/* line 784, ../sass/screen.scss */
 #disponibles-ofertas h5 {
   font-size: 18px;
   margin-bottom: 30px;
 }
-/* line 763, ../sass/screen.scss */
+/* line 785, ../sass/screen.scss */
 #disponibles-ofertas li {
   background-color: #FFF;
   padding: 10px;
   margin-top: 10px;
 }
-/* line 764, ../sass/screen.scss */
+/* line 786, ../sass/screen.scss */
 #disponibles-ofertas li:first-child {
   margin-top: 0;
 }
-/* line 766, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 #disponibles-ofertas .info {
   padding-top: 10px;
 }
-/* line 767, ../sass/screen.scss */
+/* line 789, ../sass/screen.scss */
 #disponibles-ofertas h3 {
   font-size: 1.125em;
   text-transform: uppercase;
 }
-/* line 768, ../sass/screen.scss */
+/* line 790, ../sass/screen.scss */
 #disponibles-ofertas h3 + span {
   display: block;
   color: #dc1c4d;
   font-size: 0.688em;
   text-transform: uppercase;
 }
-/* line 769, ../sass/screen.scss */
+/* line 791, ../sass/screen.scss */
 #disponibles-ofertas .btn-black {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 770, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 #disponibles-ofertas li > div:last-child {
   text-align: right;
 }
-/* line 771, ../sass/screen.scss */
+/* line 793, ../sass/screen.scss */
 #disponibles-ofertas span.price {
   display: inline;
   color: black;
   font-size: 36px;
   text-decoration: none;
 }
-/* line 772, ../sass/screen.scss */
+/* line 794, ../sass/screen.scss */
 #disponibles-ofertas .des {
   font-size: 10px;
 }
-/* line 773, ../sass/screen.scss */
+/* line 795, ../sass/screen.scss */
 #disponibles-ofertas .bgWhite > div:first-child {
   padding: 0 !important;
 }
@@ -1154,47 +1170,92 @@ span.price {
                    DESTINOS @jimmy
 
 ---------------------------------------------------------------------*/
-/* line 786, ../sass/screen.scss */
+/* line 808, ../sass/screen.scss */
 .destinos-mapas h2.lines {
   width: 600px;
 }
 
-/* line 790, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 .items-servicios li {
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
 }
-/* line 791, ../sass/screen.scss */
-.items-servicios li:hover .overlay {
-  background-color: rbga(black, 0.4);
+/* line 813, ../sass/screen.scss */
+.items-servicios li:first-child {
+  margin-top: 0;
 }
-/* line 792, ../sass/screen.scss */
-.items-servicios li .text {
+
+/*----------------------------------------------------------------------
+
+                   DESTINOS-ciudad @jimmy
+
+---------------------------------------------------------------------*/
+/* line 826, ../sass/screen.scss */
+.info-destino-ciudad .info h5 {
+  font-size: 30px;
+  color: #333333;
+}
+/* line 827, ../sass/screen.scss */
+.info-destino-ciudad .info p {
+  font-size: 14px;
+  color: #333333;
+}
+
+/* line 830, ../sass/screen.scss */
+.tiempo {
   text-align: center;
-  width: 600px;
-  margin-left: -300px;
-  position: absolute;
-  left: 50%;
-  top: 0;
+  margin: 0 auto;
 }
-/* line 793, ../sass/screen.scss */
-.items-servicios li .text h2 {
-  color: white;
-  font-size: 48px;
+/* line 831, ../sass/screen.scss */
+.tiempo p {
+  margin: 0 0 5px 0;
 }
-/* line 794, ../sass/screen.scss */
-.items-servicios li .text p {
-  color: white;
+/* line 832, ../sass/screen.scss */
+.tiempo img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 833, ../sass/screen.scss */
+.tiempo .grados {
+  display: block;
+  font-size: 36px;
+  color: #333333;
+}
+/* line 834, ../sass/screen.scss */
+.tiempo .grados-azul {
+  color: #1c84dc;
+}
+/* line 835, ../sass/screen.scss */
+.tiempo .grados-rojo {
+  color: #dc1c4d;
+}
+/* line 836, ../sass/screen.scss */
+.tiempo .clima {
   font-size: 14px;
 }
-/* line 795, ../sass/screen.scss */
-.items-servicios li .text a {
-  font-size: 12px;
-  color: white;
-  width: 140px;
-  height: 40px;
-  line-height: 40px;
-  display: block;
-  background: transparent url("../images/white-arrow.png") no-repeat 101px center;
-  margin: 0 auto;
+
+/* line 841, ../sass/screen.scss */
+.slider-destinos-ciudad .cycle-slideshow {
+  width: 940px;
+  position: relative;
+}
+/* line 843, ../sass/screen.scss */
+.slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next {
+  width: 36px;
+  height: 36px;
+  border: 2px solid white;
+  position: absolute;
+  z-index: 800;
+  cursor: pointer;
+  top: 50%;
+}
+/* line 844, ../sass/screen.scss */
+.slider-destinos-ciudad .cycle-slideshow .cycle-prev {
+  left: 5%;
+  background: url("../images/white-arrow-left.png") no-repeat 50% center;
+}
+/* line 845, ../sass/screen.scss */
+.slider-destinos-ciudad .cycle-slideshow .cycle-next {
+  background: url("../images/white-arrow.png") no-repeat 50% center;
+  right: 5%;
 }
