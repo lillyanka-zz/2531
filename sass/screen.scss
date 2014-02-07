@@ -11,7 +11,7 @@
 
 $font: 'Istok Web', sans-serif;
 $gray: #999;
-$light-gray: #666;
+$light-gray: #666; 
 $dark-gray: #333; 
 $pink: #dc1c4d;
 $btn-white-arrow: url('../images/white-arrow.png') no-repeat 95% center;
@@ -287,9 +287,15 @@ ul.ofertas{
       }
 
 .boxtext{padding:20px 0;background-color:white;}
+.fbIcon{display: block;background:url('../images/ico-share-facebook.png') no-repeat center ;width:11px;height:20px;float:right;}
+.twIcon{display: block;background:url('../images/ico-share-twitter.png')  no-repeat center;width:21px;height:20px;float:right;margin:0 5%;}
+
+
+
 
 //@jimmy
 .bgGray{background: url('../images/mainbg.jpg') repeat left top;max-width:none;padding:30px 0;margin-bottom: 20px;}
+.bgFigures{background: url("../images/ofertasbg.jpg") repeat left top;padding:50px;}
 .bgGraySimple{background-color: #f4f4f4;padding:50px 0;}
 .clearfix:before,.clearfix:after {content: " "; /* 1 */display: table; /* 2 */}
 .clearfix:after {clear: both;}
@@ -704,7 +710,7 @@ footer.row{
 }
 
 
-.menu-booking-slider{height:240px;height:100%;position:absolute;left:20%;
+.menu-booking-slider{height:240px;height:100%;position:absolute;left:14%;
   img{border-bottom:1px solid transparent;display: block;}
   ul{background-color: rgba(black,0.5);padding:30px;height:100%;
     li{margin-top:10px;
@@ -764,7 +770,7 @@ footer.row{
 .ofertas-detalle{
   img{width:100%;}
   h2.lines{width: 760px;}
-  a.btn-lines{margin-bottom:30px;}
+  p.btn-lines{margin-bottom:30px !important;width:110px;}
   #Info{text-align:center;padding:30px;
     span.price,span.desde{color:black;display: block;text-align: center;}
     span.price{margin-bottom:30px;}
@@ -828,6 +834,8 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 
+.info-destino-ciudad{padding:10px 0;}
+
 .info-destino-ciudad .info{
   h5{font-size:30px;color:$dark-gray; }
   p{font-size:14px;color:$dark-gray;}
@@ -850,4 +858,75 @@ footer.row{
   .cycle-prev{left:5%;background: url("../images/white-arrow-left.png") no-repeat 50% center;}
   .cycle-next{ background: url("../images/white-arrow.png") no-repeat 50% center;right:5%;}
  
+}
+
+.items-2{
+  li{float:left;width:48%;margin:0 1%;margin-bottom:40px;}
+  .cont-img{margin-right:5%;float:left;width:40%;}
+  .cont-info{float:left;width:55%;}
+  .cont-info h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    text-transform: uppercase;
+    white-space: normal;
+    margin:inherit;
+  }
+  .cont-info h5{
+    color: #dc1c4d;
+    font-size:11px;
+    text-transform: uppercase;
+    margin-bottom:25px;
+
+    }
+    .btn-black{margin:inherit;} 
+    + .btn-lines{margin-bottom:50px;text-align:center;}
+    
+}
+ 
+
+
+.itemsPink{color:$pink;text-align:center;
+  ul li{margin-bottom:20px;
+       a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase }
+  }
+  h2,span{color:$pink;}
+  
+}
+
+.destinos-ofertas{border-right:1px solid white;
+  ul.ofertas{width:initial;}
+}
+
+
+/*----------------------------------------------------------------------
+
+                   DESTINOS-ciudad-agenda @jimmy
+
+---------------------------------------------------------------------*/
+
+
+#hotel-select-agenda{@extend %select-style;height:40px;border:1px solid $light-gray;
+  background: white url("../images/down-arrow.png") no-repeat 200px center;
+}
+
+.info-destino-ciudad-detalle{
+  p{font-size:14px;color:$dark-gray;}
+     h4{
+          font-size: 30px;
+          font-weight: normal;
+          color: #000;
+          text-transform: uppercase;
+          margin-top: 1em;
+          margin-bottom: 0.1em;
+          white-space: normal;
+        }
+        h5{
+          color: $pink;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+        .btn-black{width:185px;margin:inherit;background:black url("../images/white-arrow.png") no-repeat  150px center}
+        p.btn-lines{margin-bottom:20px; }
+        + .btn-lines{margin-bottom:30px;text-align:CEMTER}
 }

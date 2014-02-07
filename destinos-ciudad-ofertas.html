@@ -24,10 +24,8 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=278840028812868";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-
-
-  <!--********************************************************
-                        Header TOP  nav Menu
+     <!--********************************************************
+                        HEADER TOP
   ********************************************************-->
 	<div class="row">
 	  <div class="large-4 columns left-tools">
@@ -40,18 +38,20 @@
 	    <li><a href="#">Agencias</a></li>
 	    <li><a href="#">Mis Reservas</a></li>
 	  </ul>
-	</div> 
-  <!--********************************************************
-                        Slider with booking
+	</div>
+
+     <!--********************************************************
+                        Booking slider
   ********************************************************-->
-  <div class="booking-slider">
+
+	<div class="booking-slider">
     <div class="row ">
       <div class="large-12 columns" >
         <div class="slide">
-          <img src="images/slider-mejores-ofertas.jpg" alt="" />
+          <img src="images/destinos-ciudad-madrid.jpg" alt="" />
           <div class="slide-text-header">
-            <h3>Consulte <strong>Nuestras ofertas</strong></h3>
-            <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
+            <h3>Madrid, <strong>arte</strong> y cultura</h3>
+            <span class="slide-caption">Variada oferta artistica, historica, cultural y gastronómica</span>
           </div>
         </div>
       </div><!-- /text -->
@@ -59,152 +59,185 @@
         <h3 class="lines">Reservas</h3>
         <form action="">
           <select id="hotel-select">
-            <option>Selecciona Hotel</option>
+            <option>Noviembre 2012</option>
           </select>
           <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
           <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
           <input type="button" value="RESERVAR" />
         </form>
       </div><!-- /form -->
+      <div class="menu-booking-slider">
+        <img src="images/log-negro.png">
+        <ul>
+          <li><a href="#">Barcelona </a></li>
+          <li><a href="#" class="active">Madrid </a></li>
+          <li><a href="#">bilbao </a></li>
+          <li><a href="#">baqueira </a></li>
+          <li><a href="#">salamanca </a></li>
+        </ul>
+      </div>
     </div><!-- /row -->
   </div>
-   <!--********************************************************
-                        BREADCRUMB
-  ********************************************************-->
-  <div class="row submenu">
-      <div class="large-10 columns large-centered">
-        <div class="row" >
-          <div class="large-6 columns ">
-            <ul class="clearfix breadcumbs">
-              <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">ofertas</a></li>
-            </ul>
-          </div>
-          <div class="large-6 columns icons">
-            <ul class="clearfix">
-              <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-              <li><a href="#" class="rss ir">rss</a></li>
-            </ul>
-          </div>
-         </div> 
-      </div>
-  </div><!-- /sub menu -->	
-   
 
-   <!--********************************************************
-                        Mejores ofertas 
+     <!--********************************************************
+                        Breadcumbs
   ********************************************************-->
-  <div class="row mejores-ofertas bgGray">
-    <div class="large-8 large-centered columns">
-      <div class="row title-mejores-ofertas">
-        <div class=" large-8 columns">
-           <h2>LAS MEJORES OFERTAS</h2>
-           <span>Precios y descuentos pensados especialmente para ti.</span>
-        </div>
-        <div class=" large-4 columns">
-            <select>
-              <option>Filtar por destino </option>
-              <option valie="1">1 </option>
-              <option valie="2">2 </option>
-            </select>
-        </div>
-      </div> 
+
+  <div class="row submenu">
+    <div class="large-10 columns large-centered">
       <div class="row">
-        <div class="large-4 columns">
-              <ul class="ofertas">
-                <li>
-                  <div class="top">
-                    <img src="images/ofertas1.jpg" alt="" />
-                    <div class="precio"><span class="desde">Desde</span><span class="price">65€</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Fines de semana únicos</h4>
-                    <h5>Hoteles Madrid y Barcelona</h5>
-                    <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-                 <li>
-                  <div class="top">
-                    <img src="images/ofertas1.jpg" alt="" />
-                    <div class="precio"><span class="desde">Desde</span><span class="price">65€</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Fines de semana únicos</h4>
-                    <h5>Hoteles Madrid y Barcelona</h5>
-                    <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-              </ul> 
+        <div class="large-6 columns ">
+          <ul class="clearfix breadcumbs">
+            <li><a href="#">Incios > </a></li>
+            <li><a href="#" >Destinos > </a></li>
+            <li><a href="#">Madrid > </a></li>
+            <li><a href="#" class="active">Agenda</a></li>
+          </ul>
         </div>
-        <div class="large-4 columns">
-              <ul class="ofertas">
-                <li>
-                  <div class="top">
-                    <img src="images/ofertas2.jpg" alt="" />
-                    <div class="precio"><span class="desde">Desde</span><span class="price">75€</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Verano refrescante en Salamanca</h4>
-                    <h5>Salamanca forum resort</h5>
-                    <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="top">
-                    <img src="images/ofertas2.jpg" alt="" />
-                    <div class="precio"><span class="desde">Desde</span><span class="price">75€</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Verano refrescante en Salamanca</h4>
-                    <h5>Salamanca forum resort</h5>
-                    <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-              </ul> 
-        </div>
-        <div class="large-4 columns">
-              <ul class="ofertas">
-                <li>
-                  <div class="top">
-                    <img src="images/ofertas3.jpg" alt="" />
-                    <div class="precio"><span class="desde">DTO. </span><span class="price">15%</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Reserva anticipada</h4>
-                    <h5>TODOS LOS HOTELES</h5>
-                    <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="top">
-                    <img src="images/ofertas3.jpg" alt="" />
-                    <div class="precio"><span class="desde">DTO. </span><span class="price">15%</div>
-                  </div>
-                  <div class="bottom">
-                    <h4>Reserva anticipada</h4>
-                    <h5>TODOS LOS HOTELES</h5>
-                    <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
-                    <a href="ofertas-detalle.html" class="btn-black">Reservar</a>
-                  </div>
-                </li>
-              </ul> 
+        <div class="large-6 columns icons">
+          <ul class="clearfix">
+            <!-- <li><a href="#" class="face ir">facebook</a></li> -->
+            <li><a href="#" class="rss ir">rss</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    
-  </div><!-- /row -->
+  </div><!-- /sub menu -->
 
 
 
-
-  <!--********************************************************
-                        social 
+    <!--********************************************************
+                        ciudad oferta
   ********************************************************-->
+
+  <div class="row info-destino-ciudad">
+    <div class="large-10 columns large-centered">
+
+      <div class="row">
+        <div class="large-9 columns  info">
+          <h4>Agenda</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+        </div>
+        <div class="large-3 columns ">
+          <form action="">
+            <select id="hotel-select-agenda">
+              <option>NOVIEMBRE 2013</option>
+            </select>
+            
+          </form>
+      </div>
+
+      </div>
+    </div>
+  </div><!-- /sub menu -->
+ 
+
+  <div class="bgWhite">
+    <div class="row">
+      <div class="large-10 columns large-centered">
+        <div class="row">
+          <div class="large-6 large-centered columns">
+            <h2 class="lines">Noviembre 2013</h2>
+            <span class="note">Los mejores eventos de la ciudad</span>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="items-2 clearfix large-12 columns">
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+               <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+            <li>
+              <div class="cont-img"> 
+                <img src="images/agenda.jpg">
+              </div>
+              <div class="cont-info">
+                <h4>Imagine Dragons</h4>
+                <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                <a href="" class="btn-black">ver más</a>
+              </div>
+            </li>
+          </ul>
+          <a href="" class="btn-lines">Ver mas eventos</a> 
+        </div> 
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+   
+
+
+
+
   
   
   
@@ -229,11 +262,6 @@
       </ul>  
     </div>
   </div><!-- /row -->
-
- <!--********************************************************
-                        Footer 
-  ********************************************************-->
-
    <footer class="row">
      <div class="footer-top">
        <nav>
