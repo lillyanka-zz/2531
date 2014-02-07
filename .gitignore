@@ -3,6 +3,7 @@
 
 
 #Espresso
+*.esproj
 *.esproj/*
 
 *.zip
