@@ -17,6 +17,7 @@ $pink: #dc1c4d;
 $btn-white-arrow: url('../images/white-arrow.png') no-repeat 95% center;
 $black-lines-bg: url('../images/black-lines.png') no-repeat left center, url('../images/black-lines.png') no-repeat right center;
 $white-lines-bg: url('../images/white-lines.png') no-repeat left center, url('../images/white-lines.png') no-repeat right center;
+$pink-lines-bg: url('../images/doble-linea-roja.png') no-repeat left center, url('../images/doble-linea-roja.png') no-repeat right center;
 
 
 body, h1, h2, h3, h4, h5, h6, p, a, span{
@@ -132,10 +133,10 @@ span.note{
         -webkit-font-smoothing: antialiased;
         color: $dark-gray; 
 }
+select::-ms-expand {display: none;}//ie remove appearance
 
 
-
-.booking-form{
+.booking-form{ 
   background: rgba(255,255,255,0.5);
   position: absolute;
   z-index: 2000;
@@ -784,6 +785,7 @@ footer.row{
   }
 }
 
+.detalle{height:300px;}
 
 #lists{color:$dark-gray;margin-top:40px;
   ul{list-style:inside;color:$pink;
@@ -822,9 +824,16 @@ footer.row{
 }
 
 .items-servicios{
-  li{margin-top:20px;position: relative;
+  li{margin-top:20px;position: relative;height: 575px;
     &:first-child{margin-top: 0;}
+    &:hover{cursor: pointer;}
+    &:hover .overlay{@include opacity(1);@extend %trans;}
+    &:hover .button{background-color:$pink;color:white;border-color:$pink;}
    }
+   .overlay{@include opacity(0);position: absolute;width:100%;height:100%;
+    top:0;left:0;background-color:rgba(black,0.5);
+   }
+
 
 }
 
@@ -892,6 +901,9 @@ footer.row{
        a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase }
   }
   h2,span{color:$pink;}
+  h2.lines{
+    background: $pink-lines-bg;
+  }
   
 }
 
@@ -929,5 +941,23 @@ footer.row{
         }
         .btn-black{width:185px;margin:inherit;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
-        + .btn-lines{margin-bottom:30px;text-align:CEMTER}
+        + .btn-lines{margin-bottom:30px;text-align:center}
+}
+
+
+
+
+/*----------------------------------------------------------------------
+
+                             Eventos
+
+---------------------------------------------------------------------*/
+.eventos-title{margin-bottom:50px;
+  .btn-black{width: 260px;margin: initial;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
++ .slider-destinos-ciudad{margin-bottom:20px;}
+}
+
+.items-eventos{
+  .btn-black{width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
+  h5{margin-bottom:5px; }
 }
