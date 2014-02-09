@@ -823,7 +823,7 @@ footer.row{
 }
 
 .items-servicios{
-  li{margin-top:20px;position: relative;height: 570px;
+  li{margin-top:20px;position: relative;height: 575px;
     &:first-child{margin-top: 0;}
     &:hover{cursor: pointer;}
     &:hover .overlay{@include opacity(1);@extend %trans;}
@@ -941,4 +941,22 @@ footer.row{
         .btn-black{width:185px;margin:inherit;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
         + .btn-lines{margin-bottom:30px;text-align:center}
+}
+
+
+
+
+/*----------------------------------------------------------------------
+
+                             Eventos
+
+---------------------------------------------------------------------*/
+.eventos-title{margin-bottom:50px;
+  .btn-black{width: 260px;margin: initial;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
++ .slider-destinos-ciudad{margin-bottom:20px;}
+}
+
+.items-eventos{
+  .btn-black{width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
+  h5{margin-bottom:5px; }
 }
