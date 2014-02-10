@@ -1615,6 +1615,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .left { float: left; }
 
+.centered { margin: 0 auto; width: 940px; }
+
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
 h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; }
@@ -1700,7 +1702,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 /*--------------------------------*/
 /*      ESTILOS ESPECIFICOS       */
 /*--------------------------------*/
-.left-tools { padding: 18px 0; }
+.left-tools { padding: 18px 0; float: left; }
 .left-tools > span:first-child { border-right: 1px solid #999999; padding-right: 5px; margin-right: 5px; }
 .left-tools a, .left-tools span { color: #999999; font-size: 0.688em; text-transform: uppercase; font-weight: 600; line-height: 10px; vertical-align: middle; }
 .left-tools a.tel, .left-tools span.tel { font-size: 14px; font-weight: 600; line-height: 14px; }
@@ -1802,10 +1804,12 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 .mejores-ofertas .title-mejores-ofertas { margin-bottom: 60px; }
 .mejores-ofertas h2 { margin-bottom: 0; }
-.mejores-ofertas select { height: 40px; border: 1px solid #666666; }
+.mejores-ofertas select { height: 40px; border: 1px solid #666666; width: 150px; font-weight: normal; text-transform: none; background: white url("../images/down-arrow.png") no-repeat 135px center; }
+.mejores-ofertas .select { padding-top: 10px; }
 .mejores-ofertas ul.ofertas li { padding-bottom: 40px; margin-bottom: 20px; float: none; width: 285px; }
 
 .submenu { padding: 20px 0; }
+.submenu .breadcumbs { width: 500px; }
 .submenu .breadcumbs li { float: left; }
 .submenu .breadcumbs li a { font-size: 13px; color: #666666; font-style: italic; margin-right: 5px; }
 .submenu .breadcumbs li a.active { color: #333333; cursor: inherit; }
