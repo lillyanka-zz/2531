@@ -1621,6 +1621,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .two-col { width: 470px; }
 
+.fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
+
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
 h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; }
@@ -1757,7 +1759,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 .social { padding-bottom: 32px; }
 .social > div { width: 270px; margin: 0 auto; }
-.social > div ul li { float: left; }
+.social > div ul { width: 345px; }
+.social > div ul li { float: left; width: 115px; }
 
 footer.row { background: #333333; max-width: none; }
 

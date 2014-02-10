@@ -52,6 +52,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   width: 470px;
 }
 
+.fb_iframe_widget{
+  display: block;
+  position: relative;
+  margin-top: -5px;
+}
 a.button{
   border: 2px solid #fff;
   font-size: 12px;
@@ -587,8 +592,10 @@ ul.ofertas{
     width: 270px;
     margin: 0 auto;
     ul{
+      width: 345px;
       li{
         float: left;
+        width: 115px;
       }
     }
   }
