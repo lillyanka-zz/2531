@@ -1617,6 +1617,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .centered { margin: 0 auto; width: 940px; }
 
+.centered-large { margin: 0 auto; width: 1240px; }
+
+.two-col { width: 470px; }
+
+.fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
+
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
 h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; }
@@ -1631,6 +1637,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .btn-black:hover { background-color: #dc1c4d; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: block; height: 28px; width: 150px; margin: 30px auto 0; overflow: hidden; }
+.btn-lines.ofertas { width: 139px; }
 
 /*@jimmy*/
 .btn-black, .menu-booking-slider ul li a, .items-servicios li:hover .overlay { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
@@ -1752,7 +1759,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 .social { padding-bottom: 32px; }
 .social > div { width: 270px; margin: 0 auto; }
-.social > div ul li { float: left; }
+.social > div ul { width: 345px; }
+.social > div ul li { float: left; width: 115px; }
 
 footer.row { background: #333333; max-width: none; }
 
@@ -1774,6 +1782,7 @@ footer.row { background: #333333; max-width: none; }
 .footer-middle > div div a { display: block; text-align: center; font-size: 0.813em; color: #fff; line-height: 1.5em; }
 
 .footer-bottom { background: #000; padding: 12px 20px 15px; overflow: hidden; }
+.footer-bottom > div { width: 940px; margin: 0 auto; }
 .footer-bottom .btn-lines.white { float: left; margin-right: 20px; color: #fff; border-bottom: 1px solid #fff; border-top: 1px solid #fff; width: auto; margin-top: 0; font-weight: 700; }
 .footer-bottom span.credits { color: #dc1c4d; font-weight: 700; text-align: right; display: block; line-height: 30px; }
 
@@ -1806,7 +1815,8 @@ footer.row { background: #333333; max-width: none; }
 .mejores-ofertas h2 { margin-bottom: 0; }
 .mejores-ofertas select { height: 40px; border: 1px solid #666666; width: 150px; font-weight: normal; text-transform: none; background: white url("../images/down-arrow.png") no-repeat 135px center; }
 .mejores-ofertas .select { padding-top: 10px; }
-.mejores-ofertas ul.ofertas li { padding-bottom: 40px; margin-bottom: 20px; float: none; width: 285px; }
+.mejores-ofertas ul.ofertas li { /*padding-bottom: 40px;margin-bottom:20px;float:none;width:285px;*/ }
+.mejores-ofertas ul.ofertas li:nth-child(3n) { margin-right: 0; }
 
 .submenu { padding: 20px 0; }
 .submenu .breadcumbs { width: 500px; }
@@ -1827,8 +1837,8 @@ footer.row { background: #333333; max-width: none; }
 
 .ofertas-detalle img { width: 100%; }
 .ofertas-detalle h2.lines { width: 760px; }
-.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 110px; }
-.ofertas-detalle #Info { text-align: center; padding: 30px; }
+.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 110px; padding-top: 3px; line-height: 23px; }
+.ofertas-detalle #Info { text-align: center; padding: 30px; width: 470px; }
 .ofertas-detalle #Info span.price, .ofertas-detalle #Info span.desde { color: black; display: block; text-align: center; }
 .ofertas-detalle #Info span.price { margin-bottom: 30px; }
 .ofertas-detalle #Info span.desde { font-size: 0.688em; font-weight: 600; text-transform: uppercase; }
@@ -1838,7 +1848,7 @@ footer.row { background: #333333; max-width: none; }
 .ofertas-detalle #Info p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 .ofertas-detalle #Info hr { margin: 50px 0; }
 
-.detalle { height: 300px; }
+.detalle .clearPadding { width: 470px; float: left; }
 
 #lists { color: #333333; margin-top: 40px; }
 #lists ul { list-style: inside; color: #dc1c4d; }
