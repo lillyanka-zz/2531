@@ -24,73 +24,68 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=278840028812868";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-   <!--********************************************************
-                        HEADER TOP
-  ********************************************************-->
-	<div class="row">
-	  <div class="large-4 columns left-tools">
-	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
-	    <a href="#">Contacto</a>
-	  </div>
-	  <ul class="large-4 columns menu-top right">
-	    <li><a href="#">Español</a></li>
-	    <li><a href="#">Empresas</a></li>
-	    <li><a href="#">Agencias</a></li>
-	    <li><a href="#">Mis Reservas</a></li>
-	  </ul>
-	</div>
-
-   <!--********************************************************
-                        booking-slider
-  ********************************************************-->
-	<div class="booking-slider">
-    <div class="row ">
-      <div class="centered-large" >
-        <div class="slide">
-          <img src="images/slider-mejores-ofertas.jpg" alt="" />
-          <div class="slide-text-header">
-            <h3>Consulte <strong>Nuestras ofertas</strong></h3>
-            <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
-          </div>
-        </div>
-      </div><!-- /text -->
-      <div class=" booking-form">
-        <h3 class="lines">Reservas</h3>
-        <form action="">
-          <select id="hotel-select">
-            <option>Selecciona Hotel</option>
-          </select>
-          <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
-          <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="button" value="RESERVAR" />
-        </form>
-      </div><!-- /form -->
-    </div><!-- /row -->
+  
+  
+<div class="row">
+  <div class="left-tools">
+    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+    <a href="#">Contacto</a>
   </div>
-
-  <!--********************************************************
-                        BREADCRUMB
-  ********************************************************-->
-
-  <div class="row submenu">
-        <div class="large-10 columns large-centered">
-            <div class="row" >
-              <div class="large-6 columns ">
-                <ul class="clearfix breadcumbs">
-                  <li><a href="index.html">Incios > </a></li>
-            <li><a href="ofertas.html">ofertas > </a></li>
-            <li><a href="#" class="active">Fines de semana únicos</a></li>
-                </ul>
-              </div>
-              <div class="large-6 columns icons">
-                <ul class="clearfix">
-                  <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-                  <li><a href="#" class="rss ir">rss</a></li>
-                </ul>
-              </div>
-             </div> 
-          </div>
-  </div><!-- /sub menu -->  
+  <ul class="menu-top right">
+    <li><a href="#">Español</a></li>
+    <li><a href="#">Empresas</a></li>
+    <li><a href="#">Agencias</a></li>
+    <li><a href="#">Mis Reservas</a></li>
+  </ul>
+</div> 
+<!--********************************************************
+                      Slider with booking
+********************************************************-->
+<div class="booking-slider">
+  <div class="row ">
+    <div>
+      <div class="slide">
+        <img src="images/slider-mejores-ofertas.jpg" alt="" />
+        <div class="slide-text-header">
+          <h3>Consulte <strong>Nuestras ofertas</strong></h3>
+          <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
+        </div>
+      </div>
+    </div><!-- /text -->
+    <div class=" booking-form">
+      <h3 class="lines">Reservas</h3>
+      <form action="">
+        <select id="hotel-select">
+          <option>Selecciona Hotel</option>
+        </select>
+        <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
+        <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
+        <input type="button" value="RESERVAR" />
+      </form>
+    </div><!-- /form -->
+  </div><!-- /row -->
+</div>
+ <!--********************************************************
+                      BREADCRUMB
+********************************************************-->
+<div class="row submenu">
+    <div>
+      <div class="centered" >
+        <div>
+          <ul class="clearfix left breadcumbs">
+            <li><a href="index.html">Incios > </a></li>
+            <li><a href="#" class="active">ofertas</a></li>
+          </ul>
+        </div>
+        <div class="right icons">
+          <ul class="clearfix">
+            <!-- <li><a href="#" class="face ir">facebook</a></li> -->
+            <li><a href="#" class="rss ir">rss</a></li>
+          </ul>
+        </div>
+       </div> 
+    </div>
+</div><!-- /sub menu -->	 
   
   
 
@@ -101,7 +96,7 @@
     <div class="centered">
         <h2 class="lines">Fines de semana únicos</h2>
         <span class="note">Queremos que tus fines de semana de septiembre sean únicos.</span>
-        <p href="" class="btn-lines">Compatir <a class="twIcon ir">twiterr</a><a class="fbIcon ir">facebbok</a> </p>
+        <p href="" class="btn-lines">Compatir <a class="twIcon ir">Twitter</a><a class="fbIcon ir">facebbok</a> </p>
         <div class="row bgWhite detalle">
           <div class="clearPadding">
             <img src="images/ofertas-detalle-img-big.jpg" alt="" />
@@ -112,7 +107,7 @@
             <h5>HOTELES MADRID Y BARCELONA</h5>
             <p>Queremos que tus fines de semana sean inolvidables, por ello te ofrecemos un fin de semana increíble para entradas desde
             el mes de septiembre.</p>
-            <span>Oferta válida hasta el 30/09/2013</span>
+            <a href="" class="btn-black">Reservar</a>
           </div>
         </div> 
         <div class="row" id="lists">
@@ -134,53 +129,6 @@
             </ul>
           </div>
         </div>
-        <hr/>
-        <div id="disponibles-ofertas">
-          <h5>Hoteles disponibles para esta oferta</h5>
-          <ul >
-            <li class="row">
-              <div class="large-6  columns">
-                <h3>Rafael Hoteles ventas</h3>
-                <span>Madrid</span>
-              </div>
-              <div class="large-6  columns">
-                  <a href="" class="btn-black right">Reservar</a>
-                  <div class="right info"><span class="des">DESDE</span><span class="price">65€</span></div>  
-              </div>
-            </li>
-            <li class="row">
-              <div class="large-6  columns">
-                <h3>Rafael Hoteles ventas</h3>
-                <span>Madrid</span>
-              </div>
-              <div class="large-6  columns">
-                  <a href="" class="btn-black right">Reservar</a>
-                  <div class="right info"><span class="des">DESDE</span><span class="price">65€</span></div>  
-              </div>
-            </li>
-            <li class="row">
-              <div class="large-6  columns">
-                <h3>Rafael Hoteles ventas</h3>
-                <span>Madrid</span>
-              </div>
-              <div class="large-6  columns">
-                  <a href="" class="btn-black right">Reservar</a>
-                  <div class="right info"><span class="des">DESDE</span><span class="price">65€</span></div>  
-              </div>
-            </li>
-            <li class="row">
-              <div class="large-6  columns">
-                <h3>Rafael Hoteles ventas</h3>
-                <span>Madrid</span>
-              </div>
-              <div class="large-6  columns">
-                  <a href="" class="btn-black right">Reservar</a>
-                  <div class="right info"><span class="des">DESDE</span><span class="price">65€</span></div>  
-              </div>
-            </li>
-            
-          </ul>
-        </div>
     </div>
   </div><!-- /row -->
 
@@ -189,7 +137,7 @@
   
   
 
-     <!--********************************************************
+   <!--********************************************************
                         social
   ********************************************************-->
   <div class="row social">
@@ -212,8 +160,8 @@
     </div>
   </div><!-- /row -->
 
-     <!--********************************************************
-                       footer
+   <!--********************************************************
+                        footer
   ********************************************************-->
    <footer class="row">
      <div class="footer-top">
