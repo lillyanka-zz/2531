@@ -41,15 +41,18 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
 .centered{
   margin: 0 auto;
   width: 940px;
+  overflow: hidden;
 }
 
 .centered-large{
   margin: 0 auto;
   width: 1240px;
+  overflow: hidden;
 }
 
 .two-col{
   width: 470px;
+  overflow: hidden;
 }
 
 .fb_iframe_widget{
@@ -765,10 +768,12 @@ footer.row{
 .mejores-ofertas{
   .title-mejores-ofertas{margin-bottom:60px;}
   h2{margin-bottom:0;} 
-  select{border:1px solid $light-gray;@extend %select-style; width: 150px;
+  select{border:1px solid #999;@extend %select-style;
+  width: 180px;
   font-weight: normal;
   text-transform: none;
-  background: white url("../images/down-arrow.png") no-repeat 135px center;
+  background: white url("../images/down-arrow.png") no-repeat 165px center;
+  padding: 7px 10px;
   }
   .select{
     padding-top: 10px;
