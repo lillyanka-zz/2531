@@ -127,7 +127,7 @@ span.note{
   margin: 30px auto 0;
   overflow: hidden;
   &.ofertas{
-    width: 139px;
+    width: 145px;
   }
 }
 
@@ -155,6 +155,7 @@ span.note{
         -webkit-font-smoothing: antialiased;
         color: $dark-gray; 
 }
+
 select::-ms-expand {display: none;}//ie remove appearance
 
 
@@ -189,12 +190,13 @@ select::-ms-expand {display: none;}//ie remove appearance
     :-ms-input-placeholder {  
        color: #333;  
     }
-
+.wood-parent{position: relative;}
 ul.ofertas{
     margin: 0 auto;
     width: 940px;
     overflow: hidden;
     li{
+      margin-bottom: 30px;
       padding-bottom: 40px;
       width: 300px;
       float: left;
@@ -731,7 +733,7 @@ footer.row{
 
 .booking-slider{position: relative;height: 455px;overflow:hidden;
   .booking-form{width:240px;right: 10%;top: 5%;padding:10px;
-    select{width: 100%;height: 38px;margin: 1px 10px 0 0;background: #fff url('../images/down-arrow.png') no-repeat 182px center;}
+    select{width: 100%;padding:5px 0;margin: 1px 10px 0 0;background: #fff url('../images/down-arrow.png') no-repeat 182px center;}
     input[type="text"]{margin-top:10px; background: #fff url('../images/calendar-icon.png') no-repeat 173px center;border: none;}
     input[type="button"]{width: 100%;margin-top: 10px;}
   }
@@ -762,8 +764,8 @@ footer.row{
 ---------------------------------------------------------------------*/
 .mejores-ofertas{
   .title-mejores-ofertas{margin-bottom:60px;}
-  h2{margin-bottom:0;}
-  select{height:40px;border:1px solid $light-gray;@extend %select-style; width: 150px;
+  h2{margin-bottom:0;} 
+  select{border:1px solid $light-gray;@extend %select-style; width: 150px;
   font-weight: normal;
   text-transform: none;
   background: white url("../images/down-arrow.png") no-repeat 135px center;
