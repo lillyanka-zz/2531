@@ -1735,7 +1735,9 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 .row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
-.row.main-menu nav a { padding: 20px 16px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
+.row.main-menu nav a { position: relative; margin: 20px 16px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
+.row.main-menu nav .active { text-decoration: underline; }
+.row.main-menu nav .active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat left top; }
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
@@ -1943,6 +1945,14 @@ footer.row { background: #333333; max-width: none; }
 
 .items-eventos .btn-black { width: 210px; background: black url("../images/white-arrow.png") no-repeat 172px center; }
 .items-eventos h5 { margin-bottom: 5px; }
+
+/*----------------------------------------------------------------------
+ PRESENTACION @Luis
+
+---------------------------------------------------------------------*/
+.main-menu + .booking-slider { margin-top: 18px; }
+
+.logo-icono { position: absolute; left: 50%; top: 30px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 p.lead { font-size: 1.21875em; line-height: 1.6; }
 
