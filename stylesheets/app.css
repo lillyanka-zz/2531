@@ -1615,11 +1615,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .left { float: left; }
 
-.centered { margin: 0 auto; width: 940px; }
+.centered { margin: 0 auto; width: 940px; overflow: hidden; }
 
-.centered-large { margin: 0 auto; width: 1240px; }
+.centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
 
-.two-col { width: 470px; }
+.two-col { width: 470px; overflow: hidden; }
 
 .fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
 
@@ -1815,7 +1815,7 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 .mejores-ofertas .title-mejores-ofertas { margin-bottom: 60px; }
 .mejores-ofertas h2 { margin-bottom: 0; }
-.mejores-ofertas select { border: 1px solid #666666; width: 150px; font-weight: normal; text-transform: none; background: white url("../images/down-arrow.png") no-repeat 135px center; }
+.mejores-ofertas select { border: 1px solid #999; width: 180px; font-weight: normal; text-transform: none; background: white url("../images/down-arrow.png") no-repeat 165px center; padding: 7px 10px; }
 .mejores-ofertas .select { padding-top: 10px; }
 .mejores-ofertas ul.ofertas li { /*padding-bottom: 40px;margin-bottom:20px;float:none;width:285px;*/ }
 .mejores-ofertas ul.ofertas li:nth-child(3n) { margin-right: 0; }
