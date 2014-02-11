@@ -11,11 +11,9 @@ $( document ).ready(function() {
       });
 
 
+//funcion para bajar el bookin, al hacer click se deve ejcutar
+ // $('.popUp').siblings('.booking-form').css('z-index','500');
 
 
-});
-
-
-
-  
+  });
 

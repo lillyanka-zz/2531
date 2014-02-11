@@ -1028,11 +1028,11 @@ footer.row{
                              Reservar
 
 ---------------------------------------------------------------------*/
-#mask{position:fixed;top:0;left:0;background:rgba(0,0,0,0.6);z-index:2000;width:100%;height:100%;}
+#mask{position:fixed;top:0;left:0;background:rgba(0,0,0,0.6);z-index:1000;width:100%;height:100%;}
 
 
 
-.overlay{z-index:1000;background-color: #FFF !important;position:fixed;
+.overlay{z-index:1500;background-color: #FFF !important;position:fixed;
     select{border: 1px solid #cccccc;}
 }
 
@@ -1044,8 +1044,8 @@ footer.row{
                              #mis-reservas
 
 ---------------------------------------------------------------------*/
-#mis-reservas{width:320px;padding:20px;z-index:3000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
-  h3{font-size:18px;line-height:18px;margin-bottom:15px;  }
+.popUp{width:320px;padding:20px;z-index:2000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
+  h3{font-size:18px;line-height:18px;margin-bottom:15px; text-transform: uppercase }
   p{font-size:14px;line-height:20px;margin-bottom:5px; }
   form{margin-top:30px; 
       p:first-child{margin-bottom:10px;}
@@ -1069,5 +1069,13 @@ footer.row{
             }
     }
   }
-  a{border-top:1px solid black;border-bottom:1px solid black;padding:5px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
+}
+
+// #reservar{z-index:1000;}
+#contra{
+  .btn-black{width:210px;background: black url("../images/white-arrow.png") no-repeat 210px center;}
+}
+#agencia{
+    a{border-top:1px solid black;border-bottom:1px solid black;padding:10px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
+
 }

@@ -1640,7 +1640,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .btn-lines.ofertas { width: 145px; }
 
 /*@jimmy*/
-.btn-black, .menu-booking-slider ul li a, .items-servicios li:hover .overlay, #mis-reservas form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.btn-black, .menu-booking-slider ul li a, .items-servicios li:hover .overlay, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .booking-form select, .mejores-ofertas select, #hotel-select-agenda { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -1951,9 +1951,9 @@ footer.row { background: #333333; max-width: none; }
  Reservar
 
 ---------------------------------------------------------------------*/
-#mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 2000; width: 100%; height: 100%; }
+#mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; }
 
-.overlay { z-index: 1000; background-color: #FFF !important; position: fixed; }
+.overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
 
 #icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -42px; right: 0; }
@@ -1962,16 +1962,19 @@ footer.row { background: #333333; max-width: none; }
  #mis-reservas
 
 ---------------------------------------------------------------------*/
-#mis-reservas { width: 320px; padding: 20px; z-index: 3000; background-color: #FFF; position: fixed; color: #333333; margin-left: -160px; left: 50%; top: 25%; }
-#mis-reservas h3 { font-size: 18px; line-height: 18px; margin-bottom: 15px; }
-#mis-reservas p { font-size: 14px; line-height: 20px; margin-bottom: 5px; }
-#mis-reservas form { margin-top: 30px; }
-#mis-reservas form p:first-child { margin-bottom: 10px; }
-#mis-reservas form label { font-weight: bold; font-size: 13px; width: 30%; text-align: right; float: left; margin-top: 10px; height: 40px; line-height: 30px; }
-#mis-reservas form input { width: 65%; height: 40px; border: 1px solid #333333; float: right; }
-#mis-reservas form input[type="submit"] { background: black url("../images/white-arrow.png") no-repeat 95px center; height: 50px; border: none; color: #fff; padding: 0 53px 0 19px; display: block; width: 120px; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; }
-#mis-reservas form input[type="submit"]:hover { background-color: #dc1c4d; }
-#mis-reservas a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 5px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
+.popUp { width: 320px; padding: 20px; z-index: 2000; background-color: #FFF; position: fixed; color: #333333; margin-left: -160px; left: 50%; top: 25%; }
+.popUp h3 { font-size: 18px; line-height: 18px; margin-bottom: 15px; text-transform: uppercase; }
+.popUp p { font-size: 14px; line-height: 20px; margin-bottom: 5px; }
+.popUp form { margin-top: 30px; }
+.popUp form p:first-child { margin-bottom: 10px; }
+.popUp form label { font-weight: bold; font-size: 13px; width: 30%; text-align: right; float: left; margin-top: 10px; height: 40px; line-height: 30px; }
+.popUp form input { width: 65%; height: 40px; border: 1px solid #333333; float: right; }
+.popUp form input[type="submit"] { background: black url("../images/white-arrow.png") no-repeat 95px center; height: 50px; border: none; color: #fff; padding: 0 53px 0 19px; display: block; width: 120px; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; }
+.popUp form input[type="submit"]:hover { background-color: #dc1c4d; }
+
+#contra .btn-black { width: 210px; background: black url("../images/white-arrow.png") no-repeat 210px center; }
+
+#agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
 p.lead { font-size: 1.21875em; line-height: 1.6; }
 

@@ -89,7 +89,7 @@
 		  </form>
 		</div>
 
-    <div id="mis-reservas">
+    <div class="popUp" id="agencia">
       <h3>AGENCIAS</h3>
       <p>Intoduce tu usuario y password y disfruta de las ventajas que te ofrecemos.</p>
       <form class="clearfix">
@@ -329,10 +329,12 @@
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/foundation.topbar.js"></script>
+  <script src="javascripts/main.js"></script>
 	
   
   <script>
     $(document).foundation();
+     $('.popUp').siblings('.booking-form').css('z-index','500');
   </script>
 </body>
 </html>
