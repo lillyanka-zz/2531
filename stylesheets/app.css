@@ -1934,6 +1934,7 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle .btn-black { width: 185px; margin: inherit; background: black url("../images/white-arrow.png") no-repeat 150px center; }
 .info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
+.info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; }
 
 /*----------------------------------------------------------------------
  Eventos
