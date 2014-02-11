@@ -989,7 +989,7 @@ footer.row{
           font-size: 14px;
           text-transform: uppercase;
         }
-        .btn-black{width:185px;margin:inherit;background:black url("../images/white-arrow.png") no-repeat  150px center}
+        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
         + .btn-lines{margin-bottom:30px;text-align:center}
     .info{
@@ -1008,11 +1008,61 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 .eventos-title{margin-bottom:50px;
-  .btn-black{width: 260px;margin: initial;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
+  .btn-black{width: 260px;margin: 0;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
 + .slider-destinos-ciudad{margin-bottom:20px;}
 }
 
 .items-eventos{
-  .btn-black{width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
+  .btn-black{text-align:left;width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
   h5{margin-bottom:5px; }
+}
+
+
+/*----------------------------------------------------------------------
+
+                             Reservar
+
+---------------------------------------------------------------------*/
+#mask{position:fixed;top:0;left:0;background:rgba(0,0,0,0.6);z-index:2000;width:100%;height:100%;}
+
+
+
+.overlay{z-index:1000;background-color: #FFF !important;position:fixed;
+    select{border: 1px solid #cccccc;}
+}
+
+#icon-close{position:absolute; display:block;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px; top:-42px;;right:0;}
+
+
+/*----------------------------------------------------------------------
+
+                             #mis-reservas
+
+---------------------------------------------------------------------*/
+#mis-reservas{width:320px;padding:20px;z-index:3000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
+  h3{font-size:18px;line-height:18px;margin-bottom:15px;  }
+  p{font-size:14px;line-height:20px;margin-bottom:5px; }
+  form{margin-top:30px; 
+      p:first-child{margin-bottom:10px;}
+      label{font-weight: bold;font-size:13px;width:30%;text-align:right;float:left;margin-top:10px;height:40px;line-height:30px }
+      input{width:65%;height:40px;border: 1px solid #333333;float:right;}
+      input[type="submit"]{
+        background: black url("../images/white-arrow.png") no-repeat 95px center;
+          height: 50px;
+          border: none;
+          color: #fff;
+          padding: 0 53px 0 19px;
+          display: block;
+          width: 120px;
+          line-height: 50px;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 0.75em;
+          margin: 0 auto;
+          @extend %trans;
+          &:hover{background-color:$pink;
+            }
+    }
+  }
+  a{border-top:1px solid black;border-bottom:1px solid black;padding:5px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
 }
