@@ -24,73 +24,51 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-<!--********************************************************
+  <!--********************************************************
                         Header TOP  nav Menu
   ********************************************************-->
-  <div class="row">
-    <div class="left-tools">
-      <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
-      <a href="#">Contacto</a>
-    </div>
-    <!--Logo icono-->
-    <img src="images/logo-icono.png" alt="" class="logo-icono">
-    <ul class="menu-top right">
-      <li><a href="#">Español</a></li>
-      <li><a href="#">Empresas</a></li>
-      <li><a href="#">Agencias</a></li>
-      <li><a href="#">Mis Reservas</a></li>
-    </ul>
-  </div> 
-
-  <div class="row main-menu">
-    <nav class="clearfix">
-      <a href="#" class="active">Hoteles <span></span></a>
-      <a href="#">Ofertas <span></span></a>
-      <a href="#">Destinos <span></span></a>
-      <a href="#">Eventos &amp; Reuniones <span></span></a>
-      <a href="#">Rafael Hoteles <span></span></a>
-      <a href="#">Reservas <span></span></a>
-    </nav>
-  </div><!-- /row -->
+	<div class="row">
+	  <div class="left-tools">
+	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+	    <a href="#">Contacto</a>
+	  </div>
+	  <ul class="menu-top right">
+	    <li><a href="#">Español</a></li>
+	    <li><a href="#">Empresas</a></li>
+	    <li><a href="#">Agencias</a></li>
+	    <li><a href="#">Mis Reservas</a></li>
+	  </ul>
+	</div> 
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
-  <div class="booking-slider tall">
+  <div class="booking-slider">
     <div class="row ">
       <div>
         <div class="slide">
-          <img src="images/hotel-home.jpg" alt="" />
-          <a href="" class="btn-galeria">Galer&iacute;a fotogr&aacute;fica</a>
+          <img src="images/slider-mejores-ofertas.jpg" alt="" />
+          <div class="slide-text-header">
+            <h3>Consulte <strong>Nuestras ofertas</strong></h3>
+            <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
+          </div>
         </div>
       </div><!-- /text -->
       <div class=" booking-form">
         <h3 class="lines">Reservas</h3>
         <form action="">
           <select id="hotel-select">
-            <option>Todos los hoteles</option>
+            <option>Selecciona Hotel</option>
           </select>
           <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
-          <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="text" placeholder="COD PROMO" name="checkout" id="codpromo" />
-          <input type="button" value="BUSCAR" />
+          <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" class="datepicker" />
+          <input type="button" value="RESERVAR" />
         </form>
       </div><!-- /form -->
-      <div class="menu-booking-slider">
-        <img src="images/log-negro.png">
-        <ul>
-          <li><a href="#" class="active">El hotel </a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Ubicación </a></li>
-          <li><a href="#">Habitaciones </a></li>
-          <li><a href="#">Spa </a></li>
-          <li><a href="#">Restaurantes </a></li>
-          <li><a href="#">Celebraciones</a></li>
-          <li><a href="#">Reuniones </a></li>
-          <li><a href="#">Servicios</a></li>
-        </ul>
-      </div>
     </div><!-- /row -->
   </div>
+
+  <div id="mask2"></div><!-- /cambiar a mask cuando todo este listo -->
+
    <!--********************************************************
                         BREADCRUMB
   ********************************************************-->
@@ -99,10 +77,8 @@
         <div class="centered" >
           <div>
             <ul class="clearfix left breadcumbs">
-              <li><a href="index.html">Incio > </a></li>
-              <li><a href="index.html">Hoteles > </a></li>
-              <li><a href="index.html">Rafaelhoteles Badalona > </a></li>
-              <li><a href="#" class="active">El Hotel</a></li>
+              <li><a href="index.html">Incios > </a></li>
+              <li><a href="#" class="active">ofertas</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -116,32 +92,28 @@
   </div><!-- /sub menu -->	
   
    <!--********************************************************
-                           text 
-     ********************************************************-->
-   
-     <div class="row">
-       <div class="centered">
-         <div class="left hotel-info">
-           <h3>Rafaelhoteles Badalona</h3>
-           <p>El hotel está próximo a la zona comercial conocida como la “Calle del Mar” y al "Dalt de la Vila", nombre con el que se conoce al casco antiguo de la ciudad, al Museo de Badalona así como a los restos romanos de la antigua "Baetulo". Destaca su proximidad al Centro Internacional de Congresos de Badalona (BCIN), un espacio de referencia para la celebración de encuentros profesionales.</p>
-           <address>
-           <strong>Dirección:</strong> Avenida de Navarra, 6-8. 08911 Badalona<br />
-           <strong>Teléfono:</strong> +34 93 184 79 00<br />
-           <strong>E-mail:</strong> badalona@rafaelhoteles.com</address>
-         </div>
-         <div class="ubicacion right">
-           <img src="images/mapa.jpg" alt="" />
-           <a href="" class="btn-black">Ver mapa</a>
-         </div>
-       </div>
-     </div><!-- /row -->
-     
-    <div class="row middle ofertas">
-      <div class="centered">
-        <div class="left ofertas">
-          <h2 class="lines">Ofertas</h2>
-          <span class="note">La mejor forma de disfrutar de nuestro hotel</span>
-          <ul class="ofertas">
+                        Mejores ofertas 
+  ********************************************************-->
+  <div class="row mejores-ofertas bgGray">
+    <div class="centered">
+      <div class="row title-mejores-ofertas">
+        <div class="centered">
+          <div class="left">
+           <h2>LAS MEJORES OFERTAS</h2>
+           <span>Precios y descuentos pensados especialmente para ti.</span>
+           </div>
+           <div class="right select">
+               <select>
+                 <option>Filtrar por destino </option>
+                 <option value="1">1 </option>
+                 <option value="2">2 </option>
+               </select>
+           </div>
+        </div>
+      </div> 
+      <div class="row ofertas">
+        <div class="wood-parent">
+          <ul class="ofertas wood">
             <li>
               <div class="top">
                 <img src="images/ofertas1.jpg" alt="" />
@@ -166,54 +138,60 @@
                 <a href="" class="btn-black">Reservar</a>
               </div>
             </li>
+            <li>
+              <div class="top">
+                <img src="images/ofertas3.jpg" alt="" />
+                <div class="precio"><span class="desde">Dto.</span><span class="price">15%</span></div>
+              </div>
+              <div class="bottom">
+                <h4>Reserva Anticipada</h4>
+                <h5>todos los hoteles</h5>
+                <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
+                <a href="" class="btn-black">Reservar</a>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <img src="images/ofertas1.jpg" alt="" />
+                <div class="precio"><span class="desde">Desde</span><span class="price">65€</span></div>
+              </div>
+              <div class="bottom">
+                <h4>Fines de semana únicos</h4>
+                <h5>Hoteles Madrid y Barcelona</h5>
+                <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
+                <a href="" class="btn-black">Reservar</a>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <img src="images/ofertas2.jpg" alt="" />
+                <div class="precio"><span class="desde">Desde</span><span class="price">75€</span></div>
+              </div>
+              <div class="bottom">
+                <h4>Verano refrescante en Salamanca</h4>
+                <h5>Salamanca forum resort</h5>
+                <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
+                <a href="" class="btn-black">Reservar</a>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <img src="images/ofertas3.jpg" alt="" />
+                <div class="precio"><span class="desde">Dto.</span><span class="price">15%</span></div>
+              </div>
+              <div class="bottom">
+                <h4>Reserva Anticipada</h4>
+                <h5>todos los hoteles</h5>
+                <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
+                <a href="" class="btn-black">Reservar</a>
+              </div>
+            </li>
           </ul>
-          <a href="" class="btn-lines ofertas">Ver todas las ofertas</a>
         </div>
-        <div class="right opiniones">
-          <h2 class="lines pink">Opiniones</h2>
-          <span class="note pink">Nuestros clientes hablan</span>
-          <div class="trustscore"><img src="images/trustscore.png" alt="" /></div>
-          <div class="testimonial">
-            <span>Opiniones:</span>
-            <span class="score">8/10</span><br />
-            <img src="images/progressbar.jpg" alt="" />
-            <h5>Sitio vlogs</h5>
-            <strong>15/07/2013</strong>
-            <blockquote>Sin Comentarios.. Fenomenal, no se puede pedir mas de un Hotel. Me quedaria a vivir allí.</blockquote>
-            <a href="" class="btn-lines">Ver todas las opiniones</a>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-
-  <div class="row eventos">
-    <div class="centered-large">
-      <div class="slide">
-        <img src="images/restaurante.jpg" alt="" />
-        <div class="slide-text-center">
-          <h2 class="white-lines">RESTAURANTE EL BADIU</h2>
-          <span class="slide-caption">Los mejores platos de la cocina mediterránea en el centro de Badalona.</span>
-          <a class="button" href="#">Ver m&aacute;s</a>
-        </div>
-      </div>
-    </div>
-  </div><!-- /row -->
-  
-  <div class="row servicios">
-    <div class="centered">
-      <h2 class="lines">Servicios</h2>
-      <span class="note">Disfruta de la mejor estancia en Barcelona</span>
-      <ul class="grid-5">
-        <li><img src="images/room-service.png" alt="" /></li>
-        <li><img src="images/reuniones.png" alt="" /></li>
-        <li><img src="images/wifi.png" alt="" /></li>
-        <li><img src="images/buffet.png" alt="" /></li>
-        <li><img src="images/ebike.png" alt="" /></li>
-      </ul>
-      <a href="" class="btn-black">VER TODOS LOS SERVICIOS</a>
+      </div><!-- /row -->
     </div>
   </div>
+
   <!--********************************************************
                         social 
   ********************************************************-->
@@ -343,11 +321,22 @@
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/foundation.topbar.js"></script>
+  <script src="javascripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="javascripts/main.js"></script>
-	
+  
   
   <script>
     $(document).foundation();
+      
+     $('.popUp').siblings('.booking-form').css('z-index','500');
+     $( ".datepicker" ).datepicker();
+     
+     $( ".datepicker").focus(function(){
+        // $('.booking-form').css('z-index','500');
+         $('#mask2').css('opacity',1);
+         // $('.booking-form').css('z-index','500');
+     });//realizar onfucos para quitar
+     
   </script>
 </body>
 </html>

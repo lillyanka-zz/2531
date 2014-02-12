@@ -167,10 +167,14 @@ $pink: #dc1c4d;
 .servicios{
   background: #f4f4f4 url('../images/mainbg.jpg') repeat left top;
   max-width: none;
+  text-align: center;
+  padding: 40px 0 60px;
   h2{
     width: 310px;
   }
   ul{
+  margin-bottom: 30px;
+  overflow: hidden;
     li{
       float: left;
       width: 20%;
