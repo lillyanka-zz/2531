@@ -489,22 +489,22 @@ ul.ofertas{
       text-transform: uppercase;
       -webkit-font-smoothing: antialiased;
       font-size: 0.938em;
-    }
-    .active{
-      text-decoration: underline;
-
-      span{
-        position: absolute;
-        top:40px;
-        width: 20px;
-        height: 13px;
-        background: url(../images/triangle-menu-active.png) no-repeat center;
-        left: 50%;
-        -webkit-transform:translate(-50%, -50%);
-        -moz-transform:translate(-50%, -50%);
-        -ms-transform:translate(-50%, -50%);
-        transform:translate(-50%, -50%);
-
+      &.active, &:hover{
+        text-decoration: underline;
+  
+        span{
+          position: absolute;
+          top:40px;
+          width: 20px;
+          height: 13px;
+          background: url(../images/triangle-menu-active.png) no-repeat center;
+          left: 50%;
+          -webkit-transform:translate(-50%, -50%);
+          -moz-transform:translate(-50%, -50%);
+          -ms-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+  
+        }
       }
     }
   }
@@ -1098,6 +1098,13 @@ footer.row{
 
 }
 
+//contacto
+#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
+  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
+  a{color:#dc1c4d;font-size:14px;line-height:14px;}
+  .line{background: url('../images/black-lines.png') repeat-x left center;}
+  
+ }
 /*----------------------------------------------------------------------
 
                    PRESENTACION @Luis
@@ -1120,18 +1127,50 @@ footer.row{
 }
 
 //Presentacion main
+
 .contenido-presentacion{
   width: 605px;
   margin-right:35px;
 }
 
-.presentacion-video{
-  text-align: center;
+.presentacion{
+  width: 828px;
+  margin: 0 auto;
+
+  h2.lines{
+  width: 620px;
+  }
 }
 
-.presentacion-video iframe{
-  margin: 0 auto;
+.presentacion-video{
+  text-align: center;
+  
+  iframe{
   border: 10px solid #fff; 
+  }
+}
+//filosofia main
+.filosofia-vision{
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  .lines{
+  width: 276px;
+  }
+}
+.filosofia-contenedor{
+  width: 420px;
+  margin: 0 auto;
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .note{
+    margin-bottom: 8px;
+    text-align: center;
+  } 
 }
 
 
@@ -1142,6 +1181,7 @@ footer.row{
   .slide-text-header{bottom:100px;background-color: transparent;text-align:right;
     h1{font-size:36px;line-height:36px;color:white;text-align:right; }
    }
+<<<<<<< HEAD
 } 
 
 //contacto
@@ -1151,4 +1191,7 @@ footer.row{
   .line{background: url('../images/black-lines.png') repeat-x left center;}
   
  }
+=======
+}
+>>>>>>> 68129f71313eca5c39c7553f3d43a63e744bcb2f
 
