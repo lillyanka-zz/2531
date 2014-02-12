@@ -1647,7 +1647,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .eventos h2 { width: 675px; margin: 0 auto; }
 
-.servicios { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; max-width: none; }
+.servicios { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; max-width: none; text-align: center; padding: 40px 0 60px; }
 .servicios h2 { width: 310px; }
 .servicios ul { margin-bottom: 30px; overflow: hidden; }
 .servicios ul li { float: left; width: 20%; text-align: center; }
@@ -1690,7 +1690,7 @@ address { font-size: 0.875em; line-height: 1.7em; }
 
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
-.btn-black { background: black url("../images/white-arrow.png") no-repeat 101px center; height: 50px; border: none; color: #fff; padding: 0 53px 0 19px; display: block; width: 128px; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; }
+.btn-black { background: black url("../images/white-arrow.png") no-repeat 95% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
 .btn-black:hover { background-color: #dc1c4d; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: block; height: 28px; width: 150px; margin: 30px auto 0; overflow: hidden; text-align: center; }
@@ -1706,7 +1706,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
-.btn-black, .menu-booking-slider ul li a, .items-servicios li:hover .overlay, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.menu-booking-slider ul li a, .items-servicios li:hover .overlay, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .mejores-ofertas select, #hotel-select-agenda { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -1728,7 +1728,7 @@ select::-ms-expand { display: none; }
 .wood-parent { position: relative; }
 
 ul.ofertas { margin: 0 auto; width: 940px; overflow: hidden; float: left; }
-ul.ofertas li { margin-bottom: 30px; padding-bottom: 40px; width: 300px; float: left; margin-right: 20px; background: #fff; }
+ul.ofertas li { margin-bottom: 30px; padding-bottom: 40px; width: 300px; float: left; margin-right: 20px; background: #fff; text-align: center; }
 ul.ofertas li:last-child { margin-right: 0; }
 ul.ofertas li .top { position: relative; }
 ul.ofertas li .top img { width: 100%; }
@@ -1875,9 +1875,9 @@ footer.row { background: #333333; max-width: none; }
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; }
 .menu-booking-slider img { border-bottom: 1px solid transparent; display: block; }
 .menu-booking-slider ul { background-color: rgba(0, 0, 0, 0.5); padding: 30px; height: 100%; }
-.menu-booking-slider ul li { margin-top: 10px; }
+.menu-booking-slider ul li { margin-top: 10px; height: 20px; }
 .menu-booking-slider ul li:first-child { margin-top: 0; }
-.menu-booking-slider ul li a { color: #cccccc; font-size: 13px; text-transform: uppercase; }
+.menu-booking-slider ul li a { color: #cccccc; font-size: 13px; text-transform: uppercase; font-weight: 700; }
 .menu-booking-slider ul li a:hover { color: white; }
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 

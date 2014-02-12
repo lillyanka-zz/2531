@@ -140,19 +140,17 @@ span.note{
 }
 
 .btn-black{
-  background: black url("../images/white-arrow.png") no-repeat 101px center;
+  background: black url("../images/white-arrow.png") no-repeat 95% center;
   height: 50px;
   border: none;
   color: #fff;
-  padding: 0 53px 0 19px;
-  display: block;
-  width: 128px;
+  width: auto;
   line-height: 50px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.75em;
   margin: 0 auto;
-  @extend %trans;
+  padding: 15px 38px 15px 10px;
   &:hover{background-color:$pink; }
 }
 
@@ -275,6 +273,7 @@ ul.ofertas{
       float: left;
       margin-right: 20px;
       background: #fff;
+      text-align: center;
       &:last-child{
         margin-right: 0;
       }
@@ -862,9 +861,9 @@ footer.row{
 .menu-booking-slider{height:240px;height:100%;position:absolute;left:14%;
   img{border-bottom:1px solid transparent;display: block;}
   ul{background-color: rgba(black,0.5);padding:30px;height:100%;
-    li{margin-top:10px;
+    li{margin-top:10px; height: 20px;
       &:first-child{margin-top:0;}
-      a{color:#cccccc;font-size:13px;text-transform: uppercase;@extend %trans;
+      a{color:#cccccc;font-size:13px;text-transform: uppercase;@extend %trans; font-weight: 700;
         &:hover{color:white;}
         &.active{color:white;cursor: default;}
       }
