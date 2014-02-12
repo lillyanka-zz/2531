@@ -1,0 +1,71 @@
+$pink: #dc1c4d;
+
+h2.lines{
+  width: 400px;
+}
+.row.hotel{
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  background: #fff;
+  .row.hotel-content{
+    background: #f4f4f4;
+    width: 100%;
+    max-width: none;
+    padding: 40px 0;
+    .white-bg{
+      background: #fff;
+    }
+    .hotel-img{
+      float: left;
+      margin-right: 20px;
+    }
+    .hotel-description{
+      width: 420px;
+      float: left;
+      padding-top: 20px;
+      h5{
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      p{
+        font-style: italic;
+        color: #666;
+        font-size: 0.875em;
+      }
+      .opiniones{
+        margin-top: 20px;
+        span{
+          font-weight: bold;
+          font-size: 0.875em;
+          &.score{
+            color: $pink;
+            font-size: 1.125em;
+          }
+        }
+      }
+    }
+    .hotel-price{
+      width: 140px;
+      margin-right: 20px;
+      .info{
+        width: 100%;
+        padding-top: 45px;
+      }
+      span.price,span.desde{color:black;display: block;text-align: center; 
+      }
+        span.price{margin-bottom:30px;}
+      span.desde{font-size: 0.688em;font-weight: 600;text-transform: uppercase; display: block; text-align: center;
+    }
+      span.price{font-weight: 700;font-size: 2.25em;text-decoration: none;line-height: 1.2em;}
+      .btn-black{
+        width: 140px;
+        padding: 0 34px 0 30px;
+        background: black url("../images/white-arrow.png") no-repeat 110px center;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}

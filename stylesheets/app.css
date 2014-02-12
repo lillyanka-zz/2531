@@ -1604,6 +1604,26 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+h2.lines { width: 400px; }
+
+.row.hotel { max-width: none; width: 100%; margin: 0; background: #fff; }
+.row.hotel .row.hotel-content { background: #f4f4f4; width: 100%; max-width: none; padding: 40px 0; }
+.row.hotel .row.hotel-content .white-bg { background: #fff; }
+.row.hotel .row.hotel-content .hotel-img { float: left; margin-right: 20px; }
+.row.hotel .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
+.row.hotel .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
+.row.hotel .row.hotel-content .hotel-description p { font-style: italic; color: #666; font-size: 0.875em; }
+.row.hotel .row.hotel-content .hotel-description .opiniones { margin-top: 20px; }
+.row.hotel .row.hotel-content .hotel-description .opiniones span { font-weight: bold; font-size: 0.875em; }
+.row.hotel .row.hotel-content .hotel-description .opiniones span.score { color: #dc1c4d; font-size: 1.125em; }
+.row.hotel .row.hotel-content .hotel-price { width: 140px; margin-right: 20px; }
+.row.hotel .row.hotel-content .hotel-price .info { width: 100%; padding-top: 45px; }
+.row.hotel .row.hotel-content .hotel-price span.price, .row.hotel .row.hotel-content .hotel-price span.desde { color: black; display: block; text-align: center; }
+.row.hotel .row.hotel-content .hotel-price span.price { margin-bottom: 30px; }
+.row.hotel .row.hotel-content .hotel-price span.desde { font-size: 0.688em; font-weight: 600; text-transform: uppercase; display: block; text-align: center; }
+.row.hotel .row.hotel-content .hotel-price span.price { font-weight: 700; font-size: 2.25em; text-decoration: none; line-height: 1.2em; }
+.row.hotel .row.hotel-content .hotel-price .btn-black { width: 140px; padding: 0 34px 0 30px; background: black url("../images/white-arrow.png") no-repeat 110px center; height: 40px; line-height: 40px; }
+
 /*--------------------------------*/
 /* CLASES Y VARIABLES RECICLABLES */
 /*--------------------------------*/
@@ -1622,6 +1642,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 .two-col { width: 470px; overflow: hidden; }
 
 .fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
+
+p { font-size: 0.875em !important; }
 
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
@@ -1647,6 +1669,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 select::-ms-expand { display: none; }
 
 .booking-form { background: rgba(255, 255, 255, 0.5); position: absolute; z-index: 2000; border: 1px solid rgba(255, 255, 255, 0.75); }
+.booking-form select { width: 100%; padding: 5px; margin: 1px 10px 0 0; background: white url("../images/down-arrow.png") no-repeat 200px center; text-transform: none; font-weight: normal; }
 .booking-form input[type="text"] { font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; }
 .booking-form input[type="button"] { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
