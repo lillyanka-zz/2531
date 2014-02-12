@@ -1141,9 +1141,9 @@ footer.row{
 
 //Presentacion main
 
-.contenido-presentacion{
-  width: 605px;
-  margin-right:35px;
+.contenido-presentacion, .contenido-calidad{
+  width: 620px;
+  margin-right:20px;
 }
 
 .presentacion{
@@ -1230,6 +1230,36 @@ footer.row{
     margin-right: 40px; 
   }
 }
+
+//Calidad main
+.contenido-calidad{
+  li{
+    margin-bottom: 35px;
+
+    span{
+      font-weight: bold;
+    }
+    :before{
+    content: "• ";
+    color: #dc1c4d;
+    }
+  }
+
+  p{
+    margin-bottom: 40px; 
+  }
+}
+
+.calidad-ilustracion, .medioAmbiente-ilustracion{
+  width: 300px;
+
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px; 
+  }
+}
+
 
 //404
 .page-error{margin-bottom:20px; 

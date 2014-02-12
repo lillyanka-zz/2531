@@ -1,3 +1,4 @@
+@charset "CP850";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -2015,7 +2016,7 @@ footer.row { background: #333333; max-width: none; }
 
 .logo-icono { position: absolute; left: 50%; top: 30px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.contenido-presentacion { width: 605px; margin-right: 35px; }
+.contenido-presentacion, .contenido-calidad { width: 620px; margin-right: 20px; }
 
 .presentacion { width: 828px; margin: 0 auto; }
 .presentacion h2.lines { width: 620px; }
@@ -2043,6 +2044,14 @@ footer.row { background: #333333; max-width: none; }
 .valores-top li + li { margin-left: 20px; }
 
 .valores-bottom li:first-child { margin-left: 150px; margin-right: 40px; }
+
+.contenido-calidad li { margin-bottom: 35px; }
+.contenido-calidad li span { font-weight: bold; }
+.contenido-calidad li :before { content: "• "; color: #dc1c4d; }
+.contenido-calidad p { margin-bottom: 40px; }
+
+.calidad-ilustracion, .medioAmbiente-ilustracion { width: 300px; }
+.calidad-ilustracion img, .medioAmbiente-ilustracion img { display: block; margin: 0 auto; margin-bottom: 35px; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
