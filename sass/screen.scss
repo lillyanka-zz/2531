@@ -1098,13 +1098,6 @@ footer.row{
 
 }
 
-//contacto
-#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
-  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
-  a{color:#dc1c4d;font-size:14px;line-height:14px;}
-  .line{background: url('../images/black-lines.png') repeat-x left center;}
-  
- }
 /*----------------------------------------------------------------------
 
                    PRESENTACION @Luis
@@ -1181,5 +1174,12 @@ footer.row{
   .slide-text-header{bottom:100px;background-color: transparent;text-align:right;
     h1{font-size:36px;line-height:36px;color:white;text-align:right; }
    }
+} 
+
+//contacto
+#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
+  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
+  a{color:#dc1c4d;font-size:14px;line-height:14px;}
+  .line{background: url('../images/black-lines.png') repeat-x left center;}
 }
 
