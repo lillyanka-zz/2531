@@ -2001,6 +2001,20 @@ footer.row { background: #333333; max-width: none; }
 .filosofia-contenedor img { display: block; margin: 0 auto; }
 .filosofia-contenedor .note { margin-bottom: 8px; text-align: center; }
 
+.filosofia-mision { padding: 60px 0; }
+.filosofia-mision .lines { width: 266px; }
+
+.filosofia-valores .lines { width: 340px; }
+.filosofia-valores .filosofia-contenedor { margin-bottom: 45px; }
+
+.valores-contenedor li { width: 300px; text-align: center; }
+.valores-contenedor li span { color: #666666; line-height: 16px; }
+.valores-contenedor li h4 { font-size: 18px; margin-bottom: 10px; }
+
+.valores-top li + li { margin-left: 20px; }
+
+.valores-bottom li:first-child { margin-left: 150px; margin-right: 40px; }
+
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
 .page-error .slide-text-header { bottom: 100px; background-color: transparent; text-align: right; }

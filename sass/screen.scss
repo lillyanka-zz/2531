@@ -1166,6 +1166,50 @@ footer.row{
   } 
 }
 
+.filosofia-mision{
+  padding:60px 0;
+
+  .lines{
+    width: 266px;
+  }
+}
+
+.filosofia-valores{
+  .lines{
+    width: 340px;
+  }
+
+  .filosofia-contenedor{
+    margin-bottom: 45px; 
+  }
+}
+
+.valores-contenedor li{
+  width: 300px;
+  text-align: center;
+  
+  span{
+    color: #666666;
+    line-height: 16px;
+  }
+
+  h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.valores-top li + li{
+  margin-left: 20px; 
+}
+
+.valores-bottom{
+  li:first-child{
+    margin-left: 150px;
+    margin-right: 40px; 
+  }
+}
 
 //404
 .page-error{margin-bottom:20px; 
