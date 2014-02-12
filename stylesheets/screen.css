@@ -147,7 +147,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 .row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
-.row.main-menu nav a { position: relative; margin: 20px 16px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
+.row.main-menu nav a { position: relative; margin: 20px 14px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
 .row.main-menu nav .active { text-decoration: underline; }
 .row.main-menu nav .active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
@@ -365,3 +365,9 @@ footer.row { background: #333333; max-width: none; }
 .main-menu + .booking-slider { margin-top: 18px; }
 
 .logo-icono { position: absolute; left: 50%; top: 30px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.contenido-presentacion { width: 605px; margin-right: 35px; }
+
+.presentacion-video { text-align: center; }
+
+.presentacion-video iframe { border: 10px solid #fff; }

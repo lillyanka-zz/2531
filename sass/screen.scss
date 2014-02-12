@@ -476,7 +476,7 @@ ul.ofertas{
     margin: 0 auto;
     a{
       position:relative;
-      margin: 20px 16px;
+      margin: 20px 14px;
       float: left;
       text-align: center;
       color: #333;
@@ -1038,10 +1038,6 @@ footer.row{
   margin-top: 18px;
 }
 
-.main-menu .active{
-
-}
-
 .logo-icono{
   position: absolute;
   left: 50%;
@@ -1051,4 +1047,18 @@ footer.row{
   -moz-transform:translate(-50%, -50%);
   -ms-transform:translate(-50%, -50%);
   transform:translate(-50%, -50%);
+}
+
+//Presentacion main
+.contenido-presentacion{
+  width: 605px;
+  margin-right:35px;
+}
+
+.presentacion-video{
+  text-align: center;
+}
+
+.presentacion-video iframe{
+  border: 10px solid #fff; 
 }
