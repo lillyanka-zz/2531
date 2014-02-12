@@ -1221,6 +1221,9 @@ footer.row{
 }
 
 //Presentacion main
+.subPage-title{
+  font-size: 30px;
+}
 
 .contenido-presentacion, .contenido-calidad{
   width: 620px;
@@ -1340,6 +1343,57 @@ footer.row{
     margin-bottom: 35px; 
   }
 }
+
+//noticias
+.contenido-noticias{
+  padding-top: 56px;
+
+  & + .btn-lines.boldText{
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+
+.contenido-noticias article{
+  margin-bottom: 56px;
+  img{
+    width: 212px;
+  }
+  aside{
+    width: 713px;
+    margin-left: 15px;
+
+    h4{
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    > span{
+      font-size: 12px; 
+      color: #dc1c4d;
+      font-weight: bold;
+    }
+
+    p{
+      margin: 8px 0;
+      font-style: italic;
+      color: #666666;
+    }
+
+    a{
+      width: 119px;
+      height: 40px;
+      padding: 12px 20px;
+      line-height: 19px;
+      background-position-x: 90px;
+    }
+
+  }
+}
+
+
 
 
 //404
