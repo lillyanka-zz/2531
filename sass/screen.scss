@@ -1098,7 +1098,6 @@ footer.row{
 
 }
 
-
 /*----------------------------------------------------------------------
 
                    PRESENTACION @Luis
@@ -1134,3 +1133,11 @@ footer.row{
   margin: 0 auto;
   border: 10px solid #fff; 
 }
+
+//contacto
+#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
+  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
+  a{color:#dc1c4d;font-size:14px;line-height:14px;}
+  .line{background: url('../images/black-lines.png') repeat-x left center;}
+  
+ }

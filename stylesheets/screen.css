@@ -387,3 +387,8 @@ footer.row { background: #333333; max-width: none; }
 #contra .btn-black { width: 210px; background: black url("../images/white-arrow.png") no-repeat 210px center; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
+
+#header-cont { font-size: 18px; line-height: 18px; margin-bottom: 20px; }
+#header-cont span { color: #666666; display: block; font-size: 14px; line-height: 14px; font-style: italic; }
+#header-cont a { color: #dc1c4d; font-size: 14px; line-height: 14px; }
+#header-cont .line { background: url("../images/black-lines.png") repeat-x left center; }

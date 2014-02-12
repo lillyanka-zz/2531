@@ -1992,6 +1992,11 @@ footer.row { background: #333333; max-width: none; }
 
 .presentacion-video iframe { margin: 0 auto; border: 10px solid #fff; }
 
+#header-cont { font-size: 18px; line-height: 18px; margin-bottom: 20px; }
+#header-cont span { color: #666666; display: block; font-size: 14px; line-height: 14px; font-style: italic; }
+#header-cont a { color: #dc1c4d; font-size: 14px; line-height: 14px; }
+#header-cont .line { background: url("../images/black-lines.png") repeat-x left center; }
+
 p.lead { font-size: 1.21875em; line-height: 1.6; }
 
 .subheader { line-height: 1.4; color: #6f6f6f; font-weight: 300; margin-top: 0.2em; margin-bottom: 0.5em; }
