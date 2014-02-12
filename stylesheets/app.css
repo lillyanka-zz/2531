@@ -2001,6 +2001,12 @@ footer.row { background: #333333; max-width: none; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
+#aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; overflow-y: scroll; height: 400px; }
+
+#scroll { overflow: scroll; }
+#scroll h1 { font-size: 14px; }
+#scroll p { font-size: 14px; }
+
 /*----------------------------------------------------------------------
  PRESENTACION @Luis
 
