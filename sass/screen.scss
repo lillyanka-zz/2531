@@ -480,7 +480,8 @@ ul.ofertas{
     width: 786px;
     margin: 0 auto;
     a{
-      padding: 20px 16px;
+      position:relative;
+      margin: 20px 14px;
       float: left;
       text-align: center;
       color: #333;
@@ -488,6 +489,23 @@ ul.ofertas{
       text-transform: uppercase;
       -webkit-font-smoothing: antialiased;
       font-size: 0.938em;
+    }
+    .active{
+      text-decoration: underline;
+
+      span{
+        position: absolute;
+        top:40px;
+        width: 20px;
+        height: 13px;
+        background: url(../images/triangle-menu-active.png) no-repeat center;
+        left: 50%;
+        -webkit-transform:translate(-50%, -50%);
+        -moz-transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%);
+
+      }
     }
   }
 }
@@ -1078,4 +1096,41 @@ footer.row{
 #agencia{
     a{border-top:1px solid black;border-bottom:1px solid black;padding:10px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
 
+}
+
+
+/*----------------------------------------------------------------------
+
+                   PRESENTACION @Luis
+
+---------------------------------------------------------------------*/
+//Menu de header
+.main-menu + .booking-slider{
+  margin-top: 18px;
+}
+
+.logo-icono{
+  position: absolute;
+  left: 50%;
+  top:30px;
+
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+}
+
+//Presentacion main
+.contenido-presentacion{
+  width: 605px;
+  margin-right:35px;
+}
+
+.presentacion-video{
+  text-align: center;
+}
+
+.presentacion-video iframe{
+  margin: 0 auto;
+  border: 10px solid #fff; 
 }
