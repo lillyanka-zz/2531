@@ -57,6 +57,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   overflow: hidden;
 }
 
+.pink{
+  color: $pink;
+}
+
 .fb_iframe_widget{
   display: block;
   position: relative;
@@ -84,6 +88,11 @@ h2.lines{
   text-transform: uppercase;
   line-height: 1em;
   margin: 0.5em auto 0;
+  &.pink{
+    background: $pink-lines-bg;
+    color: $pink;
+    font-size: 1.875em;
+  }
 }
 
 h3.lines{
@@ -97,6 +106,29 @@ h4{
   font-size: 1.125em;
   font-weight: normal;
   color: #000;
+}
+
+.btn-galeria{
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background: transparent url("../images/camera.png") no-repeat 188px center;
+  border: 2px solid;
+  color: #fff;
+  text-align: left;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  right: 124px;
+  bottom: 45px;
+  padding-left: 35px;
+}
+
+address{
+  font-size: 0.875em;
+  line-height: 1.7em;
 }
 
 span.note{
@@ -136,12 +168,24 @@ span.note{
   width: 150px;
   margin: 30px auto 0;
   overflow: hidden;
+  text-align: center;
   &.ofertas{
     width: 145px;
   }
 }
 
-
+.menu-booking-slider{height:240px;height:100%;position:absolute;left:14%; top:0;
+  img{border-bottom:1px solid transparent;display: block;}
+  ul{background-color: rgba(black,0.5);padding:30px;height:100%;
+    li{margin-top:10px;
+      &:first-child{margin-top:0;}
+      a{color:#cccccc;font-size:13px;text-transform: uppercase;@extend %trans;
+        &:hover{color:white;}
+        &.active{color:white;cursor: default;}
+      }
+    }
+  }
+}
       
 
 /*@jimmy*/
@@ -174,7 +218,18 @@ select::-ms-expand {display: none;}//ie remove appearance
   position: absolute;
   z-index: 2000;
   border: 1px solid rgba(255,255,255,0.75);
-    select{@extend %select-style;
+    select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      border: none;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 0.875em;
+      font-weight: 600;
+      -webkit-font-smoothing: antialiased;
+      color: $dark-gray; 
       width: 100%;
       padding: 5px;
       margin: 1px 10px 0 0;
@@ -212,6 +267,7 @@ ul.ofertas{
     margin: 0 auto;
     width: 940px;
     overflow: hidden;
+    float: left;
     li{
       margin-bottom: 30px;
       padding-bottom: 40px;
@@ -434,7 +490,6 @@ ul.ofertas{
       float: left;
       margin-right: 10px;
       background: #fff url('../images/calendar-icon.png') no-repeat 130px center;
-      
     }
    //saco placeholder en general type submit 
 
@@ -765,11 +820,37 @@ footer.row{
 /*helperclasesr*/
  
 
-
 .booking-slider{position: relative;height: 455px;overflow:hidden;
+  &.tall{
+    height: 475px;
+  }
   .booking-form{width:240px;right: 10%;top: 5%;padding:10px;
-    select{width: 100%;padding:5px 0;margin: 1px 10px 0 0;background: #fff url('../images/down-arrow.png') no-repeat 182px center;}
-    input[type="text"]{margin-top:10px; background: #fff url('../images/calendar-icon.png') no-repeat 173px center;border: none;}
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+        color: $dark-gray; 
+        width: 100%;
+        padding: 5px;
+        margin: 1px 10px 0 0;
+        background: white url("../images/down-arrow.png") no-repeat 200px center;
+        text-transform: none;
+        font-weight: normal;
+    }
+    h3.lines{
+      margin-top: 0;
+    }
+    input[type="text"]{margin-top:10px; background: #fff url('../images/calendar-icon.png') no-repeat 191px center;border: none;}
+    #codpromo{
+      background: #fff;
+    }
     input[type="button"]{width: 100%;margin-top: 10px;}
   }
   .slide{
@@ -1141,9 +1222,9 @@ footer.row{
 
 //Presentacion main
 
-.contenido-presentacion{
-  width: 605px;
-  margin-right:35px;
+.contenido-presentacion, .contenido-calidad{
+  width: 620px;
+  margin-right:20px;
 }
 
 .presentacion{
@@ -1230,6 +1311,36 @@ footer.row{
     margin-right: 40px; 
   }
 }
+
+//Calidad main
+.contenido-calidad{
+  li{
+    margin-bottom: 35px;
+
+    span{
+      font-weight: bold;
+    }
+    :before{
+    content: "• ";
+    color: #dc1c4d;
+    }
+  }
+
+  p{
+    margin-bottom: 40px; 
+  }
+}
+
+.calidad-ilustracion, .medioAmbiente-ilustracion{
+  width: 300px;
+
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px; 
+  }
+}
+
 
 //404
 .page-error{margin-bottom:20px; 

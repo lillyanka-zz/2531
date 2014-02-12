@@ -1,18 +1,22 @@
 $pink: #dc1c4d;
 
-h2.lines{
-  width: 400px;
-}
-.row.hotel{
+.row.city{
   max-width: none;
   width: 100%;
   margin: 0;
   background: #fff;
+  h2.lines{
+    width: 400px;
+    margin-bottom: 13px;
+  }
   .row.hotel-content{
-    background: #f4f4f4;
+    background: #f4f4f4 url('../images/mainbg.jpg') repeat left top;
     width: 100%;
     max-width: none;
-    padding: 40px 0;
+    padding: 40px 0 0;
+    &:last-child{
+      padding: 40px 0;
+    }
     .white-bg{
       background: #fff;
     }
@@ -66,6 +70,111 @@ h2.lines{
         height: 40px;
         line-height: 40px;
       }
+    }
+  }
+}
+
+.hotel-info{
+  width: 610px;
+}
+.ubicacion{
+  position: relative;
+  .btn-black{
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    width: 123px;
+    margin-left: -67px;
+    padding: 0 20px;
+    background: black url("../images/white-arrow.png") no-repeat 96px center;
+  }
+}
+
+.row.middle.ofertas{
+  background: #f4f4f4 url('../images/mainbg.jpg') repeat left top;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  .left.ofertas{
+    width: 640px;
+    border-right: 2px solid #fff;
+    padding: 40px 0;
+  }
+  .right.opiniones{
+    width: 300px;
+    padding-top: 55px;
+    h2{
+      width: 224px;
+    }
+    .trustscore{
+      width: 143px;
+      margin: 0 auto 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #333;
+    }
+    .testimonial{
+      text-align: center;
+      span{
+        font-weight: bold;
+        font-size: 0.875em;
+        &.score{
+          color: $pink;
+          font-size: 1.125em;
+        }
+      }
+      img{
+        margin-top: 10px;
+        margin-bottom: 37px;
+      }
+      h5{
+        color: #dc1c4d;
+        font-size: 0.688em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      strong{
+        font-size: 0.875em;
+      }
+      blockquote{
+        border: none;
+        font-size: 0.875em;
+        font-style: italic;
+        line-height: 1.8em;
+        &:before{
+          content: "\201C";
+          color: $pink;
+          font-size: 1.5em;
+        }
+        &:after{
+          content: "\201D";
+          color: $pink;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+.eventos{
+  h2{
+    width: 675px;
+    margin: 0 auto;
+  }
+}
+
+.servicios{
+  background: #f4f4f4 url('../images/mainbg.jpg') repeat left top;
+  max-width: none;
+  h2{
+    width: 310px;
+  }
+  ul{
+    li{
+      float: left;
+      width: 20%;
+      text-align: center;
     }
   }
 }
