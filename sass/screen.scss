@@ -629,13 +629,14 @@ ul.ofertas{
   & > div{
     width: 1240px;
     margin: 0 auto;
+    text-align: center;
   }
   h2{
     width: 330px;
   }
   .btn-black{
     width: 222px;
-    background: black url("../images/white-arrow.png") no-repeat 188px center;
+    background: black url("../images/white-arrow.png") no-repeat 95% center;
   }
   ul{
     overflow: hidden;
@@ -1106,13 +1107,17 @@ footer.row{
           font-size: 14px;
           text-transform: uppercase;
         }
-        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
+//        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
         + .btn-lines{margin-bottom:30px;text-align:center}
     .info{
       width: 66.66%;
       float: left;
       padding-right: 2%;
+      text-align: center;
+      p{
+        text-align: left;
+      }
     }
 }
 
