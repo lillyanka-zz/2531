@@ -1977,7 +1977,7 @@ footer.row { background: #333333; max-width: none; }
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
 .page-error { margin-bottom: 20px; }
-.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; }
+.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
 .page-error .slide-text-header { bottom: 100px; background-color: transparent; text-align: right; }
 .page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; }
 
