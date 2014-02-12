@@ -41,15 +41,18 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
 .centered{
   margin: 0 auto;
   width: 940px;
+  overflow: hidden;
 }
 
 .centered-large{
   margin: 0 auto;
   width: 1240px;
+  overflow: hidden;
 }
 
 .two-col{
   width: 470px;
+  overflow: hidden;
 }
 
 .fb_iframe_widget{
@@ -127,7 +130,7 @@ span.note{
   margin: 30px auto 0;
   overflow: hidden;
   &.ofertas{
-    width: 139px;
+    width: 145px;
   }
 }
 
@@ -155,6 +158,7 @@ span.note{
         -webkit-font-smoothing: antialiased;
         color: $dark-gray; 
 }
+
 select::-ms-expand {display: none;}//ie remove appearance
 
 
@@ -189,12 +193,13 @@ select::-ms-expand {display: none;}//ie remove appearance
     :-ms-input-placeholder {  
        color: #333;  
     }
-
+.wood-parent{position: relative;}
 ul.ofertas{
     margin: 0 auto;
     width: 940px;
     overflow: hidden;
     li{
+      margin-bottom: 30px;
       padding-bottom: 40px;
       width: 300px;
       float: left;
@@ -749,7 +754,7 @@ footer.row{
 
 .booking-slider{position: relative;height: 455px;overflow:hidden;
   .booking-form{width:240px;right: 10%;top: 5%;padding:10px;
-    select{width: 100%;height: 38px;margin: 1px 10px 0 0;background: #fff url('../images/down-arrow.png') no-repeat 182px center;}
+    select{width: 100%;padding:5px 0;margin: 1px 10px 0 0;background: #fff url('../images/down-arrow.png') no-repeat 182px center;}
     input[type="text"]{margin-top:10px; background: #fff url('../images/calendar-icon.png') no-repeat 173px center;border: none;}
     input[type="button"]{width: 100%;margin-top: 10px;}
   }
@@ -780,11 +785,13 @@ footer.row{
 ---------------------------------------------------------------------*/
 .mejores-ofertas{
   .title-mejores-ofertas{margin-bottom:60px;}
-  h2{margin-bottom:0;}
-  select{height:40px;border:1px solid $light-gray;@extend %select-style; width: 150px;
+  h2{margin-bottom:0;} 
+  select{border:1px solid #999;@extend %select-style;
+  width: 180px;
   font-weight: normal;
   text-transform: none;
-  background: white url("../images/down-arrow.png") no-repeat 135px center;
+  background: white url("../images/down-arrow.png") no-repeat 165px center;
+  padding: 7px 10px;
   }
   .select{
     padding-top: 10px;
@@ -1005,9 +1012,14 @@ footer.row{
           font-size: 14px;
           text-transform: uppercase;
         }
-        .btn-black{width:185px;margin:inherit;background:black url("../images/white-arrow.png") no-repeat  150px center}
+        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
         + .btn-lines{margin-bottom:30px;text-align:center}
+    .info{
+      width: 66.66%;
+      float: left;
+      padding-right: 2%;
+    }
 }
 
 
@@ -1019,15 +1031,76 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 .eventos-title{margin-bottom:50px;
-  .btn-black{width: 260px;margin: initial;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
+  .btn-black{width: 260px;margin: 0;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
 + .slider-destinos-ciudad{margin-bottom:20px;}
 }
 
 .items-eventos{
-  .btn-black{width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
+  .btn-black{text-align:left;width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
   h5{margin-bottom:5px; }
 }
 
+<<<<<<< HEAD
+=======
+
+/*----------------------------------------------------------------------
+
+                             Reservar
+
+---------------------------------------------------------------------*/
+#mask{position:fixed;top:0;left:0;background:rgba(0,0,0,0.6);z-index:1000;width:100%;height:100%;}
+
+
+
+.overlay{z-index:1500;background-color: #FFF !important;position:fixed;
+    select{border: 1px solid #cccccc;}
+}
+
+#icon-close{position:absolute; display:block;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px; top:-42px;;right:0;}
+
+
+/*----------------------------------------------------------------------
+
+                             #mis-reservas
+
+---------------------------------------------------------------------*/
+.popUp{width:320px;padding:20px;z-index:2000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
+  h3{font-size:18px;line-height:18px;margin-bottom:15px; text-transform: uppercase }
+  p{font-size:14px;line-height:20px;margin-bottom:5px; }
+  form{margin-top:30px; 
+      p:first-child{margin-bottom:10px;}
+      label{font-weight: bold;font-size:13px;width:30%;text-align:right;float:left;margin-top:10px;height:40px;line-height:30px }
+      input{width:65%;height:40px;border: 1px solid #333333;float:right;}
+      input[type="submit"]{
+        background: black url("../images/white-arrow.png") no-repeat 95px center;
+          height: 50px;
+          border: none;
+          color: #fff;
+          padding: 0 53px 0 19px;
+          display: block;
+          width: 120px;
+          line-height: 50px;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 0.75em;
+          margin: 0 auto;
+          @extend %trans;
+          &:hover{background-color:$pink;
+            }
+    }
+  }
+}
+
+// #reservar{z-index:1000;}
+#contra{
+  .btn-black{width:210px;background: black url("../images/white-arrow.png") no-repeat 210px center;}
+}
+#agencia{
+    a{border-top:1px solid black;border-bottom:1px solid black;padding:10px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
+
+}
+
+>>>>>>> 553fa5207e5e4a706e2ec3c04e38b09bf9c6927b
 /*----------------------------------------------------------------------
 
                    PRESENTACION @Luis
@@ -1050,11 +1123,16 @@ footer.row{
 }
 
 //Presentacion main
+<<<<<<< HEAD
 .introduccion-presentacion{
+=======
+.contenido-presentacion{
+>>>>>>> 553fa5207e5e4a706e2ec3c04e38b09bf9c6927b
   width: 605px;
   margin-right:35px;
 }
 
+<<<<<<< HEAD
 .presentacion{
   width: 828px;
   margin: 0 auto;
@@ -1094,3 +1172,21 @@ footer.row{
     text-align: center;
   } 
 }
+=======
+.presentacion-video{
+  text-align: center;
+}
+
+.presentacion-video iframe{
+  margin: 0 auto;
+  border: 10px solid #fff; 
+}
+
+//contacto
+#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
+  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
+  a{color:#dc1c4d;font-size:14px;line-height:14px;}
+  .line{background: url('../images/black-lines.png') repeat-x left center;}
+  
+ }
+>>>>>>> 553fa5207e5e4a706e2ec3c04e38b09bf9c6927b
