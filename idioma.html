@@ -30,7 +30,16 @@
 	    <a href="#">Contacto</a>
 	  </div>
 	  <ul class="menu-top right">
-	    <li><a href="#">Español</a></li>
+	    <li><a href="#">Español</a>
+        <ul>
+            <li><a href="" id="ESPA">ESPAÑOL</a></li>
+            <li><a href="" id="CATA">CATALÀ</a></li>
+            <li><a href="" id="ENG">ENGLISH</a></li>
+            <li><a href="" id="DEUT">DEUT</a></li>
+            <li><a href="" id="FRAN">FRANÇAIS</a></li>
+            <li><a href="" id="ITAL">ITALIANO</a></li>
+          </ul>
+      </li>
 	    <li><a href="#">Empresas</a></li>
 	    <li><a href="#">Agencias</a></li>
 	    <li><a href="#">Mis Reservas</a></li>
@@ -42,39 +51,39 @@
 		    data-cycle-timeout="2000"
 		    data-cycle-speed="3000"
 		    data-cycle-slides="> .slide">
-  		  <div class="cycle-pager"></div>
-  		  <div class="slide">
-  		    <img src="images/img1.jpg" alt="" />
-  		    <div class="slide-text-header">
-    		    <h3>Hoteles con <strong>personalidad</strong></h3>
-    		    <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
-    		    <a class="button" href="#">Ver todos los hoteles</a>
-  		    </div>
-  		  </div>
-  		  <div class="slide">
-  		    <img src="images/img1.jpg" alt="" />
-  		    <div class="slide-text-header">
-  		      <h3>Hoteles con <strong>personalidad</strong></h3>
-  		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
-  		      <a class="button" href="#">Ver todos los hoteles</a>
-  		    </div>
-  		  </div>
-  		  <div class="slide">
-  		    <img src="images/img1.jpg" alt="" />
-  		    <div class="slide-text-header">
-  		      <h3>Hoteles con <strong>personalidad</strong></h3>
-  		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
-  		      <a class="button" href="#">Ver todos los hoteles</a>
-  		    </div>
-  		  </div>
-  		  <div class="slide">
-  		    <img src="images/img1.jpg" alt="" />
-  		    <div class="slide-text-header">
-  		      <h3>Hoteles con <strong>personalidad</strong></h3>
-  		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
-  		      <a class="button" href="#">Ver todos los hoteles</a>
-  		    </div>
-  		  </div>
+		  <div class="cycle-pager"></div>
+		  <div class="slide">
+		    <img src="images/img1.jpg" alt="" />
+		    <div class="slide-text-header">
+  		    <h3>Hoteles con <strong>personalidad</strong></h3>
+  		    <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
+  		    <a class="button" href="#">Ver todos los hoteles</a>
+		    </div>
+		  </div>
+		  <div class="slide">
+		    <img src="images/img1.jpg" alt="" />
+		    <div class="slide-text-header">
+		      <h3>Hoteles con <strong>personalidad</strong></h3>
+		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
+		      <a class="button" href="#">Ver todos los hoteles</a>
+		    </div>
+		  </div>
+		  <div class="slide">
+		    <img src="images/img1.jpg" alt="" />
+		    <div class="slide-text-header">
+		      <h3>Hoteles con <strong>personalidad</strong></h3>
+		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
+		      <a class="button" href="#">Ver todos los hoteles</a>
+		    </div>
+		  </div>
+		  <div class="slide">
+		    <img src="images/img1.jpg" alt="" />
+		    <div class="slide-text-header">
+		      <h3>Hoteles con <strong>personalidad</strong></h3>
+		      <span class="slide-caption">Modernidad, confort y funcionalidad en todos nuestros hoteles.</span>
+		      <a class="button" href="#">Ver todos los hoteles</a>
+		    </div>
+		  </div>
 		</div><!-- /slider -->
 
 		<div class="booking-form">
@@ -84,18 +93,11 @@
   		    <option>Selecciona Hotel</option>
   		  </select>
   		  <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
-  		  <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" class="datepicker"/>
+  		  <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
   		  <input type="button" value="RESERVAR" />
 		  </form>
 		</div>
-
 	</div><!-- /row -->
-
-  <!-- /mis reservas -->
-
-
-  <div id="mask"></div>
-
   
   <div class="row main-menu">
     <nav>
@@ -109,7 +111,7 @@
   </div><!-- /row -->
   
   <div class="row ofertas">
-    <div>
+    <div class="centered">
       <h2 class="lines">Ofertas</h2>
       <span class="note">La mejor forma de disfrutar nuestros hoteles y destinos</span>
       <ul class="ofertas">
@@ -318,14 +320,10 @@
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/foundation.topbar.js"></script>
-  <script src="javascripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="javascripts/main.js"></script>
 	
   
   <script>
     $(document).foundation();
-     $('.popUp').siblings('.booking-form').css('z-index','500');
-     $( ".datepicker" ).datepicker();
   </script>
 </body>
 </html>

@@ -44,7 +44,7 @@
 
   <div class="row main-menu">
     <nav class="clearfix">
-      <a href="#" class="active">Hoteles <span></span></a>
+      <a href="#">Hoteles <span></span></a>
       <a href="#">Ofertas <span></span></a>
       <a href="#">Destinos <span></span></a>
       <a href="#">Eventos &amp; Reuniones <span></span></a>
@@ -61,9 +61,8 @@
         <div class="slide">
           <img src="images/hoteles-booking.jpg" alt="" />
           <div class="slide-text-header">
-
-             <h3>CONTACTA<strong> CON NOSOTROS</strong></h3>
-            <span class="slide-caption">Siempre a su disposición para atenderle.</span>
+             <h3>SUSCRÍBASE<strong> A NUESTRO BOLETÍN.</strong></h3>
+            <span class="slide-caption">Reciba nuestras ofertas y noticias más relevantes.</span>
           </div>
         </div>
       </div><!-- /text -->
@@ -89,7 +88,7 @@
           <div>
             <ul class="clearfix left breadcumbs">
               <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">Contacto</a></li>
+              <li><a href="#" class="active">Newsleter</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -108,7 +107,7 @@
    
      <div class="row">
        <div class="centered">
-         <h4>Contacto</h4>
+         <h4>Newsletter</h4>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales venenatis erat. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
        </div>
 
@@ -116,43 +115,129 @@
      </div><!-- /sub menu -->
      <div class="bgGraySimple">
         <div class="row ">
-          <div class="centered clearfix contacto">
-            <div class="boxRig">
-              <div id="header">
-                <h3>oficinas centrales</h3>
-                <span>Méndez Alvaro, 30, 28045, Madrid</span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-                <span class="ir linea"></span>
-              </div>
-              <div id="body">
-                <h3>CONTACTA CON NOSOTROS</h3>
-                <p>Elija uno de nuestros hoteles o departamento corporativo para ver
-                sus datos de contacto: </p>
-                <form>
-                  <select>
-                    <option value="">Sellecione hotel o departamento</option>
-                    <option value="">hotel</option>
-                    <option value="">hotel</option>
-                  </select>
-                </form>
-              </div>
-              <div id="footer">
-                <h4>Rafaelhoteles</h4>
-                <span><address>Méndez Alvaro, 30, 28045, Madrid</address></span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-              </div>
+          <div class="centered clearfix newSletter">
+            <div id="newsForm"> <!--remove al enviar eamil -->
+              <form>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>TRATAMIENTO <span class="red">*<span></label>
+                  </div>
+                  <div class="large">
+                    <select id="trata">
+                      <option>Seleccionar</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>nombre <span class="red">*</span></label>
+                  </div>
+                  <div class="large">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>apellidos <span class="red">*</span></label>
+                  </div>
+                  <div class="large">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>email <span class="red">*</span></label>
+                  </div>
+                  <div class="large">
+                    <input type="email">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>nni/pasaporte <span class="red">*</span></label>
+                  </div>
+                  <div class="large">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Fecha de nacimiento <span class="red">*</span></label>
+                  </div>
+                  <div class="large three">
+                    <select id="dia">
+                      <option>Dia</option>
+                      <option>1</option>
+                    </select>
+                    <select id="mes">
+                      <option>mes</option>
+                      <option>1</option>
+                    </select>
+                    <select id="ano">
+                      <option>Año</option>
+                      <option>1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>país <span class="red">*</span></label>
+                  </div>
+                  <div class="large">
+                    <select id="pais">
+                      <option>país</option>
+                      <option>1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>codifo postal</label>
+                  </div>
+                  <div class="large">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Viajo principalmente por</label>
+                  </div>
+                  <div class="large three clearfix">
+                    <input type="radio"> <label>Negocios</label>
+                    <input type="radio"> <label>Ocio</label>
+                    <input type="radio"> <label>Ambos</label>
+                    
+                    
+                  </div>
+                </div>
+                <div class="alig">
+                  <input type="checkbox"><span>Entiendo y acepto las <a>condiciones legales</a></span>
+                </div>
+                <div class="submit">
+                  <input type="submit" value="ENVIAR" class="btn-black">  
+                </div>
+              </form>
+            </div>
+             <div id="NewsError">
+                <h3>Su formulario no ha sido enviado</h3>
+                <p>Por favor compruebe los campos marcados con un asterisco <span>(*) </span>
+                y verifique que todos los campos estén completos y correctos.</p>
+            </div>
+            <div id="Newssend">
+                <h3>MENSAJE ENVIADO CORRECTAMENTE</h3>
+                <p>En breve recibirás un e-mail de confirmación al registro.
+                Gracias por confiar en nosotros.</p>
+            </div>
 
-            </div>
-            <div class="boxLeft">
-              <img src="images/mapa-contacto.jpg">
-            </div>
           </div>
+         
         </div>
      </div>
      
      
+
    
 
   <!--********************************************************
@@ -289,10 +374,6 @@
   
   <script>
     $(document).foundation();
-
-    $('#body select').change(function(){
-      $('#footer').show();
-    })
   </script>
 </body>
 </html>
