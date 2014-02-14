@@ -55,16 +55,12 @@
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
-  <div class="booking-slider">
+  <div class="booking-slider tall">
     <div class="row ">
       <div>
         <div class="slide">
-          <img src="images/hoteles-booking.jpg" alt="" />
-          <div class="slide-text-header">
-
-             <h3>CONTACTA<strong> CON NOSOTROS</strong></h3>
-            <span class="slide-caption">Siempre a su disposición para atenderle.</span>
-          </div>
+          <img src="images/hotel-home.jpg" alt="" />
+          <a href="" class="btn-galeria">Galer&iacute;a fotogr&aacute;fica</a>
         </div>
       </div><!-- /text -->
       <div class=" booking-form">
@@ -75,9 +71,24 @@
           </select>
           <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
           <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="button" value="RESERVAR" />
+          <input type="text" placeholder="COD PROMO" name="checkout" id="codpromo" />
+          <input type="button" value="BUSCAR" />
         </form>
       </div><!-- /form -->
+      <div class="menu-booking-slider">
+        <img src="images/log-negro.png">
+        <ul>
+          <li><a href="#" class="active">El hotel </a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Ubicación </a></li>
+          <li><a href="#">Habitaciones </a></li>
+          <li><a href="#">Spa </a></li>
+          <li><a href="#">Restaurantes </a></li>
+          <li><a href="#">Celebraciones</a></li>
+          <li><a href="#">Reuniones </a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+      </div>
     </div><!-- /row -->
   </div>
    <!--********************************************************
@@ -88,8 +99,10 @@
         <div class="centered" >
           <div>
             <ul class="clearfix left breadcumbs">
-              <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">Contacto</a></li>
+              <li><a href="index.html">Incio > </a></li>
+              <li><a href="index.html">Hoteles > </a></li>
+              <li><a href="index.html">Rafaelhoteles Badalona > </a></li>
+              <li><a href="#" class="active">El Hotel</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -105,55 +118,57 @@
    <!--********************************************************
                            text 
      ********************************************************-->
-   
+     
      <div class="row">
        <div class="centered">
-         <h4>Contacto</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales venenatis erat. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-       </div>
-
-
+         <h3>Ofertas</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet interdum aliquet. Aliquam orci diam, placerat ac quam eu, rhoncus ultrices ipsum. Donec sed gravida metus. Praesent et nunc vel enim venenatis porta eu ac justo. Phasellus turpis orci, pretium sagittis mollis vel, pulvinar eget ligula. </p>       </div>
      </div><!-- /sub menu -->
-     <div class="bgGraySimple">
-        <div class="row ">
-          <div class="centered clearfix contacto">
-            <div class="boxRig">
-              <div id="header">
-                <h3>oficinas centrales</h3>
-                <span>Méndez Alvaro, 30, 28045, Madrid</span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-                <span class="ir linea"></span>
-              </div>
-              <div id="body">
-                <h3>CONTACTA CON NOSOTROS</h3>
-                <p>Elija uno de nuestros hoteles o departamento corporativo para ver
-                sus datos de contacto: </p>
-                <form>
-                  <select>
-                    <option value="">Sellecione hotel o departamento</option>
-                    <option value="">hotel</option>
-                    <option value="">hotel</option>
-                  </select>
-                </form>
-              </div>
-              <div id="footer">
-                <h4>Rafaelhoteles</h4>
-                <span><address>Méndez Alvaro, 30, 28045, Madrid</address></span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-              </div>
-
-            </div>
-            <div class="boxLeft">
-              <img src="images/mapa-contacto.jpg">
-            </div>
-          </div>
-        </div>
+     
+   <div class="row hotel-ofertas ofertas">
+     <div class="centered">
+       <ul class="ofertas">
+         <li>
+           <div class="top">
+             <img src="images/ofertas1.jpg" alt="" />
+             <div class="precio"><span class="desde">Desde</span><span class="price">65€</span></div>
+           </div>
+           <div class="bottom">
+             <h4>Fines de semana únicos</h4>
+             <h5>Hoteles Madrid y Barcelona</h5>
+             <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
+             <a href="" class="btn-black">Reservar</a>
+           </div>
+         </li>
+         <li>
+           <div class="top">
+             <img src="images/ofertas2.jpg" alt="" />
+             <div class="precio"><span class="desde">Desde</span><span class="price">75€</span></div>
+           </div>
+           <div class="bottom">
+             <h4>Verano refrescante en Salamanca</h4>
+             <h5>Salamanca forum resort</h5>
+             <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
+             <a href="" class="btn-black">Reservar</a>
+           </div>
+         </li>
+         <li>
+           <div class="top">
+             <img src="images/ofertas3.jpg" alt="" />
+             <div class="precio"><span class="desde">Dto.</span><span class="price">15%</span></div>
+           </div>
+           <div class="bottom">
+             <h4>Reserva Anticipada</h4>
+             <h5>todos los hoteles</h5>
+             <p>Haz tu reserva anticipada en Rafaelhoteles y disfruta de un 15% de descuento.</p>
+             <a href="" class="btn-black">Reservar</a>
+           </div>
+         </li>
+       </ul>
+       <a href="" class="btn-lines ofertas">Ver todas las ofertas</a>
      </div>
-     
-     
-   
+   </div><!-- /row -->
+      
 
   <!--********************************************************
                         social 
@@ -289,10 +304,6 @@
   
   <script>
     $(document).foundation();
-
-    $('#body select').change(function(){
-      $('#footer').show();
-    })
   </script>
 </body>
 </html>

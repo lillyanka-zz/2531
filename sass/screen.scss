@@ -439,27 +439,57 @@ ul.ofertas{
   }
 } 
 
-.menu-top{
-  padding: 0;
-  li{
-    float: right;
-    margin: 13px 0 0 20px;
-    position: relative;
-    a{
+.menu-top{position: relative;padding: 0;
+  a{
       font-size: 0.688em;
+      line-height: 0.688em;
       font-weight: bold;
-      padding: 8px 0;
-      border-bottom: 1px solid #e5e5e5;
-      border-top: 1px solid #e5e5e5;
       color: $gray;
       text-transform: uppercase;
+      text-decoration:none; 
+    }//stylo en general para los a
+  > li{
+    float:right;
+    margin: 13px 0 0 20px;
+    position: relative;
+   > a{padding: 8px 0;  
+      border-bottom: 1px solid #e5e5e5;
+      border-top: 1px solid #e5e5e5;
     }
-    &:first-child a{
+    &:first-child > a{
       background: url('../images/down-arrow.png') no-repeat right center;
       padding-right: 15px;
     }
+    &:hover > ul{display:block;}
+  }//submenu idiomas
+
+   ul{display:none;position:absolute;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    padding: 20px 20px 0 30px;
+    background-color: white;
+    z-index: 1000;
+    top: 30px; 
+    right: 0px;
+    width: 146px;
+    background-color:white; z-index:1000;
+    li{margin-bottom:20px;text-align:right;
+      a{padding-right:25px; }
+    }
+    
+      li:hover a{color:$pink;}
+
   }
+
 }
+
+//idiomas sprite
+#ESPA{background: url('../images/flag-esp.png') no-repeat right center;}
+#CATA{background: url('../images/flag-cat.png') no-repeat right center;}
+#ENG{background: url('../images/flag-ingles.png') no-repeat right center;}
+#DEUT{background: url('../images/flag-alemania.png') no-repeat right center;}
+#FRAN{background: url('../images/flag-francia.png') no-repeat right center;}
+#ITAL{background: url('../images/flag-italia.png') no-repeat right center;}
 
 
 .main-slider{
@@ -629,13 +659,14 @@ ul.ofertas{
   & > div{
     width: 1240px;
     margin: 0 auto;
+    text-align: center;
   }
   h2{
     width: 330px;
   }
   .btn-black{
     width: 222px;
-    background: black url("../images/white-arrow.png") no-repeat 188px center;
+    background: black url("../images/white-arrow.png") no-repeat 95% center;
   }
   ul{
     overflow: hidden;
@@ -1106,13 +1137,17 @@ footer.row{
           font-size: 14px;
           text-transform: uppercase;
         }
-        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
+//        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
         p.btn-lines{margin-bottom:20px; }
         + .btn-lines{margin-bottom:30px;text-align:center}
     .info{
       width: 66.66%;
       float: left;
       padding-right: 2%;
+      text-align: center;
+      p{
+        text-align: left;
+      }
     }
 }
 
@@ -1436,14 +1471,90 @@ footer.row{
 } 
 
 //contacto
-#header-cont{font-size:18px;line-height:18px;margin-bottom:20px;
-  span{color:#666666;display:block;font-size:14px;line-height:14px;font-style:italic;}
-  a{color:#dc1c4d;font-size:14px;line-height:14px;}
-  .line{background: url('../images/black-lines.png') repeat-x left center;}
+
+.contacto{background: url("../images/mainbg.jpg") repeat left top;
+  .boxRig{width:440px;float:left;}
+  .boxLeft{width:470px;float:right}
+  h3{font-size:18px;text-transform:uppercase;font-weight:500;margin:0;margin-bottom:7px; }
+  h4{font-weight: 400;margin:0}
+  p{font-size:14px;font-weight: 300;}
+  span{font-style:italic; display:block;color:#666666;font-size:14px;line-height:14px;margin-bottom:10px; }
+  .linea{background: url('../images/black-lines.png') repeat-x left center;margin-top:30px;height: 20px; }
+  a{color:$pink;font-size:14px;line-height:14px;text-decoration:underline;padding-bottom:3px; }
+  #header{margin-bottom:40px; }
+  #body{margin-bottom:50px; }
+  #footer{display:none;}
+  select{@extend %select-style;border: 2px solid #e5e5e5;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 200;
+    width: 300px;
+    padding-right: 20px;
+    background-position-x: 267px;
+    padding:5px;}
+}
+
+//newsletter
+.newSletter{width:600px;margin:0 auto;background: url("../images/mainbg.jpg") repeat left top;
+  .wrap{margin-bottom:10px;}
+  .small{text-align:right;float:left;width:30%;margin-right:5%;
+    label{font-size:12px;font-weight:bold;line-height:30px;font-weight: 600;
+text-transform: uppercase;}
+  }
+  .large{float:left;width:65%;}
+  .red{color:$pink;}
+   input[type="text"],input[type="email"],select{/*height:40px !important;*/background-color:white;border:1px solid #9b9b9b !important;padding:5px;color:#333333 !important;font-size:13px !important;color:#333333 !important;}//se le sobre escriben los valores
+  input:focus{border-color:black !important; }
+  
+
+  //select
+  #trata,#pais{width:135px;background: #fff url('../images/down-arrow.png') no-repeat 117px center;
+    @extend %select-style;font-weight:normal;
+  }
+  #dia{width:70px;background: #fff url('../images/down-arrow.png') no-repeat 50px center;
+    @extend %select-style;font-weight:normal;}
+  #mes{width:120px;margin:0 10px;background: #fff url('../images/down-arrow.png') no-repeat 100px center;
+    @extend %select-style;font-weight:normal;}
+  #ano{width:100px;background: #fff url('../images/down-arrow.png') no-repeat 75px center;
+    @extend %select-style;font-weight:normal;}
+
+    .three{ 
+      input{height: 0 !important;}
+      label{display:inline;margin:0 5px;}
+  }
+  .alig{text-align:right;
+      input{height: 0 !important;margin-right:5px;}
+      a{color:$pink;text-decoration:underline; }
+  }
+  .submit{text-align:right;
+    input{line-height: 0;
+      background-position-x: 90px;
+      width: 130px;
+      margin-top: 20px;}
+  }
+  
 }
 
 
+//error and send
+#NewsError,#Newssend{margin-top:30px;text-align:center;padding:15px 30px;background-color:white;
+  h3{font-size:14px;text-transform: uppercase}
+  p{font-size:14px;
+    span{color:$pink;}
+  }
+ }
 
+#NewsError{
+  h3{color:$pink;}
+  p{font-size:14px;
+    span{color:$pink;}
+  }
+ }
+
+#Newssend{
+  h3{color:#009900;}
+ 
+ }
 
 /*         ui jquery css   */
 /*! jQuery UI - v1.10.4 - 2014-02-12
