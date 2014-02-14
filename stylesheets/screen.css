@@ -64,6 +64,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .servicios ul { margin-bottom: 30px; overflow: hidden; }
 .servicios ul li { float: left; width: 20%; text-align: center; }
 
+.hotel-ofertas { padding-top: 50px; margin-top: 15px; }
+
 /*--------------------------------*/
 /* CLASES Y VARIABLES RECICLABLES */
 /*--------------------------------*/
@@ -249,9 +251,9 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.eventos .cycle-slideshow .slide { position: relative; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
-.row.destinos > div { width: 1240px; margin: 0 auto; }
+.row.destinos > div { width: 1240px; margin: 0 auto; text-align: center; }
 .row.destinos h2 { width: 330px; }
-.row.destinos .btn-black { width: 222px; background: black url("../images/white-arrow.png") no-repeat 188px center; }
+.row.destinos .btn-black { width: 222px; background: black url("../images/white-arrow.png") no-repeat 95% center; }
 .row.destinos ul { overflow: hidden; margin: 0 auto 2em; width: 940px; }
 .row.destinos ul li { width: 20%; float: left; position: relative; }
 .row.destinos ul li img { width: 100%; }
@@ -433,10 +435,10 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
-.info-destino-ciudad-detalle .btn-black { display: block; width: 200px; margin: 0; background: black url("../images/white-arrow.png") no-repeat 150px center; }
 .info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
-.info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; }
+.info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
+.info-destino-ciudad-detalle .info p { text-align: left; }
 
 /*----------------------------------------------------------------------
  Eventos
@@ -543,11 +545,21 @@ footer.row { background: #333333; max-width: none; }
 .contenido-noticias article aside p { margin: 8px 0; font-style: italic; color: #666666; }
 .contenido-noticias article aside a { width: 119px; height: 40px; padding: 12px 20px; line-height: 19px; background-position-x: 90px; }
 
+.hotel-ubicacion .btn-black { height: 40px; line-height: 40px; display: block; bottom: 33px; display: block; left: 50%; margin: 18px auto; width: 100%; padding: 0 20px; background: black url("../images/white-arrow.png") no-repeat 149px center; }
+
 .noticias-detalle h4 { font-size: 30px; margin-bottom: 12px; }
 .noticias-detalle .subPage-subTitle { font-size: 14px; color: #dc1c4d; font-weight: bold; margin-bottom: 15px; display: block; }
 .noticias-detalle .btn-black { font-size: 12px; width: 189px; height: 42px; line-height: 18px; padding: 14px 44px 14px 22px; background-position-x: 149px; }
 
 .ilustracion .fbIcon, .ilustracion .twIcon { display: inline-block; float: none; margin-right: 0; }
+
+.ubicacion-mapa .lines { width: 600px; }
+
+.map-container { padding: 12px; background-color: #fff; }
+.map-container form { margin-top: 17px; }
+.map-container form input { height: 42px; width: 282px; }
+.map-container form label { font-size: 12px; font-weight: bold; margin-top: 18px; margin-right: 9px; }
+.map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 279px; margin-left: 9px; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
