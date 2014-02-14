@@ -1224,7 +1224,7 @@ footer.row{
   font-size: 30px;
 }
 
-.contenido-presentacion, .contenido-calidad{
+.contenido-pagina{
   width: 620px;
   margin-right:20px;
 }
@@ -1333,7 +1333,7 @@ footer.row{
   }
 }
 
-.calidad-ilustracion, .medioAmbiente-ilustracion{
+.ilustracion{
   width: 300px;
 
   img{
@@ -1392,7 +1392,38 @@ footer.row{
   }
 }
 
+//Noticias detalle
+.noticias-detalle{
+  h4{
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
 
+  .subPage-subTitle{
+    font-size: 14px;
+    color: #dc1c4d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .btn-black{
+    font-size: 12px;
+    width: 189px;
+    height: 42px;
+    line-height: 18px;
+    padding: 14px 44px 14px 22px;
+    background-position-x: 149px;
+  }
+}
+
+.ilustracion{
+  .fbIcon, .twIcon{
+    display: inline-block;
+    float: none;
+    margin-right: 0; 
+  }
+}
 
 
 //404
