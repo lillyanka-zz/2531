@@ -59,10 +59,12 @@
     <div class="row ">
       <div>
         <div class="slide">
-          <img src="images/newsletter.jpg" alt="" />
+          <img src="images/trabaja.jpg" alt="" />
           <div class="slide-text-header">
-             <h3>SUSCRÍBASE<strong> A NUESTRO BOLETÍN.</strong></h3>
-            <span class="slide-caption">Reciba nuestras ofertas y noticias más relevantes.</span>
+             <h3>ÚNETE<strong> AL EQUIPO</strong></h3>
+            <span class="slide-caption">Somos un equipo joven y emprendedor.</span>
+
+
           </div>
         </div>
       </div><!-- /text -->
@@ -88,7 +90,8 @@
           <div>
             <ul class="clearfix left breadcumbs">
               <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">Newsleter</a></li>
+              <li><a href="#" >Trabaja con nosotros ></a></li>
+              <li><a href="" class="active">Enviar Curriculum</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -107,13 +110,13 @@
    
      <div class="row">
        <div class="centered newsText">
-         <h4>Newsletter</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales venenatis erat. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+         <h4>Enviar Curriculum</h4>
+             <p>Si quieres formar parte de una cadena hotelera formada por un equipo joven y emprendedor, ponte en contacto con nosotros y buscaremos el trabajo que mejor se adapta a tu perfil.</p>
        </div>
      </div><!-- /sub menu -->
      <div class="bgGray">
         <div class="row ">
-          <div class="centered clearfix formBox">
+          <div class="centered clearfix formBox trabajo-form">
             <div id="newsForm"> <!--remove al enviar eamil -->
               <form>
                 <div class="wrap clearfix">
@@ -154,14 +157,6 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>nni/pasaporte <span class="red">*</span></label>
-                  </div>
-                  <div class="large">
-                    <input type="text" class="error">
-                  </div>
-                </div>
-                <div class="wrap clearfix">
-                  <div class="small">
                     <label>Fecha de nacimiento <span class="red">*</span></label>
                   </div>
                   <div class="large three">
@@ -192,7 +187,7 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>codifo postal</label>
+                    <label>codigo postal</label>
                   </div>
                   <div class="large">
                     <input type="text">
@@ -200,7 +195,19 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>Viajo principalmente por</label>
+                    <label>Puesto de trabajo<span class="red">*<span></label>
+                  </div>
+                  <div class="large">
+                    <select id="puesto">
+                      <option>Seleccionar</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Ares de interes</label>
                   </div>
                   <div class="large three clearfix">
                     <p>
@@ -208,28 +215,38 @@
                       <input type="radio"> <label>Ocio</label>
                       <input type="radio"> <label>Ambos</label>
                     </p>
-                    <p class="alig"><input type="checkbox"><span>Entiendo y acepto las <a>condiciones legales</a></span></p>
-                    
-                    
+                    <p>
+                      <input type="radio"> <label>Grupos</label>
+                      <input type="radio"> <label>Spa</label>
+                    </p>
                     
                   </div>
                 </div>
-
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>adjuntar cv</label>
+                  </div>
+                  <div class="large">
+                    <input type="file">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Comentarios</label>
+                  </div>
+                  <div class="large">
+                    <p><textarea></textarea></p>
+                    <p class="alig"><input type="checkbox"><span>Entiendo y acepto las <a>condiciones legales</a></span></p>
+                    <p class="alig"><input type="checkbox"><span>Deseo suscribirme al newsletter</span></p>
+                  </div>
+                </div>
                 <div class="submit">
                   <input type="submit" value="ENVIAR" class="btn-black">  
                 </div>
+
               </form>
             </div>
-             <div id="NewsError">
-                <h3>Su formulario no ha sido enviado</h3>
-                <p>Por favor compruebe los campos marcados con un asterisco <span>(*) </span>
-                y verifique que todos los campos estén completos y correctos.</p>
-            </div>
-            <div id="Newssend">
-                <h3>MENSAJE ENVIADO CORRECTAMENTE</h3>
-                <p>En breve recibirás un e-mail de confirmación al registro.
-                Gracias por confiar en nosotros.</p>
-            </div>
+          
 
           </div>
          
