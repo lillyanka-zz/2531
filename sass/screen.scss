@@ -341,6 +341,7 @@ ul.ofertas{
       right: 0;
       bottom: 0;
       padding: 0 30px 20px 0;
+      text-align: right;
       h3{
         font-size: 24px;
         text-align: right;
@@ -1464,35 +1465,54 @@ footer.row{
 }
 
 //newsletter
+
+.newsText{margin-bottom:50px;}
 .newSletter{width:600px;margin:0 auto;background: url("../images/mainbg.jpg") repeat left top;
   .wrap{margin-bottom:10px;}
   .small{text-align:right;float:left;width:30%;margin-right:5%;
     label{font-size:12px;font-weight:bold;line-height:30px;font-weight: 600;
 text-transform: uppercase;}
   }
+  
   .large{float:left;width:65%;}
   .red{color:$pink;}
-   input[type="text"],input[type="email"],select{/*height:40px !important;*/background-color:white;border:1px solid #9b9b9b !important;padding:5px;color:#333333 !important;font-size:13px !important;color:#333333 !important;}//se le sobre escriben los valores
-  input:focus{border-color:black !important; }
+   input[type="text"],input[type="email"],select{height:40px ;background-color:white;
+   border:1px solid #9b9b9b ;padding:5px;color:#333333 ;font-size:13px ;color:#333333 ;}//se le sobre escriben los valores
   
 
   //select
+  select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+        font-weight:normal;
+        color: $dark-gray; 
+  }
+
+
+
   #trata,#pais{width:135px;background: #fff url('../images/down-arrow.png') no-repeat 117px center;
-    @extend %select-style;font-weight:normal;
+   
   }
   #dia{width:70px;background: #fff url('../images/down-arrow.png') no-repeat 50px center;
-    @extend %select-style;font-weight:normal;}
+   }
   #mes{width:120px;margin:0 10px;background: #fff url('../images/down-arrow.png') no-repeat 100px center;
-    @extend %select-style;font-weight:normal;}
+   }
   #ano{width:100px;background: #fff url('../images/down-arrow.png') no-repeat 75px center;
-    @extend %select-style;font-weight:normal;}
+   }
 
     .three{ 
-      input{height: 0 !important;}
+      // input{height: 0 ;}
       label{display:inline;margin:0 5px;}
   }
   .alig{text-align:right;
-      input{height: 0 !important;margin-right:5px;}
+      input{margin-right:5px;}
       a{color:$pink;text-decoration:underline; }
   }
   .submit{text-align:right;
@@ -1501,13 +1521,15 @@ text-transform: uppercase;}
       width: 130px;
       margin-top: 20px;}
   }
+
+  .error{border-color:$pink !important;}
   
 }
 
 
 //error and send
 #NewsError,#Newssend{margin-top:30px;text-align:center;padding:15px 30px;background-color:white;
-  h3{font-size:14px;text-transform: uppercase}
+  h3{font-size:14px;text-transform: uppercase;font-weight: bold;margin-bottom:5px; }
   p{font-size:14px;
     span{color:$pink;}
   }
