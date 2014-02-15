@@ -61,7 +61,7 @@
         <div class="slide">
           <img src="images/trabaja.jpg" alt="" />
           <div class="slide-text-header">
-             <h3>ÚNETE<strong> AL EQUIPO.</strong></h3>
+             <h3>ÚNETE<strong> AL EQUIPO</strong></h3>
             <span class="slide-caption">Somos un equipo joven y emprendedor.</span>
 
 
@@ -116,7 +116,7 @@
      </div><!-- /sub menu -->
      <div class="bgGray">
         <div class="row ">
-          <div class="centered clearfix newSletter">
+          <div class="centered clearfix formBox trabajo-form">
             <div id="newsForm"> <!--remove al enviar eamil -->
               <form>
                 <div class="wrap clearfix">
@@ -157,14 +157,6 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>nni/pasaporte <span class="red">*</span></label>
-                  </div>
-                  <div class="large">
-                    <input type="text" class="error">
-                  </div>
-                </div>
-                <div class="wrap clearfix">
-                  <div class="small">
                     <label>Fecha de nacimiento <span class="red">*</span></label>
                   </div>
                   <div class="large three">
@@ -195,7 +187,7 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>codifo postal</label>
+                    <label>codigo postal</label>
                   </div>
                   <div class="large">
                     <input type="text">
@@ -203,34 +195,58 @@
                 </div>
                 <div class="wrap clearfix">
                   <div class="small">
-                    <label>Viajo principalmente por</label>
+                    <label>Puesto de trabajo<span class="red">*<span></label>
+                  </div>
+                  <div class="large">
+                    <select id="puesto">
+                      <option>Seleccionar</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Ares de interes</label>
                   </div>
                   <div class="large three clearfix">
-                    <input type="radio"> <label>Negocios</label>
-                    <input type="radio"> <label>Ocio</label>
-                    <input type="radio"> <label>Ambos</label>
-                    
+                    <p>
+                      <input type="radio"> <label>Negocios</label>
+                      <input type="radio"> <label>Ocio</label>
+                      <input type="radio"> <label>Ambos</label>
+                    </p>
+                    <p>
+                      <input type="radio"> <label>Grupos</label>
+                      <input type="radio"> <label>Spa</label>
+                    </p>
                     
                   </div>
                 </div>
-                <div class="alig">
-                  <input type="checkbox"><span>Entiendo y acepto las <a>condiciones legales</a></span>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>adjuntar cv</label>
+                  </div>
+                  <div class="large">
+                    <input type="file">
+                  </div>
+                </div>
+                <div class="wrap clearfix">
+                  <div class="small">
+                    <label>Comentarios</label>
+                  </div>
+                  <div class="large">
+                    <p><textarea></textarea></p>
+                    <p class="alig"><input type="checkbox"><span>Entiendo y acepto las <a>condiciones legales</a></span></p>
+                    <p class="alig"><input type="checkbox"><span>Deseo suscribirme al newsletter</span></p>
+                  </div>
                 </div>
                 <div class="submit">
                   <input type="submit" value="ENVIAR" class="btn-black">  
                 </div>
+
               </form>
             </div>
-             <div id="NewsError">
-                <h3>Su formulario no ha sido enviado</h3>
-                <p>Por favor compruebe los campos marcados con un asterisco <span>(*) </span>
-                y verifique que todos los campos estén completos y correctos.</p>
-            </div>
-            <div id="Newssend">
-                <h3>MENSAJE ENVIADO CORRECTAMENTE</h3>
-                <p>En breve recibirás un e-mail de confirmación al registro.
-                Gracias por confiar en nosotros.</p>
-            </div>
+          
 
           </div>
          
