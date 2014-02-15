@@ -1260,7 +1260,7 @@ footer.row{
   font-size: 30px;
 }
 
-.contenido-presentacion, .contenido-calidad{
+.contenido-pagina{
   width: 620px;
   margin-right:20px;
 }
@@ -1369,7 +1369,7 @@ footer.row{
   }
 }
 
-.calidad-ilustracion, .medioAmbiente-ilustracion{
+.ilustracion{
   width: 300px;
 
   img{
@@ -1426,6 +1426,93 @@ footer.row{
     }
 
   }
+}
+
+.hotel-ubicacion{
+  .btn-black{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    bottom: 33px;
+    display: block;
+    left: 50%;
+    margin: 18px auto;
+    width: 100%;
+    padding: 0 20px;
+    background: black url("../images/white-arrow.png") no-repeat 149px center;
+  }
+}
+
+//Noticias detalle
+.noticias-detalle{
+  h4{
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .subPage-subTitle{
+    font-size: 14px;
+    color: #dc1c4d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .btn-black{
+    font-size: 12px;
+    width: 189px;
+    height: 42px;
+    line-height: 18px;
+    padding: 14px 44px 14px 22px;
+    background-position-x: 149px;
+  }
+}
+
+.ilustracion{
+  .fbIcon, .twIcon{
+    display: inline-block;
+    float: none;
+    margin-right: 0; 
+  }
+}
+
+// Hotel Ubicaion
+.ubicacion-mapa{
+  .lines{
+    width: 600px;
+  }
+}
+
+.map-container{
+  padding: 12px; 
+  background-color: #fff;
+
+  form{
+    margin-top: 17px;
+    
+    input{
+      height: 42px;
+      width: 282px;
+
+    }
+    label{
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 18px;
+      margin-right: 9px; 
+    }
+
+    .enviar-form{
+      background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+      height: 40px;
+      border: none;
+      color: #fff;
+      padding: 0 43px 0 19px;
+      width: 279px;
+      margin-left: 9px; 
+    }
+  }
+
 }
 
 
