@@ -1473,10 +1473,15 @@ footer.row{
     float: none;
     margin-right: 0; 
   }
+
+  .btn-lines{
+    width: 118px;
+  }
 }
 
 // Hotel Ubicaion
 .ubicacion-mapa{
+  margin-bottom: 62px;
   .lines{
     width: 600px;
   }
@@ -1513,6 +1518,109 @@ footer.row{
   }
 
 }
+.ubicacion-detalles{
+
+  h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 14px;
+    margin-bottom: 0; 
+    color: #333333;
+    border-bottom: 1px solid #efefef; 
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+}
+.puntos-interes{
+  width: 477px;
+
+  li{
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+
+    p{
+      font-size: 12px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .distancia{
+      width: 138px;
+      p{
+        float: right;
+        color: $pink;
+      }
+
+      span{
+        float: left;
+      }
+
+      .car-icon{
+        margin-top: 5px;
+      }
+    }
+
+    .punto{
+      margin-left: 15px; 
+    }
+    
+  }
+}
+
+.walk-icon{
+  height: 20px;
+  width: 13px;
+  background-image: url(../images/walk-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.car-icon{
+  height: 8px;
+  width: 20px;
+  background-image: url(../images/car-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.acceso-hotel{
+  width: 428px;
+  margin-left: 35px;
+
+  ul{
+    padding-top: 20px;
+
+    li{
+      margin-bottom: 20px;
+      div{
+        width: 308px;
+        margin-left: 20px;
+
+        h4{
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #333333;
+        }
+
+        p{
+          font-size: 14px;
+          color: #333333;
+          line-height: 18px;
+        }
+      }
+      img{
+        width: 100px;
+      }
+    }
+  }
+}
+
+
+
+
+
 
 
 
