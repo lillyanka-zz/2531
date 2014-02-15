@@ -1427,6 +1427,21 @@ footer.row{
   }
 }
 
+.hotel-ubicacion{
+  .btn-black{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    bottom: 33px;
+    display: block;
+    left: 50%;
+    margin: 18px auto;
+    width: 100%;
+    padding: 0 20px;
+    background: black url("../images/white-arrow.png") no-repeat 149px center;
+  }
+}
+
 //Noticias detalle
 .noticias-detalle{
   h4{
@@ -1459,6 +1474,47 @@ footer.row{
     margin-right: 0; 
   }
 }
+
+// Hotel Ubicaion
+.ubicacion-mapa{
+  .lines{
+    width: 600px;
+  }
+}
+
+.map-container{
+  padding: 12px; 
+  background-color: #fff;
+
+  form{
+    margin-top: 17px;
+    
+    input{
+      height: 42px;
+      width: 282px;
+
+    }
+    label{
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 18px;
+      margin-right: 9px; 
+    }
+
+    .enviar-form{
+      background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+      height: 40px;
+      border: none;
+      color: #fff;
+      padding: 0 43px 0 19px;
+      width: 279px;
+      margin-left: 9px; 
+    }
+  }
+
+}
+
+
 
 
 //404
