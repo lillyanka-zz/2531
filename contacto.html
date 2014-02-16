@@ -35,16 +35,26 @@
     <!--Logo icono-->
     <img src="images/logo-icono.png" alt="" class="logo-icono">
     <ul class="menu-top right">
-      <li><a href="#">Español</a></li>
+      <li><a href="#">Español</a>
+        <!-- dropdown -->
+        <ul>
+            <li><a href="" id="ESPA">ESPAÑOL</a></li>
+            <li><a href="" id="CATA">CATALÀ</a></li>
+            <li><a href="" id="ENG">ENGLISH</a></li>
+            <li><a href="" id="DEUT">DEUT</a></li>
+            <li><a href="" id="FRAN">FRANÇAIS</a></li>
+            <li><a href="" id="ITAL">ITALIANO</a></li>
+        </ul>
+      </li>
       <li><a href="#">Empresas</a></li>
       <li><a href="#">Agencias</a></li>
       <li><a href="#">Mis Reservas</a></li>
     </ul>
-  </div> 
+  </div>  
 
   <div class="row main-menu">
     <nav class="clearfix">
-      <a href="#" class="active">Hoteles <span></span></a>
+      <a href="#">Hoteles <span></span></a>
       <a href="#">Ofertas <span></span></a>
       <a href="#">Destinos <span></span></a>
       <a href="#">Eventos &amp; Reuniones <span></span></a>
@@ -287,12 +297,6 @@
   <script src="javascripts/main.js"></script>
 	
   
-  <script>
-    $(document).foundation();
-
-    $('#body select').change(function(){
-      $('#footer').show();
-    })
-  </script>
+ 
 </body>
 </html>

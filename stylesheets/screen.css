@@ -432,6 +432,8 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 #hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; }
 
+.alinLeft { text-align: left; }
+
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
@@ -462,7 +464,7 @@ footer.row { background: #333333; max-width: none; }
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
 
-#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -42px; right: 0; }
+#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -40px; right: 0; }
 
 /*----------------------------------------------------------------------
  #mis-reservas
@@ -482,9 +484,10 @@ footer.row { background: #333333; max-width: none; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
-#aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; overflow-y: scroll; height: 400px; }
+#aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; height: 400px; }
 
-#scroll h1 { font-size: 14px; }
+#scroll { overflow-y: scroll; height: 330px; }
+#scroll h1, #scroll h2 { font-size: 14px; }
 #scroll p { font-size: 14px; }
 
 /*----------------------------------------------------------------------
@@ -588,9 +591,9 @@ footer.row { background: #333333; max-width: none; }
 .acceso-hotel ul li img { width: 100px; }
 
 .page-error { margin-bottom: 20px; }
-.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
+.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
 .page-error .slide-text-header { bottom: 100px; background-color: transparent; text-align: right; }
-.page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; }
+.page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; margin: 0; }
 
 .contacto { background: url("../images/mainbg.jpg") repeat left top; }
 .contacto .boxRig { width: 440px; float: left; }
@@ -604,7 +607,7 @@ footer.row { background: #333333; max-width: none; }
 .contacto #header { margin-bottom: 40px; }
 .contacto #body { margin-bottom: 50px; }
 .contacto #footer { display: none; }
-.contacto select { border: 2px solid #e5e5e5; color: #333333; font-size: 13px; font-weight: 200; width: 300px; padding-right: 20px; background-position-x: 267px; padding: 5px; }
+.contacto select { border: 2px solid #e5e5e5; color: #333333; font-size: 13px; font-weight: 200; width: 300px; padding-right: 20px; background: white url("../images/down-arrow.png") no-repeat 95% center; padding: 5px; }
 
 .newsText { margin-bottom: 50px; }
 .newsText h4 { font-weight: bold; }
