@@ -1714,7 +1714,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 
 select::-ms-expand { display: none; }
 
-.booking-form { background: rgba(255, 255, 255, 0.5); position: absolute; z-index: 2000; border: 1px solid rgba(255, 255, 255, 0.75); }
+.booking-form { background: rgba(255, 255, 255, 0.5); position: absolute; z-index: 1000; border: 1px solid rgba(255, 255, 255, 0.75); }
 .booking-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; width: 100%; padding: 5px; margin: 1px 10px 0 0; background: white url("../images/down-arrow.png") no-repeat 200px center; text-transform: none; font-weight: normal; }
 .booking-form input[type="text"] { font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; }
 .booking-form input[type="button"] { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
@@ -1992,10 +1992,10 @@ footer.row { background: #333333; max-width: none; }
 .tiempo .grados-rojo { color: #dc1c4d; }
 .tiempo .clima { font-size: 14px; }
 
-.slider-destinos-ciudad .cycle-slideshow { width: 940px; position: relative; }
-.slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next { width: 36px; height: 36px; border: 2px solid white; position: absolute; z-index: 800; cursor: pointer; top: 50%; }
-.slider-destinos-ciudad .cycle-slideshow .cycle-prev { left: 5%; background: url("../images/white-arrow-left.png") no-repeat 50% center; }
-.slider-destinos-ciudad .cycle-slideshow .cycle-next { background: url("../images/white-arrow.png") no-repeat 50% center; right: 5%; }
+.slider-destinos-ciudad .cycle-slideshow, .gallery-slideshow { width: 940px; position: relative; }
+.slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next, .gallery-slideshow div.cycle-prev, .gallery-slideshow div.cycle-next { width: 36px; height: 36px; border: 2px solid white; position: absolute; z-index: 800; cursor: pointer; top: 50%; }
+.slider-destinos-ciudad .cycle-slideshow .cycle-prev, .gallery-slideshow .cycle-prev { left: 5%; background: url("../images/white-arrow-left.png") no-repeat 50% center; }
+.slider-destinos-ciudad .cycle-slideshow .cycle-next, .gallery-slideshow .cycle-next { background: url("../images/white-arrow.png") no-repeat 50% center; right: 5%; }
 
 .items-2 li { float: left; width: 48%; margin: 0 1%; margin-bottom: 40px; }
 .items-2 .cont-img { margin-right: 5%; float: left; width: 40%; }
@@ -2085,7 +2085,7 @@ footer.row { background: #333333; max-width: none; }
 
 .subPage-title { font-size: 30px; }
 
-.contenido-presentacion, .contenido-calidad { width: 620px; margin-right: 20px; }
+.contenido-pagina { width: 620px; margin-right: 20px; }
 
 .presentacion { width: 828px; margin: 0 auto; }
 .presentacion h2.lines { width: 620px; }
@@ -2114,13 +2114,13 @@ footer.row { background: #333333; max-width: none; }
 
 .valores-bottom li:first-child { margin-left: 150px; margin-right: 40px; }
 
-.contenido-calidad li { margin-bottom: 35px; }
-.contenido-calidad li span { font-weight: bold; }
-.contenido-calidad li :before { content: "• "; color: #dc1c4d; }
-.contenido-calidad p { margin-bottom: 40px; }
+.contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li { margin-bottom: 35px; }
+.contenido-calidad li span, .contenido-celebraciones li span, .contenido-reuniones li span { font-weight: bold; }
+.contenido-calidad li:before, .contenido-celebraciones li:before, .contenido-reuniones li:before { content: "• "; color: #dc1c4d; display: inline-block; }
+.contenido-calidad p, .contenido-celebraciones p, .contenido-reuniones p { margin-bottom: 40px; }
 
-.calidad-ilustracion, .medioAmbiente-ilustracion { width: 300px; }
-.calidad-ilustracion img, .medioAmbiente-ilustracion img { display: block; margin: 0 auto; margin-bottom: 35px; }
+.ilustracion { width: 300px; }
+.ilustracion img { display: block; margin: 0 auto; margin-bottom: 35px; }
 
 .contenido-noticias { padding-top: 56px; }
 .contenido-noticias + .btn-lines.boldText { font-weight: bold; margin-bottom: 30px; }
@@ -2174,6 +2174,53 @@ footer.row { background: #333333; max-width: none; }
 .acceso-hotel ul li div h4 { font-size: 12px; font-weight: bold; text-transform: uppercase; color: #333333; }
 .acceso-hotel ul li div p { font-size: 14px; color: #333333; line-height: 18px; }
 .acceso-hotel ul li img { width: 100px; }
+
+#popUp-qr { width: 400px; }
+
+.servicios-detalle h2 { width: 600px; }
+
+.contenido-servicios { margin-bottom: 40px; }
+
+.servicios-info, .spa-info { padding: 55px 0; }
+.servicios-info img, .spa-info img { width: 173px; float: left; }
+.servicios-info li, .spa-info li { width: 440px; float: left; margin-bottom: 37px; }
+.servicios-info li:nth-child(odd), .spa-info li:nth-child(odd) { margin-right: 60px; }
+.servicios-info li .contenido, .spa-info li .contenido { width: 252px; margin-left: 15px; }
+.servicios-info li .contenido h3, .spa-info li .contenido h3 { font-weight: normal; font-size: 18px; margin-bottom: 10px; margin-top: 0; text-transform: uppercase; }
+.servicios-info li .contenido p, .spa-info li .contenido p { color: #666666; font-style: italic; font-size: 14px; }
+
+.hotel-spa { padding-bottom: 60px; }
+
+.ilustracion { text-align: center; }
+.ilustracion h3 { font-size: 18px; font-weight: normal; margin-bottom: 8px; }
+.ilustracion span { font-size: 11px; color: #dc1c4d; font-weight: bold; display: block; margin-bottom: 8px; }
+.ilustracion p { font-size: 14px; color: #666666; font-style: italic; margin-bottom: 30px; }
+.ilustracion .btn-black { padding: 15px 40px 15px 20px; }
+
+.spa-info h2 { width: 510px; }
+.spa-info .contenido span { font-size: 11px; font-weight: bold; color: #dc1c4d; }
+.spa-info .contenido h3 { margin-bottom: 0 !important; }
+
+.gallery-spa .lines { width: 628px; }
+
+.pdf-icon { height: 19px; width: 16px; background-image: url(../images/pdf-icon.png); background-repeat: no-repeat; background-position: center; }
+
+.fileLink { width: auto; height: auto; line-height: auto; display: inline-block; margin: 0 0 40px 0; }
+.fileLink a { color: #222222; }
+.fileLink .pdf-icon { margin-top: 3px; margin-left: 7px; }
+.fileLink + .fileLink { margin-left: 35px; }
+
+.contenido-celebraciones h4 { font-size: 14px; text-transform: uppercase; }
+.contenido-celebraciones li { margin-bottom: 16px; }
+.contenido-celebraciones .btn-black { margin-top: 40px; }
+
+.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes { padding-bottom: 60px; }
+
+.restaurantes-info { width: 300px; }
+.restaurantes-info h3 { font-size: 14px; font-weight: bold; }
+.restaurantes-info li { margin-bottom: 15px; }
+.restaurantes-info li span { font-weight: bold; }
+.restaurantes-info p { font-style: italic; color: #666666; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }

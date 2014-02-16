@@ -214,7 +214,7 @@ select::-ms-expand {display: none;}//ie remove appearance
 .booking-form{ 
   background: rgba(255,255,255,0.5);
   position: absolute;
-  z-index: 2000;
+  z-index: 1000;
   border: 1px solid rgba(255,255,255,0.75);
     select{
       -webkit-appearance: none;
@@ -1061,7 +1061,7 @@ footer.row{
 }
 
 
-.slider-destinos-ciudad .cycle-slideshow{
+.slider-destinos-ciudad .cycle-slideshow, .gallery-slideshow{
   width:940px;position: relative;
   div.cycle-prev,div.cycle-next{width:36px;height:36px;border:2px solid white;position:absolute;z-index: 800;cursor: pointer;top:50%;}
   .cycle-prev{left:5%;background: url("../images/white-arrow-left.png") no-repeat 50% center;}
@@ -1260,7 +1260,7 @@ footer.row{
   font-size: 30px;
 }
 
-.contenido-presentacion, .contenido-calidad{
+.contenido-pagina{
   width: 620px;
   margin-right:20px;
 }
@@ -1351,16 +1351,17 @@ footer.row{
 }
 
 //Calidad main
-.contenido-calidad{
+.contenido-calidad, .contenido-celebraciones, .contenido-reuniones{
   li{
     margin-bottom: 35px;
 
     span{
       font-weight: bold;
     }
-    :before{
+    &:before{
     content: "• ";
     color: #dc1c4d;
+    display: inline-block;
     }
   }
 
@@ -1369,7 +1370,7 @@ footer.row{
   }
 }
 
-.calidad-ilustracion, .medioAmbiente-ilustracion{
+.ilustracion{
   width: 300px;
 
   img{
@@ -1615,6 +1616,184 @@ footer.row{
         width: 100px;
       }
     }
+  }
+}
+
+#popUp-qr{
+  width: 400px;
+}
+
+//hotel-servicios
+.servicios-detalle{
+
+  h2{
+    width: 600px;
+  }
+}
+
+.contenido-servicios{
+  margin-bottom: 40px;
+}
+
+.servicios-info, .spa-info{
+  padding: 55px 0;
+  img{
+    width: 173px;
+    float: left;
+  }
+
+  li{
+    width: 440px;
+    float: left;
+    margin-bottom: 37px;
+
+    &:nth-child(odd){
+      margin-right: 60px; 
+    }
+
+    .contenido{
+      width: 252px;
+      margin-left: 15px; 
+      h3{
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      p{
+        color: #666666;
+        font-style: italic;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//Hotel-spa
+
+.hotel-spa{
+  padding-bottom: 60px;
+
+}
+.ilustracion{
+    text-align: center; 
+    h3{
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 8px; 
+    }
+
+    span{
+      font-size: 11px;
+      color: $pink;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    p{
+      font-size: 14px;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 30px; 
+    }
+
+    .btn-black{
+      padding: 15px 40px 15px 20px;  
+    }
+  }
+
+.spa-info{
+  h2{
+    width: 510px;
+  }
+
+  .contenido{ 
+
+    span{
+      font-size: 11px;
+      font-weight: bold;
+      color: $pink;
+    }
+
+    h3{
+      margin-bottom: 0 !important; 
+    }
+  }
+}
+
+.gallery-spa{
+
+  .lines{
+    width: 628px;
+  }
+}
+.pdf-icon{
+  height: 19px;
+  width: 16px;
+  background-image: url(../images/pdf-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fileLink{
+  width: auto;
+  height: auto;
+  line-height: auto;
+  display: inline-block;
+  margin: 0 0 40px 0;
+  
+  a{
+    color: #222222;
+  }
+  .pdf-icon{
+    margin-top: 3px;
+    margin-left: 7px;
+  }
+
+  & + &{
+    margin-left: 35px;
+  }
+}
+
+.contenido-celebraciones{
+  h4{
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  li{
+    margin-bottom: 16px; 
+  }
+
+  .btn-black{
+    margin-top: 40px;
+  }
+}
+
+.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes{
+  padding-bottom: 60px;
+}
+
+.restaurantes-info{
+  width: 300px;
+
+  h3{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  li{
+    margin-bottom: 15px;
+    span{
+      font-weight: bold;
+    }
+  }
+
+  p{
+    font-style: italic;
+    color: #666666;
   }
 }
 
