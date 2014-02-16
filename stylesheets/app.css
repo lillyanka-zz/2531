@@ -2020,6 +2020,8 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 #hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; }
 
+.alinLeft { text-align: left; }
+
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
@@ -2050,7 +2052,7 @@ footer.row { background: #333333; max-width: none; }
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
 
-#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -42px; right: 0; }
+#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -40px; right: 0; }
 
 /*----------------------------------------------------------------------
  #mis-reservas
@@ -2070,9 +2072,10 @@ footer.row { background: #333333; max-width: none; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
-#aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; overflow-y: scroll; height: 400px; }
+#aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; height: 400px; }
 
-#scroll h1 { font-size: 14px; }
+#scroll { overflow-y: scroll; height: 330px; }
+#scroll h1, #scroll h2 { font-size: 14px; }
 #scroll p { font-size: 14px; }
 
 /*----------------------------------------------------------------------
@@ -2223,9 +2226,9 @@ footer.row { background: #333333; max-width: none; }
 .restaurantes-info p { font-style: italic; color: #666666; }
 
 .page-error { margin-bottom: 20px; }
-.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 200px; background-position: 155px; margin: 0; display: inline-block; }
+.page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
 .page-error .slide-text-header { bottom: 100px; background-color: transparent; text-align: right; }
-.page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; }
+.page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; margin: 0; }
 
 .contacto { background: url("../images/mainbg.jpg") repeat left top; }
 .contacto .boxRig { width: 440px; float: left; }
@@ -2239,7 +2242,7 @@ footer.row { background: #333333; max-width: none; }
 .contacto #header { margin-bottom: 40px; }
 .contacto #body { margin-bottom: 50px; }
 .contacto #footer { display: none; }
-.contacto select { border: 2px solid #e5e5e5; color: #333333; font-size: 13px; font-weight: 200; width: 300px; padding-right: 20px; background-position-x: 267px; padding: 5px; }
+.contacto select { border: 2px solid #e5e5e5; color: #333333; font-size: 13px; font-weight: 200; width: 300px; padding-right: 20px; background: white url("../images/down-arrow.png") no-repeat 95% center; padding: 5px; }
 
 .newsText { margin-bottom: 50px; }
 .newsText h4 { font-weight: bold; }
@@ -2309,9 +2312,34 @@ footer.row { background: #333333; max-width: none; }
 .mapa-sitio .align-left { text-align: right; margin-top: 30px; }
 .mapa-sitio .linea { background: url("../images/black-lines.png") repeat-x left center; margin-bottom: 30px; display: block; height: 20px; }
 
+.bgCapas { width: 100%; background-color: rgba(0, 0, 0, 0.8); padding: 50px; }
+
+.capaHoteles { display: none; position: absolute; top: 0px; z-index: 5000; }
+.capaHoteles .containes-hote { width: 800px; margin: 0 auto; }
+.capaHoteles .containes-hote .hotel { width: 60%; float: left; }
+.capaHoteles .containes-hote .hotel ul { width: 50%; float: left; }
+.capaHoteles .containes-hote .hotel ul:first-child { padding-right: 5%; }
+.capaHoteles .containes-hote .hotel ul li { margin-top: 20px; }
+.capaHoteles .containes-hote .hotel ul li:first-child { margin-top: 0; }
+.capaHoteles .containes-hote .hotel h2 { font-size: 14px; color: white; text-transform: uppercase; }
+.capaHoteles .containes-hote .hotel h3 { font-size: 11px; color: #dc1c4d; text-transform: uppercase; }
+.capaHoteles .containes-hote .picture { width: 40%; float: right; padding-left: 5%; text-align: right; font-weight: 700; font-size: 0.75em; }
+.capaHoteles .containes-hote .picture img { margin-bottom: 20px; }
+.capaHoteles .containes-hote .picture a { border: 2px solid white; background: url("../images/white-arrow.png") no-repeat 95% center; text-transform: uppercase; color: white; padding: 10px 40px 10px 10px; height: 40px; line-height: 40px; }
+
+.capaDestinos { display: none; position: absolute; top: 0px; z-index: 5000; }
+.capaDestinos .containes-desti { width: 800px; margin: 0 auto; }
+.capaDestinos .containes-desti .destinos { width: 60%; float: left; text-align: right; padding-right: 5%; }
+.capaDestinos .containes-desti .destinos ul li { margin-top: 20px; }
+.capaDestinos .containes-desti .destinos ul li:first-child { margin-top: 0; }
+.capaDestinos .containes-desti .destinos h2 { font-size: 14px; color: white; text-transform: uppercase; }
+.capaDestinos .containes-desti .picture { width: 40%; float: right; text-align: right; font-weight: 700; font-size: 0.75em; }
+.capaDestinos .containes-desti .picture img { margin-bottom: 20px; }
+.capaDestinos .containes-desti .picture a { border: 2px solid white; background: url("../images/white-arrow.png") no-repeat 95% center; text-transform: uppercase; color: white; padding: 10px 40px 10px 10px; height: 40px; line-height: 40px; }
+
 /*         ui jquery css   */
 /*! jQuery UI - v1.10.4 - 2014-02-12
-* http://jqueryui.com
+* http://jhqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.datepicker.css, jquery.ui.theme.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=0&bgColorHeader=%23ffffff&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=%23ffffff&fcHeader=%23dc1c4d&iconColorHeader=%23000000&bgColorContent=%23ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=%23ffffff&fcContent=%23dc1c4d&iconColorContent=%23000000&bgColorDefault=%23ffffff&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=%23ffffff&fcDefault=%23000000&iconColorDefault=%23ffffff&bgColorHover=%23dc1c4d&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=%23ffffff&fcHover=%23ffffff&iconColorHover=%23454545&bgColorActive=%23dc1c4d&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=%23ffffff&fcActive=%23f5f5f5&iconColorActive=%23454545&bgColorHighlight=%23ffffff&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=%23ffffff&fcHighlight=%23dc1c4d&iconColorHighlight=%230b0b0b&bgColorError=%23fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=%23cd0a0a&fcError=%23cd0a0a&iconColorError=%23cd0a0a&bgColorOverlay=%23ffffff&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=%23ffffff&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */

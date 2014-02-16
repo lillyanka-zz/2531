@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rafael Hoteles</title>
+
+  
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=278840028812868";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!--********************************************************
+                        Header TOP  nav Menu
+  ********************************************************-->
+  <div class="row">
+    <div class="left-tools">
+      <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+      <a href="#">Contacto</a>
+    </div>
+    <!--Logo icono-->
+    <img src="images/logo-icono.png" alt="" class="logo-icono">
+    <ul class="menu-top right">
+      <li><a href="#">Español</a>
+        <!-- dropdown -->
+        <ul>
+            <li><a href="" id="ESPA">ESPAÑOL</a></li>
+            <li><a href="" id="CATA">CATALÀ</a></li>
+            <li><a href="" id="ENG">ENGLISH</a></li>
+            <li><a href="" id="DEUT">DEUT</a></li>
+            <li><a href="" id="FRAN">FRANÇAIS</a></li>
+            <li><a href="" id="ITAL">ITALIANO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Empresas</a></li>
+      <li><a href="#">Agencias</a></li>
+      <li><a href="#">Mis Reservas</a></li>
+    </ul>
+  </div> 
+
+  <div class="row main-menu">
+    <nav class="clearfix">
+      <a href="#" class="active">Hoteles <span></span></a>
+      <a href="#" id="subMenuOfertas">Ofertas <span></span></a>
+      <a href="#" id="subMenuODestinos">Destinos <span></span></a>
+      <a href="#">Eventos &amp; Reuniones <span></span></a>
+      <a href="#">Rafael Hoteles <span></span></a>
+      <a href="#">Reservas <span></span></a>
+    </nav>
+  </div><!-- /row -->
+  <!--********************************************************
+                        Slider with booking
+  ********************************************************-->
+  <div class="booking-slider">
+    <div class="row ">
+      <div>
+        <div class="slide">
+          <img src="images/slider-mejores-ofertas.jpg" alt="" />
+          <div class="slide-text-header">
+            <h3>Consulte <strong>Nuestras ofertas</strong></h3>
+            <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
+          </div>
+        </div>
+      </div><!-- /text -->
+      <div class=" booking-form">
+        <h3 class="lines">Reservas</h3>
+        <form action="">
+          <select id="hotel-select">
+            <option>Selecciona Hotel</option>
+          </select>
+          <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
+          <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
+          <input type="button" value="RESERVAR" />
+        </form>
+      </div><!-- /form -->
+    </div><!-- /row -->
+
+
+    <!-- @jimmy quitar sino ocupa /capas menu -->
+    <div class="capaHoteles bgCapas">
+      <div class="containes-hote clearfix">
+        <div class="hotel">
+          <ul>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+            <li>
+              <h2>refaelhoteles badalona</h2>
+              <h3>barcelona</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="picture">
+          <img src="images/capas-menu-hotel.jpg">
+          <a href="">ver todos los hoteles</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="capaDestinos bgCapas">
+      <div class="containes-desti clearfix">
+        <div class="destinos">
+          <ul>
+            <li>
+              <h2>Barcelona</h2>
+            </li>
+            <li>
+              <h2>Barcelona</h2>
+            </li>
+            <li>
+              <h2>Barcelona</h2>
+            </li>
+            <li>
+              <h2>Barcelona</h2>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="picture">
+          <img src="images/capas-menu-destinos.jpg">
+          <a href="">ver mapa de ubicacion</a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </div>
+   <!--********************************************************
+                        BREADCRUMB
+  ********************************************************-->
+  <div class="row submenu">
+      <div>
+        <div class="centered" >
+          <div>
+            <ul class="clearfix left breadcumbs">
+              <li><a href="index.html">Incios > </a></li>
+              <li><a href="#" class="active">Trabaja con nosotros</a></li>
+              
+            </ul>
+          </div>
+          <div class="right icons">
+            <ul class="clearfix">
+              <!-- <li><a href="#" class="face ir">facebook</a></li> -->
+              <li><a href="#" class="rss ir">rss</a></li>
+            </ul>
+          </div>
+         </div> 
+      </div>
+  </div><!-- /sub menu -->	
+  
+   <!--********************************************************
+                           text 
+     ********************************************************-->
+   
+     <div class="row">
+       <div class="centered newsText trabajo-text-main">
+         <h4>Trabaja con nosotros</h4>
+             <p>Si quieres formar parte de una cadena hotelera formada por un equipo joven y emprendedor, ponte en contacto con nosotros y buscaremos el trabajo que mejor se adapta a tu perfil.</p>
+             <p>Actualmente tenemos <span class="ofertas-disponibles">5 ofertas de trabajo<span></p>
+       </div>
+     </div><!-- /sub menu -->
+ <!--********************************************************
+                           items empleo 
+     ********************************************************-->
+
+     <div class="bgGray">
+        <div class="row ">
+          <div class="centered clearfix  ">
+            <ul class="items-trabajo">
+              <li>
+                <a  class="detalles">ver detalles</a>
+                <a href="#" class="btn-black">INSCRIBIRME</a>
+                <span class="close ir"> cerrar</span>
+                <div class="titles">
+                  <h4>RECEPCIONISTA</h4>
+                  <h5>05 NOV 2013 · RAFAELHOTELES MADRID NORTE</h5>
+                </div>
+                <div class="info">
+                  <div class="box">
+                    <h6>Descripción</h6>
+                    <p>Realizar las operaciones y trámites necesarios para la incorporación y salida de los huéspedes en el Hotel, de acuerdo a las normas de Atención al Cliente previamente establecidas, a fin de garantizar la Satisfacción del Cliente. Así como atender todas las necesidades y dudas del Cliente durante su estancia</p>
+                  </div>
+                  <div class="box">
+                        <h6>Requisitos mínimos</h6>
+                        <ul class="listBullet">
+                          <li><span>Experiencia demostrable en puesto similar.</span></li>
+                          <li><span>Dominio de Español e inglés hablado y escrito valorándose el conocimiento de otros idiomas.</span></li>
+                          <li><span>Buenos conocimientos de programas informáticos (Office, Tesipro..)</span></li>
+                          <li><span>Persona con claro enfoque y dedicación al cliente, con interés y voluntad para adaptarse al puesto, así como </span></li>
+                          <li><span>capacidad de Liderazgo, motivación y formación</span></li>
+                        </ul>
+                 </div>
+                </div>   
+              </li>
+              <li>
+                <a  class="detalles">ver detalles</a>
+                <a href="#" class="btn-black">INSCRIBIRME</a>
+                <span class="close ir"> cerrar</span>
+                <div class="titles">
+                  <h4>Técnico spa</h4>
+                  <h5>05 NOV 2013 · RAFAELHOTELES MADRID NORTE</h5>
+                </div>
+                <div class="info">
+                  <div class="box">
+                    <h6>Descripción</h6>
+                    <p>Realizar las operaciones y trámites necesarios para la incorporación y salida de los huéspedes en el Hotel, de acuerdo a las normas de Atención al Cliente previamente establecidas, a fin de garantizar la Satisfacción del Cliente. Así como atender todas las necesidades y dudas del Cliente durante su estancia</p>
+                  </div>
+                  <div class="box">
+                        <h6>Requisitos mínimos</h6>
+                        <ul class="listBullet">
+                          <li><span>Experiencia demostrable en puesto similar.</span></li>
+                          <li><span>Dominio de Español e inglés hablado y escrito valorándose el conocimiento de otros idiomas.</span></li>
+                          <li><span>Buenos conocimientos de programas informáticos (Office, Tesipro..)</span></li>
+                          <li><span>Persona con claro enfoque y dedicación al cliente, con interés y voluntad para adaptarse al puesto, así como </span></li>
+                          <li><span>capacidad de Liderazgo, motivación y formación</span></li>
+                        </ul>
+                 </div>
+                </div>  
+              </li>
+              <li>
+                <a  class="detalles">ver detalles</a>
+                <a href="#" class="btn-black">INSCRIBIRME</a>
+                <span class="close ir"> cerrar</span>
+                <div class="titles">
+                  <h4>jefe de cocina</h4>
+                  <h5>05 NOV 2013 · RAFAELHOTELES MADRID NORTE</h5>
+                </div>
+                <div class="info">
+                  <div class="box">
+                    <h6>Descripción</h6>
+                    <p>Realizar las operaciones y trámites necesarios para la incorporación y salida de los huéspedes en el Hotel, de acuerdo a las normas de Atención al Cliente previamente establecidas, a fin de garantizar la Satisfacción del Cliente. Así como atender todas las necesidades y dudas del Cliente durante su estancia</p>
+                  </div>
+                  <div class="box">
+                        <h6>Requisitos mínimos</h6>
+                        <ul class="listBullet">
+                          <li><span>Experiencia demostrable en puesto similar.</span></li>
+                          <li><span>Dominio de Español e inglés hablado y escrito valorándose el conocimiento de otros idiomas.</span></li>
+                          <li><span>Buenos conocimientos de programas informáticos (Office, Tesipro..)</span></li>
+                          <li><span>Persona con claro enfoque y dedicación al cliente, con interés y voluntad para adaptarse al puesto, así como </span></li>
+                          <li><span>capacidad de Liderazgo, motivación y formación</span></li>
+                        </ul>
+                 </div>
+                </div>
+              </li>
+              <li>
+                <a  class="detalles">ver detalles</a>
+                <a href="#" class="btn-black">INSCRIBIRME</a>
+                <span class="close ir"> cerrar</span>
+                <div class="titles">
+                  <h4>jefe de recepción</h4>
+                  <h5>05 NOV 2013 · RAFAELHOTELES MADRID NORTE</h5>
+                </div>
+                <div class="info">
+                  <div class="box">
+                    <h6>Descripción</h6>
+                    <p>Realizar las operaciones y trámites necesarios para la incorporación y salida de los huéspedes en el Hotel, de acuerdo a las normas de Atención al Cliente previamente establecidas, a fin de garantizar la Satisfacción del Cliente. Así como atender todas las necesidades y dudas del Cliente durante su estancia</p>
+                  </div>
+                  <div class="box">
+                        <h6>Requisitos mínimos</h6>
+                        <ul class="listBullet">
+                          <li><span>Experiencia demostrable en puesto similar.</span></li>
+                          <li><span>Dominio de Español e inglés hablado y escrito valorándose el conocimiento de otros idiomas.</span></li>
+                          <li><span>Buenos conocimientos de programas informáticos (Office, Tesipro..)</span></li>
+                          <li><span>Persona con claro enfoque y dedicación al cliente, con interés y voluntad para adaptarse al puesto, así como </span></li>
+                          <li><span>capacidad de Liderazgo, motivación y formación</span></li>
+                        </ul>
+                 </div>
+                </div>
+              </li>
+              <li>
+                <a  class="detalles">ver detalles</a>
+                <a href="#" class="btn-black">INSCRIBIRME</a>
+                <span class="close ir"> cerrar</span>
+                <div class="titles">
+                  <h4>REVENUE MANAGER</h4>
+                  <h5>05 NOV 2013 · RAFAELHOTELES MADRID NORTE</h5>
+                </div>
+                <div class="info">
+                  <div class="box">
+                    <h6>Descripción</h6>
+                    <p>Realizar las operaciones y trámites necesarios para la incorporación y salida de los huéspedes en el Hotel, de acuerdo a las normas de Atención al Cliente previamente establecidas, a fin de garantizar la Satisfacción del Cliente. Así como atender todas las necesidades y dudas del Cliente durante su estancia</p>
+                  </div>
+                  <div class="box">
+                        <h6>Requisitos mínimos</h6>
+                        <ul class="listBullet">
+                          <li><span>Experiencia demostrable en puesto similar.</span></li>
+                          <li><span>Dominio de Español e inglés hablado y escrito valorándose el conocimiento de otros idiomas.</span></li>
+                          <li><span>Buenos conocimientos de programas informáticos (Office, Tesipro..)</span></li>
+                          <li><span>Persona con claro enfoque y dedicación al cliente, con interés y voluntad para adaptarse al puesto, así como </span></li>
+                          <li><span>capacidad de Liderazgo, motivación y formación</span></li>
+                        </ul>
+                 </div>
+                </div>
+              </li>
+            </ul>
+          
+
+          </div>
+         
+        </div>
+     </div>
+
+      <!--********************************************************
+                           text -bottom
+     ********************************************************-->
+     <div class="row">
+       <div class="text-trabajo-bottom">
+         
+             <p>Si nuestras ofertas de empleo no se ajustan a tu especialidad, puedes enviarnos igualmente tu curriculum, lo tendremos en cuenta para futuras convocatorias.</p>
+             <a href="#" class="btn-black">Enviar cv</a>
+       </div>
+     </div><!-- /sub menu -->
+     
+
+   
+
+  <!--********************************************************
+                        social 
+  ********************************************************-->
+  
+  
+  
+
+  
+  <div class="row social">
+    <div>
+      <ul>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="rafaelhoteles">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+        <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
+        <li><!-- Place this tag where you want the +1 button to render. -->
+        <div class="g-plusone" data-annotation="inline" data-width="120"></div>
+        
+        <!-- Place this tag after the last +1 button tag. -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script></li>
+      </ul>  
+    </div>
+  </div><!-- /row -->
+
+ <!--********************************************************
+                        Footer 
+  ********************************************************-->
+<footer class="row">
+     <div class="footer-top">
+       <nav>
+         <a class="facebook" href="">Facebook</a>
+         <a class="twitter" href="">Twitter</a>
+         <a class="pinterest" href="">Pinterest</a>
+         <a class="instagram" href="">Instagram</a>
+         <a class="youtube" href="">Youtube</a>
+       </nav>
+       <div class="right">
+         <form method="post" action="">
+           <h3>Newsletter</h3>
+           <input type="text" name="email" placeholder="E-MAIL" />
+           <input type="button" class="btn pink" name="submit" value="Registrarme" />
+         </form>
+       </div>
+     </div><!-- /row top -->
+     <div class="footer-middle">
+       <div>
+         <div>
+           <span class="city-title">Barcelona</span>
+           <a href="">Rafaelhoteles Barcelona</a>
+         </div>
+         <div>
+           <span class="city-title">Bilbao</span>
+           <a href="">Holiday Inn Bilbao</a>
+         </div>
+         <div>
+           <span class="city-title">Madrid</span>
+           <a href="">Holiday Inn Madrid-Pirámides</a>
+           <a href="">Rafaelhoteles Atocha</a>
+           <a href="">Rafaelhoteles Madrid Norte</a>
+           <a href="">Rafaelhoteles Orense</a>
+           <a href="">Rafaelhoteles Ventas</a>
+           <a href="">Rafaelhoteles Forum Alcalá</a>
+         </div>
+         <div>
+           <span class="city-title">Baqueira</span>
+           <a href="">Rafaelhoteles by La Pleta</a>
+         </div>
+         <div>
+           <span class="city-title">Salamanca</span>
+           <a href="">Salamanca Forum</a>
+         </div>
+       </div>
+     </div><!-- /row middle -->
+     <div class="footer-bottom">
+       <div>
+         <nav>
+           <a href="" class="btn-lines white">Trabaja con nosotros</a>
+           <a href="" class="btn-lines white">Mapa web</a>
+           <a href="" class="btn-lines white">Aviso legal</a>
+         </nav>
+         <span class="credits right">by eMascaró Tourism</span>
+       </div>
+     </div><!-- /row bottom -->
+   </footer> 
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <script src="javascripts/vendor/cycle2.js"></script>
+  <script src="javascripts/vendor/wood.js"></script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+	
+	<script src="javascripts/foundation/foundation.abide.js"></script>
+	
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/foundation.interchange.js"></script>
+	
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+  <script src="javascripts/main.js"></script>
+	
+  
+</body>
+</html>
