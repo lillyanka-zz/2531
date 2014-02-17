@@ -1,10 +1,17 @@
 $pink: #dc1c4d;
 
+.center{
+  text-align: center;
+}
+
 .row.city{
   max-width: none;
   width: 100%;
   margin: 0;
   background: #fff;
+  &.room{
+    margin: 10px 0;
+  }
   h2.lines{
     width: 400px;
     margin-bottom: 13px;
@@ -33,6 +40,18 @@ $pink: #dc1c4d;
         text-transform: uppercase;
         margin-bottom: 0;
       }
+      .btn-black{
+        margin-top: 30px;
+        display: table;
+        height: 30px;
+        padding: 0 38px 0 10px;
+      }
+      p.center{
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        font-style: normal;
+      }
       p{
         font-style: italic;
         color: #666;
@@ -53,6 +72,12 @@ $pink: #dc1c4d;
     .hotel-price{
       width: 140px;
       margin-right: 20px;
+      &.info{
+        margin: 0 auto;
+        .price{
+          text-decoration: underline;
+        }
+      }
       .info{
         width: 100%;
         padding-top: 45px;
