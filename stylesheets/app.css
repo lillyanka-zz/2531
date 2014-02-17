@@ -1692,7 +1692,7 @@ address { font-size: 0.875em; line-height: 1.7em; }
 
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
-.btn-black { background: black url("../images/white-arrow.png") no-repeat 95% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
+.btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
 .btn-black:hover { background-color: #dc1c4d; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: block; height: 28px; width: 150px; margin: 30px auto 0; overflow: hidden; text-align: center; }
@@ -1708,7 +1708,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
-.menu-booking-slider ul li a, .items-servicios li:hover .overlay, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.menu-booking-slider ul li a, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .mejores-ofertas select, #hotel-select-agenda, .contacto select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -1742,7 +1742,7 @@ ul.ofertas li .bottom h4 { font-size: 1.125em; font-weight: normal; color: #000;
 ul.ofertas li .bottom h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
 ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 
-.slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; text-align: right; }
+.slide-text-header { position: absolute; right: 70px; bottom: 0; padding: 0 30px 20px 0; text-align: right; }
 .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
 
@@ -1929,6 +1929,8 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 .clearPadding { padding: 0 !important; }
 
+.centeredOfertas { width: 940px; margin: 0 auto; }
+
 .ofertas-detalle img { width: 100%; }
 .ofertas-detalle h2.lines { width: 760px; }
 .ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 110px; padding-top: 3px; line-height: 23px; }
@@ -1956,7 +1958,7 @@ footer.row { background: #333333; max-width: none; }
 #disponibles-ofertas .info { padding-top: 10px; }
 #disponibles-ofertas h3 { font-size: 1.125em; text-transform: uppercase; }
 #disponibles-ofertas h3 + span { display: block; color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; }
-#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; }
+#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; }
 #disponibles-ofertas li > div:last-child { text-align: right; }
 #disponibles-ofertas span.price { display: inline; color: black; font-size: 36px; text-decoration: none; }
 #disponibles-ofertas .des { font-size: 10px; }
@@ -1971,9 +1973,9 @@ footer.row { background: #333333; max-width: none; }
 .items-servicios li { margin-top: 20px; position: relative; height: 575px; }
 .items-servicios li:first-child { margin-top: 0; }
 .items-servicios li:hover { cursor: pointer; }
-.items-servicios li:hover .overlay { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.items-servicios li:hover .mascara { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .items-servicios li:hover .button { background-color: #dc1c4d; color: white; border-color: #dc1c4d; }
-.items-servicios .overlay { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); }
+.items-servicios .mascara { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); }
 
 /*----------------------------------------------------------------------
  DESTINOS-ciudad @jimmy
@@ -2035,10 +2037,11 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .eventos-title { margin-bottom: 50px; }
-.eventos-title .btn-black { width: 260px; margin: 0; background: black url("../images/white-arrow.png") no-repeat 230px center; margin-top: 20px; }
+.eventos-title .btn-black { width: 260px; margin: 0; background: black url("../images/white-arrow.png") no-repeat 95% center; margin-top: 20px; }
 .eventos-title + .slider-destinos-ciudad { margin-bottom: 20px; }
+.eventos-title strong { display: block; margin-bottom: 20px; }
 
-.items-eventos .btn-black { text-align: left; width: 210px; background: black url("../images/white-arrow.png") no-repeat 172px center; }
+.items-eventos .btn-black { width: 200px; text-align: left; margin: 10px auto; display: block; background: black url("../images/white-arrow.png") no-repeat 95% center; line-height: normal; }
 .items-eventos h5 { margin-bottom: 5px; }
 
 /*----------------------------------------------------------------------
@@ -2052,7 +2055,7 @@ footer.row { background: #333333; max-width: none; }
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
 
-#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -40px; right: 0; }
+#icon-close { position: absolute; display: block; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: -41px; right: 0; }
 
 /*----------------------------------------------------------------------
  #mis-reservas

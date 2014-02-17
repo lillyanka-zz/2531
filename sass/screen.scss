@@ -140,7 +140,7 @@ span.note{
 }
 
 .btn-black{
-  background: black url("../images/white-arrow.png") no-repeat 95% center;
+  background: black url("../images/white-arrow.png") no-repeat 90% center;
   height: 50px;
   border: none;
   color: #fff;
@@ -338,7 +338,7 @@ ul.ofertas{
 
 .slide-text-header{
       position: absolute;
-      right: 0;
+      right: 70px;
       bottom: 0;
       padding: 0 30px 20px 0;
       text-align: right;
@@ -960,7 +960,7 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 .clearPadding{padding:0 !important;}
-
+.centeredOfertas{width:940px;margin: 0 auto;}
 .ofertas-detalle{
   img{width:100%;}
   h2.lines{width: 760px;}
@@ -1002,7 +1002,7 @@ footer.row{
   .info{padding-top:10px;}
   h3{font-size:1.125em;text-transform:uppercase }
   h3 + span{display:block;color: $pink;font-size: 0.688em;text-transform:uppercase;}
-  .btn-black{display:inline-block;margin-left:20px; }
+  .btn-black{display:inline-block;margin-left:20px; line-height: normal;}
   li > div:last-child{text-align:right;}
   span.price{display:inline;color:black;font-size:36px;text-decoration:none; }
   .des{font-size:10px; }
@@ -1026,10 +1026,10 @@ footer.row{
   li{margin-top:20px;position: relative;height: 575px;
     &:first-child{margin-top: 0;}
     &:hover{cursor: pointer;}
-    &:hover .overlay{@include opacity(1);@extend %trans;}
+    &:hover .mascara{@include opacity(1);}
     &:hover .button{background-color:$pink;color:white;border-color:$pink;}
    }
-   .overlay{@include opacity(0);position: absolute;width:100%;height:100%;
+   .mascara{@include opacity(0);@extend %trans;position: absolute;width:100%;height:100%;
     top:0;left:0;background-color:rgba(black,0.5);
    }
 
@@ -1162,12 +1162,13 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 .eventos-title{margin-bottom:50px;
-  .btn-black{width: 260px;margin: 0;background: #000 url("../images/white-arrow.png") no-repeat 230px center;margin-top: 20px;}
+  .btn-black{width: 260px;margin: 0;background: #000 url("../images/white-arrow.png") no-repeat 95% center;margin-top: 20px;}
 + .slider-destinos-ciudad{margin-bottom:20px;}
+  strong{display:block;margin-bottom:20px; }
 }
 
 .items-eventos{
-  .btn-black{text-align:left;width:210px;background: #000 url("../images/white-arrow.png") no-repeat 172px center;}
+  .btn-black{width: 200px;text-align:left;margin: 10px auto;display: block;background: #000 url("../images/white-arrow.png") no-repeat 95% center;line-height:normal;}
   h5{margin-bottom:5px; }
 }
 
@@ -1185,7 +1186,7 @@ footer.row{
     select{border: 1px solid #cccccc;}
 }
 
-#icon-close{position:absolute; display:block;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px; top:-40px;right:0;}
+#icon-close{position:absolute; display:block;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px; top:-41px;right:0;}
 
 
 /*----------------------------------------------------------------------
