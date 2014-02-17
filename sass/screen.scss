@@ -88,6 +88,9 @@ h2.lines{
   text-transform: uppercase;
   line-height: 1em;
   margin: 0.5em auto 0;
+  display: table;
+  margin: 0 auto;
+  padding: 0 30px;
   &.pink{
     background: $pink-lines-bg;
     color: $pink;
@@ -161,9 +164,9 @@ span.note{
   color: #000;
   font-size: 0.688em;
   line-height: 28px; 
-  display: block;
+  display: table;
   height: 28px;
-  width: 150px;
+  width: auto;
   margin: 30px auto 0;
   overflow: hidden;
   text-align: center;
@@ -385,7 +388,7 @@ ul.ofertas{
         }
       }
 
-.boxtext{padding:20px 0;background-color:white;}
+.boxtext{padding:40px 0;background-color:white;}
 .fbIcon{display: block;background:url('../images/ico-share-facebook.png') no-repeat center ;width:11px;height:20px;float:right;}
 .twIcon{display: block;background:url('../images/ico-share-twitter.png')  no-repeat center;width:21px;height:20px;float:right;margin:0 5%;}
 
@@ -1120,8 +1123,12 @@ footer.row{
 
 #hotel-select-agenda{@extend %select-style;height:40px;border:1px solid $light-gray;
   background: white url("../images/down-arrow.png") no-repeat 200px center;
+  padding-right: 91px;
+  margin-top: 54px;
 }
-
+.info{
+  width: 75%;
+}
 .alinLeft{text-align:left;}
 .info-destino-ciudad-detalle{
   p{font-size:14px;color:$dark-gray;}
@@ -1153,6 +1160,16 @@ footer.row{
     }
 }
 
+
+
+.destinos-agenda{
+  h2{
+    width: 472px;
+  }
+  .btn-lines{
+    width: 104px;
+  }
+}
 
 
 
