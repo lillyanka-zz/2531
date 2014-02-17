@@ -35,26 +35,16 @@
     <!--Logo icono-->
     <img src="images/logo-icono.png" alt="" class="logo-icono">
     <ul class="menu-top right">
-      <li><a href="#">Español</a>
-        <!-- dropdown -->
-        <ul>
-            <li><a href="" id="ESPA">ESPAÑOL</a></li>
-            <li><a href="" id="CATA">CATALÀ</a></li>
-            <li><a href="" id="ENG">ENGLISH</a></li>
-            <li><a href="" id="DEUT">DEUT</a></li>
-            <li><a href="" id="FRAN">FRANÇAIS</a></li>
-            <li><a href="" id="ITAL">ITALIANO</a></li>
-        </ul>
-      </li>
+      <li><a href="#">Español</a></li>
       <li><a href="#">Empresas</a></li>
       <li><a href="#">Agencias</a></li>
       <li><a href="#">Mis Reservas</a></li>
     </ul>
-  </div>  
+  </div> 
 
   <div class="row main-menu">
     <nav class="clearfix">
-      <a href="#">Hoteles <span></span></a>
+      <a href="#" class="active">Hoteles <span></span></a>
       <a href="#">Ofertas <span></span></a>
       <a href="#">Destinos <span></span></a>
       <a href="#">Eventos &amp; Reuniones <span></span></a>
@@ -65,16 +55,12 @@
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
-  <div class="booking-slider">
+  <div class="booking-slider tall">
     <div class="row ">
       <div>
         <div class="slide">
-          <img src="images/hoteles-booking.jpg" alt="" />
-          <div class="slide-text-header">
-
-             <h3>CONTACTA<strong> CON NOSOTROS</strong></h3>
-            <span class="slide-caption">Siempre a su disposición para atenderle.</span>
-          </div>
+          <img src="images/spa.jpg" alt="" />
+          <a href="" class="btn-galeria">Galer&iacute;a fotogr&aacute;fica</a>
         </div>
       </div><!-- /text -->
       <div class=" booking-form">
@@ -85,9 +71,24 @@
           </select>
           <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
           <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="button" value="RESERVAR" />
+          <input type="text" placeholder="COD PROMO" name="checkout" id="codpromo" />
+          <input type="button" value="BUSCAR" />
         </form>
       </div><!-- /form -->
+      <div class="menu-booking-slider">
+        <img src="images/log-negro.png">
+        <ul>
+          <li><a href="#">El hotel </a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Ubicación </a></li>
+          <li><a href="#">Habitaciones </a></li>
+          <li><a href="#" class="active">Spa </a></li>
+          <li><a href="#">Restaurantes </a></li>
+          <li><a href="#">Celebraciones</a></li>
+          <li><a href="#">Reuniones </a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+      </div>
     </div><!-- /row -->
   </div>
    <!--********************************************************
@@ -98,8 +99,10 @@
         <div class="centered" >
           <div>
             <ul class="clearfix left breadcumbs">
-              <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">Contacto</a></li>
+              <li><a href="index.html">Incio > </a></li>
+              <li><a href="index.html">Hoteles > </a></li>
+              <li><a href="index.html">Rafaelhoteles Badalona > </a></li>
+              <li><a href="#" class="active">Spa</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -117,54 +120,98 @@
      ********************************************************-->
    
      <div class="row">
-       <div class="centered">
-         <h4>Contacto</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales venenatis erat. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+       <div class="centered hotel-spa">
+       <h3>Spa</h3>
+         <div class="left contenido-pagina">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium porttitor nulla non venenatis. Donec in justo dictum, rutrum lacus sit amet, bibendum odio. Mauris pulvinar erat nec lorem porta tempor. Morbi rutrum pulvinar ornare. Pellentesque tellus lectus, lacinia eget arcu quis, fermentum vulputate urna. Nunc mollis massa at magna blandit bibendum. Suspendisse tempor varius pellentesque.</p>
+           <p>Mauris nec faucibus ipsum. Integer eu pellentesque metus. Donec placerat sit amet risus sed consequat. Aenean aliquet, mauris eget laoreet lacinia, turpis massa scelerisque ante, aliquam malesuada tortor quam et elit. Vestibulum vestibulum lectus sed mattis dignissim. Morbi sollicitudin id dui sit amet imperdiet. Pellentesque sem tellus, tincidunt in dui quis, tempus condimentum nulla. Maecenas suscipit nec elit in lobortis. </p>
+           <div class="btn-lines fileLink">
+             <a href="#" class="left">DOSSIER SPA</a>
+             <span class="pdf-icon left">
+           </div>
+           
+         </div>
+
+         <div class="left ilustracion">
+           <img src="images/spa-ilustracion.jpg" alt="">
+           <h3>FINES DE SEMANA ÚNICOS</h3>
+           <span>HOTELES MADRID Y BARCELONA</span>
+           <p>Queremos que tus fines de semana de septiembre sean inolvidables.</p>
+           <a href="#" class="btn-black">RESERVAR</a>
+         </div>
        </div>
+     </div><!-- /row -->
+  <div class="row bgGray gallery-spa">
+    <div class="centered">
+      <h2 class="lines">EL SPA EN IMÁGENES</h2>
+      <span class="note">Lo mejor de nuestro spa</span>
+      <div class="text-center cycle-slideshow gallery-slideshow">
+          <div class="cycle-prev"></div>
+          <div class="cycle-next"></div>
+          <img src="images/spa-slide1.jpg">
+          <img src="images/spa-slide1.jpg">
+          <img src="images/spa-slide1.jpg">
+      </div>
+      <a href="#" class="btn-lines">TOUR VIRTUAL 360º</a>
+    </div>
+  </div>
 
-
-     </div><!-- /sub menu -->
-     <div class="bgGraySimple">
-        <div class="row ">
-          <div class="centered clearfix contacto">
-            <div class="boxRig">
-              <div id="header">
-                <h3>oficinas centrales</h3>
-                <span>Méndez Alvaro, 30, 28045, Madrid</span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-                <span class="ir linea"></span>
-              </div>
-              <div id="body">
-                <h3>CONTACTA CON NOSOTROS</h3>
-                <p>Elija uno de nuestros hoteles o departamento corporativo para ver
-                sus datos de contacto: </p>
-                <form>
-                  <select>
-                    <option value="">Sellecione hotel o departamento</option>
-                    <option value="">hotel</option>
-                    <option value="">hotel</option>
-                  </select>
-                </form>
-              </div>
-              <div id="footer">
-                <h4>Rafaelhoteles</h4>
-                <span><address>Méndez Alvaro, 30, 28045, Madrid</address></span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-              </div>
-
-            </div>
-            <div class="boxLeft">
-              <img src="images/mapa-contacto.jpg">
-            </div>
+  <div class="row">
+    <div class="centered spa-info">
+      <h2 class="lines">TRATAMIENTOS</h2>
+      <span class="note">Bienestar en estado puro.</span>
+      <ul>
+        <li>
+          <img src="images/spa1.jpg" alt="">
+          <div class="left contenido">
+            <h3>DETOX</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
           </div>
-        </div>
-     </div>
-     
-     
-   
-
+        </li>
+        <li>
+          <img src="images/spa2.jpg" alt="">
+          <div class="left contenido">
+            <h3>EXPPRESS FACIAL</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/spa3.jpg" alt="">
+          <div class="left contenido">
+            <h3>FIRMEZA FACIAL</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/spa4.jpg" alt="">
+          <div class="left contenido">
+            <h3>MAR DE OXÍGENO</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/spa5.jpg" alt="">
+          <div class="left contenido">
+            <h3>PLACERES CÍTRICOS</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/spa6.jpg" alt="">
+          <div class="left contenido">
+            <h3>REVITALIZANTES</h3>
+            <span>60 MIN - 75€</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse pretium porttitor nulla non venenatis.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!--********************************************************
                         social 
   ********************************************************-->
@@ -297,6 +344,8 @@
   <script src="javascripts/main.js"></script>
 	
   
- 
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>

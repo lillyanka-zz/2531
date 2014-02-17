@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Rafael Hoteles</title>
 
@@ -28,24 +28,47 @@
   <!--********************************************************
                         HEADER TOP
   ********************************************************-->
-	<div class="row">
-	  <div class="large-4 columns left-tools">
-	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
-	    <a href="#">Contacto</a>
-	  </div>
-	  <ul class="large-4 columns menu-top right">
-	    <li><a href="#">Español</a></li>
-	    <li><a href="#">Empresas</a></li>
-	    <li><a href="#">Agencias</a></li>
-	    <li><a href="#">Mis Reservas</a></li>
-	  </ul>
-	</div>
+ <div class="row">
+    <div class="left-tools">
+      <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+      <a href="#">Contacto</a>
+    </div>
+    <!--Logo icono-->
+    <img src="images/logo-icono.png" alt="" class="logo-icono">
+    <ul class="menu-top right">
+      <li><a href="#">Español</a>
+        <!-- dropdown -->
+        <ul>
+            <li><a href="" id="ESPA">ESPAÑOL</a></li>
+            <li><a href="" id="CATA">CATALÀ</a></li>
+            <li><a href="" id="ENG">ENGLISH</a></li>
+            <li><a href="" id="DEUT">DEUT</a></li>
+            <li><a href="" id="FRAN">FRANÇAIS</a></li>
+            <li><a href="" id="ITAL">ITALIANO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Empresas</a></li>
+      <li><a href="#">Agencias</a></li>
+      <li><a href="#">Mis Reservas</a></li>
+    </ul>
+</div> 
 
+  <!-- agrego @jimmy id capa-menu -->
+  <div class="row main-menu">
+    <nav class="clearfix">
+      <a href="#" class="active">Hoteles <span></span></a>
+      <a href="#" id="subMenuOfertas">Ofertas <span></span></a>
+      <a href="#" id="subMenuODestinos">Destinos <span></span></a>
+      <a href="#">Eventos &amp; Reuniones <span></span></a>
+      <a href="#">Rafael Hoteles <span></span></a>
+      <a href="#">Reservas <span></span></a>
+    </nav>
+  </div><!-- /row -->
 
 <!--********************************************************
                         booking-slider
   ********************************************************-->
-	<div class="booking-slider">
+  <div class="booking-slider">
     <div class="row ">
       <div class="large-12 columns" >
         <div class="slide">
@@ -134,7 +157,7 @@
   <div class="bgGraySimple">
      <div class="row ">
 
-        <div class="large-7 large-centered columns">
+        <div class="large-6 large-centered columns">
           <h2 class="lines">Lugares de interés</h2>
           <span class="note">Disfruta de la ciudad, disfruta madrid</span>
         </div>
@@ -173,7 +196,7 @@
   <div class="bgGraySimple slider-destinos-ciudad">
        <div class="row ">
 
-            <div class="large-8 large-centered columns">
+            <div class="large-7 large-centered columns">
               <h2 class="lines">La ciudad en imágenes</h2>
               <span class="note">Descubre los rincones secretos de Madrid</span>
             </div>
@@ -189,10 +212,139 @@
          </div>
   </div>
 
-    <!--********************************************************
-                        title and slider
+
+<!--********************************************************
+                        items agenda
   ********************************************************-->
 
+  <div class="bgWhite">
+    <div class="row">
+      <div class="large-10 columns large-centered">
+
+        <div class="row">
+            <div class="large-4 large-centered columns">
+              <h2 class="lines">Agenda</h2>
+              <span class="note">Los mejores eventos de la ciudad</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="items-2 clearfix large-12 columns">
+              <li>
+                <div class="cont-img"> 
+                  <img src="images/agenda.jpg">
+                </div>
+                <div class="cont-info">
+                  <h4>Imagine Dragons</h4>
+                  <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                  <a href="" class="btn-black">ver más</a>
+                </div>
+              </li>
+              <li>
+                <div class="cont-img"> 
+                  <img src="images/agenda.jpg">
+                </div>
+                <div class="cont-info">
+                  <h4>Imagine Dragons</h4>
+                  <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                  <a href="" class="btn-black">ver más</a>
+                </div>
+              </li>
+              <li>
+                <div class="cont-img"> 
+                  <img src="images/agenda.jpg">
+                </div>
+                <div class="cont-info">
+                  <h4>Imagine Dragons</h4>
+                  <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                  <a href="" class="btn-black">ver más</a>
+                </div>
+              </li>
+              <li>
+                <div class="cont-img"> 
+                  <img src="images/agenda.jpg">
+                </div>
+                <div class="cont-info">
+                  <h4>Imagine Dragons</h4>
+                  <h5>06 DIC 2013 · Palacio Vistalegre Arena</h5>
+                  <a href="" class="btn-black">ver más</a>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="btn-lines">Ver todos los eventos</a>
+        </div>
+            
+
+      </div>
+      
+
+    </div>
+  </div>
+
+<!--********************************************************
+                        ofertas y hoteles
+  ********************************************************-->
+
+  <div class="bgFigures">
+      <div class="row" >
+          <div class="large-10 large-centered columns">
+            <div class="row" >
+                <div class="large-8 columns destinos-ofertas">
+
+                  <div class="row">
+                      <div class="large-6 large-centered columns">
+                        <h2 class="lines">Ofertas</h2>
+                        <span class="note">La mejor de disfrutar de madrid</span>
+                      </div>
+                  </div>
+                
+                  
+                  <ul class="ofertas">
+                    <li>
+                      <div class="top">
+                        <img src="images/ofertas1.jpg" alt="" />
+                        <div class="precio"><span class="desde">Desde</span><span class="price">65€</div>
+                      </div>
+                      <div class="bottom">
+                        <h4>Fines de semana únicos</h4>
+                        <h5>Hoteles Madrid y Barcelona</h5>
+                        <p>Queremos que tus fines de semana de Septiembre sean inolvidables</p>
+                        <a href="" class="btn-black">Reservar</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="top">
+                        <img src="images/ofertas2.jpg" alt="" />
+                        <div class="precio"><span class="desde">Desde</span><span class="price">75€</div>
+                      </div>
+                      <div class="bottom">
+                        <h4>Verano refrescante en Salamanca</h4>
+                        <h5>Salamanca forum resort</h5>
+                        <p>Aléjate del calor del verano y descubre esta maravillosa ciudad</p>
+                        <a href="" class="btn-black">Reservar</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="" class="btn-lines">Ver todas las ofertas</a>
+                </div>
+                <div class="large-4  columns itemsPink">
+                  <h2 class="lines">Hoteles</h2>
+                  <span class="note">Rafaelhoteles en madrid</span>
+                  <ul>
+                    <li><a href="">Rafaelhoteles madrid </a></li>
+                    <li><a href="">Rafaelhoteles madrid</a></li>
+                    <li><a href="">Rafaelhoteles madrid </a></li>
+                    <li><a href="">Rafaelhoteles madrid</a></li>
+                    <li><a href="">Rafaelhoteles madrid </a></li>
+                    <li><a href="">Rafaelhoteles madrid</a></li>
+
+                  </ul>
+                  <a href="" class="btn-lines">Ver todos los hoteles</a>                
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
 
 
   <a href="" class="btn-lines">Ver todos los hoteles</a>  
@@ -292,37 +444,37 @@
   <script src="javascripts/vendor/cycle2.js"></script>
   
   <script src="javascripts/foundation/foundation.js"></script>
-	
-	<script src="javascripts/foundation/foundation.abide.js"></script>
-	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-	
+  
+  <script src="javascripts/foundation/foundation.abide.js"></script>
+  
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+  
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.interchange.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
   
   <script>
     $(document).foundation();

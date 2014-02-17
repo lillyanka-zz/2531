@@ -35,26 +35,16 @@
     <!--Logo icono-->
     <img src="images/logo-icono.png" alt="" class="logo-icono">
     <ul class="menu-top right">
-      <li><a href="#">Español</a>
-        <!-- dropdown -->
-        <ul>
-            <li><a href="" id="ESPA">ESPAÑOL</a></li>
-            <li><a href="" id="CATA">CATALÀ</a></li>
-            <li><a href="" id="ENG">ENGLISH</a></li>
-            <li><a href="" id="DEUT">DEUT</a></li>
-            <li><a href="" id="FRAN">FRANÇAIS</a></li>
-            <li><a href="" id="ITAL">ITALIANO</a></li>
-        </ul>
-      </li>
+      <li><a href="#">Español</a></li>
       <li><a href="#">Empresas</a></li>
       <li><a href="#">Agencias</a></li>
       <li><a href="#">Mis Reservas</a></li>
     </ul>
-  </div>  
+  </div> 
 
   <div class="row main-menu">
     <nav class="clearfix">
-      <a href="#">Hoteles <span></span></a>
+      <a href="#" class="active">Hoteles <span></span></a>
       <a href="#">Ofertas <span></span></a>
       <a href="#">Destinos <span></span></a>
       <a href="#">Eventos &amp; Reuniones <span></span></a>
@@ -65,16 +55,12 @@
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
-  <div class="booking-slider">
+  <div class="booking-slider tall">
     <div class="row ">
       <div>
         <div class="slide">
-          <img src="images/hoteles-booking.jpg" alt="" />
-          <div class="slide-text-header">
-
-             <h3>CONTACTA<strong> CON NOSOTROS</strong></h3>
-            <span class="slide-caption">Siempre a su disposición para atenderle.</span>
-          </div>
+          <img src="images/celebraciones.jpg" alt="" />
+          <a href="" class="btn-galeria">Galer&iacute;a fotogr&aacute;fica</a>
         </div>
       </div><!-- /text -->
       <div class=" booking-form">
@@ -85,9 +71,24 @@
           </select>
           <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
           <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="button" value="RESERVAR" />
+          <input type="text" placeholder="COD PROMO" name="checkout" id="codpromo" />
+          <input type="button" value="BUSCAR" />
         </form>
       </div><!-- /form -->
+      <div class="menu-booking-slider">
+        <img src="images/log-negro.png">
+        <ul>
+          <li><a href="#">El hotel </a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Ubicación </a></li>
+          <li><a href="#">Habitaciones </a></li>
+          <li><a href="#">Spa </a></li>
+          <li><a href="#">Restaurantes </a></li>
+          <li><a href="#" class="active">Celebraciones</a></li>
+          <li><a href="#">Reuniones </a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+      </div>
     </div><!-- /row -->
   </div>
    <!--********************************************************
@@ -98,8 +99,10 @@
         <div class="centered" >
           <div>
             <ul class="clearfix left breadcumbs">
-              <li><a href="index.html">Incios > </a></li>
-              <li><a href="#" class="active">Contacto</a></li>
+              <li><a href="index.html">Incio > </a></li>
+              <li><a href="index.html">Hoteles > </a></li>
+              <li><a href="index.html">Rafaelhoteles Badalona > </a></li>
+              <li><a href="#" class="active">Celebraciones</a></li>
             </ul>
           </div>
           <div class="right icons">
@@ -117,54 +120,92 @@
      ********************************************************-->
    
      <div class="row">
-       <div class="centered">
-         <h4>Contacto</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum eget nisl a sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales venenatis erat. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-       </div>
+       <div class="centered hotel-celebraciones">
+       <h3>Celebraciones</h3>
+         <div class="left contenido-pagina contenido-celebraciones">
+           <p>Atención y buen gusto para un día tan especial, son dos de las características de nuestro servicio de organización de eventos. Sabemos que es una fecha muy especial para vosotros, por eso queremos contribuir a que todo sea un éxito, que este día sea perfecto y así tengáis el mejor de los recuerdos.</p>
 
-
-     </div><!-- /sub menu -->
-     <div class="bgGraySimple">
-        <div class="row ">
-          <div class="centered clearfix contacto">
-            <div class="boxRig">
-              <div id="header">
-                <h3>oficinas centrales</h3>
-                <span>Méndez Alvaro, 30, 28045, Madrid</span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-                <span class="ir linea"></span>
-              </div>
-              <div id="body">
-                <h3>CONTACTA CON NOSOTROS</h3>
-                <p>Elija uno de nuestros hoteles o departamento corporativo para ver
-                sus datos de contacto: </p>
-                <form>
-                  <select>
-                    <option value="">Sellecione hotel o departamento</option>
-                    <option value="">hotel</option>
-                    <option value="">hotel</option>
-                  </select>
-                </form>
-              </div>
-              <div id="footer">
-                <h4>Rafaelhoteles</h4>
-                <span><address>Méndez Alvaro, 30, 28045, Madrid</address></span>
-                <span>Tel: +34 914 688 100/ +34 914 688 120</span>
-                <a href="">atocha@rafaelhoteles.com</a>
-              </div>
-
-            </div>
-            <div class="boxLeft">
-              <img src="images/mapa-contacto.jpg">
-            </div>
+          <h4>ESPECIAL BODAS</h4>
+          <ul>
+            <li>
+              Wedding Planner
+            </li>
+            <li>
+              Degustación de menú para 4 personas (entre 50-100 asistentes)
+            </li>
+            <li>
+              Degustación de menú para 6 personas (a partir de 100 asistentes)
+            </li>
+            <li>
+              Salida tardía a las 18:00 horas
+            </li>
+            <li>
+              Desayuno especial en habitación hasta las 13:00 horas
+            </li>
+            <li>
+              3 plazas de parking
+            </li>
+            <li>
+              Adornos florales en mesas (diseño propio)
+            </li>
+            <li>
+              Regalo sorpresa en habitación (más de 15.000 €)
+            </li>
+            <li>
+               Cena de aniversario en el hotel (entre 50 y 100 asistentes)
+            </li>
+            <li>
+              Noche y cena de aniversario en el hotel (entre 100 y 200 asistentes)
+            </li>
+            <li>
+              Fin de semana en un hotel de la cadena a elegir (excepto Rafaelhoteles by La Pleta) y cena
+              de aniversario en el hotel de la celebración (para bodas a partir de 200 asistentes)
+            </li>
+          </ul>
+           
+          <div class="btn-lines fileLink">
+            <a href="#" class="left">PLANO SALONES</a>
+            <span class="pdf-icon left">
           </div>
-        </div>
-     </div>
-     
-     
-   
+          <div class="btn-lines fileLink">
+            <a href="#" class="left">MENÚ BODAS</a>
+            <span class="pdf-icon left">
+          </div>
+          <div class="btn-lines fileLink">
+            <a href="#" class="left">MENÚ CELEBRACIONES</a>
+            <span class="pdf-icon left">
+          </div>
+          <br>
+          
+          <a href="#" class="btn-black">ORGANIZA TU EVENTO</a>
+           
+         </div>
 
+         <div class="left ilustracion">
+           <img src="images/celebraciones-ilustracion.jpg" alt="">
+           <h3>BODAS POR TODO LO ALTO</h3>
+           <span>CELEBRA TU BODA CON NOSOTROS</span>
+           <p>Benefíciate de los mejores descuentos para ti y tus invitados.</p>
+           <a href="#" class="btn-black">MÁS INFO</a>
+         </div>
+       </div>
+     </div><!-- /row -->
+  <div class="row bgGray gallery-celebraciones">
+    <div class="centered">
+      <h2 class="lines">SAONES EN IMÁGENES</h2>
+      <span class="note">Lo mejor de nuestros salones</span>
+      <div class="text-center cycle-slideshow gallery-slideshow">
+          <div class="cycle-prev"></div>
+          <div class="cycle-next"></div>
+          <img src="images/celebraciones-slide1.jpg">
+          <img src="images/celebraciones-slide1.jpg">
+          <img src="images/celebraciones-slide1.jpg">
+      </div>
+      <a href="#" class="btn-lines">TOUR VIRTUAL 360º</a>
+    </div>
+  </div>
+
+ 
   <!--********************************************************
                         social 
   ********************************************************-->
@@ -297,6 +338,8 @@
   <script src="javascripts/main.js"></script>
 	
   
- 
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
