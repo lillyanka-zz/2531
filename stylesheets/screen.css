@@ -17,7 +17,10 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+.center { text-align: center; }
+
 .row.city { max-width: none; width: 100%; margin: 0; background: #fff; }
+.row.city.room { margin: 10px 0; }
 .row.city h2.lines { width: 400px; margin-bottom: 13px; }
 .row.city .row.hotel-content { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 40px 0 0; }
 .row.city .row.hotel-content:last-child { padding: 40px 0; }
@@ -25,11 +28,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row.city .row.hotel-content .hotel-img { float: left; margin-right: 20px; }
 .row.city .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
 .row.city .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
+.row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 30px; padding: 0 38px 0 10px; }
+.row.city .row.hotel-content .hotel-description p.center { width: 300px; text-align: center; margin: 0 auto; font-style: normal; }
 .row.city .row.hotel-content .hotel-description p { font-style: italic; color: #666; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones { margin-top: 20px; }
 .row.city .row.hotel-content .hotel-description .opiniones span { font-weight: bold; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones span.score { color: #dc1c4d; font-size: 1.125em; }
 .row.city .row.hotel-content .hotel-price { width: 140px; margin-right: 20px; }
+.row.city .row.hotel-content .hotel-price.info { margin: 0 auto; }
+.row.city .row.hotel-content .hotel-price.info .price { text-decoration: underline; }
 .row.city .row.hotel-content .hotel-price .info { width: 100%; padding-top: 45px; }
 .row.city .row.hotel-content .hotel-price span.price, .row.city .row.hotel-content .hotel-price span.desde { color: black; display: block; text-align: center; }
 .row.city .row.hotel-content .hotel-price span.price { margin-bottom: 30px; }
@@ -91,7 +98,7 @@ p { font-size: 0.875em !important; }
 
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
-h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; }
+h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; display: table; margin: 0 auto; padding: 0 30px; }
 h2.lines.pink { background: url("../images/doble-linea-roja.png") no-repeat left center, url("../images/doble-linea-roja.png") no-repeat right center; color: #dc1c4d; font-size: 1.875em; }
 
 h3.lines { font-size: 1.5em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; }
@@ -107,7 +114,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
 .btn-black:hover { background-color: #dc1c4d; }
 
-.btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: block; height: 28px; width: 150px; margin: 30px auto 0; overflow: hidden; text-align: center; }
+.btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
 .btn-lines.ofertas { width: 145px; }
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; top: 0; }
@@ -163,7 +170,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .slide-text-center span { display: block; text-align: center; color: #fff; font-style: italic; }
 .slide-text-center .button { width: 100px; margin: 28px auto 0; display: block; }
 
-.boxtext { padding: 20px 0; background-color: white; }
+.boxtext { padding: 40px 0; background-color: white; }
 
 .fbIcon { display: block; background: url("../images/ico-share-facebook.png") no-repeat center; width: 11px; height: 20px; float: right; }
 
@@ -432,7 +439,9 @@ footer.row { background: #333333; max-width: none; }
  DESTINOS-ciudad-agenda @jimmy
 
 ---------------------------------------------------------------------*/
-#hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; }
+#hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; padding-right: 91px; margin-top: 54px; }
+
+.info { width: 75%; }
 
 .alinLeft { text-align: left; }
 
@@ -443,6 +452,9 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
 .info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
+
+.destinos-agenda h2 { width: 472px; }
+.destinos-agenda .btn-lines { width: 104px; }
 
 /*----------------------------------------------------------------------
  Eventos
@@ -632,13 +644,26 @@ footer.row { background: #333333; max-width: none; }
 .contenido-celebraciones li { margin-bottom: 16px; }
 .contenido-celebraciones .btn-black { margin-top: 40px; }
 
-.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes { padding-bottom: 60px; }
+.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes, .hotel-holidayInn { padding-bottom: 60px; }
 
 .restaurantes-info { width: 300px; }
 .restaurantes-info h3 { font-size: 14px; font-weight: bold; }
 .restaurantes-info li { margin-bottom: 15px; }
 .restaurantes-info li span { font-weight: bold; }
 .restaurantes-info p { font-style: italic; color: #666666; }
+
+.large-link { color: #dc1c4d; font-size: 24px; font-weight: bold; }
+
+.ilustracion-holiday > div { position: relative; }
+.ilustracion-holiday > div .btn-black { position: absolute; bottom: 30px; left: 75px; line-height: 23px; }
+.ilustracion-holiday p { font-style: normal; margin-bottom: 8px; color: #333333; }
+
+.booking-slider .btn-pink, .booking-slider .btn-white { width: 239px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 18px; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 116px; padding-left: 35px; background-position-x: 83%; }
+.booking-slider .btn-white { bottom: 45px; padding-left: 30px; background-position-x: 88%; text-align: left; }
+
+.btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
+
+.btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }

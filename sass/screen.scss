@@ -1791,7 +1791,7 @@ footer.row{
   }
 }
 
-.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes{
+.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes, .hotel-holidayInn{
   padding-bottom: 60px;
 }
 
@@ -1816,7 +1816,68 @@ footer.row{
   }
 }
 
+.large-link{
+  color: $pink;
+  font-size: 24px;
+  font-weight: bold;
+}
 
+.ilustracion-holiday{
+  & > div{
+    position: relative;
+
+    .btn-black{
+      position: absolute;
+      bottom: 30px;
+      left: 75px;
+      line-height: 23px;
+    }
+  }
+
+  p{
+    font-style: normal;
+    margin-bottom: 8px;
+    color: #333333;
+  }
+}
+
+.booking-slider{
+  .btn-pink, .btn-white{
+    width: 239px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    right: 124px;
+    bottom: 116px;
+    padding-left: 35px;
+    background-position-x: 83%;
+  }
+
+  .btn-white{
+    bottom: 45px;
+    padding-left: 30px;
+    background-position-x: 88%;
+    text-align: left;
+  }
+}
+
+.btn-pink{
+  background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
+  height: 40px;
+  border: none;
+  color: #fff;
+  padding: 0 43px 0 19px;
+}
+
+.btn-white{
+  background: #fff url("../images/pc-icon.png") no-repeat 80% center;
+  color: $pink;
+}
 
 //404
 .page-error{margin-bottom:20px; 

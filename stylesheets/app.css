@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -2232,13 +2232,26 @@ footer.row { background: #333333; max-width: none; }
 .contenido-celebraciones li { margin-bottom: 16px; }
 .contenido-celebraciones .btn-black { margin-top: 40px; }
 
-.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes { padding-bottom: 60px; }
+.hotel-celebraciones, .hotel-reuniones, .hotel-restaurantes, .hotel-holidayInn { padding-bottom: 60px; }
 
 .restaurantes-info { width: 300px; }
 .restaurantes-info h3 { font-size: 14px; font-weight: bold; }
 .restaurantes-info li { margin-bottom: 15px; }
 .restaurantes-info li span { font-weight: bold; }
 .restaurantes-info p { font-style: italic; color: #666666; }
+
+.large-link { color: #dc1c4d; font-size: 24px; font-weight: bold; }
+
+.ilustracion-holiday > div { position: relative; }
+.ilustracion-holiday > div .btn-black { position: absolute; bottom: 30px; left: 75px; line-height: 23px; }
+.ilustracion-holiday p { font-style: normal; margin-bottom: 8px; color: #333333; }
+
+.booking-slider .btn-pink, .booking-slider .btn-white { width: 239px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 18px; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 116px; padding-left: 35px; background-position-x: 83%; }
+.booking-slider .btn-white { bottom: 45px; padding-left: 30px; background-position-x: 88%; text-align: left; }
+
+.btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
+
+.btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
