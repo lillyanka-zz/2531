@@ -1940,7 +1940,7 @@ footer.row { background: #333333; max-width: none; }
 
 .ofertas-detalle img { width: 100%; }
 .ofertas-detalle h2.lines { width: 760px; }
-.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 110px; padding-top: 3px; line-height: 23px; }
+.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 140px; padding-top: 3px; line-height: 23px; }
 .ofertas-detalle #Info { text-align: center; padding: 30px; width: 470px; }
 .ofertas-detalle #Info span.price, .ofertas-detalle #Info span.desde { color: black; display: block; text-align: center; }
 .ofertas-detalle #Info span.price { margin-bottom: 30px; }
@@ -1965,11 +1965,12 @@ footer.row { background: #333333; max-width: none; }
 #disponibles-ofertas .info { padding-top: 10px; }
 #disponibles-ofertas h3 { font-size: 1.125em; text-transform: uppercase; }
 #disponibles-ofertas h3 + span { display: block; color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; }
-#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; }
+#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; margin-top: 10px; }
 #disponibles-ofertas li > div:last-child { text-align: right; }
 #disponibles-ofertas span.price { display: inline; color: black; font-size: 36px; text-decoration: none; }
 #disponibles-ofertas .des { font-size: 10px; }
 #disponibles-ofertas .bgWhite > div:first-child { padding: 0 !important; }
+#disponibles-ofertas .two-col .right + .info { width: auto !important; }
 
 /*----------------------------------------------------------------------
  DESTINOS @jimmy
@@ -1989,6 +1990,7 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .info-destino-ciudad { padding: 10px 0; }
+.info-destino-ciudad .twoColum { width: 24%; float: left; }
 
 .info-destino-ciudad .info h5 { font-size: 30px; color: #333333; }
 .info-destino-ciudad .info p { font-size: 14px; color: #333333; }
@@ -2036,13 +2038,13 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
-.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; }
+.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; width: 140px !important; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
 .info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
 
 .destinos-agenda h2 { width: 472px; }
-.destinos-agenda .btn-lines { width: 104px; }
+.destinos-agenda .btn-lines { width: 124px; }
 
 /*----------------------------------------------------------------------
  Eventos
@@ -2062,7 +2064,7 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 #mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; }
 
-#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; display: none; }
 
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
