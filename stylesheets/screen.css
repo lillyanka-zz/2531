@@ -17,7 +17,10 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+.center { text-align: center; }
+
 .row.city { max-width: none; width: 100%; margin: 0; background: #fff; }
+.row.city.room { margin: 10px 0; }
 .row.city h2.lines { width: 400px; margin-bottom: 13px; }
 .row.city .row.hotel-content { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 40px 0 0; }
 .row.city .row.hotel-content:last-child { padding: 40px 0; }
@@ -25,11 +28,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row.city .row.hotel-content .hotel-img { float: left; margin-right: 20px; }
 .row.city .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
 .row.city .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
+.row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 30px; padding: 0 38px 0 10px; }
+.row.city .row.hotel-content .hotel-description p.center { width: 300px; text-align: center; margin: 0 auto; font-style: normal; }
 .row.city .row.hotel-content .hotel-description p { font-style: italic; color: #666; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones { margin-top: 20px; }
 .row.city .row.hotel-content .hotel-description .opiniones span { font-weight: bold; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones span.score { color: #dc1c4d; font-size: 1.125em; }
 .row.city .row.hotel-content .hotel-price { width: 140px; margin-right: 20px; }
+.row.city .row.hotel-content .hotel-price.info { margin: 0 auto; }
+.row.city .row.hotel-content .hotel-price.info .price { text-decoration: underline; }
 .row.city .row.hotel-content .hotel-price .info { width: 100%; padding-top: 45px; }
 .row.city .row.hotel-content .hotel-price span.price, .row.city .row.hotel-content .hotel-price span.desde { color: black; display: block; text-align: center; }
 .row.city .row.hotel-content .hotel-price span.price { margin-bottom: 30px; }
@@ -91,7 +98,7 @@ p { font-size: 0.875em !important; }
 
 a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
 
-h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; }
+h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; display: table; margin: 0 auto; padding: 0 30px; }
 h2.lines.pink { background: url("../images/doble-linea-roja.png") no-repeat left center, url("../images/doble-linea-roja.png") no-repeat right center; color: #dc1c4d; font-size: 1.875em; }
 
 h3.lines { font-size: 1.5em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; }
@@ -107,7 +114,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
 .btn-black:hover { background-color: #dc1c4d; }
 
-.btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: block; height: 28px; width: 150px; margin: 30px auto 0; overflow: hidden; text-align: center; }
+.btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
 .btn-lines.ofertas { width: 145px; }
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; top: 0; }
@@ -163,7 +170,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .slide-text-center span { display: block; text-align: center; color: #fff; font-style: italic; }
 .slide-text-center .button { width: 100px; margin: 28px auto 0; display: block; }
 
-.boxtext { padding: 20px 0; background-color: white; }
+.boxtext { padding: 40px 0; background-color: white; }
 
 .fbIcon { display: block; background: url("../images/ico-share-facebook.png") no-repeat center; width: 11px; height: 20px; float: right; }
 
@@ -345,7 +352,7 @@ footer.row { background: #333333; max-width: none; }
 
 .ofertas-detalle img { width: 100%; }
 .ofertas-detalle h2.lines { width: 760px; }
-.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 110px; padding-top: 3px; line-height: 23px; }
+.ofertas-detalle p.btn-lines { margin-bottom: 30px !important; width: 140px; padding-top: 3px; line-height: 23px; }
 .ofertas-detalle #Info { text-align: center; padding: 30px; width: 470px; }
 .ofertas-detalle #Info span.price, .ofertas-detalle #Info span.desde { color: black; display: block; text-align: center; }
 .ofertas-detalle #Info span.price { margin-bottom: 30px; }
@@ -370,11 +377,12 @@ footer.row { background: #333333; max-width: none; }
 #disponibles-ofertas .info { padding-top: 10px; }
 #disponibles-ofertas h3 { font-size: 1.125em; text-transform: uppercase; }
 #disponibles-ofertas h3 + span { display: block; color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; }
-#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; }
+#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; margin-top: 10px; }
 #disponibles-ofertas li > div:last-child { text-align: right; }
 #disponibles-ofertas span.price { display: inline; color: black; font-size: 36px; text-decoration: none; }
 #disponibles-ofertas .des { font-size: 10px; }
 #disponibles-ofertas .bgWhite > div:first-child { padding: 0 !important; }
+#disponibles-ofertas .two-col .right + .info { width: auto !important; }
 
 /*----------------------------------------------------------------------
  DESTINOS @jimmy
@@ -394,6 +402,7 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .info-destino-ciudad { padding: 10px 0; }
+.info-destino-ciudad .twoColum { width: 24%; float: left; }
 
 .info-destino-ciudad .info h5 { font-size: 30px; color: #333333; }
 .info-destino-ciudad .info p { font-size: 14px; color: #333333; }
@@ -432,17 +441,22 @@ footer.row { background: #333333; max-width: none; }
  DESTINOS-ciudad-agenda @jimmy
 
 ---------------------------------------------------------------------*/
-#hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; }
+#hotel-select-agenda { height: 40px; border: 1px solid #666666; background: white url("../images/down-arrow.png") no-repeat 200px center; padding-right: 91px; margin-top: 54px; }
+
+.info { width: 75%; }
 
 .alinLeft { text-align: left; }
 
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
-.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; }
+.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; width: 140px !important; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
 .info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
+
+.destinos-agenda h2 { width: 472px; }
+.destinos-agenda .btn-lines { width: 124px; }
 
 /*----------------------------------------------------------------------
  Eventos
@@ -462,7 +476,7 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 #mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; }
 
-#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; display: none; }
 
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
@@ -489,7 +503,7 @@ footer.row { background: #333333; max-width: none; }
 
 #aviso { width: 680px; margin-left: -340px; left: 50%; top: 15%; height: 400px; }
 
-#scroll { overflow-y: scroll; height: 330px; }
+#scroll { overflow-y: scroll; height: 330px; font-size: 14px; }
 #scroll h1, #scroll h2 { font-size: 14px; }
 #scroll p { font-size: 14px; }
 

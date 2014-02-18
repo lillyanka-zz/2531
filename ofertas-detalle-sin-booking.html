@@ -6,6 +6,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
   <title>Rafael Hoteles</title>
 
   
@@ -28,68 +29,63 @@
                         HEADER TOP
   ********************************************************-->
 	<div class="row">
-	  <div class="left-tools">
-	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
-	    <a href="#">Contacto</a>
-	  </div>
-	  <ul class="menu-top right">
-	    <li><a href="#">Español</a></li>
-	    <li><a href="#">Empresas</a></li>
-	    <li><a href="#">Agencias</a></li>
-	    <li><a href="#">Mis Reservas</a></li>
-	  </ul>
-	</div>
+    <div class="left-tools">
+      <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+      <a href="#">Contacto</a>
+    </div>
+    <!--Logo icono-->
+    <img src="images/logo-icono.png" alt="" class="logo-icono">
+    <ul class="menu-top right">
+      <li><a href="#">Español</a>
+        <!-- dropdown -->
+        <ul>
+            <li><a href="" id="ESPA">ESPAÑOL</a></li>
+            <li><a href="" id="CATA">CATALÀ</a></li>
+            <li><a href="" id="ENG">ENGLISH</a></li>
+            <li><a href="" id="DEUT">DEUT</a></li>
+            <li><a href="" id="FRAN">FRANÇAIS</a></li>
+            <li><a href="" id="ITAL">ITALIANO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Empresas</a></li>
+      <li><a href="#">Agencias</a></li>
+      <li><a href="#">Mis Reservas</a></li>
+    </ul>
+  </div> 
 
-   <!--********************************************************
-                        booking-slider
-  ********************************************************-->
-<!--	<div class="booking-slider">
-    <div class="row ">
-      <div class="centered-large" >
-        <div class="slide">
-          <img src="images/slider-mejores-ofertas.jpg" alt="" />
-          <div class="slide-text-header">
-            <h3>Consulte <strong>Nuestras ofertas</strong></h3>
-            <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
-          </div>
-        </div>
-      </div><!-- /text --*>
-      <div class=" booking-form">
-        <h3 class="lines">Reservas</h3>
-        <form action="">
-          <select id="hotel-select">
-            <option>Selecciona Hotel</option>
-          </select>
-          <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" />
-          <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" />
-          <input type="button" value="RESERVAR" />
-        </form>
-      </div><!-- /form --*>
-    </div><!-- /row --*>
-  </div>-->
+  <!-- agrego @jimmy id capa-menu -->
+  <div class="row main-menu">
+    <nav class="clearfix">
+      <a href="#">Hoteles <span></span></a>
+      <a href="#" id="subMenuOfertas"  class="active">Ofertas <span></span></a>
+      <a href="#" id="subMenuODestinos">Destinos <span></span></a>
+      <a href="#">Eventos &amp; Reuniones <span></span></a>
+      <a href="#">Rafael Hoteles <span></span></a>
+      <a href="#">Reservas <span></span></a>
+    </nav>
+  </div><!-- /row -->
 
-  <!--********************************************************
+    <!--********************************************************
                         BREADCRUMB
   ********************************************************-->
-
-<div class="row submenu">
-    <div>
-      <div class="centered" >
-        <div>
-          <ul class="clearfix left breadcumbs">
-            <li><a href="index.html">Incios > </a></li>
-            <li><a href="#" class="active">ofertas</a></li>
-          </ul>
-        </div>
-        <div class="right icons">
-          <ul class="clearfix">
-            <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-            <li><a href="#" class="rss ir">rss</a></li>
-          </ul>
-        </div>
-       </div> 
-    </div>
-</div><!-- /sub menu -->	 
+  <div class="row submenu">
+      <div>
+        <div class="centered" >
+          <div>
+            <ul class="clearfix left breadcumbs">
+              <li><a href="index.html">Incios > </a></li>
+              <li><a href="#" class="active">ofertas</a></li>
+            </ul>
+          </div>
+          <div class="right icons">
+            <ul class="clearfix">
+              <!-- <li><a href="#" class="face ir">facebook</a></li> -->
+              <li><a href="#" class="rss ir">rss</a></li>
+            </ul>
+          </div>
+         </div> 
+      </div>
+  </div><!-- /sub menu -->   
   
   
 
@@ -97,7 +93,7 @@
                         ofertas-detalle
   ********************************************************-->
   <div class="row ofertas-detalle bgGray">
-    <div class="centered">
+    <div class="centeredOfertas">
         <h2 class="lines">Fines de semana únicos</h2>
         <span class="note">Queremos que tus fines de semana de septiembre sean únicos.</span>
         <p href="" class="btn-lines">Compatir <a class="twIcon ir">twiterr</a><a class="fbIcon ir">facebbok</a> </p>
@@ -187,138 +183,139 @@
   
   
   
-<!--********************************************************
-                        social 
-  ********************************************************-->
-  
-  
-  
-
-  
-  <div class="row social">
-    <div>
-      <ul>
-        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="rafaelhoteles">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-        <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
-        <li><!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-annotation="inline" data-width="120"></div>
-        
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/platform.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script></li>
-      </ul>  
-    </div>
-  </div><!-- /row -->
 
  <!--********************************************************
-                        Footer 
-  ********************************************************-->
-<footer class="row">
-     <div class="footer-top">
-       <nav>
-         <a class="facebook" href="">Facebook</a>
-         <a class="twitter" href="">Twitter</a>
-         <a class="pinterest" href="">Pinterest</a>
-         <a class="instagram" href="">Instagram</a>
-         <a class="youtube" href="">Youtube</a>
-       </nav>
-       <div class="right">
-         <form method="post" action="">
-           <h3>Newsletter</h3>
-           <input type="text" name="email" placeholder="E-MAIL" />
-           <input type="button" class="btn pink" name="submit" value="Registrarme" />
-         </form>
-       </div>
-     </div><!-- /row top -->
-     <div class="footer-middle">
-       <div>
-         <div>
-           <span class="city-title">Barcelona</span>
-           <a href="">Rafaelhoteles Barcelona</a>
-         </div>
-         <div>
-           <span class="city-title">Bilbao</span>
-           <a href="">Holiday Inn Bilbao</a>
-         </div>
-         <div>
-           <span class="city-title">Madrid</span>
-           <a href="">Holiday Inn Madrid-Pirámides</a>
-           <a href="">Rafaelhoteles Atocha</a>
-           <a href="">Rafaelhoteles Madrid Norte</a>
-           <a href="">Rafaelhoteles Orense</a>
-           <a href="">Rafaelhoteles Ventas</a>
-           <a href="">Rafaelhoteles Forum Alcalá</a>
-         </div>
-         <div>
-           <span class="city-title">Baqueira</span>
-           <a href="">Rafaelhoteles by La Pleta</a>
-         </div>
-         <div>
-           <span class="city-title">Salamanca</span>
-           <a href="">Salamanca Forum</a>
-         </div>
-       </div>
-     </div><!-- /row middle -->
-     <div class="footer-bottom">
-       <div>
-         <nav>
-           <a href="" class="btn-lines white">Trabaja con nosotros</a>
-           <a href="" class="btn-lines white">Mapa web</a>
-           <a href="" class="btn-lines white">Aviso legal</a>
-         </nav>
-         <span class="credits right">by eMascaró Tourism</span>
-       </div>
-     </div><!-- /row bottom -->
-   </footer> 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                         social 
+   ********************************************************-->
+   
+   
+   
+ 
+   
+   <div class="row social">
+     <div>
+       <ul>
+         <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="rafaelhoteles">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+         <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
+         <li><!-- Place this tag where you want the +1 button to render. -->
+         <div class="g-plusone" data-annotation="inline" data-width="120"></div>
+         
+         <!-- Place this tag after the last +1 button tag. -->
+         <script type="text/javascript">
+           (function() {
+             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+             po.src = 'https://apis.google.com/js/platform.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+           })();
+         </script></li>
+       </ul>  
+     </div>
+   </div><!-- /row -->
+ 
+  <!--********************************************************
+                         Footer 
+   ********************************************************-->
+ <footer class="row">
+      <div class="footer-top">
+        <nav>
+          <a class="facebook" href="">Facebook</a>
+          <a class="twitter" href="">Twitter</a>
+          <a class="pinterest" href="">Pinterest</a>
+          <a class="instagram" href="">Instagram</a>
+          <a class="youtube" href="">Youtube</a>
+        </nav>
+        <div class="right">
+          <form method="post" action="">
+            <h3>Newsletter</h3>
+            <input type="text" name="email" placeholder="E-MAIL" />
+            <input type="button" class="btn pink" name="submit" value="Registrarme" />
+          </form>
+        </div>
+      </div><!-- /row top -->
+      <div class="footer-middle">
+        <div>
+          <div>
+            <span class="city-title">Barcelona</span>
+            <a href="">Rafaelhoteles Barcelona</a>
+          </div>
+          <div>
+            <span class="city-title">Bilbao</span>
+            <a href="">Holiday Inn Bilbao</a>
+          </div>
+          <div>
+            <span class="city-title">Madrid</span>
+            <a href="">Holiday Inn Madrid-Pirámides</a>
+            <a href="">Rafaelhoteles Atocha</a>
+            <a href="">Rafaelhoteles Madrid Norte</a>
+            <a href="">Rafaelhoteles Orense</a>
+            <a href="">Rafaelhoteles Ventas</a>
+            <a href="">Rafaelhoteles Forum Alcalá</a>
+          </div>
+          <div>
+            <span class="city-title">Baqueira</span>
+            <a href="">Rafaelhoteles by La Pleta</a>
+          </div>
+          <div>
+            <span class="city-title">Salamanca</span>
+            <a href="">Salamanca Forum</a>
+          </div>
+        </div>
+      </div><!-- /row middle -->
+      <div class="footer-bottom">
+        <div>
+          <nav>
+            <a href="" class="btn-lines white">Trabaja con nosotros</a>
+            <a href="" class="btn-lines white">Mapa web</a>
+            <a href="" class="btn-lines white">Aviso legal</a>
+          </nav>
+          <span class="credits right">by eMascaró Tourism</span>
+        </div>
+      </div><!-- /row bottom -->
+    </footer> 
+   <script>
+   document.write('<script src=' +
+   ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+   '.js><\/script>')
+   </script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+   <script src="javascripts/vendor/cycle2.js"></script>
+   
+   <script src="javascripts/foundation/foundation.js"></script>
   
-  <script src="javascripts/vendor/cycle2.js"></script>
+  <script src="javascripts/foundation/foundation.abide.js"></script>
   
-  <script src="javascripts/foundation/foundation.js"></script>
-	
-	<script src="javascripts/foundation/foundation.abide.js"></script>
-	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-	
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
   
-  <script>
-    $(document).foundation();
-  </script>
-</body>
-</html>
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.interchange.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
+   
+   <script>
+     $(document).foundation();
+   </script>
+ </body>
+ </html>

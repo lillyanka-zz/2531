@@ -84,15 +84,41 @@ $( document ).ready(function() {
       //date-picker
       //
 
-      var datePicker =  $( ".datepicker" );
+      var checkIn =  $( "#checkin" ),
+       checkout =  $( "#checkout" );
+
       
-     datePicker.datepicker();
+     checkIn.datepicker();
+     checkout.datepicker();
+
+    
+
+     function datepi(elem){
+
+       elem.on({
+        focus: function() {
+          $('#mask2').show();
+        }, blur: function() {
+          $('#mask2').hide();
+        }
+      });
+
+     };
+
+     datepi(checkIn);
+     datepi(checkout);
      
-     datePicker.focus(function(){
-        // $('.booking-form').css('z-index','500');
-         $('#mask2').css('opacity',1);
-         // $('.booking-form').css('z-index','500');
-     });//realizar onfucos para quitar
+     // checkIn.focus(function(){
+     //    // $('.booking-form').css('z-index','500');
+     //     $('#mask2').show();
+     //     // $('.booking-form').css('z-index','500');
+     // });//realizar onfucos para quitar
+
+     // checkIn.blur(function(){
+     //    // $('.booking-form').css('z-index','500');
+     //     $('#mask2').hide();
+     //     // $('.booking-form').css('z-index','500');
+     // });//realizar onfucos para quitar
 
 
   });//end jquery
