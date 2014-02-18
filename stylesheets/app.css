@@ -1609,7 +1609,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .row.city { max-width: none; width: 100%; margin: 0; background: #fff; }
 .row.city.room { margin: 10px 0; }
-.row.city h2.lines { width: 400px; margin-bottom: 13px; }
+.row.city h2.lines { width: 400px; margin: 0.5em auto 13px; }
 .row.city .row.hotel-content { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 40px 0 0; }
 .row.city .row.hotel-content:last-child { padding: 40px 0; }
 .row.city .row.hotel-content .white-bg { background: #fff; }
@@ -1679,6 +1679,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 .two-col { width: 470px; overflow: hidden; }
 
 .pink { color: #dc1c4d; }
+
+.hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; }
+
+.slide:hover .hover { display: block; }
 
 .fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
 
