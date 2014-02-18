@@ -1605,7 +1605,10 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+.center { text-align: center; }
+
 .row.city { max-width: none; width: 100%; margin: 0; background: #fff; }
+.row.city.room { margin: 10px 0; }
 .row.city h2.lines { width: 400px; margin-bottom: 13px; }
 .row.city .row.hotel-content { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 40px 0 0; }
 .row.city .row.hotel-content:last-child { padding: 40px 0; }
@@ -1613,11 +1616,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row.city .row.hotel-content .hotel-img { float: left; margin-right: 20px; }
 .row.city .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
 .row.city .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
+.row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 30px; padding: 0 38px 0 10px; }
+.row.city .row.hotel-content .hotel-description p.center { width: 300px; text-align: center; margin: 0 auto; font-style: normal; }
 .row.city .row.hotel-content .hotel-description p { font-style: italic; color: #666; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones { margin-top: 20px; }
 .row.city .row.hotel-content .hotel-description .opiniones span { font-weight: bold; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones span.score { color: #dc1c4d; font-size: 1.125em; }
 .row.city .row.hotel-content .hotel-price { width: 140px; margin-right: 20px; }
+.row.city .row.hotel-content .hotel-price.info { margin: 0 auto; }
+.row.city .row.hotel-content .hotel-price.info .price { text-decoration: underline; }
 .row.city .row.hotel-content .hotel-price .info { width: 100%; padding-top: 45px; }
 .row.city .row.hotel-content .hotel-price span.price, .row.city .row.hotel-content .hotel-price span.desde { color: black; display: block; text-align: center; }
 .row.city .row.hotel-content .hotel-price span.price { margin-bottom: 30px; }
