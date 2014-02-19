@@ -456,11 +456,7 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
 
 .destinos-agenda h2 { width: 472px; }
-<<<<<<< HEAD
-.destinos-agenda .btn-lines { width: 104px; }
-=======
 .destinos-agenda .btn-lines { width: 124px; }
->>>>>>> 140b5b3d2f801a80368b137ff65330d1e12e26a0
 
 /*----------------------------------------------------------------------
  Eventos
@@ -666,6 +662,8 @@ footer.row { background: #333333; max-width: none; }
 
 .booking-slider .btn-pink, .booking-slider .btn-white { width: 239px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 18px; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 116px; padding-left: 35px; background-position-x: 83%; }
 .booking-slider .btn-white { bottom: 45px; padding-left: 30px; background-position-x: 88%; text-align: left; }
+
+.special-booking { left: 21%; }
 
 .btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
