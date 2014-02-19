@@ -1938,6 +1938,38 @@ footer.row{
   left: 21%;
 }
 
+.lapleta-spa{
+  margin-bottom: 20px;
+  position: relative;
+
+  .container{
+    position: absolute;
+    top: 233px;
+    left: 400px;
+
+    .lines{
+      color: #fff;
+      background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center;
+    }
+
+    .note{
+      color: #fff;
+    }
+
+    a{
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #fff;
+      padding: 17px 43px 24px 26px;
+      width: 125px;
+      height: 33px;
+      font-size: 12px;
+      background: transparent url("../images/white-arrow.png") no-repeat 83% center;
+      color: #fff;
+    }
+  }
+}
+
 .btn-pink{
   background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center;
   height: 40px;

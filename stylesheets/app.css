@@ -2265,6 +2265,12 @@ footer.row { background: #333333; max-width: none; }
 
 .special-booking { left: 21%; }
 
+.lapleta-spa { margin-bottom: 20px; position: relative; }
+.lapleta-spa .container { position: absolute; top: 233px; left: 400px; }
+.lapleta-spa .container .lines { color: #fff; background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center; }
+.lapleta-spa .container .note { color: #fff; }
+.lapleta-spa .container a { display: block; margin: 0 auto; border: 2px solid #fff; padding: 17px 43px 24px 26px; width: 125px; height: 33px; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
+
 .btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
 .btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
