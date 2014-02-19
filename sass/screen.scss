@@ -69,9 +69,15 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+  @extend %trans;
+  @include opacity(0);
+
+  .cycle-prev{z-index:2000;}
+  .cycle-next{z-index:2000;}
 }
 
 .slide:hover .hover{
+  @include opacity(1);
   display: block;
 }
 
@@ -461,10 +467,12 @@ ul.ofertas{
         left: 50% ;
         margin-left: -70px;
         cursor: pointer;
-      }
+        }
         
   }
-  &:hover  .hover{@include opacity(1);cursor: pointer; }
+        .cycle-prev, .cycle-next{z-index:2000 !important;}
+
+  &:hover  .hover{@include opacity(1);cursor: pointer;display:block }
 
 }
 
@@ -701,6 +709,8 @@ ul.ofertas{
     }
     .slide{
       position: relative;
+      
+      
     }
   }
 }

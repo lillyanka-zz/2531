@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -1680,9 +1680,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .pink { color: #dc1c4d; }
 
-.hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; }
+.hover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.hover .cycle-prev { z-index: 2000; }
+.hover .cycle-next { z-index: 2000; }
 
-.slide:hover .hover { display: block; }
+.slide:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; display: block; }
 
 .fb_iframe_widget { display: block; position: relative; margin-top: -5px; }
 
@@ -1719,7 +1721,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
-.menu-booking-slider ul li a, .mascaraEventos .hover, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.hover, .menu-booking-slider ul li a, .mascaraEventos .hover, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .mejores-ofertas select, #hotel-select-agenda, .contacto select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -1794,7 +1796,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .mascaraEventos { overflow: hidden; }
 .mascaraEventos .hover { position: absolute; z-index: 1000; background-color: rgba(0, 0, 0, 0.3); left: 0 !important; position: absolute; top: 0 !important; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .mascaraEventos .hover span { width: 140px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 85% center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; padding-left: 20px; top: 50%; left: 50%; margin-left: -70px; cursor: pointer; }
-.mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; }
+.mascaraEventos .cycle-prev, .mascaraEventos .cycle-next { z-index: 2000 !important; }
+.mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; display: block; }
 
 .left-tools { padding: 18px 0; float: left; }
 .left-tools > span:first-child { border-right: 1px solid #999999; padding-right: 5px; margin-right: 5px; }
