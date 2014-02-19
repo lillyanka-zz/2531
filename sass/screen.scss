@@ -61,6 +61,26 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   color: $pink;
 }
 
+.hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  @extend %trans;
+  @include opacity(0);
+
+  .cycle-prev{z-index:2000;}
+  .cycle-next{z-index:2000;}
+}
+
+.slide:hover .hover{
+  @include opacity(1);
+  display: block;
+}
+
 .fb_iframe_widget{
   display: block;
   position: relative;
@@ -287,7 +307,7 @@ ul.ofertas{
         }
         .precio{
           position: absolute;
-          top: 65%;
+          top: 60%;
           left: 0;
           width: 100%;
           background: url('../images/shadow.png') no-repeat center center;
@@ -419,6 +439,45 @@ ul.ofertas{
 /*--------------------------------*/
 /*      ESTILOS ESPECIFICOS       */
 /*--------------------------------*/
+
+
+//
+//hover overlay gallerias
+//
+
+.mascaraEventos{overflow:hidden;
+  .hover{position: absolute; z-index: 1000; background-color: rgba(0,0,0,.3); 
+          left: 0 !important; position: absolute; top: 0 !important; width: 100%; height: 100%;@include opacity(0); 
+          @extend %trans;
+        span{
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        background: transparent url("../images/camera.png") no-repeat 85% center;
+        border: 2px solid;
+        color: #fff;
+        text-align: left;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+        padding-left: 20px;
+        top: 50% ;
+        left: 50% ;
+        margin-left: -70px;
+        cursor: pointer;
+        }
+        
+  }
+        .cycle-prev, .cycle-next{z-index:2000 !important;}
+
+  &:hover  .hover{@include opacity(1);cursor: pointer;display:block }
+
+}
+
+
+
 
 .left-tools{
   padding: 18px 0;
@@ -650,6 +709,8 @@ ul.ofertas{
     }
     .slide{
       position: relative;
+      
+      
     }
   }
 }
@@ -680,6 +741,7 @@ ul.ofertas{
       width: 20%;
       float: left;
       position: relative;
+      height: 240px;
       img{
         width: 100%;
       }
@@ -1190,6 +1252,10 @@ footer.row{
   .btn-black{width: 200px;text-align:left;margin: 10px auto;display: block;background: #000 url("../images/white-arrow.png") no-repeat 95% center;line-height:normal;}
   h5{margin-bottom:5px; }
 }
+
+
+
+
 
 
 /*----------------------------------------------------------------------
