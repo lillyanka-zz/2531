@@ -2214,7 +2214,7 @@ text-transform: uppercase;}
 
   .containes-desti{width:800px;margin:0 auto;
 
-    .destinos{width:60%;float:left;text-align:right;padding-right:5%;
+    .destinos{width:42%;float:left;text-align:right;padding-right:5%;
       ul{
         li{margin-top:20px;
           &:first-child{margin-top:0;}
@@ -2223,8 +2223,8 @@ text-transform: uppercase;}
       h2{font-size:14px;color:white;text-transform:uppercase; }
   
     }
-    .picture{width:40%;float:right;text-align:right;
-      img{margin-bottom:20px; }
+    .picture{width:40%;float:left;text-align:right;
+      img{margin-bottom:20px; } 
       a{border:2px solid white;
           background:url('../images/white-arrow.png') no-repeat 95% center;
          text-transform: uppercase; color:white;padding:10px 40px 10px 10px;height:40px;line-height:40px;}
