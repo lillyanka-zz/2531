@@ -2379,7 +2379,7 @@ footer.row { background: #333333; max-width: none; }
 
 .capaDestinos { display: none; position: absolute; top: 0px; z-index: 5000; }
 .capaDestinos .containes-desti { width: 800px; margin: 0 auto; }
-.capaDestinos .containes-desti .destinos { width: 60%; float: left; text-align: right; padding-right: 5%; }
+.capaDestinos .containes-desti .destinos { width: 43%; float: left; text-align: right; padding-right: 5%; }
 .capaDestinos .containes-desti .destinos ul li { margin-top: 20px; }
 .capaDestinos .containes-desti .destinos ul li:first-child { margin-top: 0; }
 .capaDestinos .containes-desti .destinos h2 { font-size: 14px; color: white; text-transform: uppercase; }
