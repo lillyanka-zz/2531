@@ -92,14 +92,17 @@
 	</div><!-- /row -->
   
   <div class="row main-menu">
-    <nav>
-      <a href="#">Hoteles</a>
-      <a href="#">Ofertas</a>
-      <a href="#">Destinos</a>
-      <a href="#">Eventos &amp; Reuniones</a>
-      <a href="#">Rafael Hoteles</a>
-      <a href="#">Reservas</a>
-    </nav>
+    <div class="centered-large">
+      <a href="#bottom" class="scrollBottom"></a>
+      <nav>
+        <a href="#">Hoteles</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Destinos</a>
+        <a href="#">Eventos &amp; Reuniones</a>
+        <a href="#">Rafael Hoteles</a>
+        <a href="#">Reservas</a>
+      </nav>
+    </div>
   </div><!-- /row -->
   
   <div class="row ofertas">
@@ -187,21 +190,50 @@
   </div><!-- /row -->
   
   <div class="row destinos">
-    <div>
+    <div class="centered">
       <h2 class="lines">Destinos</h2>
       <span class="note">Variada oferta artística, histórica, cultural o gastronómica.</span>
-      <ul>
+      <ul class="cycle-slideshow" 
+          data-cycle-fx=carousel
+          data-cycle-timeout=0
+          data-cycle-carousel-visible=5
+          data-cycle-slides="> li"
+          data-cycle-next=".destinos .next"
+          data-cycle-prev=".destinos .prev"
+          >
         <li class=" mascaraEventos">
           <img src="images/barcelona.jpg" alt="" />
           <div class="hover"></div>
           <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
 
         </li>
-        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a><</li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos">
+          <img src="images/barcelona.jpg" alt="" />
+          <div class="hover"></div>
+          <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
+
+        </li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos">
+          <img src="images/barcelona.jpg" alt="" />
+          <div class="hover"></div>
+          <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
+
+        </li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
       </ul>
+      <a href="#" class="next"><img src="images/prevarrow.png" /></a>
+      <a href="#" class="next"><img src="images/nextarrow.png" /></a>
       <a href="" class="btn-black">Ver mapa de destinos</a>
     </div>
   </div><!-- /row -->
@@ -230,6 +262,8 @@
                           Footer 
     ********************************************************-->
   <footer class="row">
+    <div class="centered-large">
+      <a href="#" class="scrollTop" id="bottom"></a>
        <div class="footer-top">
          <nav>
            <a class="facebook" href="">Facebook</a>
@@ -246,6 +280,7 @@
            </form>
          </div>
        </div><!-- /row top -->
+     </div>
        <div class="footer-middle">
          <div>
            <div>
@@ -292,8 +327,10 @@
     '.js><\/script>')
     </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.smooth-scroll.min.js"></script>
     
     <script src="javascripts/vendor/cycle2.js"></script>
+    <script src="javascripts/carousel.js"></script>
     <script src="javascripts/vendor/wood.js"></script>
     
     <script src="javascripts/foundation/foundation.js"></script>

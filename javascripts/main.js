@@ -1,6 +1,14 @@
 $( document ).ready(function() {
-  $(document).foundation();
-
+//  $(document).foundation();
+  $('a.scrollTop').click(function(){
+    event.preventDefault();
+    $.smoothScroll({direction:'top'});
+  });
+  $('a.scrollBottom').click(function(){
+    var link = this;
+    event.preventDefault();
+    $.smoothScroll({scrollTarget: link.hash});
+  });
 
   // Handler for .ready() called.
   var wood =$('.wood li');
