@@ -16,7 +16,7 @@ $gray: #999;
 $light-gray: #666; 
 $dark-gray: #333; 
 $pink: #dc1c4d;
-$btn-white-arrow: url('../images/white-arrow.png') no-repeat 95% center;
+$btn-white-arrow: url('../images/white-arrow.png') no-repeat 90% center;
 $black-lines-bg: url('../images/black-lines.png') no-repeat left center, url('../images/black-lines.png') no-repeat right center;
 $white-lines-bg: url('../images/white-lines.png') no-repeat left center, url('../images/white-lines.png') no-repeat right center;
 $pink-lines-bg: url('../images/doble-linea-roja.png') no-repeat left center, url('../images/doble-linea-roja.png') no-repeat right center;
@@ -116,6 +116,11 @@ a.button{
   background: $btn-white-arrow;
   padding: 10px 30px 10px 10px;
   box-shadow: none;
+}
+
+div:hover .button{
+  background: #fff url("../images/arrow-pink.png") no-repeat 90% center;
+  color: $pink;
 }
 
 h2.lines{
@@ -404,6 +409,7 @@ ul.ofertas{
         left: 0;
         top: 40%;
         width: 100%;
+        z-index: 1000;
         h2{
           text-align: center;
           color: #fff;
@@ -727,8 +733,13 @@ ul.ofertas{
     }
     .slide{
       position: relative;
-      
-      
+      &:hover{
+        .button{
+          background: #fff url("../images/arrow-pink.png") no-repeat 90% center;
+          color: $pink;
+          
+        }
+      }
     }
   }
 }
@@ -1478,7 +1489,8 @@ footer.row{
 //Calidad main
 .contenido-calidad, .contenido-celebraciones, .contenido-reuniones{
   li{
-    margin-bottom: 35px;
+    margin-bottom: 12px;
+    font-size: 14px;
 
     span{
       font-weight: bold;
