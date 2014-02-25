@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
@@ -106,14 +106,16 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 p { font-size: 0.875em !important; }
 
-a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 95% center; padding: 10px 30px 10px 10px; box-shadow: none; }
+a.button { border: 2px solid #fff; font-size: 12px; text-transform: uppercase; background: url("../images/white-arrow.png") no-repeat 90% center; padding: 10px 30px 10px 10px; box-shadow: none; }
+
+div:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
 
 h2.lines { font-size: 3em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; text-transform: uppercase; line-height: 1em; margin: 0.5em auto 0; display: table; margin: 0 auto; padding: 0 30px; }
 h2.lines.pink { background: url("../images/doble-linea-roja.png") no-repeat left center, url("../images/doble-linea-roja.png") no-repeat right center; color: #dc1c4d; font-size: 1.875em; }
 
 h3.lines { font-size: 1.5em; text-align: center; margin: 0.5em auto; background: url("../images/black-lines.png") no-repeat left center, url("../images/black-lines.png") no-repeat right center; }
 
-h4 { font-size: 1.875em !important; font-weight: normal; color: #000; }
+h4 { font-size: 1.875em; font-weight: normal; color: #000; }
 
 .btn-galeria { width: 240px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 188px center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 45px; padding-left: 35px; }
 
@@ -146,7 +148,7 @@ select::-ms-expand { display: none; }
 .booking-form { background: rgba(255, 255, 255, 0.5); position: absolute; z-index: 1000; border: 1px solid rgba(255, 255, 255, 0.75); }
 .booking-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; width: 100%; padding: 5px; margin: 1px 10px 0 0; background: white url("../images/down-arrow.png") no-repeat 200px center; text-transform: none; font-weight: normal; }
 .booking-form input[type="text"] { font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; }
-.booking-form input[type="button"] { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
+.booking-form input[type="button"] { background: #dc1c4d url("../images/white-arrow.png") no-repeat 90% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
 ::-webkit-input-placeholder { color: #333; }
 
@@ -171,11 +173,11 @@ ul.ofertas li .bottom h4 { font-size: 1.125em !important; font-weight: normal; c
 ul.ofertas li .bottom h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
 ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 
-.slide-text-header { position: absolute; right: 70px; bottom: 0; padding: 0 30px 20px 0; text-align: right; }
+.slide-text-header { position: absolute; right: 90px; bottom: 0; padding: 0 30px 20px 0; text-align: right; }
 .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
 
-.slide-text-center { position: absolute; left: 0; top: 40%; width: 100%; }
+.slide-text-center { position: absolute; left: 0; top: 40%; width: 100%; z-index: 1000; }
 .slide-text-center h2 { text-align: center; color: #fff; text-transform: uppercase; font-size: 3em; margin-bottom: 0; line-height: 1em; background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center; }
 .slide-text-center span { display: block; text-align: center; color: #fff; font-style: italic; }
 .slide-text-center .button { width: 100px; margin: 28px auto 0; display: block; }
@@ -226,7 +228,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .menu-top > li > a { padding: 8px 0; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; }
 .menu-top > li:first-child > a { background: url("../images/down-arrow.png") no-repeat right center; padding-right: 15px; }
 .menu-top > li:hover > ul { display: block; }
-.menu-top ul { display: none; position: absolute; border: 1px solid #e5e5e5; position: absolute; padding: 20px 20px 0 30px; background-color: white; z-index: 1000; top: 30px; right: 0px; width: 146px; background-color: white; z-index: 1000; }
+.menu-top ul { display: none; position: absolute; border: 1px solid #e5e5e5; position: absolute; padding: 20px 20px 0 30px; background-color: white; z-index: 1000; top: 30px; right: 0px; width: 120px; background-color: white; z-index: 1000; }
 .menu-top ul li { margin-bottom: 20px; text-align: right; }
 .menu-top ul li a { padding-right: 25px; }
 .menu-top ul li:hover a { color: #dc1c4d; }
@@ -272,6 +274,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.eventos .cycle-slideshow .cycle-pager span { color: #fff; font-size: 4em; width: 25px; float: left; opacity: 0.5; }
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active { opacity: 1; }
 .row.eventos .cycle-slideshow .slide { position: relative; }
+.row.eventos .cycle-slideshow .slide:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }
@@ -324,7 +327,7 @@ footer.row { background: #333333; max-width: none; }
 .booking-slider.tall { height: 475px; }
 .booking-slider .booking-form { width: 240px; right: 10%; top: 5%; padding: 10px; }
 .booking-slider .booking-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; width: 100%; padding: 5px; margin: 1px 10px 0 0; background: white url("../images/down-arrow.png") no-repeat 200px center; text-transform: none; font-weight: normal; }
-.booking-slider .booking-form h3.lines { margin-top: 0; }
+.booking-slider .booking-form h3.lines { margin-top: 0; width: 180px; }
 .booking-slider .booking-form input[type="text"] { margin-top: 10px; background: white url("../images/calendar-icon.png") no-repeat 191px center; border: none; }
 .booking-slider .booking-form #codpromo { background: #fff; }
 .booking-slider .booking-form input[type="button"] { width: 100%; margin-top: 10px; }
@@ -421,7 +424,9 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .info-destino-ciudad { padding: 10px 0; }
+.info-destino-ciudad h3 { font-size: 30px; }
 .info-destino-ciudad .twoColum { width: 24%; float: left; }
+.info-destino-ciudad .fixBox { width: 70% !important; }
 
 .info-destino-ciudad .info h5 { font-size: 30px; color: #333333; }
 .info-destino-ciudad .info p { font-size: 14px; color: #333333; }
@@ -442,7 +447,7 @@ footer.row { background: #333333; max-width: none; }
 .items-2 li { float: left; width: 48%; margin: 0 1%; margin-bottom: 40px; }
 .items-2 .cont-img { margin-right: 5%; float: left; width: 40%; }
 .items-2 .cont-info { float: left; width: 55%; }
-.items-2 .cont-info h4 { font-size: 18px; font-weight: normal; color: #000; text-transform: uppercase; white-space: normal; margin: inherit; }
+.items-2 .cont-info h4 { font-size: 18px !important; font-weight: normal; color: #000; text-transform: uppercase; white-space: normal; margin: inherit; }
 .items-2 .cont-info h5 { color: #dc1c4d; font-size: 11px; text-transform: uppercase; margin-bottom: 25px; }
 .items-2 .btn-black { margin: inherit; }
 .items-2 + .btn-lines { margin-bottom: 50px; text-align: center; }
@@ -474,7 +479,7 @@ footer.row { background: #333333; max-width: none; }
 .info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
 
-.destinos-agenda h2 { width: 472px; }
+.destinos-agenda h2 { margin-top: 30px; width: 472px; }
 .destinos-agenda .btn-lines { width: 124px; }
 
 /*----------------------------------------------------------------------
@@ -511,12 +516,12 @@ footer.row { background: #333333; max-width: none; }
 .popUp p { font-size: 14px; line-height: 20px; margin-bottom: 5px; }
 .popUp form { margin-top: 30px; }
 .popUp form p:first-child { margin-bottom: 10px; }
-.popUp form label { font-weight: bold; font-size: 13px; width: 30%; text-align: right; float: left; margin-top: 10px; height: 40px; line-height: 30px; }
+.popUp form label { text-transform: uppercase; font-weight: bold; font-size: 13px; width: 30%; text-align: right; float: left; margin-top: 10px; height: 40px; line-height: 30px; }
 .popUp form input { width: 65%; height: 40px; border: 1px solid #333333; float: right; }
 .popUp form input[type="submit"] { background: black url("../images/white-arrow.png") no-repeat 95px center; height: 50px; border: none; color: #fff; padding: 0 53px 0 19px; display: block; width: 120px; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; }
 .popUp form input[type="submit"]:hover { background-color: #dc1c4d; }
 
-#contra .btn-black { width: 210px; background: black url("../images/white-arrow.png") no-repeat 210px center; }
+#contra .btn-black { width: auto; background: black url("../images/white-arrow.png") no-repeat 210px center; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
@@ -565,7 +570,7 @@ footer.row { background: #333333; max-width: none; }
 
 .valores-bottom li:first-child { margin-left: 150px; margin-right: 40px; }
 
-.contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li { margin-bottom: 35px; }
+.contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li { margin-bottom: 12px; font-size: 14px; }
 .contenido-calidad li span, .contenido-celebraciones li span, .contenido-reuniones li span { font-weight: bold; }
 .contenido-calidad li:before, .contenido-celebraciones li:before, .contenido-reuniones li:before { content: "• "; color: #dc1c4d; display: inline-block; }
 .contenido-calidad p, .contenido-celebraciones p, .contenido-reuniones p { margin-bottom: 40px; }
@@ -711,10 +716,11 @@ footer.row { background: #333333; max-width: none; }
 .contacto #header { margin-bottom: 40px; }
 .contacto #body { margin-bottom: 50px; }
 .contacto #footer { display: none; }
+.contacto #footer h4 { font-size: 18px; font-weight: normal; }
 .contacto select { border: 2px solid #e5e5e5; color: #333333; font-size: 13px; font-weight: 200; width: 300px; padding-right: 20px; background: white url("../images/down-arrow.png") no-repeat 95% center; padding: 5px; }
 
 .newsText { margin-bottom: 50px; }
-.newsText h4 { font-weight: bold; }
+.newsText h4 { font-weight: bold; font-size: 30px; }
 
 .formBox { width: 600px; margin: 0 auto; background: url("../images/mainbg.jpg") repeat left top; }
 .formBox .wrap { margin-bottom: 10px; }

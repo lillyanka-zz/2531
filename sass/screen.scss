@@ -27,6 +27,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   -webkit-font-smoothing: antialiased;
 }
 
+
+
 .row{
   width: 100%;
   position: relative;
@@ -149,7 +151,7 @@ h3.lines{
 }
 
 h4{
-  font-size: 1.875em !important;
+  font-size: 1.875em ;//el important afecta el estilo en general
   font-weight: normal;
   color: #000;
 }
@@ -384,7 +386,7 @@ ul.ofertas{
 
 .slide-text-header{
       position: absolute;
-      right: 70px;
+      right: 90px;
       bottom: 0;
       padding: 0 30px 20px 0;
       text-align: right;
@@ -558,7 +560,7 @@ ul.ofertas{
     z-index: 1000;
     top: 30px; 
     right: 0px;
-    width: 146px;
+    width: 120px;
     background-color:white; z-index:1000;
     li{margin-bottom:20px;text-align:right;
       a{padding-right:25px; }
@@ -982,6 +984,7 @@ footer.row{
     }
     h3.lines{
       margin-top: 0;
+      width:180px; 
     }
     input[type="text"]{margin-top:10px; background: #fff url('../images/calendar-icon.png') no-repeat 191px center;border: none;}
     #codpromo{
@@ -1149,7 +1152,9 @@ footer.row{
 ---------------------------------------------------------------------*/
 
 .info-destino-ciudad{padding:10px 0;
+  h3{font-size:30px; }
   .twoColum{width:24%;float:left; }
+  .fixBox{width:70% !important;}
 }
 
 .info-destino-ciudad .info{
@@ -1181,7 +1186,7 @@ footer.row{
   .cont-img{margin-right:5%;float:left;width:40%;}
   .cont-info{float:left;width:55%;}
   .cont-info h4{
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: normal;
     color: #000;
     text-transform: uppercase;
@@ -1268,6 +1273,7 @@ footer.row{
 
 .destinos-agenda{
   h2{
+    margin-top:30px; 
     width: 472px;
   }
   .btn-lines{
@@ -1333,7 +1339,7 @@ footer.row{
   p{font-size:14px;line-height:20px;margin-bottom:5px; }
   form{margin-top:30px; 
       p:first-child{margin-bottom:10px;}
-      label{font-weight: bold;font-size:13px;width:30%;text-align:right;float:left;margin-top:10px;height:40px;line-height:30px }
+      label{text-transform:uppercase;font-weight: bold;font-size:13px;width:30%;text-align:right;float:left;margin-top:10px;height:40px;line-height:30px }
       input{width:65%;height:40px;border: 1px solid #333333;float:right;}
       input[type="submit"]{
         background: black url("../images/white-arrow.png") no-repeat 95px center;
@@ -1357,7 +1363,7 @@ footer.row{
 
 // #reservar{z-index:1000;}
 #contra{
-  .btn-black{width:210px;background: black url("../images/white-arrow.png") no-repeat 210px center;}
+  .btn-black{width:auto;background: black url("../images/white-arrow.png") no-repeat 210px center;}
 }
 #agencia{
     a{border-top:1px solid black;border-bottom:1px solid black;padding:10px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
@@ -2055,7 +2061,9 @@ footer.row{
   a{color:$pink;font-size:14px;line-height:14px;text-decoration:underline;padding-bottom:3px; }
   #header{margin-bottom:40px; }
   #body{margin-bottom:50px; }
-  #footer{display:none;}
+  #footer{display:none;
+    h4{font-size:18px;font-weight:normal;}
+  }
   select{@extend %select-style;border: 2px solid #e5e5e5;
     color: #333333;
     font-size: 13px;
@@ -2069,7 +2077,7 @@ footer.row{
 //newsletter
 
 .newsText{margin-bottom:50px;
-  h4{font-weight: bold;}
+  h4{font-weight: bold;font-size:30px; }
 }
 //reutilizable para formularios
 .formBox{width:600px;margin:0 auto;background: url("../images/mainbg.jpg") repeat left top;
