@@ -92,14 +92,17 @@
 	</div><!-- /row -->
   
   <div class="row main-menu">
-    <nav>
-      <a href="#">Hoteles</a>
-      <a href="#">Ofertas</a>
-      <a href="#">Destinos</a>
-      <a href="#">Eventos &amp; Reuniones</a>
-      <a href="#">Rafael Hoteles</a>
-      <a href="#">Reservas</a>
-    </nav>
+    <div class="centered-large">
+      <a href="#bottom" class="scrollBottom"></a>
+      <nav>
+        <a href="#">Hoteles</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Destinos</a>
+        <a href="#">Eventos &amp; Reuniones</a>
+        <a href="#">Rafael Hoteles</a>
+        <a href="#">Reservas</a>
+      </nav>
+    </div>
   </div><!-- /row -->
   
   <div class="row ofertas">
@@ -150,11 +153,8 @@
   
   <div class="row eventos">
     <div class="cycle-slideshow  mascaraEventos" data-cycle-fx="fade" 
-        data-cycle-timeout="2000"
+        data-cycle-timeout="0"
         data-cycle-slides="> .slide">
-
-              
-      <div class="hover"></div> 
       <div class="cycle-pager"></div>
       <div class="slide">
         <img src="images/eventos.jpg" alt="" />
@@ -187,21 +187,50 @@
   </div><!-- /row -->
   
   <div class="row destinos">
-    <div>
+    <div class="centered">
       <h2 class="lines">Destinos</h2>
       <span class="note">Variada oferta artística, histórica, cultural o gastronómica.</span>
-      <ul>
+      <ul class="cycle-slideshow" 
+          data-cycle-fx=carousel
+          data-cycle-timeout=0
+          data-cycle-carousel-visible=5
+          data-cycle-slides="> li"
+          data-cycle-next=".destinos .next"
+          data-cycle-prev=".destinos .prev"
+          >
         <li class=" mascaraEventos">
           <img src="images/barcelona.jpg" alt="" />
           <div class="hover"></div>
           <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
 
         </li>
-        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a><</li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos">
+          <img src="images/barcelona.jpg" alt="" />
+          <div class="hover"></div>
+          <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
+
+        </li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
+        <li class=" mascaraEventos">
+          <img src="images/barcelona.jpg" alt="" />
+          <div class="hover"></div>
+          <span>Barcelona</span><a href="" class="btn-lines white">Ver destino</a>
+
+        </li>
+        <li class=" mascaraEventos"><img src="images/bilbao.jpg" alt="" /><div class="hover"></div><span>Bilbao</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/madrid.jpg" alt="" /><div class="hover"></div><span>Madrid</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/baqueira.jpg" alt="" /><div class="hover"></div><span>Baqueira</span><a href="" class="btn-lines white">Ver destino</a></li>
         <li class=" mascaraEventos"><img src="images/salamanca.jpg" alt="" /><div class="hover"></div><span>Salamanca</span><a href="" class="btn-lines white">Ver destino</a></li>
       </ul>
+      <a href="#" class="prev"><img src="images/prevarrow.png" /></a>
+      <a href="#" class="next"><img src="images/nextarrow.png" /></a>
       <a href="" class="btn-black">Ver mapa de destinos</a>
     </div>
   </div><!-- /row -->
@@ -226,107 +255,115 @@
     </div>
   </div><!-- /row -->
    
-   <footer class="row">
-     <div class="footer-top">
-       <nav>
-         <a class="facebook" href="">Facebook</a>
-         <a class="twitter" href="">Twitter</a>
-         <a class="pinterest" href="">Pinterest</a>
-         <a class="instagram" href="">Instagram</a>
-         <a class="youtube" href="">Youtube</a>
-       </nav>
-       <div class="right">
-         <form method="post" action="">
-           <h3>Newsletter</h3>
-           <input type="text" name="email" placeholder="E-MAIL" />
-           <input type="button" class="btn pink" name="submit" value="Registrarme" />
-         </form>
-       </div>
-     </div><!-- /row top -->
-     <div class="footer-middle">
-       <div>
-         <div>
-           <span class="city-title">Barcelona</span>
-           <a href="">Rafaelhoteles Barcelona</a>
-         </div>
-         <div>
-           <span class="city-title">Bilbao</span>
-           <a href="">Holiday Inn Bilbao</a>
-         </div>
-         <div>
-           <span class="city-title">Madrid</span>
-           <a href="">Holiday Inn Madrid-Pirámides</a>
-           <a href="">Rafaelhoteles Atocha</a>
-           <a href="">Rafaelhoteles Madrid Norte</a>
-           <a href="">Rafaelhoteles Orense</a>
-           <a href="">Rafaelhoteles Ventas</a>
-           <a href="">Rafaelhoteles Forum Alcalá</a>
-         </div>
-         <div>
-           <span class="city-title">Baqueira</span>
-           <a href="">Rafaelhoteles by La Pleta</a>
-         </div>
-         <div>
-           <span class="city-title">Salamanca</span>
-           <a href="">Salamanca Forum</a>
-         </div>
-       </div>
-     </div><!-- /row middle -->
-     <div class="footer-bottom">
-       <div>
+  <!--********************************************************
+                          Footer 
+    ********************************************************-->
+  <footer class="row">
+    <div class="centered-large">
+      <a href="#" class="scrollTop" id="bottom"></a>
+       <div class="footer-top">
          <nav>
-           <a href="" class="btn-lines white">Trabaja con nosotros</a>
-           <a href="" class="btn-lines white">Mapa web</a>
-           <a href="" class="btn-lines white">Aviso legal</a>
+           <a class="facebook" href="">Facebook</a>
+           <a class="twitter" href="">Twitter</a>
+           <a class="pinterest" href="">Pinterest</a>
+           <a class="instagram" href="">Instagram</a>
+           <a class="youtube" href="">Youtube</a>
          </nav>
-         <span class="credits right">by eMascaró Tourism</span>
-       </div>
-     </div><!-- /row bottom -->
-   </footer> 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  
-  <script src="javascripts/vendor/cycle2.js"></script>
-  
-  <script src="javascripts/foundation/foundation.js"></script>
-	
-	<script src="javascripts/foundation/foundation.abide.js"></script>
-	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-	
-  
-  <script>
-    $(document).foundation();
-  </script>
-</body>
-</html>
+         <div class="right">
+           <form method="post" action="">
+             <h3>Newsletter</h3>
+             <input type="text" name="email" placeholder="E-MAIL" />
+             <input type="button" class="btn pink" name="submit" value="Registrarme" />
+           </form>
+         </div>
+       </div><!-- /row top -->
+     </div>
+       <div class="footer-middle">
+         <div>
+           <div>
+             <span class="city-title">Barcelona</span>
+             <a href="">Rafaelhoteles Barcelona</a>
+           </div>
+           <div>
+             <span class="city-title">Bilbao</span>
+             <a href="">Holiday Inn Bilbao</a>
+           </div>
+           <div>
+             <span class="city-title">Madrid</span>
+             <a href="">Holiday Inn Madrid-Pirámides</a>
+             <a href="">Rafaelhoteles Atocha</a>
+             <a href="">Rafaelhoteles Madrid Norte</a>
+             <a href="">Rafaelhoteles Orense</a>
+             <a href="">Rafaelhoteles Ventas</a>
+             <a href="">Rafaelhoteles Forum Alcalá</a>
+           </div>
+           <div>
+             <span class="city-title">Baqueira</span>
+             <a href="">Rafaelhoteles by La Pleta</a>
+           </div>
+           <div>
+             <span class="city-title">Salamanca</span>
+             <a href="">Salamanca Forum</a>
+           </div>
+         </div>
+       </div><!-- /row middle -->
+       <div class="footer-bottom">
+         <div class="centered">
+           <nav>
+             <a href="" class="btn-lines white">Trabaja con nosotros</a>
+             <a href="" class="btn-lines white">Mapa web</a>
+             <a href="" class="btn-lines white">Aviso legal</a>
+           </nav>
+           <span class="credits right">by eMascaró Tourism</span>
+         </div>
+       </div><!-- /row bottom -->
+     </footer> 
+    <script>
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+    '.js><\/script>')
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.smooth-scroll.min.js"></script>
+    
+    <script src="javascripts/vendor/cycle2.js"></script>
+    <script src="javascripts/carousel.js"></script>
+    <script src="javascripts/vendor/wood.js"></script>
+    
+    <script src="javascripts/foundation/foundation.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.abide.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.alerts.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.clearing.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.cookie.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.forms.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.interchange.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.joyride.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.magellan.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.orbit.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.reveal.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.section.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+  	
+  	<script src="javascripts/foundation/foundation.topbar.js"></script>
+    <script src="javascripts/main.js"></script>
+  	
+    
+    
+  </body>
+  </html>
