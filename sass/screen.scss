@@ -78,6 +78,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   .cycle-next{z-index:2000;}
 }
 
+.fsizeBig{font-size:30px; }
+
 .scrollTop{
   display: block;
   background: url('../images/scroll-up.png') no-repeat left top;
@@ -198,7 +200,7 @@ span.note{
   font-weight: 700;
   font-size: 0.75em;
   margin: 0 auto;
-  padding: 15px 38px 15px 10px;
+  padding: 15px 45px 15px 15px;
   &:hover{background-color:$pink; }
 }
 
@@ -868,8 +870,9 @@ footer.row{
       color: $pink;
       text-transform: uppercase;
       float: left;
-      line-height: 40px;
       margin: 0;
+      line-height: 60px;
+      height: 40px;
     }
     input[type="text"]{
       width: 179px;

@@ -96,6 +96,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 .hover .cycle-prev { z-index: 2000; }
 .hover .cycle-next { z-index: 2000; }
 
+.fsizeBig { font-size: 30px; }
+
 .scrollTop { display: block; background: url("../images/scroll-up.png") no-repeat left top; width: 34px; height: 34px; float: right; margin-top: 31px; }
 
 .scrollBottom { display: block; background: url("../images/scroll-bottom.png") no-repeat left top; width: 34px; height: 34px; float: right; margin-top: 10px; }
@@ -123,7 +125,7 @@ address { font-size: 0.875em; line-height: 1.7em; }
 
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
-.btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 38px 15px 10px; }
+.btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 45px 15px 15px; }
 .btn-black:hover { background-color: #dc1c4d; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
@@ -303,7 +305,7 @@ footer.row { background: #333333; max-width: none; }
 .footer-top a.instagram { background-position: -150px 0; }
 .footer-top a.youtube { background-position: -200px 0; }
 .footer-top form { width: 535px; }
-.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; line-height: 40px; margin: 0; }
+.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 60px; height: 40px; }
 .footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; }
 .footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
 
