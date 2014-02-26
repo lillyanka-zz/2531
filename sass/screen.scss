@@ -2202,14 +2202,21 @@ text-transform: uppercase;}
 
     > ul{list-style-position:inside;list-style:none;margin:0;
       > li{width:20%;float:left;padding-left:2%;
+          
         &:first-child{padding-left:0;}
-        h4{margin-bottom:10px;color:$pink;font-size:13px;text-transform: uppercase;color:$pink;}
+        h4{margin-bottom:10px;color:$pink;font-size:11px !important;text-transform: uppercase;color:$pink;}
         
-        ul{color:$pink;list-style-position:inside;list-style:disc;
+        >ul{color:$pink;list-style-position:inside;list-style:disc; margin-left: 0;
 
           li{margin-bottom:15px;
-            
-          span,a{color:black;font-size:13px; }
+            list-style: none;
+            &:before{
+              content: "\00B7";
+              font-size: 14px;
+              font-weight: bold;
+              padding-right: 4px;
+            }
+          span,a{color:black;font-size:14px; }
           } 
         }
       }
