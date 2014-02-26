@@ -1565,9 +1565,22 @@ footer.row{
 
   .btn-lines{
     width: 118px;
+    height: auto;
+    line-height: normal;
+
+    span{
+      color: $dark-gray;
+      line-height: 12px;
+      margin-top: 7px;
+      margin-bottom: none;
+    }
   }
 }
 
+.volver-noticias{
+  margin-top: 140px;
+  margin-bottom: 22px;
+}
 // Hotel Ubicaion
 .ubicacion-mapa{
   margin-bottom: 62px;
@@ -1960,9 +1973,8 @@ footer.row{
       display: block;
       margin: 0 auto;
       border: 2px solid #fff;
-      padding: 17px 43px 24px 26px;
-      width: 125px;
-      height: 33px;
+      padding: 13px 31px 13px 21px;
+      width: 120px;
       font-size: 12px;
       background: transparent url("../images/white-arrow.png") no-repeat 83% center;
       color: #fff;

@@ -1,3 +1,5 @@
+
+
 $( document ).ready(function() {
   $(document).foundation();
 
@@ -82,41 +84,15 @@ $( document ).ready(function() {
       //date-picker
       //
 
-      var checkIn =  $( "#checkin" ),
-       checkout =  $( "#checkout" );
-
+      var datePicker =  $( ".datepicker" );
       
-     checkIn.datepicker();
-     checkout.datepicker();
-
-    
-
-     function datepi(elem){
-
-       elem.on({
-        focus: function() {
-          $('#mask2').show();
-        }, blur: function() {
-          $('#mask2').hide();
-        }
-      });
-
-     };
-
-     datepi(checkIn);
-     datepi(checkout);
+     datePicker.datepicker();
      
-     // checkIn.focus(function(){
-     //    // $('.booking-form').css('z-index','500');
-     //     $('#mask2').show();
-     //     // $('.booking-form').css('z-index','500');
-     // });//realizar onfucos para quitar
-
-     // checkIn.blur(function(){
-     //    // $('.booking-form').css('z-index','500');
-     //     $('#mask2').hide();
-     //     // $('.booking-form').css('z-index','500');
-     // });//realizar onfucos para quitar
+     datePicker.focus(function(){
+        // $('.booking-form').css('z-index','500');
+         $('#mask2').css('opacity',1);
+         // $('.booking-form').css('z-index','500');
+     });//realizar onfucos para quitar
 
 
   });//end jquery
