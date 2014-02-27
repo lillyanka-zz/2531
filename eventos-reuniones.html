@@ -135,7 +135,7 @@
   <div class="row eventos-title">
     <div class="large-10 columns large-centered">
       
-          <h4>Reuniones</h4>
+          <h4 class="fsizeBig">Reuniones</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec laoreet augue. Vestibulum euismod arcu sed commodo cursus. Maecenas venenatis euismod scelerisque. Quisque consectetur tristique sapien, vitae viverra dui pellentesque in. Aliquam enim eros, posuere sed libero quis, fermentum rutrum risus. Aliquam et congue sem, quis lacinia quam. Praesent elementum lorem eget rhoncus pharetra. Vestibulum id tellus ligula. Cras lacinia et dolor vitae pulvinar. Pellentesque imperdiet risus eu odio tempor pretium. In hac habitasse platea dictumst. Vivamus egestas bibendum iaculis. Mauris rhoncus risus a metus semper rhoncus. Phasellus rutrum massa dolor, sit amet fringilla elit laoreet ut.</p>
           <strong>Si lo deseas puedes solicitar más información de nuestros salones y servicios: </strong>
           <a class="btn-black">SOLICITAR MÁS INFORMACIÓN</a>
@@ -201,8 +201,9 @@
 
         </div> 
       <div class="row items-eventos">
-        <div class="centered wood-parent">
-              <ul class="ofertas wood">
+        <div class="centered ">
+              <ul class="ofertas  js-masonry"
+              data-masonry-options='{ "columnWidth": 1, "itemSelector": "li" }'>
                 <li>
                   <div class="top">
                     <img src="images/reuniones1.jpg" alt="" />
@@ -374,6 +375,7 @@
      '.js><\/script>')
      </script>
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="javascripts/masonry.js"></script>
      
      <script src="javascripts/vendor/cycle2.js"></script>
      <script src="javascripts/vendor/wood.js"></script>
