@@ -1,6 +1,3 @@
-
-$(document).foundation();
-
 /*! jQuery UI - v1.10.4 - 2014-02-23
 * http://jqueryui.com
 * Includes: jquery.ui.core.js, jquery.ui.datepicker.js
