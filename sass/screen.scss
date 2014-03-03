@@ -36,6 +36,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   }
 }
 
+#wrapper{
+  padding-top: 135px;
+}
+
 .right{
   float: right;
 }
@@ -54,6 +58,13 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   margin: 0 auto;
   width: 1240px;
   overflow: hidden;
+}
+
+.inner-header{
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
 }
 
 .two-col{

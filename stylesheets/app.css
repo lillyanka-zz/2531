@@ -1670,6 +1670,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 .row { width: 100%; position: relative; }
 .row.top-links { max-width: none; padding: 0 20px; }
 
+#wrapper { padding-top: 135px; }
+
 .right { float: right; }
 
 .left { float: left; }
@@ -1677,6 +1679,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 .centered { margin: 0 auto; width: 940px; overflow: hidden; }
 
 .centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
+
+.inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; }
 
 .two-col { width: 470px; overflow: hidden; }
 
