@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
@@ -566,7 +566,7 @@ footer.row { background: #333333; max-width: none; }
 .filosofia-vision .lines { width: 276px; }
 
 .filosofia-contenedor { width: 420px; margin: 0 auto; }
-.filosofia-contenedor img { display: block; margin: 0 auto; }
+.filosofia-contenedor img { display: block; margin: 0 auto; margin-bottom: 30px; }
 .filosofia-contenedor .note { margin-bottom: 8px; text-align: center; }
 
 .filosofia-mision { padding: 60px 0; }
@@ -575,13 +575,13 @@ footer.row { background: #333333; max-width: none; }
 .filosofia-valores .lines { width: 340px; }
 .filosofia-valores .filosofia-contenedor { margin-bottom: 45px; }
 
-.valores-contenedor li { width: 300px; text-align: center; }
+.valores-contenedor li { width: 288px; text-align: center; }
 .valores-contenedor li span { color: #666666; line-height: 16px; }
 .valores-contenedor li h4 { font-size: 18px; margin-bottom: 10px; }
 
 .valores-top li + li { margin-left: 20px; }
 
-.valores-bottom li:first-child { margin-left: 150px; margin-right: 40px; }
+.valores-bottom li:first-child { margin-left: 148px; margin-right: 54px; }
 
 .contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li { margin-bottom: 12px; font-size: 14px; }
 .contenido-calidad li span, .contenido-celebraciones li span, .contenido-reuniones li span { font-weight: bold; }
