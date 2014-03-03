@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*--------------------------------*/
 body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif; -webkit-font-smoothing: antialiased; }
 
-.row { width: 100%; position: relative; }
+.row { width: 100%; position: relative; min-width: 1240px; }
 .row.top-links { max-width: none; padding: 0 20px; }
 
 #wrapper { padding-top: 135px; }
@@ -257,7 +257,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 #ITAL { background: url("../images/flag-italia.png") no-repeat right center; }
 
-.main-slider { position: relative; height: 695px; }
+.main-slider { position: relative; height: 695px; width: 960px !important; }
 .main-slider .booking-form { width: 788px; height: 120px; left: 50%; top: 50%; margin-left: -394px; margin-top: -60px; padding: 0 20px; }
 .main-slider .booking-form h3.lines { width: 260px; }
 .main-slider .booking-form select { width: 252px; height: 38px; float: left; margin: 1px 10px 0 0; }
@@ -266,6 +266,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
 .main-slider .slide { position: relative; }
+.main-slider .slide img { width: 1240px !important; height: 695px !important; }
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
