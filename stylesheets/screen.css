@@ -134,7 +134,7 @@ address { font-size: 0.875em; line-height: 1.7em; }
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
 .btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 45px 15px 15px; }
-.btn-black:hover { background-color: #dc1c4d; }
+.btn-black:hover { background-color: #dc1c4d; color: #fff; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
 .btn-lines.ofertas { width: 145px; }
