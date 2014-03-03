@@ -1443,7 +1443,7 @@ a.th { display: inline-block; max-width: 100%; }
 .f-dropdown.large { max-width: 800px; }
 
 /* Grid HTML Classes */
-.row { margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; /* max-width: 77.5em; */ width: 100%; *zoom: 1; }
+.row { margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 77.5em; width: 100%; *zoom: 1; }
 
 .row:before, .row:after { content: " "; display: table; }
 
@@ -1668,6 +1668,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif; -webkit-font-smoothing: antialiased; }
 
 .row { width: 100%; position: relative; }
+.row.top-links { max-width: none; padding: 0 20px; }
 
 .right { float: right; }
 
@@ -1708,7 +1709,7 @@ h3.lines { font-size: 1.5em; text-align: center; margin: 0.5em auto; background:
 
 h4 { font-size: 1.875em; font-weight: normal; color: #000; }
 
-.menu { position: static; z-index: 10000; max-width: 1600px; padding: 0 20px;}
+.menu { position: static; z-index: 10000; }
 
 .btn-galeria { width: 240px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 188px center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 45px; padding-left: 35px; }
 
@@ -1854,7 +1855,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
 .main-slider .slide .slide-text-header a.button { float: right; }
 
-.row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; position: static;}
+.row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
 .row.main-menu nav a { position: relative; margin: 20px 14px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
 .row.main-menu nav a.active, .row.main-menu nav a:hover { text-decoration: underline; }

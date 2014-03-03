@@ -80,6 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif; -webkit-font-smoothing: antialiased; }
 
 .row { width: 100%; position: relative; }
+.row.top-links { max-width: none; padding: 0 20px; }
 
 .right { float: right; }
 
