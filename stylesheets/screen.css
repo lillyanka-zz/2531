@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
@@ -88,7 +88,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .left { float: left; }
 
-.centered { margin: 0 auto; width: 940px; overflow: hidden; }
+.centered { margin: 0 auto; width: 940px; overflow: hidden; position: relative; }
 
 .centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
 
@@ -293,8 +293,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }
 .row.destinos h2 { width: 330px; }
 .row.destinos .btn-black { margin-top: 2em; display: table; height: 30px; line-height: 15px; background: black url("../images/white-arrow.png") no-repeat 93% center; padding: 15px 45px 15px 10px; }
-.row.destinos .next { float: right; }
-.row.destinos .prev { float: left; }
+.row.destinos .next { position: absolute; right: 0; top: 20px; }
+.row.destinos .prev { position: absolute; left: 0; top: 20px; }
 .row.destinos ul { overflow: hidden; margin: 0 auto; width: 940px; }
 .row.destinos ul li { width: 188px; float: left; position: relative !important; height: 240px; }
 .row.destinos ul li img { width: 100%; }
@@ -315,8 +315,8 @@ footer.row { background: #333333; max-width: none; }
 .footer-top a.pinterest { background-position: -100px 0; }
 .footer-top a.instagram { background-position: -150px 0; }
 .footer-top a.youtube { background-position: -200px 0; }
-.footer-top form { width: 535px; }
-.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 60px; height: 40px; }
+.footer-top form { width: 536px; }
+.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 44px; height: 40px; }
 .footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; }
 .footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
 

@@ -53,6 +53,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   margin: 0 auto;
   width: 940px;
   overflow: hidden;
+  position: relative;
 }
 
 .centered-large{
@@ -804,10 +805,14 @@ ul.ofertas{
     padding: 15px 45px 15px 10px;
   }
   .next{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 20px;
   }
   .prev{
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 20px;
   }
   ul{
     overflow: hidden;
@@ -900,13 +905,13 @@ footer.row{
     }
   }
   form{
-    width: 535px;
+    width: 536px;
     h3{
       color: $pink;
       text-transform: uppercase;
       float: left;
       margin: 0;
-      line-height: 60px;
+      line-height: 44px;
       height: 40px;
     }
     input[type="text"]{
