@@ -31,10 +31,19 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   width: 100%;
   position: relative;
   min-width: 1240px;
+  .row{
+    margin: 0 !important;
+  }
   &.top-links{
     max-width: none;
     padding: 0 20px;
   }
+}
+
+#outer-wrapper{
+  width: 100%;
+  max-width: 1600px;
+  margin:0 auto !important;
 }
 
 #wrapper{
@@ -67,6 +76,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   width: 100%;
   z-index: 10000;
   background: #fff;
+  max-width: 1600px;
 }
 
 .two-col{
