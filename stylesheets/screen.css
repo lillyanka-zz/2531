@@ -79,8 +79,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*--------------------------------*/
 body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif; -webkit-font-smoothing: antialiased; }
 
-.row { width: 100%; position: relative; min-width: 1240px; }
-.row.top-links { max-width: none; padding: 0 20px; }
+.row { width: 100%; position: relative; min-width: 960px; }
+.row .row { margin: 0 !important; }
+.row.top-links { max-width: 1600px; padding: 0 20px; min-width: 960px; }
+
+#outer-wrapper { width: 100%; max-width: none; margin: 0 auto !important; }
 
 #wrapper { padding-top: 135px; }
 
@@ -92,7 +95,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
 
-.inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; }
+.inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; max-width: none; box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); }
 
 .two-col { width: 470px; overflow: hidden; }
 
@@ -272,7 +275,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
 .main-slider .slide .slide-text-header a.button { float: right; }
 
-.row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; }
+.row.main-menu { max-width: 1600px; margin-bottom: 0; min-width: 960px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
 .row.main-menu nav a { position: relative; margin: 20px 14px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
 .row.main-menu nav a.active, .row.main-menu nav a:hover { text-decoration: underline; }

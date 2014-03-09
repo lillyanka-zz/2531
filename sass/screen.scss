@@ -30,19 +30,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
 .row{
   width: 100%;
   position: relative;
-  min-width: 1240px;
+  min-width: 960px;
   .row{
     margin: 0 !important;
   }
   &.top-links{
-    max-width: none;
+    max-width: 1600px;
     padding: 0 20px;
+    min-width: 960px;
   }
 }
 
 #outer-wrapper{
   width: 100%;
-  max-width: 1600px;
+  max-width: none;
   margin:0 auto !important;
 }
 
@@ -76,7 +77,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   width: 100%;
   z-index: 10000;
   background: #fff;
-  max-width: 1600px;
+  max-width: none;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
 }
 
 .two-col{
@@ -706,9 +708,9 @@ ul.ofertas{
 }
 
 .row.main-menu{
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
-  max-width: none;
-  margin-bottom: 4px;
+  max-width: 1600px;
+  margin-bottom: 0;
+  min-width: 960px;
   nav{
     width: 786px;
     margin: 0 auto;
