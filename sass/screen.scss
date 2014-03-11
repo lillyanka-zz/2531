@@ -68,8 +68,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
 
 .centered-large{
   margin: 0 auto;
-  width: 1240px;
+  max-width: 1240px;
   overflow: hidden;
+  width: 100%;
+  min-width: 960px;
 }
 
 .inner-header{
@@ -627,7 +629,9 @@ ul.ofertas{
 .main-slider{
   position: relative;
   height: 695px;
-  width: 960px !important;
+  width: 100% !important;
+  max-width: 1600px;
+  min-width: 960px;
   .booking-form{
     width: 788px;
     height: 120px;
@@ -676,9 +680,15 @@ ul.ofertas{
   }
   .slide{
     position: relative;
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 1600px;
+    min-width: 960px;
     img{
-      width: 1240px !important;
-      height: 695px !important;
+      width: 100% !important;
+      max-width: 1600px;
+      min-width: 960px;
+      height: 100% !important;
     }
     .slide-text-header{//reutilizable
       position: absolute;
@@ -763,6 +773,9 @@ ul.ofertas{
 
 .row.eventos{
   margin: 20px auto;
+  width: 100% !important;
+  max-width: 1600px;
+  min-width: 960px;
   .cycle-slideshow{
     .cycle-pager{
       position: absolute;
@@ -789,6 +802,9 @@ ul.ofertas{
           color: $pink;
           
         }
+      }
+      img{
+        height: 100%;
       }
     }
   }
@@ -884,7 +900,9 @@ ul.ofertas{
 
 footer.row{
   background: $dark-gray;
-  max-width: none;
+  width: 100% !important;
+  max-width: 1600px;
+  min-width: 960px;
 }
 .footer-top{
   padding: 27px 0;

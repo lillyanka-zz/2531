@@ -10,6 +10,16 @@ return isNaN(t)?d:t},g=p(l[0]),m=Math.max(g,p(l[1]||"")),g=a?Math.max(g,a.getFul
 
 $( document ).ready(function() {
 //  $(document).foundation();
+
+  var winHeight = $(window).height() - 60;
+  $('.main-slider, .slider, .slide').css('height', winHeight);
+
+  $(window).resize(function() {
+    var winHeight = $(window).height() - 60;
+    console.log(winHeight);
+    $('.main-slider, .slider, .slide').css('height', winHeight);
+  });
+
   $('a.scrollTop').click(function(){
     event.preventDefault();
     $.smoothScroll({direction:'top'});

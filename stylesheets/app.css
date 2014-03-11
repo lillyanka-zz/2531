@@ -1681,7 +1681,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .centered { margin: 0 auto; width: 940px; overflow: hidden; position: relative; }
 
-.centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
+.centered-large { margin: 0 auto; max-width: 1240px; overflow: hidden; width: 100%; min-width: 960px; }
 
 .inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; max-width: none; box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); }
 
@@ -1848,7 +1848,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 #ITAL { background: url("../images/flag-italia.png") no-repeat right center; }
 
-.main-slider { position: relative; height: 695px; width: 960px !important; }
+.main-slider { position: relative; height: 695px; width: 100% !important; max-width: 1600px; min-width: 960px; }
 .main-slider .booking-form { width: 788px; height: 120px; left: 50%; top: 50%; margin-left: -394px; margin-top: -60px; padding: 0 20px; }
 .main-slider .booking-form h3.lines { width: 260px; }
 .main-slider .booking-form select { width: 252px; height: 38px; float: left; margin: 1px 10px 0 0; }
@@ -1856,8 +1856,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-.main-slider .slide { position: relative; }
-.main-slider .slide img { width: 1240px !important; height: 695px !important; }
+.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; }
+.main-slider .slide img { width: 100% !important; max-width: 1600px; min-width: 960px; height: 100% !important; }
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
@@ -1873,12 +1873,13 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
 .row.ofertas .btn-lines { float: none; }
 
-.row.eventos { margin: 20px auto; }
+.row.eventos { margin: 20px auto; width: 100% !important; max-width: 1600px; min-width: 960px; }
 .row.eventos .cycle-slideshow .cycle-pager { position: absolute; z-index: 2000; top: 32%; left: 50%; margin-left: -38px; }
 .row.eventos .cycle-slideshow .cycle-pager span { color: #fff; font-size: 4em; width: 25px; float: left; opacity: 0.5; }
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active { opacity: 1; }
 .row.eventos .cycle-slideshow .slide { position: relative; }
 .row.eventos .cycle-slideshow .slide:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
+.row.eventos .cycle-slideshow .slide img { height: 100%; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }
@@ -1897,7 +1898,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .social > div ul { width: 345px; }
 .social > div ul li { float: left; width: 115px; }
 
-footer.row { background: #333333; max-width: none; }
+footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
 .footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite.png") no-repeat left top; text-indent: -9999px; }
