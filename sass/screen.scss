@@ -629,7 +629,7 @@ ul.ofertas{
 .main-slider{
   position: relative;
   height: 695px;
-  width: 100% !important;
+  width: auto !important;
   max-width: 1600px;
   min-width: 960px;
   .booking-form{
@@ -684,11 +684,12 @@ ul.ofertas{
     width: 100% !important;
     max-width: 1600px;
     min-width: 960px;
+    text-align: center;
     img{
       width: 100% !important;
       max-width: 1600px;
       min-width: 960px;
-      height: 100% !important;
+      height: auto !important;
     }
     .slide-text-header{//reutilizable
       position: absolute;
