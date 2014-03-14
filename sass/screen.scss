@@ -225,7 +225,9 @@ span.note{
 }
 
 .btn-black{
-  background: black url("../images/white-arrow.png") no-repeat 90% center;
+  //cambio background-color para realizar hover y borro a todos el color
+  background:  url("../images/white-arrow.png") no-repeat 90% center;
+  background-color:black;
   height: 50px;
   border: none;
   color: #fff;
@@ -236,9 +238,10 @@ span.note{
   font-size: 0.75em;
   margin: 0 auto;
   padding: 15px 45px 15px 15px;
-  &:hover{background-color:$pink; color: #fff; }
+  @include transition();
+  &:hover{background-color:$pink !important; color: #fff; }
 }
-
+ 
 .btn-lines{
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
@@ -828,7 +831,8 @@ ul.ofertas{
     display: table;
     height: 30px;
     line-height: 15px;
-    background: black url("../images/white-arrow.png") no-repeat 93% center;
+    background:  url("../images/white-arrow.png") no-repeat 93% center;
+     background-color:black;
     padding: 15px 45px 15px 10px;
   }
   .next{
@@ -1091,7 +1095,7 @@ footer.row{
 ---------------------------------------------------------------------*/
 .mejores-ofertas{
   .title-mejores-ofertas{margin-bottom:60px;}
-  h2{margin-bottom:0;} 
+  h2{margin-bottom:0;font-size:42px !important;} 
   select{border:1px solid #999;@extend %select-style;
   width: 180px;
   font-weight: normal;
@@ -1112,6 +1116,9 @@ footer.row{
   }
    
 }
+
+
+ul.ofertas li a{margin-top:25px !important; }
 
 .submenu{
   padding-top:20px;
@@ -1140,6 +1147,9 @@ footer.row{
 
 ---------------------------------------------------------------------*/
 .clearPadding{padding:0 !important;}
+.bulletclear{font-size:12px;
+  span{font-size:14px; }
+ }
 .centeredOfertas{width:940px;margin: 0 auto;}
 .ofertas-detalle{
   img{width:100%;}
@@ -1156,7 +1166,8 @@ font-size: 11px !important;}
     span.price{margin-bottom:30px;}
     span.desde{font-size: 0.688em;font-weight: 600;text-transform: uppercase;}
     span.price{font-weight: 700;font-size: 2.25em;text-decoration: underline;line-height: 1.2em;}
-    span:last-child{color:$gray;}
+    span:last-child{color: #666666;
+font-size: 14px;}
     h5{color: $pink;font-size: 0.688em;text-transform: uppercase;text-align: center;}
     p{color: $light-gray;font-style: italic;font-size: 0.875em;text-align: center;}
     hr{margin:50px 0}
@@ -1365,7 +1376,7 @@ font-size: 11px !important;}
 
 ---------------------------------------------------------------------*/
 .eventos-title{margin-bottom:50px;
-  .btn-black{width: 260px;margin: 0;background: #000 url("../images/white-arrow.png") no-repeat 95% center;margin-top: 20px;}
+  .btn-black{width: 260px;margin: 0; background:  url("../images/white-arrow.png") no-repeat 95% center;margin-top: 20px;background-color:black;}
 + .slider-destinos-ciudad{margin-bottom:20px;}
   strong{display:block;margin-bottom:20px; }
 }
@@ -1376,7 +1387,8 @@ font-size: 11px !important;}
     text-align: left;
     margin: 10px auto;
     display: table;
-    background: black url("../images/white-arrow.png") no-repeat 92% center;
+    background:  url("../images/white-arrow.png") no-repeat 92% center;
+     background-color:black;
     line-height: 13px;
     height: auto;
     padding: 15px 38px 15px 15px;
@@ -1410,13 +1422,13 @@ font-size: 11px !important;}
                              #mis-reservas
 
 ---------------------------------------------------------------------*/
-.popUp{width:320px;padding:20px;z-index:2000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
-  h3{font-size:18px;line-height:18px;margin-bottom:15px; text-transform: uppercase }
-  p{font-size:14px;line-height:20px;margin-bottom:5px; }
+.popUp{width:350px;padding:20px;z-index:2000;background-color: #FFF;position:fixed;color:#333333;margin-left:-160px;left:50%;top:25%;
+  h3{font-size:18px;line-height:18px;color:#333333; text-transform: uppercase }
+  p{font-size:14px;line-height:20px;margin-bottom:5px;color:#333333; }
   form{margin-top:30px; 
       p:first-child{margin-bottom:10px;}
       label{text-transform:uppercase;font-weight: bold;font-size:13px;width:30%;text-align:right;float:left;margin-top:10px;height:40px;line-height:30px }
-      input{width:65%;height:40px;border: 1px solid #333333;float:right;}
+      input{width:65%;height:40px;border: 1px solid #9b9b9b;float:right;}
       input[type="submit"]{
         background: black url("../images/white-arrow.png") no-repeat 95px center;
           height: 50px;
@@ -1439,7 +1451,7 @@ font-size: 11px !important;}
 
 // #reservar{z-index:1000;}
 #contra{
-  .btn-black{width:auto;background: black url("../images/white-arrow.png") no-repeat 210px center;}
+  .btn-black{width:auto;background:  url("../images/white-arrow.png") no-repeat 210px center;background-color:black;}
 }
 #agencia{
     a{border-top:1px solid black;border-bottom:1px solid black;padding:10px 0;display:block;margin:0 auto;width:200px;font-size:11px;color:black;text-align:center;margin-top:30px;  }
@@ -1660,7 +1672,7 @@ font-size: 11px !important;}
     margin: 18px auto;
     width: 100%;
     padding: 0 20px;
-    background: black url("../images/white-arrow.png") no-repeat 149px center;
+    background:  url("../images/white-arrow.png") no-repeat 149px center;background-color:black;
   }
 }
 
@@ -2132,7 +2144,7 @@ font-size: 11px !important;}
 .page-error{margin-bottom:20px; 
   .btn-black{background-color:transparent;border:2px solid white; width: 180px;line-height:normal;
     background-position: 155px;margin:0;display:inline-block;}
-  .slide-text-header{bottom:100px;background-color: transparent;text-align:right;
+  .slide-text-header{bottom:125px;background-color: transparent;text-align:right;
     h1{font-size:36px;line-height:36px;color:white;text-align:right;margin: 0; }
    }
 } 
@@ -2388,7 +2400,14 @@ text-transform: uppercase;}
 }
 
 
-
+//
+//hover
+//
+#newsForm input:focus,#newsForm textarea:focus,#newsForm select:focus{
+  border:1px solid black !important;@include box-shadow(none !important);
+  background:white !important; outline: none;
+}
+select:focus{outline: none;}
 /*         ui jquery css   */
 /*! jQuery UI - v1.10.4 - 2014-02-12
 * http://jhqueryui.com
