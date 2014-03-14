@@ -79,8 +79,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*--------------------------------*/
 body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif; -webkit-font-smoothing: antialiased; }
 
-.row { width: 100%; position: relative; min-width: 1240px; }
-.row.top-links { max-width: none; padding: 0 20px; }
+.row { width: 100%; position: relative; min-width: 960px; }
+.row .row { margin: 0 !important; }
+.row.top-links { max-width: 1600px; padding: 0 20px; min-width: 960px; }
+
+#outer-wrapper { width: 100%; max-width: none; margin: 0 auto !important; }
 
 #wrapper { padding-top: 135px; }
 
@@ -88,11 +91,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .left { float: left; }
 
-.centered { margin: 0 auto; width: 940px; overflow: hidden; }
+.centered { margin: 0 auto; width: 940px; overflow: hidden; position: relative; }
 
-.centered-large { margin: 0 auto; width: 1240px; overflow: hidden; }
+.centered-large { margin: 0 auto; max-width: 1240px; overflow: hidden; width: 100%; min-width: 960px; }
 
-.inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; }
+.inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; max-width: none; box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); }
 
 .two-col { width: 470px; overflow: hidden; }
 
@@ -133,8 +136,8 @@ address { font-size: 0.875em; line-height: 1.7em; }
 
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
-.btn-black { background: black url("../images/white-arrow.png") no-repeat 90% center; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 45px 15px 15px; }
-.btn-black:hover { background-color: #dc1c4d; }
+.btn-black { background: url("../images/white-arrow.png") no-repeat 90% center; background-color: black; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 45px 15px 15px; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; }
+.btn-black:hover { background-color: #dc1c4d !important; color: #fff; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
 .btn-lines.ofertas { width: 145px; }
@@ -257,7 +260,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 #ITAL { background: url("../images/flag-italia.png") no-repeat right center; }
 
-.main-slider { position: relative; height: 695px; width: 960px !important; }
+.main-slider { position: relative; height: 695px; width: auto !important; max-width: 1600px; min-width: 960px; }
 .main-slider .booking-form { width: 788px; height: 120px; left: 50%; top: 50%; margin-left: -394px; margin-top: -60px; padding: 0 20px; }
 .main-slider .booking-form h3.lines { width: 260px; }
 .main-slider .booking-form select { width: 252px; height: 38px; float: left; margin: 1px 10px 0 0; }
@@ -265,14 +268,14 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-.main-slider .slide { position: relative; }
-.main-slider .slide img { width: 1240px !important; height: 695px !important; }
+.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; }
+.main-slider .slide img { width: 1600px !important; height: auto !important; }
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
 .main-slider .slide .slide-text-header a.button { float: right; }
 
-.row.main-menu { box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); max-width: none; margin-bottom: 4px; }
+.row.main-menu { max-width: 1600px; margin-bottom: 0; min-width: 960px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
 .row.main-menu nav a { position: relative; margin: 20px 14px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
 .row.main-menu nav a.active, .row.main-menu nav a:hover { text-decoration: underline; }
@@ -282,19 +285,20 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
 .row.ofertas .btn-lines { float: none; }
 
-.row.eventos { margin: 20px auto; }
+.row.eventos { margin: 20px auto; width: 100% !important; max-width: 1600px; min-width: 960px; }
 .row.eventos .cycle-slideshow .cycle-pager { position: absolute; z-index: 2000; top: 32%; left: 50%; margin-left: -38px; }
 .row.eventos .cycle-slideshow .cycle-pager span { color: #fff; font-size: 4em; width: 25px; float: left; opacity: 0.5; }
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active { opacity: 1; }
 .row.eventos .cycle-slideshow .slide { position: relative; }
 .row.eventos .cycle-slideshow .slide:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
+.row.eventos .cycle-slideshow .slide img { height: 100%; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }
 .row.destinos h2 { width: 330px; }
-.row.destinos .btn-black { margin-top: 2em; display: table; height: 30px; line-height: 15px; background: black url("../images/white-arrow.png") no-repeat 93% center; padding: 15px 45px 15px 10px; }
-.row.destinos .next { float: right; }
-.row.destinos .prev { float: left; }
+.row.destinos .btn-black { margin-top: 2em; display: table; height: 30px; line-height: 15px; background: url("../images/white-arrow.png") no-repeat 93% center; background-color: black; padding: 15px 45px 15px 10px; }
+.row.destinos .next { position: absolute; right: 0; top: 20px; }
+.row.destinos .prev { position: absolute; left: 0; top: 20px; }
 .row.destinos ul { overflow: hidden; margin: 0 auto; width: 940px; }
 .row.destinos ul li { width: 188px; float: left; position: relative !important; height: 240px; }
 .row.destinos ul li img { width: 100%; }
@@ -306,7 +310,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .social > div ul { width: 345px; }
 .social > div ul li { float: left; width: 115px; }
 
-footer.row { background: #333333; max-width: none; }
+footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
 .footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite.png") no-repeat left top; text-indent: -9999px; }
@@ -315,8 +319,8 @@ footer.row { background: #333333; max-width: none; }
 .footer-top a.pinterest { background-position: -100px 0; }
 .footer-top a.instagram { background-position: -150px 0; }
 .footer-top a.youtube { background-position: -200px 0; }
-.footer-top form { width: 535px; }
-.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 60px; height: 40px; }
+.footer-top form { width: 536px; }
+.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 44px; height: 40px; }
 .footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; }
 .footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
 
@@ -360,11 +364,13 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .mejores-ofertas .title-mejores-ofertas { margin-bottom: 60px; }
-.mejores-ofertas h2 { margin-bottom: 0; }
+.mejores-ofertas h2 { margin-bottom: 0; font-size: 42px !important; }
 .mejores-ofertas select { border: 1px solid #999; width: 180px; font-weight: normal; text-transform: none; background: white url("../images/down-arrow.png") no-repeat 165px center; padding: 7px 10px; }
 .mejores-ofertas .select { padding-top: 10px; }
 .mejores-ofertas ul.ofertas li { /*padding-bottom: 40px;margin-bottom:20px;float:none;width:285px;*/ }
 .mejores-ofertas ul.ofertas li:nth-child(3n) { margin-right: 0; }
+
+ul.ofertas li a { margin-top: 25px !important; }
 
 .submenu { padding-top: 20px; }
 .submenu .breadcumbs { width: 500px; }
@@ -383,6 +389,9 @@ footer.row { background: #333333; max-width: none; }
 ---------------------------------------------------------------------*/
 .clearPadding { padding: 0 !important; }
 
+.bulletclear { font-size: 12px; }
+.bulletclear span { font-size: 14px; }
+
 .centeredOfertas { width: 940px; margin: 0 auto; }
 
 .ofertas-detalle img { width: 100%; }
@@ -393,7 +402,7 @@ footer.row { background: #333333; max-width: none; }
 .ofertas-detalle #Info span.price { margin-bottom: 30px; }
 .ofertas-detalle #Info span.desde { font-size: 0.688em; font-weight: 600; text-transform: uppercase; }
 .ofertas-detalle #Info span.price { font-weight: 700; font-size: 2.25em; text-decoration: underline; line-height: 1.2em; }
-.ofertas-detalle #Info span:last-child { color: #999999; }
+.ofertas-detalle #Info span:last-child { color: #666666; font-size: 14px; }
 .ofertas-detalle #Info h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
 .ofertas-detalle #Info p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 .ofertas-detalle #Info hr { margin: 50px 0; }
@@ -501,11 +510,11 @@ footer.row { background: #333333; max-width: none; }
 
 ---------------------------------------------------------------------*/
 .eventos-title { margin-bottom: 50px; }
-.eventos-title .btn-black { width: 260px; margin: 0; background: black url("../images/white-arrow.png") no-repeat 95% center; margin-top: 20px; }
+.eventos-title .btn-black { width: 260px; margin: 0; background: url("../images/white-arrow.png") no-repeat 95% center; margin-top: 20px; background-color: black; }
 .eventos-title + .slider-destinos-ciudad { margin-bottom: 20px; }
 .eventos-title strong { display: block; margin-bottom: 20px; }
 
-.items-eventos .btn-black { width: auto; text-align: left; margin: 10px auto; display: table; background: black url("../images/white-arrow.png") no-repeat 92% center; line-height: 13px; height: auto; padding: 15px 38px 15px 15px; }
+.items-eventos .btn-black { width: auto; text-align: left; margin: 10px auto; display: table; background: url("../images/white-arrow.png") no-repeat 92% center; background-color: black; line-height: 13px; height: auto; padding: 15px 38px 15px 15px; }
 .items-eventos h5 { margin-bottom: 5px; }
 
 /*----------------------------------------------------------------------
@@ -525,17 +534,17 @@ footer.row { background: #333333; max-width: none; }
  #mis-reservas
 
 ---------------------------------------------------------------------*/
-.popUp { width: 320px; padding: 20px; z-index: 2000; background-color: #FFF; position: fixed; color: #333333; margin-left: -160px; left: 50%; top: 25%; }
-.popUp h3 { font-size: 18px; line-height: 18px; margin-bottom: 15px; text-transform: uppercase; }
-.popUp p { font-size: 14px; line-height: 20px; margin-bottom: 5px; }
+.popUp { width: 350px; padding: 20px; z-index: 2000; background-color: #FFF; position: fixed; color: #333333; margin-left: -160px; left: 50%; top: 25%; }
+.popUp h3 { font-size: 18px; line-height: 18px; color: #333333; text-transform: uppercase; }
+.popUp p { font-size: 14px; line-height: 20px; margin-bottom: 5px; color: #333333; }
 .popUp form { margin-top: 30px; }
 .popUp form p:first-child { margin-bottom: 10px; }
 .popUp form label { text-transform: uppercase; font-weight: bold; font-size: 13px; width: 30%; text-align: right; float: left; margin-top: 10px; height: 40px; line-height: 30px; }
-.popUp form input { width: 65%; height: 40px; border: 1px solid #333333; float: right; }
+.popUp form input { width: 65%; height: 40px; border: 1px solid #9b9b9b; float: right; }
 .popUp form input[type="submit"] { background: black url("../images/white-arrow.png") no-repeat 95px center; height: 50px; border: none; color: #fff; padding: 0 53px 0 19px; display: block; width: 120px; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; }
 .popUp form input[type="submit"]:hover { background-color: #dc1c4d; }
 
-#contra .btn-black { width: auto; background: black url("../images/white-arrow.png") no-repeat 210px center; }
+#contra .btn-black { width: auto; background: url("../images/white-arrow.png") no-repeat 210px center; background-color: black; }
 
 #agencia a { border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; display: block; margin: 0 auto; width: 200px; font-size: 11px; color: black; text-align: center; margin-top: 30px; }
 
@@ -603,7 +612,7 @@ footer.row { background: #333333; max-width: none; }
 .contenido-noticias article aside p { margin: 8px 0; font-style: italic; color: #666666; }
 .contenido-noticias article aside a { width: 119px; height: 40px; padding: 12px 20px; line-height: 19px; background-position-x: 90px; }
 
-.hotel-ubicacion .btn-black { height: 40px; line-height: 40px; display: block; bottom: 33px; display: block; left: 50%; margin: 18px auto; width: 100%; padding: 0 20px; background: black url("../images/white-arrow.png") no-repeat 149px center; }
+.hotel-ubicacion .btn-black { height: 40px; line-height: 40px; display: block; bottom: 33px; display: block; left: 50%; margin: 18px auto; width: 100%; padding: 0 20px; background: url("../images/white-arrow.png") no-repeat 149px center; background-color: black; }
 
 .noticias-detalle h4 { font-size: 30px; margin-bottom: 12px; }
 .noticias-detalle .subPage-subTitle { font-size: 14px; color: #dc1c4d; font-weight: bold; margin-bottom: 15px; display: block; }
@@ -718,7 +727,7 @@ footer.row { background: #333333; max-width: none; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
-.page-error .slide-text-header { bottom: 100px; background-color: transparent; text-align: right; }
+.page-error .slide-text-header { bottom: 125px; background-color: transparent; text-align: right; }
 .page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; margin: 0; }
 
 .contacto { background: url("../images/mainbg.jpg") repeat left top; }
@@ -829,6 +838,10 @@ footer.row { background: #333333; max-width: none; }
 .capaDestinos .containes-desti .picture { width: 40%; float: left; text-align: right; font-weight: 700; font-size: 0.75em; }
 .capaDestinos .containes-desti .picture img { margin-bottom: 20px; }
 .capaDestinos .containes-desti .picture a { border: 2px solid white; background: url("../images/white-arrow.png") no-repeat 95% center; text-transform: uppercase; color: white; padding: 10px 40px 10px 10px; height: 40px; line-height: 40px; }
+
+#newsForm input:focus, #newsForm textarea:focus, #newsForm select:focus { border: 1px solid black !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; background: white !important; outline: none; }
+
+select:focus { outline: none; }
 
 /*         ui jquery css   */
 /*! jQuery UI - v1.10.4 - 2014-02-12

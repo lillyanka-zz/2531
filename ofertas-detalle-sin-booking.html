@@ -28,7 +28,12 @@
    <!--********************************************************
                         HEADER TOP
   ********************************************************-->
-	<div class="row">
+	  <div id="outer-wrapper">
+<!--********************************************************
+                        Header TOP  nav Menu
+  ********************************************************-->
+  <div class="inner-header">
+  <div class="row top-links">
     <div class="left-tools">
       <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
       <a href="#">Contacto</a>
@@ -36,34 +41,26 @@
     <!--Logo icono-->
     <img src="images/logo-icono.png" alt="" class="logo-icono">
     <ul class="menu-top right">
-      <li><a href="#">Español</a>
-        <!-- dropdown -->
-        <ul>
-            <li><a href="" id="ESPA">ESPAÑOL</a></li>
-            <li><a href="" id="CATA">CATALÀ</a></li>
-            <li><a href="" id="ENG">ENGLISH</a></li>
-            <li><a href="" id="DEUT">DEUT</a></li>
-            <li><a href="" id="FRAN">FRANÇAIS</a></li>
-            <li><a href="" id="ITAL">ITALIANO</a></li>
-        </ul>
-      </li>
+      <li><a href="#">Español</a></li>
       <li><a href="#">Empresas</a></li>
       <li><a href="#">Agencias</a></li>
       <li><a href="#">Mis Reservas</a></li>
     </ul>
   </div> 
 
-  <!-- agrego @jimmy id capa-menu -->
   <div class="row main-menu">
     <nav class="clearfix">
-      <a href="#">Hoteles <span></span></a>
-      <a href="#" id="subMenuOfertas"  class="active">Ofertas <span></span></a>
-      <a href="#" id="subMenuODestinos">Destinos <span></span></a>
+      <a href="#" >Hoteles <span></span></a>
+      <a href="#" class="active">Ofertas <span></span></a>
+      <a href="#">Destinos <span></span></a>
       <a href="#">Eventos &amp; Reuniones <span></span></a>
       <a href="#">Rafael Hoteles <span></span></a>
       <a href="#">Reservas <span></span></a>
     </nav>
   </div><!-- /row -->
+  </div>
+  
+  <div id="wrapper">
 
     <!--********************************************************
                         BREADCRUMB
@@ -80,8 +77,8 @@
           <div class="right icons">
             <ul class="clearfix">
               <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-              <li><a href="#" class="rss ir">rss</a></li>
               <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
+              <li><a href="#" class="rss ir">rss</a></li>
             </ul>
           </div>
          </div> 
@@ -114,7 +111,7 @@
         <div class="row" id="lists">
           <div class="two-col left">
             <h4>Los precios son aplicables a habitación estándar e incluyen:</h4>
-            <ul>
+            <ul class="bulletclear">
               <li><span>Desayuno buffet</span></li>
               <li><span>Niños gratis hasta 3 años</span></li>
               <li><span>Late Check-Out (hasta las 14:00 horas)</span></li>
@@ -123,7 +120,7 @@
           </div>
           <div class="two-col right">
             <h4>Condiciones</h4>
-            <ul>
+            <ul class="bulletclear">
               <li><span>IVA incluido</span></li>
               <li><span>Sujeto a disponibilidad</span></li>
               <li><span>Estancia mínima 2 noches</span></li>
@@ -273,6 +270,8 @@
         </div>
       </div><!-- /row bottom -->
     </footer> 
+    </div>
+    </div>
    <script>
     document.write('<script src=' +
     ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
