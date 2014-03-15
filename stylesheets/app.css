@@ -1732,7 +1732,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; top: 0; }
 .menu-booking-slider img { border-bottom: 1px solid transparent; display: block; }
-.menu-booking-slider ul { background-color: rgba(0, 0, 0, 0.5); padding: 30px; height: 100%; }
+.menu-booking-slider ul { background-color: rgba(0, 0, 0, 0.8); padding: 30px; height: 100%; }
 .menu-booking-slider ul li { margin-top: 10px; }
 .menu-booking-slider ul li:first-child { margin-top: 0; }
 .menu-booking-slider ul li a { color: #cccccc; font-size: 13px; text-transform: uppercase; }
@@ -1831,7 +1831,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .menu-top > li > a { padding: 8px 0; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; }
 .menu-top > li:first-child > a { background: url("../images/down-arrow.png") no-repeat right center; padding-right: 15px; }
 .menu-top > li:hover > ul { display: block; }
-.menu-top ul { display: none; position: absolute; border: 1px solid #e5e5e5; position: absolute; padding: 20px 20px 0 30px; background-color: white; z-index: 1000; top: 30px; right: 0px; width: 120px; background-color: white; z-index: 1000; }
+.menu-top ul { display: none; position: absolute; border: 1px solid #e5e5e5; position: absolute; padding: 20px 20px 0 0px; background-color: white; z-index: 1000; top: 30px; right: 0px; width: 120px; background-color: white; z-index: 1000; }
 .menu-top ul li { margin-bottom: 20px; text-align: right; }
 .menu-top ul li a { padding-right: 25px; }
 .menu-top ul li:hover a { color: #dc1c4d; }
@@ -1856,13 +1856,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-<<<<<<< HEAD
-.main-slider .slide { position: relative; }
-.main-slider .slide img { width: 1240px !important; height: 695px !important; }
-=======
 .main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; }
 .main-slider .slide img { width: 1600px !important; height: auto !important; }
->>>>>>> f7476c1c205f65ba1a828a85fd2ab02e26017a09
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
@@ -1871,8 +1866,9 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.main-menu { max-width: 1600px; margin-bottom: 0; min-width: 960px; }
 .row.main-menu nav { width: 786px; margin: 0 auto; }
 .row.main-menu nav a { position: relative; margin: 20px 14px; float: left; text-align: center; color: #333; font-weight: 600; text-transform: uppercase; -webkit-font-smoothing: antialiased; font-size: 0.938em; }
-.row.main-menu nav a.active, .row.main-menu nav a:hover { text-decoration: underline; }
-.row.main-menu nav a.active span, .row.main-menu nav a:hover span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.row.main-menu nav a:hover { text-decoration: underline; }
+.row.main-menu nav a.active { text-decoration: underline; }
+.row.main-menu nav a.active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat left top; }
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
@@ -2009,7 +2005,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 #lists h4, #lists li { margin-bottom: 20px; }
 
 #disponibles-ofertas h5 { font-size: 18px; margin-bottom: 30px; }
-#disponibles-ofertas li { background-color: #FFF; padding: 10px; margin-top: 10px; }
+#disponibles-ofertas li { background-color: #FFF; padding: 10px; margin-top: 15px; }
 #disponibles-ofertas li:first-child { margin-top: 0; }
 #disponibles-ofertas .info { padding-top: 10px; }
 #disponibles-ofertas h3 { font-size: 1.125em; text-transform: uppercase; }
@@ -2027,7 +2023,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 ---------------------------------------------------------------------*/
 .destinos-mapas h2.lines { width: 600px; }
 
-.items-servicios li { margin-top: 20px; position: relative; height: 575px; }
+.items-servicios li { margin-top: 20px; position: relative; height: 575px; overflow: hidden; }
 .items-servicios li:first-child { margin-top: 0; }
 .items-servicios li:hover { cursor: pointer; }
 .items-servicios li:hover .mascara { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
@@ -2114,9 +2110,9 @@ ul.ofertas li a { margin-top: 25px !important; }
  Reservar
 
 ---------------------------------------------------------------------*/
-#mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; }
+#mask { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); z-index: 1000; width: 100%; height: 100%; }
 
-#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; width: 100%; height: 100%; display: none; }
+#mask2 { position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); z-index: 1000; width: 100%; height: 100%; display: none; }
 
 .overlay { z-index: 1500; background-color: #FFF !important; position: fixed; }
 .overlay select { border: 1px solid #cccccc; }
@@ -2959,6 +2955,16 @@ select:focus { outline: none; }
 .ui-widget-overlay { background: white url(../images/ui-bg_flat_0_ffffff_40x100.png) 50% 50% repeat-x; opacity: .3; filter: Alpha(Opacity=30); }
 
 .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: white url(../images/ui-bg_flat_0_ffffff_40x100.png) 50% 50% repeat-x; opacity: .3; filter: Alpha(Opacity=30); border-radius: 8px; }
+
+.ui-datepicker th { display: none; }
+
+.ui-datepicker-header { border-bottom: 1px solid #cccccc; margin-bottom: 15px; }
+
+.ui-datepicker-calendar tr.even, .ui-datepicker-calendar tr.alt, .ui-datepicker-calendar tr:nth-of-type(even) { background: none; }
+
+.ui-datepicker-calendar a { font-weight: bold !important; }
+
+.ui-state-highlight { color: #dc1c4d !important; background-color: #f5f5f5 !important; -webkit-border-radius: 80%; -moz-border-radius: 80%; -ms-border-radius: 80%; -o-border-radius: 80%; border-radius: 80%; }
 
 p.lead { font-size: 1.21875em; line-height: 1.6; }
 
