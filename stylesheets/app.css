@@ -1856,7 +1856,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; }
+.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; overflow: hidden; }
 .main-slider .slide img { width: 1600px !important; height: auto !important; }
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
