@@ -748,7 +748,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
 
-.fb-share-button { margin-left: 10px; }
+.fb-like { margin-left: 10px; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
