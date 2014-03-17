@@ -255,8 +255,14 @@ span.note{
   margin: 30px auto 0;
   overflow: hidden;
   text-align: center;
+  @extend %trans;
   &.ofertas{
     width: 145px;
+  }
+  &:hover{
+    border-bottom: 1px solid $pink;
+    border-top: 1px solid $pink;
+    color: $pink;
   }
 }
 
@@ -1327,7 +1333,9 @@ font-size: 14px;}
 
 .itemsPink{color:$pink;text-align:center;
   ul li{margin-bottom:20px;
-       a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase }
+       a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase;
+        &:hover{text-decoration:underline;}
+     }
   }
   h2,span{color:$pink;}
   h2.lines{

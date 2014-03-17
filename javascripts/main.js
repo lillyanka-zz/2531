@@ -149,18 +149,14 @@ $( document ).ready(function() {
 
       var elems = $('.ofertas li');
 
-      elems.hover(function(){
-        
-
-      });
-
+      
         elems.hover(
         function() {
-          $(this).animate({
+          $(this).css({
             top: "-=10",
           });
         } , function() {
-          $(this).animate({
+          $(this).css({
             top: "+=10",
           });
         }
