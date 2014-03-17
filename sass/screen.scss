@@ -935,7 +935,7 @@ footer.row{
     height: 49px;
     width: 49px;
     margin-right: 10px;
-    background: url('../images/social-sprit2.png') no-repeat left top;
+    background: url('../images/social-sprite2.png') no-repeat left top;
     text-indent: -9999px;
     &.facebook{
       background-position: 0 0;
@@ -2329,6 +2329,7 @@ text-transform: uppercase;}
   //buttons
   .detalles{color:black;position:absolute;top:25px;text-transform: uppercase;border-top:1px solid black;
     border-bottom:1px solid black;padding:10px 0;right:180px;font-size:11px; 
+    &:hover{border-top:1px solid $pink;border-bottom:1px solid $pink;color:$pink}
   }
   .btn-black{position: absolute;top:22px;right:20px;line-height:normal;}
   .close{position:absolute; display:none;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px;top: 20px;right: 20px;}
