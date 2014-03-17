@@ -929,7 +929,7 @@ footer.row{
     height: 49px;
     width: 49px;
     margin-right: 10px;
-    background: url('../images/social-sprite2.png') no-repeat left top;
+    background: url('../images/social-sprit2.png') no-repeat left top;
     text-indent: -9999px;
     &.facebook{
       background-position: 0 0;
@@ -1784,8 +1784,10 @@ font-size: 14px;}
       border: none;
       color: #fff;
       padding: 0 43px 0 19px;
-      width: 279px;
-      margin-left: 9px; 
+      width: 232px;
+      margin-left: 9px;
+      font-size: 12px;
+      font-weight: bold; 
     }
   }
 

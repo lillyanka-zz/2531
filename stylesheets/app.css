@@ -1905,7 +1905,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
-.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite2.png") no-repeat left top; text-indent: -9999px; }
+.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprit2.png") no-repeat left top; text-indent: -9999px; }
 .footer-top a.facebook { background-position: 0 0; }
 .footer-top a.twitter { background-position: -50px 0; }
 .footer-top a.twitter:hover { background-position: -50px -51px; }
@@ -2230,7 +2230,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .map-container form { margin-top: 17px; }
 .map-container form input { height: 42px; width: 282px; }
 .map-container form label { font-size: 12px; font-weight: bold; margin-top: 18px; margin-right: 9px; }
-.map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 279px; margin-left: 9px; }
+.map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 232px; margin-left: 9px; font-size: 12px; font-weight: bold; }
 
 .contenido-ubicacion { padding-bottom: 58px; }
 
