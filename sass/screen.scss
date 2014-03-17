@@ -72,6 +72,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span{
   overflow: hidden;
   width: 100%;
   min-width: 960px;
+  position: relative;
 }
 
 .inner-header{
@@ -237,7 +238,7 @@ span.note{
   font-weight: 700;
   font-size: 0.75em;
   margin: 0 auto;
-  padding: 15px 45px 15px 15px;
+  padding: 15px 43px 15px 15px;
   @include transition();
   &:hover{background-color:$pink !important; color: #fff; }
 }
@@ -709,6 +710,7 @@ ul.ofertas{
     max-width: 1600px;
     min-width: 960px;
     text-align: center;
+    overflow: hidden;
     img{
       width: 1600px !important;
       height: auto !important;
@@ -919,7 +921,11 @@ ul.ofertas{
       width: 345px;
       li{
         float: left;
-        width: 115px;
+        width: auto;
+        margin-right: 15px;
+        .twitter-share-button{
+          width: 77px !important;
+        }
       }
     }
   }
@@ -928,8 +934,7 @@ ul.ofertas{
 footer.row{
   background: $dark-gray;
   width: 100% !important;
-  max-width: 1600px;
-  min-width: 960px;
+  max-width: none;
 }
 .footer-top{
   padding: 27px 0;
@@ -943,27 +948,27 @@ footer.row{
     height: 49px;
     width: 49px;
     margin-right: 10px;
-    background: url('../images/social-sprite2.png') no-repeat left top;
+    background: url('../images/social-sprite.png') no-repeat left top;
     text-indent: -9999px;
     &.facebook{
       background-position: 0 0;
-      &:hover{background-position:0 -51px}
+      &:hover{background-position:0 -50px}
     }
     &.twitter{
       background-position: -50px 0;
-      &:hover{background-position:-50px -51px}
+      &:hover{background-position:-50px -50px}
     }
     &.pinterest{
       background-position: -100px 0;
-      &:hover{background-position:-100px -51px}
+      &:hover{background-position:-100px -50px}
     }
     &.instagram{
       background-position: -150px 0;
-      &:hover{background-position:-150px -51px}
+      &:hover{background-position:-150px -50px}
     }
     &.youtube{
       background-position: -200px 0;
-      &:hover{background-position:-200px -51px}
+      &:hover{background-position:-200px -50px}
     }
   }
   form{
@@ -992,7 +997,7 @@ footer.row{
       height: 40px;
       border: none;
       color: #fff;
-      padding: 0 43px 0 19px;
+      padding: 0 41px 0 19px;
       text-transform: uppercase;
       font-size: 0.75em;
     }
@@ -1110,6 +1115,11 @@ footer.row{
   }
   .slide{
     position: relative;
+    height: 477px !important;
+    img{
+      width: auto;
+      height: 100%;
+    }
   } 
 }
 
@@ -1438,7 +1448,7 @@ font-size: 14px;}
      background-color:black;
     line-height: 13px;
     height: auto;
-    padding: 15px 38px 15px 15px;
+    padding: 15px 36px 15px 15px;
   }
   h5{margin-bottom:5px; }
 }
@@ -1749,7 +1759,7 @@ font-size: 14px;}
     width: 189px;
     height: 42px;
     line-height: 18px;
-    padding: 14px 44px 14px 22px;
+    padding: 14px 42px 14px 22px;
     background-position-x: 149px;
   }
 }
@@ -2007,7 +2017,7 @@ font-size: 14px;}
     }
 
     .btn-black{
-      padding: 15px 40px 15px 20px;  
+      padding: 15px 38px 15px 20px;  
     }
   }
 
@@ -2197,7 +2207,7 @@ font-size: 14px;}
   height: 40px;
   border: none;
   color: #fff;
-  padding: 0 43px 0 19px;
+  padding: 0 41px 0 19px;
 }
 
 .btn-white{
@@ -2471,6 +2481,13 @@ text-transform: uppercase;}
 }
 }
 
+
+.fb-share-button {
+  margin-left: 0 !important;
+  &>span{
+    vertical-align: top !important;
+  }
+}
 
 //
 //hover

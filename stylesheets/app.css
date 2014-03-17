@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -1638,7 +1638,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .ubicacion { position: relative; }
 .ubicacion .btn-black { height: 40px; line-height: 40px; position: absolute; bottom: 33px; left: 50%; width: 123px; margin-left: -67px; padding: 0 20px; background: black url("../images/white-arrow.png") no-repeat 96px center; }
 
-.row.middle.ofertas { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 0; }
+.row.middle.ofertas { width: 100%; max-width: none; padding: 0; }
 .row.middle.ofertas .left.ofertas { width: 640px; border-right: 2px solid #fff; padding: 40px 0; }
 .row.middle.ofertas .right.opiniones { width: 300px; padding-top: 55px; }
 .row.middle.ofertas .right.opiniones h2 { width: 224px; }
@@ -1681,7 +1681,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span { font-family: "Istok Web", sans-serif;
 
 .centered { margin: 0 auto; width: 940px; overflow: hidden; position: relative; }
 
-.centered-large { margin: 0 auto; max-width: 1240px; overflow: hidden; width: 100%; min-width: 960px; }
+.centered-large { margin: 0 auto; max-width: 1240px; overflow: hidden; width: 100%; min-width: 960px; position: relative; }
 
 .inner-header { position: fixed; width: 100%; z-index: 10000; background: #fff; max-width: none; box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35); }
 
@@ -1724,7 +1724,7 @@ address { font-size: 0.875em; line-height: 1.7em; }
 
 span.note { display: block; text-align: center; font-style: italic; font-size: 0.875em; margin-bottom: 3em; }
 
-.btn-black { background: url("../images/white-arrow.png") no-repeat 90% center; background-color: black; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 45px 15px 15px; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; }
+.btn-black { background: url("../images/white-arrow.png") no-repeat 90% center; background-color: black; height: 50px; border: none; color: #fff; width: auto; line-height: 50px; text-transform: uppercase; font-weight: 700; font-size: 0.75em; margin: 0 auto; padding: 15px 43px 15px 15px; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; }
 .btn-black:hover { background-color: #dc1c4d !important; color: #fff; }
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
@@ -1860,7 +1860,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; }
+.main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; overflow: hidden; }
 .main-slider .slide img { width: 1600px !important; height: auto !important; }
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
@@ -1902,26 +1902,27 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .social { padding-bottom: 32px; }
 .social > div { width: 270px; margin: 0 auto; }
 .social > div ul { width: 345px; }
-.social > div ul li { float: left; width: 115px; }
+.social > div ul li { float: left; width: auto; margin-right: 15px; }
+.social > div ul li .twitter-share-button { width: 77px !important; }
 
-footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
+footer.row { background: #333333; width: 100% !important; max-width: none; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
-.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite2.png") no-repeat left top; text-indent: -9999px; }
+.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite.png") no-repeat left top; text-indent: -9999px; }
 .footer-top a.facebook { background-position: 0 0; }
-.footer-top a.facebook:hover { background-position: 0 -51px; }
+.footer-top a.facebook:hover { background-position: 0 -50px; }
 .footer-top a.twitter { background-position: -50px 0; }
-.footer-top a.twitter:hover { background-position: -50px -51px; }
+.footer-top a.twitter:hover { background-position: -50px -50px; }
 .footer-top a.pinterest { background-position: -100px 0; }
-.footer-top a.pinterest:hover { background-position: -100px -51px; }
+.footer-top a.pinterest:hover { background-position: -100px -50px; }
 .footer-top a.instagram { background-position: -150px 0; }
-.footer-top a.instagram:hover { background-position: -150px -51px; }
+.footer-top a.instagram:hover { background-position: -150px -50px; }
 .footer-top a.youtube { background-position: -200px 0; }
-.footer-top a.youtube:hover { background-position: -200px -51px; }
+.footer-top a.youtube:hover { background-position: -200px -50px; }
 .footer-top form { width: 536px; }
 .footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 44px; height: 40px; font-size: 24px; }
 .footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; font-size: 12px; color: #333333; font-weight: bold; }
-.footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 90% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
+.footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 90% center; height: 40px; border: none; color: #fff; padding: 0 41px 0 19px; text-transform: uppercase; font-size: 0.75em; }
 
 .footer-middle { background: url("../images/footer-bg.jpg") repeat left top; padding: 55px 0; overflow: hidden; }
 .footer-middle > div { width: 940px; margin: 0 auto; }
@@ -1950,7 +1951,8 @@ footer.row { background: #333333; width: 100% !important; max-width: 1600px; min
 .booking-slider .booking-form input[type="text"] { margin-top: 10px; background: white url("../images/calendar-icon.png") no-repeat 191px center; border: none; }
 .booking-slider .booking-form #codpromo { background: #fff; }
 .booking-slider .booking-form input[type="button"] { width: 100%; margin-top: 10px; }
-.booking-slider .slide { position: relative; }
+.booking-slider .slide { position: relative; height: 477px !important; }
+.booking-slider .slide img { width: auto; height: 100%; }
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; }
 .menu-booking-slider img { border-bottom: 1px solid transparent; display: block; }
@@ -2119,7 +2121,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .eventos-title + .slider-destinos-ciudad { margin-bottom: 20px; }
 .eventos-title strong { display: block; margin-bottom: 20px; }
 
-.items-eventos .btn-black { width: auto; text-align: left; margin: 10px auto; display: table; background: url("../images/white-arrow.png") no-repeat 92% center; background-color: black; line-height: 13px; height: auto; padding: 15px 38px 15px 15px; }
+.items-eventos .btn-black { width: auto; text-align: left; margin: 10px auto; display: table; background: url("../images/white-arrow.png") no-repeat 92% center; background-color: black; line-height: 13px; height: auto; padding: 15px 36px 15px 15px; }
 .items-eventos h5 { margin-bottom: 5px; }
 
 /*----------------------------------------------------------------------
@@ -2223,7 +2225,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .noticias-detalle h4 { font-size: 30px; margin-bottom: 12px; }
 .noticias-detalle .subPage-subTitle { font-size: 14px; color: #dc1c4d; font-weight: bold; margin-bottom: 15px; display: block; }
-.noticias-detalle .btn-black { font-size: 12px; width: 189px; height: 42px; line-height: 18px; padding: 14px 44px 14px 22px; background-position-x: 149px; }
+.noticias-detalle .btn-black { font-size: 12px; width: 189px; height: 42px; line-height: 18px; padding: 14px 42px 14px 22px; background-position-x: 149px; }
 
 .ilustracion .fbIcon, .ilustracion .twIcon { display: inline-block; float: none; margin-right: 0; }
 .ilustracion .btn-lines { width: 118px; height: auto; line-height: normal; }
@@ -2286,7 +2288,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .ilustracion h3 { font-size: 18px; font-weight: normal; margin-bottom: 8px; }
 .ilustracion span { font-size: 11px; color: #dc1c4d; font-weight: bold; display: block; margin-bottom: 8px; }
 .ilustracion p { font-size: 14px; color: #666666; font-style: italic; margin-bottom: 30px; }
-.ilustracion .btn-black { padding: 15px 40px 15px 20px; }
+.ilustracion .btn-black { padding: 15px 38px 15px 20px; }
 
 .spa-info h2 { width: 510px; }
 .spa-info .contenido span { font-size: 11px; font-weight: bold; color: #dc1c4d; }
@@ -2330,7 +2332,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .lapleta-spa .container .note { color: #fff; }
 .lapleta-spa .container a { position: relative; z-index: 2000; display: block; margin: 0 auto; border: 2px solid #fff; padding: 13px 31px 13px 21px; width: 120px; font-weight: bold; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
 
-.btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
+.btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 41px 0 19px; }
 
 .btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
 
@@ -2450,6 +2452,9 @@ ul.ofertas li a { margin-top: 25px !important; }
 .capaDestinos .containes-desti .picture { width: 40%; float: left; text-align: right; font-weight: 700; font-size: 0.75em; }
 .capaDestinos .containes-desti .picture img { margin-bottom: 20px; }
 .capaDestinos .containes-desti .picture a { border: 2px solid white; background: url("../images/white-arrow.png") no-repeat 95% center; text-transform: uppercase; color: white; padding: 10px 40px 10px 10px; height: 40px; line-height: 40px; }
+
+.fb-share-button { margin-left: 0 !important; }
+.fb-share-button > span { vertical-align: top !important; }
 
 #newsForm input:focus, #newsForm textarea:focus, #newsForm select:focus { border: 1px solid black !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; background: white !important; outline: none; }
 
