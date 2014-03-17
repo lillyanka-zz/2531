@@ -1856,13 +1856,8 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .main-slider .cycle-pager { position: absolute; right: 30px; bottom: 155px; z-index: 2000; }
 .main-slider .cycle-pager span { color: #fff; font-size: 50px; width: 20px; display: block; float: left; opacity: 0.5; }
 .main-slider .cycle-pager span.cycle-pager-active { opacity: 1; }
-<<<<<<< HEAD
-.main-slider .slide { position: relative; }
-.main-slider .slide img { width: 1240px !important; height: 695px !important; }
-=======
 .main-slider .slide { position: relative; height: 100% !important; width: 100% !important; max-width: 1600px; min-width: 960px; text-align: center; }
 .main-slider .slide img { width: 1600px !important; height: auto !important; }
->>>>>>> f7476c1c205f65ba1a828a85fd2ab02e26017a09
 .main-slider .slide .slide-text-header { position: absolute; right: 0; bottom: 0; padding: 0 30px 20px 0; }
 .main-slider .slide .slide-text-header h3 { font-size: 24px; text-align: right; font-weight: 400; color: #fff; text-transform: uppercase; margin-bottom: 0; }
 .main-slider .slide .slide-text-header span.slide-caption { font-style: italic; font-size: 0.875em; color: #fff; margin-bottom: 2em; display: block; }
@@ -2225,6 +2220,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .map-container form input { height: 42px; width: 282px; }
 .map-container form label { font-size: 12px; font-weight: bold; margin-top: 18px; margin-right: 9px; }
 .map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 279px; margin-left: 9px; }
+
+.contenido-ubicacion { padding-bottom: 58px; }
 
 .ubicacion-detalles h3 { font-size: 18px; font-weight: bold; padding-bottom: 14px; margin-bottom: 0; color: #333333; border-bottom: 1px solid #efefef; }
 .ubicacion-detalles p { margin-bottom: 0; }
