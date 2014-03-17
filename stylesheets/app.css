@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -1827,6 +1827,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .mascaraEventos .hover .slide img { display: block; height: 100%; }
 .mascaraEventos .cycle-prev, .mascaraEventos .cycle-next { z-index: 2000 !important; }
 .mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; display: block; }
+.mascaraEventos:hover .container a { color: #db1c4d; background-color: #fff; background-image: url("../images/arrow-pink.png"); }
 
 .left-tools { padding: 18px 0; float: left; }
 .left-tools > span:first-child { border-right: 1px solid #999999; padding-right: 5px; margin-right: 5px; }
@@ -2336,13 +2337,13 @@ ul.ofertas li a { margin-top: 25px !important; }
 .lapleta-spa .container { position: absolute; top: 233px; left: 400px; }
 .lapleta-spa .container .lines { color: #fff; background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center; }
 .lapleta-spa .container .note { color: #fff; }
-.lapleta-spa .container a { display: block; margin: 0 auto; border: 2px solid #fff; padding: 13px 31px 13px 21px; width: 120px; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
+.lapleta-spa .container a { position: relative; z-index: 2000; display: block; margin: 0 auto; border: 2px solid #fff; padding: 13px 31px 13px 21px; width: 120px; font-weight: bold; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
 
 .btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 41px 0 19px; }
 
 .btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
 
-.fb-share-button { margin-left: 10px; }
+.fb-like { margin-left: 10px; }
 
 .page-error { margin-bottom: 20px; height: auto; width: 100%; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
