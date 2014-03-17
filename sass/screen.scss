@@ -552,8 +552,16 @@ ul.ofertas{
   }
         .cycle-prev, .cycle-next{z-index:2000 !important;}
 
-  &:hover  .hover{@include opacity(1);cursor: pointer;display:block }
-
+  &:hover  .hover{@include opacity(1);cursor: pointer;display:block}
+  &:hover{
+    .container{
+      a{
+        color: #db1c4d;
+        background-color: #fff;
+        background-image: url("../images/arrow-pink.png"); 
+      }
+    }
+  }
 }
 
 
@@ -2169,11 +2177,14 @@ font-size: 14px;}
     }
 
     a{
+      position: relative;
+      z-index: 2000;
       display: block;
       margin: 0 auto;
       border: 2px solid #fff;
       padding: 13px 31px 13px 21px;
       width: 120px;
+      font-weight: bold;
       font-size: 12px;
       background: transparent url("../images/white-arrow.png") no-repeat 83% center;
       color: #fff;

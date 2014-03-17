@@ -232,6 +232,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .mascaraEventos .hover span { width: 140px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 85% center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; padding-left: 20px; top: 50%; left: 50%; margin-left: -70px; cursor: pointer; }
 .mascaraEventos .cycle-prev, .mascaraEventos .cycle-next { z-index: 2000 !important; }
 .mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; display: block; }
+.mascaraEventos:hover .container a { color: #db1c4d; background-color: #fff; background-image: url("../images/arrow-pink.png"); }
 
 .left-tools { padding: 18px 0; float: left; }
 .left-tools > span:first-child { border-right: 1px solid #999999; padding-right: 5px; margin-right: 5px; }
@@ -739,7 +740,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .lapleta-spa .container { position: absolute; top: 233px; left: 400px; }
 .lapleta-spa .container .lines { color: #fff; background: url("../images/white-lines.png") no-repeat left center, url("../images/white-lines.png") no-repeat right center; }
 .lapleta-spa .container .note { color: #fff; }
-.lapleta-spa .container a { display: block; margin: 0 auto; border: 2px solid #fff; padding: 13px 31px 13px 21px; width: 120px; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
+.lapleta-spa .container a { position: relative; z-index: 2000; display: block; margin: 0 auto; border: 2px solid #fff; padding: 13px 31px 13px 21px; width: 120px; font-weight: bold; font-size: 12px; background: transparent url("../images/white-arrow.png") no-repeat 83% center; color: #fff; }
 
 .btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
