@@ -933,6 +933,7 @@ footer.row{
     text-indent: -9999px;
     &.facebook{
       background-position: 0 0;
+      &:hover{background-position:0 -51px}
     }
     &.twitter{
       background-position: -50px 0;
@@ -1101,7 +1102,7 @@ footer.row{
 
 .menu-booking-slider{height:240px;height:100%;position:absolute;left:14%;
   img{border-bottom:1px solid transparent;display: block;}
-  ul{background-color: rgba(black,0.5);padding:30px;height:100%;
+  ul{background-color: rgba(black,0.8);padding:30px;height:100%;
     li{margin-top:10px; height: 20px;
       &:first-child{margin-top:0;}
       a{color:#cccccc;font-size:13px;text-transform: uppercase;@extend %trans; font-weight: 700;
@@ -1287,11 +1288,16 @@ font-size: 14px;}
 
 .slider-destinos-ciudad .cycle-slideshow, .gallery-slideshow{
   width:940px;position: relative;
-  div.cycle-prev,div.cycle-next{width:36px;height:36px;border:2px solid white;position:absolute;z-index: 800;cursor: pointer;top:50%;}
-  .cycle-prev{left:5%;background: url("../images/white-arrow-left.png") no-repeat 50% center;}
-  .cycle-next{ background: url("../images/white-arrow.png") no-repeat 50% center;right:5%;}
+  div.cycle-prev,div.cycle-next{@extend %trans;width:36px;height:36px;border:2px solid white;position:absolute;z-index: 800;cursor: pointer;top:50%;}
+  .cycle-prev{left:5%;background: url("../images/white-arrow-left.png") no-repeat 50% center;
+  &:hover{background:white url("../images/arrow-pink2.png") no-repeat 50% center;}
+  }
+  .cycle-next{ background: url("../images/white-arrow.png") no-repeat 50% center;right:5%;
+    &:hover{background:white url("../images/arrow-pink.png") no-repeat 50% center;}
+  }
  
 }
+
 
 .items-2{
   li{float:left;width:48%;margin:0 1%;margin-bottom:40px;}

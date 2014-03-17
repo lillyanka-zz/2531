@@ -152,7 +152,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
-.hover, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .left-tools > a, .menu-top a, .footer-bottom .btn-lines.white, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.hover, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .left-tools > a, .menu-top a, .footer-bottom .btn-lines.white, .items-servicios .mascara, .slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next, .gallery-slideshow div.cycle-prev, .gallery-slideshow div.cycle-next, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .mejores-ofertas select, #hotel-select-agenda, .contacto select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -319,6 +319,7 @@ footer.row { background: #333333; width: 100% !important; max-width: 1600px; min
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
 .footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite2.png") no-repeat left top; text-indent: -9999px; }
 .footer-top a.facebook { background-position: 0 0; }
+.footer-top a.facebook:hover { background-position: 0 -51px; }
 .footer-top a.twitter { background-position: -50px 0; }
 .footer-top a.twitter:hover { background-position: -50px -51px; }
 .footer-top a.pinterest { background-position: -100px 0; }
@@ -363,7 +364,7 @@ footer.row { background: #333333; width: 100% !important; max-width: 1600px; min
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; }
 .menu-booking-slider img { border-bottom: 1px solid transparent; display: block; }
-.menu-booking-slider ul { background-color: rgba(0, 0, 0, 0.5); padding: 30px; height: 100%; }
+.menu-booking-slider ul { background-color: rgba(0, 0, 0, 0.8); padding: 30px; height: 100%; }
 .menu-booking-slider ul li { margin-top: 10px; height: 20px; }
 .menu-booking-slider ul li:first-child { margin-top: 0; }
 .menu-booking-slider ul li a { color: #cccccc; font-size: 13px; text-transform: uppercase; font-weight: 700; }
@@ -476,7 +477,9 @@ ul.ofertas li a { margin-top: 25px !important; }
 .slider-destinos-ciudad .cycle-slideshow, .gallery-slideshow { width: 940px; position: relative; }
 .slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next, .gallery-slideshow div.cycle-prev, .gallery-slideshow div.cycle-next { width: 36px; height: 36px; border: 2px solid white; position: absolute; z-index: 800; cursor: pointer; top: 50%; }
 .slider-destinos-ciudad .cycle-slideshow .cycle-prev, .gallery-slideshow .cycle-prev { left: 5%; background: url("../images/white-arrow-left.png") no-repeat 50% center; }
+.slider-destinos-ciudad .cycle-slideshow .cycle-prev:hover, .gallery-slideshow .cycle-prev:hover { background: white url("../images/arrow-pink2.png") no-repeat 50% center; }
 .slider-destinos-ciudad .cycle-slideshow .cycle-next, .gallery-slideshow .cycle-next { background: url("../images/white-arrow.png") no-repeat 50% center; right: 5%; }
+.slider-destinos-ciudad .cycle-slideshow .cycle-next:hover, .gallery-slideshow .cycle-next:hover { background: white url("../images/arrow-pink.png") no-repeat 50% center; }
 
 .items-2 li { float: left; width: 48%; margin: 0 1%; margin-bottom: 40px; }
 .items-2 .cont-img { margin-right: 5%; float: left; width: 40%; }
