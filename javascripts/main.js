@@ -12,12 +12,12 @@ $( document ).ready(function() {
 //  $(document).foundation();
 
   var winHeight = $(window).height() - 60;
-  $('.main-slider, .slider, .slide').css('height', winHeight);
+  $('.main-slider, .main-slider .slider, .main-slider .slide').css('height', winHeight);
 
   $(window).resize(function() {
     var winHeight = $(window).height() - 60;
     console.log(winHeight);
-    $('.main-slider, .slider, .slide').css('height', winHeight);
+    $('.main-slider, .main-slider .slider, .main-slider .slide').css('height', winHeight);
   });
 
   $('a.scrollTop').click(function(){
