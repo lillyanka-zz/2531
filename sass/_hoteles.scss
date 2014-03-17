@@ -27,9 +27,25 @@ $pink: #dc1c4d;
     .white-bg{
       background: #fff;
     }
+    .image{
+      margin-right: 20px;
+    }
+    .image:after {
+        content:'\A';
+        position:absolute;
+        width:50%; height:100%;
+        top:0; left:0;
+        background:rgba(0,0,0,0.6) url('../images/ampliar-btn.png') no-repeat center center;
+        opacity:0;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+    }
+    .image:hover:after{
+      opacity: 1;
+    }
     .hotel-img{
       float: left;
-      margin-right: 20px;
+      
     }
     .hotel-description{
       width: 420px;
@@ -201,6 +217,10 @@ $pink: #dc1c4d;
   h2{
     width: 310px;
   }
+  h6{
+    font-size:0.9em;
+    margin: 2em 0;
+  }
   ul{
   margin-bottom: 30px;
   overflow: hidden;
@@ -208,6 +228,8 @@ $pink: #dc1c4d;
       float: left;
       width: 20%;
       text-align: center;
+      height: 140px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -215,4 +237,13 @@ $pink: #dc1c4d;
 .hotel-ofertas{
   padding-top: 50px;
   margin-top: 15px;
+}
+
+.info-hotel{
+  display: none;
+  position: absolute !important;
+  z-index: 200;
+  left: 50%;
+  margin-left: -620px !important;
+  padding: 40px 0 20px;
 }

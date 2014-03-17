@@ -11,6 +11,21 @@ return isNaN(t)?d:t},g=p(l[0]),m=Math.max(g,p(l[1]||"")),g=a?Math.max(g,a.getFul
 $( document ).ready(function() {
 //  $(document).foundation();
 
+var ampliar = $('a.ampliar');
+var cerrar = $('a.cerrar');
+ampliar.click(function(event) {
+  event.preventDefault();
+  ampliar.parent('.centered').siblings('.info-hotel').fadeIn();
+  ampliar.css('display', 'none');
+  cerrar.css('display', 'block');
+});
+cerrar.click(function(event) {
+  event.preventDefault();
+  cerrar.parent('.centered').siblings('.info-hotel').fadeOut();
+  cerrar.css('display', 'none');
+  ampliar.css('display', 'block');
+});
+
   var winHeight = $(window).height() - 60;
   $('.main-slider, .main-slider .slider, .main-slider .slide').css('height', winHeight);
 

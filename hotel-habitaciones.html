@@ -55,6 +55,7 @@
     </nav>
   </div><!-- /row -->
   </div>
+  <div id="wrapper">
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
@@ -123,7 +124,7 @@
        <h2 class="lines">Estándar</h2>
        <span class="note">M&aacute;ximo confort.</span>
          <div class="centered white-bg">
-           <img src="images/estandar.jpg" class="hotel-img" alt="" />
+           <div class="image"><img src="images/estandar.jpg" class="hotel-img" alt="" /></div>
            <div class="hotel-description center">
              <div class="hotel-price info"><span class="desde">DESDE</span><span class="price">65€</span></div>
              <p class="center">Las habitaciones estándar están totalmente equipadas para hacer de su estancia un momento inolvidable. </p>
@@ -131,9 +132,27 @@
            </div>
          </div>
          <a href="" class="btn-lines left">Tour Virtual 360º</a>
-         <a href="" class="btn-lines right">Ampliar Info</a>
+         <a href="" class="btn-lines right ampliar">Ampliar Info</a>
+         <a href="#" class="cerrar right">Cerrar</a>
+         </div>
+         <div class="info-hotel servicios centered-large">
+           <div class="centered">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus imperdiet metus vel tincidunt. Suspendisse ac tincidunt metus. Morbi pretium felis a mauris tempus, id lacinia ante ultricies. Pellentesque bibendum venenatis sem et ultricies. Nullam ac dui nulla. Donec vitae eros non tortor commodo mattis. Nulla eget ipsum tristique, consectetur urna quis, dignissim urna.</p>
+             <h6>Servicios de esta habitación</h6>
+             <ul class="grid-5">
+               <li><img src="images/room-service.png" alt="" /></li>
+               <li><img src="images/reuniones.png" alt="" /></li>
+               <li><img src="images/wifi.png" alt="" /></li>
+               <li><img src="images/buffet.png" alt="" /></li>
+               <li><img src="images/ebike.png" alt="" /></li>
+               <li><img src="images/reuniones.png" alt="" /></li>
+               <li><img src="images/buffet.png" alt="" /></li>
+               <li><img src="images/ebike.png" alt="" /></li>
+               </ul>
+             </div>
          </div>
        </div>
+       
      </div>
      
     <div class="row city room">
@@ -142,7 +161,7 @@
       <h2 class="lines">Doble</h2>
       <span class="note">Compartiendo experiencias.</span>
         <div class="centered white-bg">
-          <img src="images/doble.jpg" class="hotel-img" alt="" />
+          <div class="image"><img src="images/doble.jpg" class="hotel-img" alt="" /></div>
           <div class="hotel-description center">
             <div class="hotel-price info"><span class="desde">DESDE</span><span class="price">65€</span></div>
             <p class="center">Las habitaciones estándar están totalmente equipadas para hacer de su estancia un momento inolvidable. </p>
@@ -150,7 +169,7 @@
           </div>
         </div>
         <a href="" class="btn-lines left">Tour Virtual 360º</a>
-        <a href="" class="btn-lines right">Ampliar Info</a>
+        <a href="" class="btn-lines right ampliar">Ampliar Info</a>
         </div>
       </div>
     </div>
@@ -161,7 +180,7 @@
       <h2 class="lines">Junior Suite</h2>
       <span class="note">Exclusividad y confort.</span>
         <div class="centered white-bg">
-          <img src="images/junior.jpg" class="hotel-img" alt="" />
+          <div class="image"><img src="images/junior.jpg" class="hotel-img" alt="" /></div>
           <div class="hotel-description center">
             <div class="hotel-price info"><span class="desde">DESDE</span><span class="price">65€</span></div>
             <p class="center">Las habitaciones estándar están totalmente equipadas para hacer de su estancia un momento inolvidable. </p>
@@ -169,7 +188,7 @@
           </div>
         </div>
         <a href="" class="btn-lines left">Tour Virtual 360º</a>
-        <a href="" class="btn-lines right">Ampliar Info</a>
+        <a href="" class="btn-lines right ampliar">Ampliar Info</a>
         </div>
       </div>
     </div>
@@ -263,6 +282,7 @@
        </div>
      </div><!-- /row bottom -->
    </footer> 
+   </div>
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +

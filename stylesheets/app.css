@@ -1613,7 +1613,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row.city .row.hotel-content { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; width: 100%; max-width: none; padding: 40px 0 0; }
 .row.city .row.hotel-content:last-child { padding: 40px 0; }
 .row.city .row.hotel-content .white-bg { background: #fff; }
-.row.city .row.hotel-content .hotel-img { float: left; margin-right: 20px; }
+.row.city .row.hotel-content .image { margin-right: 20px; }
+.row.city .row.hotel-content .image:after { content: '\A'; position: absolute; width: 50%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.6) url("../images/ampliar-btn.png") no-repeat center center; opacity: 0; transition: all 1s; -webkit-transition: all 1s; }
+.row.city .row.hotel-content .image:hover:after { opacity: 1; }
+.row.city .row.hotel-content .hotel-img { float: left; }
 .row.city .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
 .row.city .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
 .row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 30px; padding: 0 38px 0 10px; }
@@ -1657,10 +1660,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .servicios { background: #f4f4f4 url("../images/mainbg.jpg") repeat left top; max-width: none; text-align: center; padding: 40px 0 60px; }
 .servicios h2 { width: 310px; }
+.servicios h6 { font-size: 0.9em; margin: 2em 0; }
 .servicios ul { margin-bottom: 30px; overflow: hidden; }
-.servicios ul li { float: left; width: 20%; text-align: center; }
+.servicios ul li { float: left; width: 20%; text-align: center; height: 140px; margin-bottom: 25px; }
 
 .hotel-ofertas { padding-top: 50px; margin-top: 15px; }
+
+.info-hotel { display: none; position: absolute !important; z-index: 200; left: 50%; margin-left: -620px !important; padding: 40px 0 20px; }
 
 /*--------------------------------*/
 /* CLASES Y VARIABLES RECICLABLES */
@@ -1794,7 +1800,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 
 .bgGray { background: url("../images/mainbg.jpg") repeat left top; max-width: none; padding: 50px 0; margin-bottom: 20px; }
 
-.bgFigures { background: url("../images/ofertasbg.jpg") repeat left top; padding: 50px; }
+.bgFigures { background: url("../images/ofertasbg.jpg") no-repeat center top; padding: 50px; }
 
 .bgGraySimple { background-color: #f4f4f4; padding: 50px 0; }
 
@@ -1818,6 +1824,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .mascaraEventos { overflow: hidden; }
 .mascaraEventos .hover { position: absolute; z-index: 1000; background-color: rgba(0, 0, 0, 0.3); left: 0 !important; position: absolute; top: 0 !important; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .mascaraEventos .hover span { width: 140px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 85% center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; padding-left: 20px; top: 50%; left: 50%; margin-left: -70px; cursor: pointer; }
+.mascaraEventos .hover .slide img { display: block; height: 100%; }
 .mascaraEventos .cycle-prev, .mascaraEventos .cycle-next { z-index: 2000 !important; }
 .mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; display: block; }
 
@@ -1873,7 +1880,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.main-menu nav a.active { text-decoration: underline; }
 .row.main-menu nav a.active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat left top; }
+.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat center top; }
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
 .row.ofertas .btn-lines { float: none; }
 
@@ -2337,7 +2344,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .fb-share-button { margin-left: 10px; }
 
-.page-error { margin-bottom: 20px; }
+.page-error { margin-bottom: 20px; height: auto; width: 100%; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }
 .page-error .slide-text-header { bottom: 125px; background-color: transparent; text-align: right; }
 .page-error .slide-text-header h1 { font-size: 36px; line-height: 36px; color: white; text-align: right; margin: 0; }
@@ -2455,6 +2462,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .fb-share-button { margin-left: 0 !important; }
 .fb-share-button > span { vertical-align: top !important; }
 
+a.cerrar { display: none; height: 40px; width: 40px; background: url("../images/cerrar.jpg") no-repeat left top; text-indent: -9999px; margin-top: 20px; }
+
 #newsForm input:focus, #newsForm textarea:focus, #newsForm select:focus { border: 1px solid black !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; background: white !important; outline: none; }
 
 select:focus { outline: none; }
@@ -2487,7 +2496,7 @@ select:focus { outline: none; }
 
 .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
-.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+.ui-datepicker { width: 12.4em; padding: .2em .2em 0; display: none; }
 
 .ui-datepicker .ui-datepicker-header { position: relative; padding: .2em 0; }
 
