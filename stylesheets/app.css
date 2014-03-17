@@ -2235,6 +2235,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .map-container form label { font-size: 12px; font-weight: bold; margin-top: 18px; margin-right: 9px; }
 .map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 279px; margin-left: 9px; }
 
+.contenido-ubicacion { padding-bottom: 58px; }
+
 .ubicacion-detalles h3 { font-size: 18px; font-weight: bold; padding-bottom: 14px; margin-bottom: 0; color: #333333; border-bottom: 1px solid #efefef; }
 .ubicacion-detalles p { margin-bottom: 0; }
 
