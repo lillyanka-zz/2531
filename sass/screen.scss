@@ -255,8 +255,14 @@ span.note{
   margin: 30px auto 0;
   overflow: hidden;
   text-align: center;
+  @extend %trans;
   &.ofertas{
     width: 145px;
+  }
+  &:hover{
+    border-bottom: 1px solid $pink;
+    border-top: 1px solid $pink;
+    color: $pink;
   }
 }
 
@@ -1327,7 +1333,9 @@ font-size: 14px;}
 
 .itemsPink{color:$pink;text-align:center;
   ul li{margin-bottom:20px;
-       a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase }
+       a{color:$pink;font-size:12px;font-weight:bold;text-transform: uppercase;
+        &:hover{text-decoration:underline;}
+     }
   }
   h2,span{color:$pink;}
   h2.lines{
@@ -2337,6 +2345,7 @@ text-transform: uppercase;}
   //buttons
   .detalles{color:black;position:absolute;top:25px;text-transform: uppercase;border-top:1px solid black;
     border-bottom:1px solid black;padding:10px 0;right:180px;font-size:11px; 
+    &:hover{border-top:1px solid $pink;border-bottom:1px solid $pink;color:$pink}
   }
   .btn-black{position: absolute;top:22px;right:20px;line-height:normal;}
   .close{position:absolute; display:none;background:black url("../images/ico-cerrar-blanco.png") no-repeat center center; width:40px; height:40px;top: 20px;right: 20px;}

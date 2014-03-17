@@ -1729,6 +1729,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 
 .btn-lines { border-bottom: 1px solid #000; border-top: 1px solid #000; text-transform: uppercase; color: #000; font-size: 0.688em; line-height: 28px; display: table; height: 28px; width: auto; margin: 30px auto 0; overflow: hidden; text-align: center; }
 .btn-lines.ofertas { width: 145px; }
+.btn-lines:hover { border-bottom: 1px solid #dc1c4d; border-top: 1px solid #dc1c4d; color: #dc1c4d; }
 
 .menu-booking-slider { height: 240px; height: 100%; position: absolute; left: 14%; top: 0; }
 .menu-booking-slider img { border-bottom: 1px solid transparent; display: block; }
@@ -1740,7 +1741,11 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
+<<<<<<< HEAD
 .hover, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .left-tools > a, .menu-top a, .footer-bottom .btn-lines.white, .items-servicios .mascara, .slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next, .gallery-slideshow div.cycle-prev, .gallery-slideshow div.cycle-next, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+=======
+.hover, .btn-lines, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .left-tools > a, .menu-top a, .footer-bottom .btn-lines.white, .items-servicios .mascara, .slider-destinos-ciudad .cycle-slideshow div.cycle-prev, .slider-destinos-ciudad .cycle-slideshow div.cycle-next, .gallery-slideshow div.cycle-prev, .gallery-slideshow div.cycle-next, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+>>>>>>> 62d6062e5c41920985ba1eb4eb9b753fd16f3090
 
 .mejores-ofertas select, #hotel-select-agenda, .contacto select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -2080,6 +2085,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .itemsPink { color: #dc1c4d; text-align: center; }
 .itemsPink ul li { margin-bottom: 20px; }
 .itemsPink ul li a { color: #dc1c4d; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+.itemsPink ul li a:hover { text-decoration: underline; }
 .itemsPink h2, .itemsPink span { color: #dc1c4d; }
 .itemsPink h2.lines { background: url("../images/doble-linea-roja.png") no-repeat left center, url("../images/doble-linea-roja.png") no-repeat right center; }
 
@@ -2397,6 +2403,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .items-trabajo .info .listBullet { padding-bottom: 40px; color: #dc1c4d; list-style: initial; list-style-position: inside; color: #dc1c4d; margin: 0; }
 .items-trabajo .info .listBullet span { color: black; }
 .items-trabajo .detalles { color: black; position: absolute; top: 25px; text-transform: uppercase; border-top: 1px solid black; border-bottom: 1px solid black; padding: 10px 0; right: 180px; font-size: 11px; }
+.items-trabajo .detalles:hover { border-top: 1px solid #dc1c4d; border-bottom: 1px solid #dc1c4d; color: #dc1c4d; }
 .items-trabajo .btn-black { position: absolute; top: 22px; right: 20px; line-height: normal; }
 .items-trabajo .close { position: absolute; display: none; background: black url("../images/ico-cerrar-blanco.png") no-repeat center center; width: 40px; height: 40px; top: 20px; right: 20px; }
 
