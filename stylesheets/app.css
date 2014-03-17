@@ -1740,7 +1740,7 @@ span.note { display: block; text-align: center; font-style: italic; font-size: 0
 .menu-booking-slider ul li a.active { color: white; cursor: default; }
 
 /*@jimmy*/
-.hover, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.hover, .menu-booking-slider ul li a, ul.ofertas li, .mascaraEventos .hover, .left-tools > a, .menu-top a, .footer-bottom .btn-lines.white, .items-servicios .mascara, .popUp form input[type="submit"] { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .mejores-ofertas select, #hotel-select-agenda, .contacto select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; padding: 0 5px; background: white url("../images/down-arrow.png") no-repeat 235px center; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; }
 
@@ -1824,11 +1824,13 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .left-tools > span:first-child { border-right: 1px solid #999999; padding-right: 5px; margin-right: 5px; }
 .left-tools a, .left-tools span { color: #999999; font-size: 0.688em; text-transform: uppercase; font-weight: 600; line-height: 10px; vertical-align: middle; }
 .left-tools a.tel, .left-tools span.tel { font-size: 14px; font-weight: 600; line-height: 14px; }
+.left-tools > a:hover { color: #686868 !important; text-decoration: underline; }
 
 .menu-top { position: relative; padding: 0; }
 .menu-top a { font-size: 0.688em; line-height: 0.688em; font-weight: bold; color: #999999; text-transform: uppercase; text-decoration: none; }
 .menu-top > li { float: right; margin: 13px 0 0 20px; position: relative; }
 .menu-top > li > a { padding: 8px 0; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; }
+.menu-top > li > a:hover { color: #727272; }
 .menu-top > li:first-child > a { background: url("../images/down-arrow.png") no-repeat right center; padding-right: 15px; }
 .menu-top > li:hover > ul { display: block; }
 .menu-top ul { display: none; position: absolute; border: 1px solid #e5e5e5; position: absolute; padding: 20px 20px 0 0px; background-color: white; z-index: 1000; top: 30px; right: 0px; width: 120px; background-color: white; z-index: 1000; }
@@ -1875,12 +1877,13 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.ofertas .btn-lines { float: none; }
 
 .row.eventos { margin: 20px auto; width: 100% !important; max-width: 1600px; min-width: 960px; }
+.row.eventos .cycle-slideshow { width: 100%; }
 .row.eventos .cycle-slideshow .cycle-pager { position: absolute; z-index: 2000; top: 32%; left: 50%; margin-left: -38px; }
 .row.eventos .cycle-slideshow .cycle-pager span { color: #fff; font-size: 4em; width: 25px; float: left; opacity: 0.5; }
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active { opacity: 1; }
 .row.eventos .cycle-slideshow .slide { position: relative; }
 .row.eventos .cycle-slideshow .slide:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
-.row.eventos .cycle-slideshow .slide img { height: 100%; }
+.row.eventos .cycle-slideshow .slide img { width: 100%; height: 100%; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }
@@ -1902,27 +1905,34 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
-.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite.png") no-repeat left top; text-indent: -9999px; }
+.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite2.png") no-repeat left top; text-indent: -9999px; }
 .footer-top a.facebook { background-position: 0 0; }
 .footer-top a.twitter { background-position: -50px 0; }
+.footer-top a.twitter:hover { background-position: -50px -51px; }
 .footer-top a.pinterest { background-position: -100px 0; }
+.footer-top a.pinterest:hover { background-position: -100px -51px; }
 .footer-top a.instagram { background-position: -150px 0; }
+.footer-top a.instagram:hover { background-position: -150px -51px; }
 .footer-top a.youtube { background-position: -200px 0; }
+.footer-top a.youtube:hover { background-position: -200px -51px; }
 .footer-top form { width: 536px; }
-.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 44px; height: 40px; }
-.footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; }
-.footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
+.footer-top form h3 { color: #dc1c4d; text-transform: uppercase; float: left; margin: 0; line-height: 44px; height: 40px; font-size: 24px; }
+.footer-top form input[type="text"] { width: 179px; float: left; height: 40px; margin: 0 10px 0 20px; border: none; font-size: 12px; color: #333333; font-weight: bold; }
+.footer-top form .btn.pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 90% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; text-transform: uppercase; font-size: 0.75em; }
 
 .footer-middle { background: url("../images/footer-bg.jpg") repeat left top; padding: 55px 0; overflow: hidden; }
 .footer-middle > div { width: 940px; margin: 0 auto; }
 .footer-middle > div div { width: 20%; float: left; }
 .footer-middle > div div .city-title { display: block; text-align: center; color: #fff; font-weight: 700; margin-bottom: 4px; }
-.footer-middle > div div a { display: block; text-align: center; font-size: 0.813em; color: #fff; line-height: 1.5em; }
+.footer-middle > div div a { display: block; text-align: center; font-size: 0.813em; color: #cccccc; line-height: 1.5em; }
+.footer-middle > div div a:hover { text-decoration: underline; }
 
 .footer-bottom { background: #000; padding: 12px 20px 15px; overflow: hidden; }
 .footer-bottom > div { width: 940px; margin: 0 auto; }
-.footer-bottom .btn-lines.white { float: left; margin-right: 20px; color: #fff; border-bottom: 1px solid #fff; border-top: 1px solid #fff; width: auto; margin-top: 0; font-weight: 700; }
-.footer-bottom span.credits { color: #dc1c4d; font-weight: 700; text-align: right; display: block; line-height: 30px; }
+.footer-bottom .btn-lines.white { float: left; margin-right: 20px; color: #fff; border-bottom: 1px solid #666666; border-top: 1px solid #666666; width: auto; margin-top: 0; font-weight: 700; }
+.footer-bottom .btn-lines.white:hover { color: #666666; }
+.footer-bottom span.credits { color: #dc1c4d; font-weight: 700; text-align: right; display: block; line-height: 30px; font-size: 13px; }
+.footer-bottom span.credits:hover { text-decoration: underline; }
 
 /*----------------------------------------------------------------------
  OFERTAS @jimmy
