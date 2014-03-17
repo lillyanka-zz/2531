@@ -317,7 +317,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 footer.row { background: #333333; width: 100% !important; max-width: 1600px; min-width: 960px; }
 
 .footer-top { padding: 27px 0; overflow: hidden; width: 940px; margin: 0 auto; left: 21px; position: relative; }
-.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprit2.png") no-repeat left top; text-indent: -9999px; }
+.footer-top a { float: left; height: 49px; width: 49px; margin-right: 10px; background: url("../images/social-sprite2.png") no-repeat left top; text-indent: -9999px; }
 .footer-top a.facebook { background-position: 0 0; }
 .footer-top a.facebook:hover { background-position: 0 -51px; }
 .footer-top a.twitter { background-position: -50px 0; }
@@ -583,6 +583,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .presentacion { width: 828px; margin: 0 auto; }
 .presentacion h2.lines { width: 620px; }
 
+.contenido-presentacion { padding-bottom: 58px; }
+
 .presentacion-video { text-align: center; }
 .presentacion-video iframe { border: 10px solid #fff; }
 
@@ -591,7 +593,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .filosofia-contenedor { width: 420px; margin: 0 auto; }
 .filosofia-contenedor img { display: block; margin: 0 auto; margin-bottom: 30px; }
-.filosofia-contenedor .note { margin-bottom: 8px; text-align: center; }
+.filosofia-contenedor .note { margin-bottom: 0; text-align: center; font-size: 14px; line-height: 21px; }
 
 .filosofia-mision { padding: 60px 0; }
 .filosofia-mision .lines { width: 266px; }
@@ -607,10 +609,10 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .valores-bottom li:first-child { margin-left: 148px; margin-right: 54px; }
 
-.contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li { margin-bottom: 12px; font-size: 14px; }
-.contenido-calidad li span, .contenido-celebraciones li span, .contenido-reuniones li span { font-weight: bold; }
-.contenido-calidad li:before, .contenido-celebraciones li:before, .contenido-reuniones li:before { content: "• "; color: #dc1c4d; display: inline-block; }
-.contenido-calidad p, .contenido-celebraciones p, .contenido-reuniones p { margin-bottom: 40px; }
+.contenido-calidad li, .contenido-celebraciones li, .contenido-reuniones li, .contenido-medioAmbiente li { margin-bottom: 12px; font-size: 14px; }
+.contenido-calidad li span, .contenido-celebraciones li span, .contenido-reuniones li span, .contenido-medioAmbiente li span { font-weight: bold; }
+.contenido-calidad li:before, .contenido-celebraciones li:before, .contenido-reuniones li:before, .contenido-medioAmbiente li:before { content: "• "; color: #dc1c4d; display: inline-block; }
+.contenido-calidad p, .contenido-celebraciones p, .contenido-reuniones p, .contenido-medioAmbiente p { margin-bottom: 40px; }
 
 .ilustracion { width: 300px; }
 .ilustracion img { display: block; margin: 0 auto; margin-bottom: 35px; }
@@ -643,7 +645,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 
 .map-container { padding: 12px; background-color: #fff; }
 .map-container form { margin-top: 17px; }
-.map-container form input { height: 42px; width: 282px; }
+.map-container form input { height: 42px; width: 282px; -webkit-appearance: none; -moz-appearance: none; appearance: none; box-shadow: none; }
 .map-container form label { font-size: 12px; font-weight: bold; margin-top: 18px; margin-right: 9px; }
 .map-container form .enviar-form { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; width: 232px; margin-left: 9px; font-size: 12px; font-weight: bold; }
 
@@ -740,6 +742,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .btn-pink { background: #dc1c4d url("../images/white-arrow.png") no-repeat 95% center; height: 40px; border: none; color: #fff; padding: 0 43px 0 19px; }
 
 .btn-white { background: white url("../images/pc-icon.png") no-repeat 80% center; color: #dc1c4d; }
+
+.fb-share-button { margin-left: 10px; }
 
 .page-error { margin-bottom: 20px; }
 .page-error .btn-black { background-color: transparent; border: 2px solid white; width: 180px; line-height: normal; background-position: 155px; margin: 0; display: inline-block; }

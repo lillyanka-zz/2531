@@ -929,7 +929,7 @@ footer.row{
     height: 49px;
     width: 49px;
     margin-right: 10px;
-    background: url('../images/social-sprit2.png') no-repeat left top;
+    background: url('../images/social-sprite2.png') no-repeat left top;
     text-indent: -9999px;
     &.facebook{
       background-position: 0 0;
@@ -1535,6 +1535,10 @@ font-size: 14px;}
   }
 }
 
+.contenido-presentacion{
+  padding-bottom: 58px;
+}
+
 .presentacion-video{
   text-align: center;
   
@@ -1562,8 +1566,10 @@ font-size: 14px;}
   }
 
   .note{
-    margin-bottom: 8px;
+    margin-bottom: 0;
     text-align: center;
+    font-size: 14px;
+    line-height: 21px;
   } 
 }
 
@@ -1613,7 +1619,7 @@ font-size: 14px;}
 }
 
 //Calidad main
-.contenido-calidad, .contenido-celebraciones, .contenido-reuniones{
+.contenido-calidad, .contenido-celebraciones, .contenido-reuniones, .contenido-medioAmbiente{
   li{
     margin-bottom: 12px;
     font-size: 14px;
@@ -1775,6 +1781,10 @@ font-size: 14px;}
     input{
       height: 42px;
       width: 282px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
 
     }
     label{
@@ -2175,6 +2185,12 @@ font-size: 14px;}
   background: #fff url("../images/pc-icon.png") no-repeat 80% center;
   color: $pink;
 }
+
+.fb-share-button{
+  margin-left: 10px;
+}
+
+
 
 //404
 .page-error{margin-bottom:20px; 
