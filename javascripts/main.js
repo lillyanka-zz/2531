@@ -143,5 +143,27 @@ $( document ).ready(function() {
      });//realizar onfucos para quitar
 
 
+      //
+      //li hover ofertas
+      //
+
+      var elems = $('.ofertas li');
+
+      
+        elems.hover(
+        function() {
+          $(this).css({
+            top: "-=10",
+          });
+        } , function() {
+          $(this).css({
+            top: "+=10",
+          });
+        }
+      );
+
+
+
+
   });//end jquery
 

@@ -25,21 +25,39 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-  <!--********************************************************
+  <div id="outer-wrapper">
+<!--********************************************************
                         Header TOP  nav Menu
   ********************************************************-->
-	<div class="row">
-	  <div class="left-tools">
-	    <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
-	    <a href="#">Contacto</a>
-	  </div>
-	  <ul class="menu-top right">
-	    <li><a href="#">Español</a></li>
-	    <li><a href="#">Empresas</a></li>
-	    <li><a href="#">Agencias</a></li>
-	    <li><a href="#">Mis Reservas</a></li>
-	  </ul>
-	</div> 
+  <div class="inner-header">
+  <div class="row top-links">
+    <div class="left-tools">
+      <span>Reservas: <a href="tel:902100105" class="tel">902 100 105</a></span>
+      <a href="#">Contacto</a>
+    </div>
+    <!--Logo icono-->
+    <img src="images/logo-icono.png" alt="" class="logo-icono">
+    <ul class="menu-top right">
+      <li><a href="#">Español</a></li>
+      <li><a href="#">Empresas</a></li>
+      <li><a href="#">Agencias</a></li>
+      <li><a href="#">Mis Reservas</a></li>
+    </ul>
+  </div> 
+
+  <div class="row main-menu">
+    <nav class="clearfix">
+      <a href="#" >Hoteles <span></span></a>
+      <a href="#" class="active">Ofertas <span></span></a>
+      <a href="#">Destinos <span></span></a>
+      <a href="#">Eventos &amp; Reuniones <span></span></a>
+      <a href="#">Rafael Hoteles <span></span></a>
+      <a href="#">Reservas <span></span></a>
+    </nav>
+  </div><!-- /row -->
+  </div>
+  
+  <div id="wrapper">
   <!--********************************************************
                         Slider with booking
   ********************************************************-->
@@ -82,8 +100,9 @@
           <div class="right icons">
             <ul class="clearfix">
               <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-              <li><a href="#" class="rss ir">rss</a></li>
               <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
+              <li><a href="#" class="rss ir">rss</a></li>
+              
             </ul>
           </div>
          </div> 
@@ -95,7 +114,7 @@
   ********************************************************-->
   <div class="row mejores-ofertas bgGray">
     <div class="centered">
-      <div class="row title-mejores-ofertas">
+      <div class="clearfix title-mejores-ofertas">
         <div class="centered">
           <div class="left">
            <h2>LAS MEJORES OFERTAS</h2>
@@ -278,7 +297,9 @@
          <span class="credits right">by eMascaró Tourism</span>
        </div>
      </div><!-- /row bottom -->
-   </footer> 
+   </footer>
+   </div>
+    </div><!-- outer-wrapper --> 
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
