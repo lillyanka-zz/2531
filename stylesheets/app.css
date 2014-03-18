@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -1881,7 +1881,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.main-menu nav a.active { text-decoration: underline; }
 .row.main-menu nav a.active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat center top; }
+.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") no-repeat center top; }
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
 .row.ofertas .btn-lines { float: none; }
 
@@ -2497,7 +2497,7 @@ select:focus { outline: none; }
 
 .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
-.ui-datepicker { width: 12.4em; padding: .2em .2em 0; display: none; }
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
 
 .ui-datepicker .ui-datepicker-header { position: relative; padding: .2em 0; }
 
