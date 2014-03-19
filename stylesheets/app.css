@@ -1781,6 +1781,7 @@ ul.ofertas li .top .precio span.price { display: block; font-weight: 700; font-s
 ul.ofertas li .bottom { padding: 0 12px; }
 ul.ofertas li .bottom h4 { font-size: 1.125em !important; font-weight: normal; color: #000; text-transform: uppercase; text-align: center; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 ul.ofertas li .bottom h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
+ul.ofertas li .bottom h5:hover { text-decoration: underline; }
 ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 
 .slide-text-header { position: absolute; right: 90px; bottom: 0; padding: 0 30px 20px 0; text-align: right; }
@@ -1881,7 +1882,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.main-menu nav a.active { text-decoration: underline; }
 .row.main-menu nav a.active span { position: absolute; top: 40px; width: 20px; height: 13px; background: url(../images/triangle-menu-active.png) no-repeat center; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") repeat center top; }
+.row.ofertas { padding-bottom: 70px; max-width: none; background: url("../images/ofertasbg.jpg") no-repeat center top; }
 .row.ofertas h2.lines { width: 293px; line-height: 1em; margin: 0.5em auto 0; }
 .row.ofertas .btn-lines { float: none; }
 
@@ -2000,7 +2001,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 ---------------------------------------------------------------------*/
 .clearPadding { padding: 0 !important; }
 
-.bulletclear { font-size: 12px; }
+.bulletclear { font-size: 11px; }
 .bulletclear span { font-size: 14px; }
 
 .centeredOfertas { width: 940px; margin: 0 auto; }
@@ -2013,7 +2014,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .ofertas-detalle #Info span.price { margin-bottom: 30px; }
 .ofertas-detalle #Info span.desde { font-size: 0.688em; font-weight: 600; text-transform: uppercase; }
 .ofertas-detalle #Info span.price { font-weight: 700; font-size: 2.25em; text-decoration: underline; line-height: 1.2em; }
-.ofertas-detalle #Info span:last-child { color: #666666; font-size: 14px; }
+.ofertas-detalle #Info span:last-child { color: #666666; font-size: 14px; font-style: italic; }
 .ofertas-detalle #Info h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
 .ofertas-detalle #Info p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
 .ofertas-detalle #Info hr { margin: 50px 0; }
@@ -2029,13 +2030,12 @@ ul.ofertas li a { margin-top: 25px !important; }
 #disponibles-ofertas h5 { font-size: 18px; margin-bottom: 30px; }
 #disponibles-ofertas li { background-color: #FFF; padding: 10px; margin-top: 15px; }
 #disponibles-ofertas li:first-child { margin-top: 0; }
-#disponibles-ofertas .info { padding-top: 10px; }
 #disponibles-ofertas h3 { font-size: 1.125em; text-transform: uppercase; }
 #disponibles-ofertas h3 + span { display: block; color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; }
-#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; margin-top: 10px; }
+#disponibles-ofertas .btn-black { display: inline-block; margin-left: 20px; line-height: normal; /*margin-top:10px;*/ }
 #disponibles-ofertas li > div:last-child { text-align: right; }
 #disponibles-ofertas span.price { display: inline; color: black; font-size: 36px; text-decoration: none; }
-#disponibles-ofertas .des { font-size: 10px; }
+#disponibles-ofertas .des { font-size: 11px; font-weight: bold; margin-right: 5px; }
 #disponibles-ofertas .bgWhite > div:first-child { padding: 0 !important; }
 #disponibles-ofertas .two-col .right + .info { width: auto !important; }
 
@@ -2111,7 +2111,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .info-destino-ciudad-detalle p { font-size: 14px; color: #333333; }
 .info-destino-ciudad-detalle h4 { font-size: 30px; font-weight: normal; color: #000; text-transform: uppercase; margin-top: 1em; margin-bottom: 0.1em; white-space: normal; }
 .info-destino-ciudad-detalle h5 { color: #dc1c4d; font-size: 14px; text-transform: uppercase; }
-.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; width: 140px !important; }
+.info-destino-ciudad-detalle p.btn-lines { margin-bottom: 20px; width: 140px !important; padding-top: 3px; line-height: 23px; font-weight: bold; font-size: 11px !important; }
 .info-destino-ciudad-detalle + .btn-lines { margin-bottom: 30px; text-align: center; }
 .info-destino-ciudad-detalle .info { width: 66.66%; float: left; padding-right: 2%; text-align: center; }
 .info-destino-ciudad-detalle .info p { text-align: left; }
@@ -2497,7 +2497,7 @@ select:focus { outline: none; }
 
 .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
-.ui-datepicker { width: 12.4em; padding: .2em .2em 0; display: none; }
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
 
 .ui-datepicker .ui-datepicker-header { position: relative; padding: .2em 0; }
 

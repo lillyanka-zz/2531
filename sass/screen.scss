@@ -428,6 +428,7 @@ ul.ofertas{
           font-size: 0.688em;
           text-transform: uppercase;
           text-align: center;
+          &:hover{text-decoration:underline;}
         }
         p{
           color: $light-gray;
@@ -1202,7 +1203,7 @@ ul.ofertas li a{margin-top:25px !important; }
 
 ---------------------------------------------------------------------*/
 .clearPadding{padding:0 !important;}
-.bulletclear{font-size:12px;
+.bulletclear{font-size:11px;
   span{font-size:14px; }
  }
 .centeredOfertas{width:940px;margin: 0 auto;}
@@ -1221,8 +1222,7 @@ font-size: 11px !important;}
     span.price{margin-bottom:30px;}
     span.desde{font-size: 0.688em;font-weight: 600;text-transform: uppercase;}
     span.price{font-weight: 700;font-size: 2.25em;text-decoration: underline;line-height: 1.2em;}
-    span:last-child{color: #666666;
-font-size: 14px;}
+    span:last-child{color: #666666;font-size: 14px;font-style:italic; }
     h5{color: $pink;font-size: 0.688em;text-transform: uppercase;text-align: center;}
     p{color: $light-gray;font-style: italic;font-size: 0.875em;text-align: center;}
     hr{margin:50px 0}
@@ -1249,13 +1249,13 @@ font-size: 14px;}
   li{background-color: #FFF;padding:10px;margin-top:15px;
     &:first-child{margin-top:0;} 
   }
-  .info{padding-top:10px;}
+  // .info{padding-top:10px;}
   h3{font-size:1.125em;text-transform:uppercase }
   h3 + span{display:block;color: $pink;font-size: 0.688em;text-transform:uppercase;}
-  .btn-black{display:inline-block;margin-left:20px; line-height: normal;margin-top:10px; }
+  .btn-black{display:inline-block;margin-left:20px; line-height: normal;/*margin-top:10px;*/ }
   li > div:last-child{text-align:right;}
   span.price{display:inline;color:black;font-size:36px;text-decoration:none; }
-  .des{font-size:10px; }
+  .des{font-size: 11px;font-weight: bold;margin-right: 5px; }
   .bgWhite > div:first-child{padding:0 !important;}
 
   
@@ -1405,7 +1405,12 @@ font-size: 14px;}
           text-transform: uppercase;
         }
 //        .btn-black{display:block;width:200px;margin:0;background:black url("../images/white-arrow.png") no-repeat  150px center}
-        p.btn-lines{margin-bottom:20px;width: 140px !important; }
+        p.btn-lines{margin-bottom:20px;width: 140px !important;
+          padding-top: 3px;
+          line-height: 23px;
+          font-weight: bold;
+          font-size: 11px !important;
+                   }
         + .btn-lines{margin-bottom:30px;text-align:center}
     .info{
       width: 66.66%;
