@@ -392,6 +392,7 @@ ul.ofertas{
           width: 100%;
           background: url('../images/shadow.png') no-repeat center center;
           background-size: auto 100%;
+          font-style: normal;
           span.desde{
             display: block;
             text-align: center;
@@ -550,12 +551,12 @@ ul.ofertas{
     margin-left: -70px;
     cursor: pointer;
     }
+    }
     .slide{
       img{
         display: block;
         height: 100%;
-      }
-    }  
+      }  
   }
         .cycle-prev, .cycle-next{z-index:2000 !important;}
 
@@ -1087,7 +1088,7 @@ footer.row{
 /*helperclasesr*/
  
 
-.booking-slider{position: relative;height: 455px;overflow:hidden;
+.booking-slider{position: relative;height: auto;overflow:hidden;
   &.tall{
     height: 475px;
   }
@@ -1193,9 +1194,9 @@ ul.ofertas li a{margin-top:25px !important; }
     
   }
   .icons{text-align:left;
-    ul li{float:right;}
+    ul li{float:left;}
     .rss{width:25px;height:25px;display: block;
-      background: url('../images/ico-rss.png') no-repeat left top;}
+      background: url('../images/ico-rss.png') no-repeat left top; margin-top: 2px;}
   }
 } 
 

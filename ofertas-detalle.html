@@ -62,6 +62,35 @@
   </div>
   
   <div id="wrapper">
+    <!--********************************************************
+                          Slider with booking
+    ********************************************************-->
+    <div class="booking-slider">
+      <div class="row ">
+        <div>
+          <div class="slide">
+            <img src="images/slider-mejores-ofertas.jpg" alt="" />
+            <div class="slide-text-header">
+              <h3>Consulte <strong>Nuestras ofertas</strong></h3>
+              <span class="slide-caption">La mejor forma de disfrutar de nuestros hoteles y destinos.</span>
+            </div>
+          </div>
+        </div><!-- /text -->
+        <div class=" booking-form">
+          <h3 class="lines">Reservas</h3>
+          <form action="">
+            <select id="hotel-select">
+              <option>Selecciona Hotel</option>
+            </select>
+            <input type="text" placeholder="CHECK-IN" name="checkin" id="checkin" class="datepicker"/>
+            <input type="text" placeholder="CHECK-OUT" name="checkout" id="checkout" class="datepicker" />
+            <input type="button" value="RESERVAR" />
+          </form>
+        </div><!-- /form -->
+      </div><!-- /row -->
+    </div>
+  
+    <div id="mask2"></div><!-- /cambiar a mask cuando todo este listo -->
    <!--********************************************************
                         BREADCRUMB
   ********************************************************-->
@@ -77,8 +106,8 @@
           <div class="right icons">
             <ul class="clearfix">
               <!-- <li><a href="#" class="face ir">facebook</a></li> -->
-              <li><div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div></li>
               <li><a href="#" class="rss ir">rss</a></li>
+              <li><div class="fb-like" data-href="http://example.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
             </ul>
           </div>
          </div> 

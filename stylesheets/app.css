@@ -1619,7 +1619,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row.city .row.hotel-content .hotel-img { float: left; }
 .row.city .row.hotel-content .hotel-description { width: 420px; float: left; padding-top: 20px; }
 .row.city .row.hotel-content .hotel-description h5 { font-weight: normal; text-transform: uppercase; margin-bottom: 0; }
-.row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 30px; padding: 0 38px 0 10px; }
+.row.city .row.hotel-content .hotel-description .btn-black { margin-top: 30px; display: table; height: 23px; padding: 0 46px 0 20px; background: black url("../images/white-arrow.png") no-repeat 86% center; line-height: 38px; }
 .row.city .row.hotel-content .hotel-description p.center { width: 300px; text-align: center; margin: 0 auto; font-style: normal; }
 .row.city .row.hotel-content .hotel-description p { font-style: italic; color: #666; font-size: 0.875em; }
 .row.city .row.hotel-content .hotel-description .opiniones { margin-top: 20px; }
@@ -1775,7 +1775,7 @@ ul.ofertas li:hover a { background-color: #dc1c4d; }
 ul.ofertas li:last-child { margin-right: 0; }
 ul.ofertas li .top { position: relative; }
 ul.ofertas li .top img { width: 100%; }
-ul.ofertas li .top .precio { position: absolute; top: 60%; left: 0; width: 100%; background: url("../images/shadow.png") no-repeat center center; background-size: auto 100%; }
+ul.ofertas li .top .precio { position: absolute; top: 60%; left: 0; width: 100%; background: url("../images/shadow.png") no-repeat center center; background-size: auto 100%; font-style: normal; }
 ul.ofertas li .top .precio span.desde { display: block; text-align: center; color: #fff; font-size: 0.688em; font-weight: 600; text-transform: uppercase; }
 ul.ofertas li .top .precio span.price { display: block; font-weight: 700; font-size: 2.25em; text-align: center; color: #fff; text-decoration: underline; line-height: 1.2em; }
 ul.ofertas li .bottom { padding: 0 12px; }
@@ -1825,7 +1825,7 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .mascaraEventos { overflow: hidden; }
 .mascaraEventos .hover { position: absolute; z-index: 1000; background-color: rgba(0, 0, 0, 0.3); left: 0 !important; position: absolute; top: 0 !important; width: 100%; height: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .mascaraEventos .hover span { width: 140px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 85% center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; padding-left: 20px; top: 50%; left: 50%; margin-left: -70px; cursor: pointer; }
-.mascaraEventos .hover .slide img { display: block; height: 100%; }
+.mascaraEventos .slide img { display: block; height: 100%; }
 .mascaraEventos .cycle-prev, .mascaraEventos .cycle-next { z-index: 2000 !important; }
 .mascaraEventos:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; cursor: pointer; display: block; }
 .mascaraEventos:hover .container a { color: #db1c4d; background-color: #fff; background-image: url("../images/arrow-pink.png"); }
@@ -1951,7 +1951,7 @@ footer.row { background: #333333; width: 100% !important; max-width: none; }
 
 ---------------------------------------------------------------------*/
 /*helperclasesr*/
-.booking-slider { position: relative; height: 455px; overflow: hidden; }
+.booking-slider { position: relative; height: auto; overflow: hidden; }
 .booking-slider.tall { height: 475px; }
 .booking-slider .booking-form { width: 240px; right: 10%; top: 5%; padding: 10px; }
 .booking-slider .booking-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; border: none; border-radius: 0; text-transform: uppercase; font-size: 0.875em; font-weight: 600; -webkit-font-smoothing: antialiased; color: #333333; width: 100%; padding: 5px; margin: 1px 10px 0 0; background: white url("../images/down-arrow.png") no-repeat 200px center; text-transform: none; font-weight: normal; }
@@ -1992,8 +1992,8 @@ ul.ofertas li a { margin-top: 25px !important; }
 .submenu .breadcumbs li a.active:hover { color: #333333; cursor: inherit; }
 .submenu .breadcumbs li a:hover { color: #333333; }
 .submenu .icons { text-align: left; }
-.submenu .icons ul li { float: right; }
-.submenu .icons .rss { width: 25px; height: 25px; display: block; background: url("../images/ico-rss.png") no-repeat left top; }
+.submenu .icons ul li { float: left; }
+.submenu .icons .rss { width: 25px; height: 25px; display: block; background: url("../images/ico-rss.png") no-repeat left top; margin-top: 2px; }
 
 /*----------------------------------------------------------------------
  Detalle OFERTA @jimmy
