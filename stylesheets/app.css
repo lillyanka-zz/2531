@@ -1886,13 +1886,13 @@ ul.ofertas li .bottom p { color: #666666; font-style: italic; font-size: 0.875em
 .row.ofertas .btn-lines { float: none; }
 
 .row.eventos { margin: 20px auto; width: 100% !important; max-width: 1600px; min-width: 960px; }
-.row.eventos .cycle-slideshow { width: 100%; }
+.row.eventos .cycle-slideshow { width: 100%; max-width: 1240px; }
 .row.eventos .cycle-slideshow .cycle-pager { position: absolute; z-index: 2000; top: 32%; left: 50%; margin-left: -38px; }
 .row.eventos .cycle-slideshow .cycle-pager span { color: #fff; font-size: 4em; width: 25px; float: left; opacity: 0.5; }
 .row.eventos .cycle-slideshow .cycle-pager span.cycle-pager-active { opacity: 1; }
 .row.eventos .cycle-slideshow .slide { position: relative; }
 .row.eventos .cycle-slideshow .slide:hover .button { background: white url("../images/arrow-pink.png") no-repeat 90% center; color: #dc1c4d; }
-.row.eventos .cycle-slideshow .slide img { width: 100%; height: 100%; }
+.row.eventos .cycle-slideshow .slide img { width: 100%; height: 100%; display: block; }
 
 .row.destinos { margin-bottom: 20px; padding-bottom: 70px; padding-top: 33px; max-width: none; background: url("../images/mainbg.jpg") repeat left top; }
 .row.destinos > div { /*width: 1240px;*/ margin: 0 auto; text-align: center; }

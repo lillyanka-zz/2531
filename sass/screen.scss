@@ -809,6 +809,7 @@ ul.ofertas{
   min-width: 960px;
   .cycle-slideshow{
       width:100%; 
+      max-width: 1240px;
     .cycle-pager{
       position: absolute;
       z-index: 2000;
@@ -838,6 +839,7 @@ ul.ofertas{
       img{
         width:100%; 
         height: 100%;
+        display: block;
       }
     }
   }
