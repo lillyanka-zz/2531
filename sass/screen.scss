@@ -210,6 +210,9 @@ h4{
   right: 124px;
   bottom: 45px;
   padding-left: 35px;
+  &:hover{
+    color: #fff;
+  }
 }
 
 address{
@@ -1227,7 +1230,7 @@ font-size: 11px !important;}
     span.price{font-weight: 700;font-size: 2.25em;text-decoration: underline;line-height: 1.2em;}
     span:last-child{color: #666666;font-size: 14px;font-style:italic; }
     h5{color: $pink;font-size: 0.688em;text-transform: uppercase;text-align: center;}
-    p{color: $light-gray;font-style: italic;font-size: 0.875em;text-align: center;}
+    p{color: $light-gray;font-style: normal;font-size: 0.875em;text-align: center;}
     hr{margin:50px 0}
   }
 }

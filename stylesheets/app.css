@@ -1725,6 +1725,7 @@ h4 { font-size: 1.875em; font-weight: normal; color: #000; }
 .menu { position: static; z-index: 10000; }
 
 .btn-galeria { width: 240px; height: 40px; line-height: 40px; display: block; background: transparent url("../images/camera.png") no-repeat 188px center; border: 2px solid; color: #fff; text-align: left; font-size: 0.75em; text-transform: uppercase; font-weight: bold; position: absolute; right: 124px; bottom: 45px; padding-left: 35px; }
+.btn-galeria:hover { color: #fff; }
 
 address { font-size: 0.875em; line-height: 1.7em; }
 
@@ -2016,7 +2017,7 @@ ul.ofertas li a { margin-top: 25px !important; }
 .ofertas-detalle #Info span.price { font-weight: 700; font-size: 2.25em; text-decoration: underline; line-height: 1.2em; }
 .ofertas-detalle #Info span:last-child { color: #666666; font-size: 14px; font-style: italic; }
 .ofertas-detalle #Info h5 { color: #dc1c4d; font-size: 0.688em; text-transform: uppercase; text-align: center; }
-.ofertas-detalle #Info p { color: #666666; font-style: italic; font-size: 0.875em; text-align: center; }
+.ofertas-detalle #Info p { color: #666666; font-style: normal; font-size: 0.875em; text-align: center; }
 .ofertas-detalle #Info hr { margin: 50px 0; }
 
 .detalle .clearPadding { width: 470px; float: left; }
